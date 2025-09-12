@@ -221,4 +221,4 @@ if __name__ == "__main__":
     print(f"Saving final results to JSON: {output_json_file}")
     save_results_json(results_df, output_json_file)
     
-    print("Results saved successfully in both CSV and JSON formats!")
+    print("Results saved successfully in JSON formats!")
