@@ -1,0 +1,7 @@
+OPENAI_API_KEY: "your-api-key"
+GEMINI_API_KEY: "your-api-key"
+FHIR_CONFIG:
+  PROJECT_ID: "your-gcp-project-id"
+  LOCATION: "your-fhir-dataset-location"
+  DATASET_ID: "your-dataset-id"
+  STORE_ID: "fhir-store-id"
