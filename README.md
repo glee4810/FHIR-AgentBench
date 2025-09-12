@@ -196,9 +196,9 @@ CUDA_VISIBLE_DEVICES=<gpu_ids> python -m vllm.entrypoints.openai.api_server --mo
 
 ## 📊 Evaluation
 
-Run the following command to normalize, evaluate answers, and visualize performance (accuracy, FHIR resource retrieval recall/precision):
+Run the following command to normalize, evaluate answers, and visualize performance (FHIR resource retrieval recall/precision, answer correctness):
 
 ```bash
-python evaluation_metrics.py --input <agent_output_file_path>
+python evaluation_metrics.py --input <agent_output_json_file_path>
 ```
 
