@@ -157,7 +157,7 @@ def process_questions_efficiently(questions_df, id2sample, value_mapping):
     question_processor = QuestionProcessor(value_mapping_valid, value_mapping_natural)
     questions_df_raw = question_processor.process_questions_batch(questions_df, id2sample)
     
-    # Generate assumptions
+    # Generate question context
     assumption_generator = AssumptionGenerator()
     assumptions = assumption_generator.generate_assumptions(questions_df_raw, id2sample)
     questions_df_raw['assumption'] = assumptions
