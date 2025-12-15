@@ -202,3 +202,6 @@ Run the following command to normalize, evaluate answers, and visualize performa
 python evaluation_metrics.py --input <agent_output_json_file_path>
 ```
 
+
+## Authorship
+FHIR-AgentBench is a joint research effort between Verily Life Sciences, Korea Advanced Institute of Science & Technology (KAIST), and Massachusetts Institute of Technology (MIT).
