@@ -36,6 +36,20 @@ This is a **null result, and a clean one.** Across two frontier models, a catalo
 > budget. Read §2–§5 as "replicate the known null under stronger controls + isolate the cap as the real
 > lever," not "discover that tools don't help."
 
+> **Wider prior art (and why our null is still interesting).** In *general* agent work the direction
+> "purpose-built/typed tools beat a generic shell" is **well established** — most cleanly by **GradleFixer**
+> ([arXiv 2510.08640](https://arxiv.org/abs/2510.08640): domain-specific tools 81.4% pass@1 vs a
+> general-purpose shell, with a graded shell→domain trend *and* a call-budget manipulation), and by
+> **Thinker** ([arXiv 2503.21036](https://arxiv.org/abs/2503.21036): 68.3%→82.6% on τ-bench retail) — though
+> neither reports paired/significance statistics. But in **clinical** work the only datapoint near our axis
+> (FHIR-AgentBench's own ablation) shows generic **0.25 ≥ specialized 0.22**, so "typed beats generic" is
+> **not** established for FHIR. The closest clinical neighbour, **FHIR-AgentEval**
+> ([PMC12919212](https://pmc.ncbi.nlm.nih.gov/articles/PMC12919212/): best 60.6% success), holds the tool
+> surface *constant* and ablates memory, not tool design. So our **exact cell** — generic-vs-typed on a real
+> FHIR MCP tool surface, crossed with a context-cap factorial, analyzed with paired stats — is **unoccupied**,
+> and our underpowered **null runs against the general "typed wins" direction**. Net verdict: **partially
+> known** — the contribution is the method bundle + the honest null, not the direction.
+
 **RUN-0 (original, confounded):** Generic Medplum tool ≈39% → 5-tool catalog ≈50%, a **+11pp** apparent win. This is the result that motivated the whole pitch. But it was measured **without any of the controls that would let you trust it**:
 
 - **No cap-factorial.** The 32k vs 100k context cap was never varied. The 5-tool arm and the 1-tool arm were not matched on context budget, so any difference in how often each arm *overflowed* the cap got silently scored as a "tool quality" difference.
