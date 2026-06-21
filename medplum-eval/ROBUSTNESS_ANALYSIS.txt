@@ -2,6 +2,15 @@
 ROBUSTNESS ANALYSIS (judge-free re-score + MDE + Holm)  
 ==============================================================================
 
+PROVENANCE / what is computed vs reconstructed:
+  * COMPUTED LIVE from committed data (medplum-eval/results/*.json): the §1 deterministic
+    re-score curve and its McNemar steps in §3 (gpt curve(det): ...).
+  * RECONSTRUCTED CONSTANTS (hardcoded below) from a scoring run whose raw data was on a
+    torn-down box: the §1 LLM-judge accuracies and ALL the opus p-values in §3. The committed
+    per-question JSON carries agent answers but NOT the judge's correctness labels, and the
+    entire Opus run (incl. the cap-factorial / p_holm=0.005 finding) has no committed raw data.
+    Those numbers are reproducible only by re-running the eval, not from this repo's artifacts.
+
 ## 1. Judge-free deterministic re-score (vs the gpt-5-mini LLM judge)
 
 tools  arm            LLM-judge deterministic    |Δ|

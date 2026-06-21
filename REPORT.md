@@ -10,6 +10,16 @@
 
 This is a **null result, and a clean one.** Across two frontier models, a catalog of purpose-built FHIR tools showed **no statistically significant accuracy advantage** over Medplum's single generic `fhir_request` tool on single-patient retrieval. The original headline ("5 tools beat 1 by +11pp") was **confounded** — it folded in a context-budget/overflow artifact and had no paired statistics or controls, and it does not replicate on either model under rigorous testing. The **only robust, significant effect anywhere** is the context cap: `_include`/reference-resolution tools are token-hungry and overflow the default 32k budget, and fixing that — not adding tools — is what moved accuracy.
 
+> **⚠️ Reproducibility status (read before citing any number).** This is exploratory work, and the
+> runs were executed on ephemeral EC2 boxes that have been torn down. From the committed artifacts you
+> can regenerate **only** the GPT-5.5 *deterministic* re-score curve and the overflow taxonomy (§9.1,
+> `python robustness_analysis.py medplum-eval/results`). Everything else is **reconstructed from lost
+> runs**: all LLM-judge accuracies (the per-question JSON has agent answers but no correctness labels),
+> all paired p-values, and the **entire Opus run including the cap-factorial** — so the headline
+> "only robust effect" (cap-on-`arm_ref`, p=0.0005 → p_holm=0.005) is an *unreproduced observation from
+> a destroyed run*, not a result you can recompute here. Treat the null + the deterministic flat curve
+> as the load-bearing claims; treat the cap finding and the absolute accuracies as credible-but-unverifiable.
+
 ---
 
 ## 2. The arc: how a +11pp win became a null
@@ -25,7 +35,7 @@ This is a **null result, and a clean one.** Across two frontier models, a catalo
 
 **RUN-2 (GPT-5.5, nested staircase):** Re-ran across 1→2→4→5→6 tools on a second, stronger model. The curve is **flat and noisy (0.70–0.83)**, every paired step is null, and the 1-tool generic (0.80) is **never beaten** by the 5-tool catalog (0.767). The effect is model-specific *and* artifact-driven — it survives on neither model.
 
-> An independent crude deterministic re-score of the GPT-5.5 raw answers reproduced these numbers almost exactly (control 0.80, cat4 0.80, validated5 0.79, arm_ref 0.83), so the directional conclusion is **not** an LLM-judge artifact. (Note: the `_scores.csv` / `_paired.json` aggregates in the gptcurve dir are zeroed-out — an *unscored serialization artifact*. Do **not** cite them; the per-question raw JSON files are the source of truth and they back the RESULTS_DATA numbers.)
+> An independent judge-free deterministic re-score of the GPT-5.5 raw answers (strict string/number match, see §9.1) reproduces the **flat *shape*** — control (1 tool) ≈ arm_ref (6 tools) — but it floors **~20pp below** the LLM judge (deterministic 0.55–0.61 vs judge 0.70–0.83), because strict matching misses semantic equivalents (e.g. `'urgent'=='UR'`). So the *null/flat conclusion* is not an LLM-judge artifact; only the absolute level is judge-dependent. **Reproducibility caveat (read §8):** the committed per-question JSON (`medplum-eval/results/`) carries the agent answers but **not** the judge's correctness labels — the scoring run was lost with its box — so the LLM-judge accuracies in §3 are *reconstructed constants*, not recomputable from the repo. The deterministic curve in §9.1 is the one thing you can regenerate from committed data (`python robustness_analysis.py medplum-eval/results`).
 
 ---
 
@@ -91,12 +101,12 @@ Curve is flat/noisy across 0.70–0.83 with no significant climb.
 
 ## 5. The one real finding: context budget / `_include` overflow
 
-The only robust, significant lever in the entire experiment is the **context cap**, isolated by the Opus cap-factorial:
+The only robust, significant lever in the entire experiment is the **context cap**, isolated by the Opus cap-factorial. *(Caveat from §1: this is from the destroyed Opus run — credible, externally corroborated, but not recomputable from committed artifacts. The mechanism, not the exact p-value, is the takeaway.)*
 
-- **control, 32k → 100k:** 0.36 → 0.64, Δ **+0.28**, **p=0.039** (significant).
-- **arm_ref, 32k → 100k:** 0.16 → 0.72, Δ **+0.56**, **p=0.0005** (highly significant).
+- **control, 32k → 100k:** 0.36 → 0.64, Δ **+0.28**, **p=0.039** (significant; but does **not** survive Holm — see §9.3).
+- **arm_ref, 32k → 100k:** 0.16 → 0.72, Δ **+0.56**, **p=0.0005** (the one effect that survives Holm, p_holm=0.005).
 - At the 32k cap, **arm_ref overflowed 20/25 questions** — its `resolve_references`/`_include` bundles are payload-heavy and blow the stock budget.
-- On GPT-5.5, cat2 overflowed 6/30 and validated5 overflowed 1/30 — same mechanism, smaller blast radius.
+- On GPT-5.5, `cat2` overflowed several of 30 and `validated5` 1/30 — and notably `cat2` overflows even at the **raised 100k cap**, not just at 32k. Same mechanism; it *strengthens* "token economics dominate" while complicating any "just raise the cap and it's fixed" reading.
 
 **The mechanism:** what looked like "purpose-built tools make the agent smarter" was substantially "the larger-context arm dodged a context-overflow cliff the harness imposed." **FHIR tool ergonomics on frontier models are dominated by token economics, not tool count.** `_include`/reference-resolution is a concrete context-budget trap: if you give an agent FHIR tools, design for payload size, not tool-surface area.
 
@@ -126,7 +136,7 @@ The only robust, significant lever in the entire experiment is the **context cap
 
 ## 7. What it means + recommendation
 
-**Do NOT pitch Medplum on "your generic tool is worse, buy our tool catalog."** The data says the opposite. For strong models the single generic tool is plenty, and GPT-5.5 with the bare generic (0.80) *beat* Opus with the bare generic (0.72). If anything, this result **validates Medplum's minimalist single-tool design.** Pitching a confounded +11pp you've already disproven is a fast way to get eaten alive by a maintainer who reads your raw data.
+**Do NOT pitch Medplum on "your generic tool is worse, buy our tool catalog."** The data says the opposite. For strong models the single generic tool is plenty. (A *tempting* but unsound add-on: "GPT-5.5 with the bare generic, 0.80, beat Opus, 0.72." Don't lean on it — those two numbers are from **different slices** (GPT rep n=30 vs Opus medication n=25), different question sets, both with lost raw data, and the 8pp gap is **well inside the MDE (~34–46pp, §9.2)**. It's apples-to-oranges and below noise; mention it at most as a hand-wave, not evidence.) If anything, this result **validates Medplum's minimalist single-tool design.** Pitching a confounded +11pp you've already disproven is a fast way to get eaten alive by a maintainer who reads your raw data.
 
 **Instead, ship the methodology and the overflow finding as the contribution.** The accuracy result is null, but the *experiment* is the asset. You built a paired-McNemar + bootstrap + cap-factorial harness that **catches a confound a naive eval (RUN-0, and frankly most vendor eval blog posts) would have shipped as a win.** The reframed, defensible thesis:
 
@@ -149,7 +159,7 @@ That is true, specific, useful to a Medplum maintainer, and a strong hiring sign
 - **Single seed per cell.** Run-to-run (decoding) variance is unmeasured. Each cell is one sample at one seed; the flat curve could hide seed-level wobble we never observed. A SOTA design would run ≥3 seeds/cell and report the variance component.
 - **No multiple-comparison correction in the headline numbers.** The per-comparison p-values in §3 are uncorrected. After Holm-Bonferroni over the full family (§9), **only the cap-on-arm_ref effect survives** (p_holm=0.005); the cap-on-control effect (p=0.039) does **not** (p_holm=0.35). Secondary findings beyond the context-cap effect should be treated as exploratory.
 - **No pre-registration.** Arms, slices, and the primary comparison were not pre-registered; the cap-factorial was added after RUN-0 surprised us. This is honest exploratory work, not a confirmatory trial.
-- **Opus raw data lost** with its torn-down box (reproducibility hole); the GPT-5.5 raw answers survive at `medplum-eval-results/runs/gptcurve/mcp.*.gpt-5.5-2026-04-23.rep.c100k.json` and carry the load. The `_scores.csv` / `_paired.json` in that dir are zeroed-out unscored artifacts — **do not cite them.**
+- **Opus raw data lost** with its torn-down box (reproducibility hole) — there is **no committed Opus data anywhere in the repo**, so every Opus number and the cap-factorial finding are reconstructed (see §1). The GPT-5.5 raw answers are committed at [`medplum-eval/results/mcp.*.gpt-5.5-2026-04-23.rep.c100k.json`](medplum-eval/results/) — but they carry **agent answers only, not correctness labels**, so they back the *deterministic* re-score (§9.1) and the overflow taxonomy, not the LLM-judge accuracies. The original `_scores.csv` / `_paired.json` aggregates were zeroed-out unscored artifacts and are deliberately **not committed** — do not reconstruct or cite them.
 
 ---
 
@@ -178,7 +188,7 @@ The strict scorer floors ~20pp below the semantic judge (it misses equivalents l
 
 Under any plausible discordance-noise assumption the MDE is **~34–46pp**. The correct reading of the null is therefore **"no tool effect larger than ~the MDE,"** not "no effect." A commercially-decisive 5–10pp lift is far below this floor — **structurally invisible** to this design. This is the single most important honesty caveat: the experiment is badly underpowered for realistic effect sizes.
 
-**9.3 — Holm-Bonferroni (family-wise correction).** Corrected all 10 paired p-values for multiple comparisons.
+**9.3 — Holm-Bonferroni (family-wise correction).** Corrected the full family of **10** paired p-values (the 6 Opus comparisons + the 4 GPT-5.5 curve steps; full table in [`ROBUSTNESS_ANALYSIS.txt`](medplum-eval/ROBUSTNESS_ANALYSIS.txt) §3). Representative rows:
 
 | comparison | p | p_holm | survives? |
 |---|---|---|---|
@@ -186,6 +196,8 @@ Under any plausible discordance-noise assumption the MDE is **~34–46pp**. The 
 | opus med: cap effect on control (32k→100k) | 0.039 | 0.351 | no |
 | opus med: structure-lift (control_include→arm_ref) | 0.69 | 1.0 | no |
 | opus med: total-lift (control→arm_ref) | 0.625 | 1.0 | no |
-| all GPT-5.5 curve steps (1→2→4→5→6) | ≈1.0 | 1.0 | no |
+| opus med: coaching-lift (control→control_include) | 1.0 | 1.0 | no |
+| opus rep: control→arm_full8 | 1.0 | 1.0 | no |
+| GPT-5.5 curve steps (1→2, 2→4, 4→5, 5→6), each | ≈1.0 | 1.0 | no |
 
 After correction, **exactly one effect is credible: the `_include`/reference-resolution overflow at the 32k cap (p_holm=0.005).** Even the cap-on-control effect drops out. This is the cleanest possible statement of the result: the *only* thing that robustly moves accuracy, family-wise-corrected, is the context-budget trap — not tool count, not tool design.

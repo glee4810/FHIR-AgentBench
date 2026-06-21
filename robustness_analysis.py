@@ -125,6 +125,16 @@ def main():
     print("=" * 78)
     print("ROBUSTNESS ANALYSIS (judge-free re-score + MDE + Holm)  ")
     print("=" * 78)
+    print(
+        "\nPROVENANCE / what is computed vs reconstructed:\n"
+        "  * COMPUTED LIVE from committed data (medplum-eval/results/*.json): the §1 deterministic\n"
+        "    re-score curve and its McNemar steps in §3 (gpt curve(det): ...).\n"
+        "  * RECONSTRUCTED CONSTANTS (hardcoded below) from a scoring run whose raw data was on a\n"
+        "    torn-down box: the §1 LLM-judge accuracies and ALL the opus p-values in §3. The committed\n"
+        "    per-question JSON carries agent answers but NOT the judge's correctness labels, and the\n"
+        "    entire Opus run (incl. the cap-factorial / p_holm=0.005 finding) has no committed raw data.\n"
+        "    Those numbers are reproducible only by re-running the eval, not from this repo's artifacts."
+    )
 
     # ---- 1. deterministic re-score of the GPT-5.5 curve cells ----
     print("\n## 1. Judge-free deterministic re-score (vs the gpt-5-mini LLM judge)\n")

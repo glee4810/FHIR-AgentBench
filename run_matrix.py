@@ -54,11 +54,9 @@ def tier1_cells():
     Real hypothesis: GPT is weaker at raw FHIR query construction, so the typed-tool lift may be
     LARGER than on opus."""
     C = []
-    # FINISH RUN: only the missing 8-tool endpoint (the 5 lower-rung cells already exist + are skipped).
-    # Completes the nested staircase control(1)->2->4->5->6->8 to answer the 5-vs-8 question.
-    C.append(_cell("mcp", "arm_full8", GPT, cap=RAISED_CAP, sample="rep"))
-    return C
-    # (original full curve preserved below for reference; unreachable)
+    # Full nested dose-response staircase on the representative slice: 1 generic -> 2 -> 4 -> 5 -> 6 -> 8 tools.
+    # NOTE: run_cell() skips any cell whose output JSON already exists in --out-dir, so point at a FRESH
+    # --out-dir to re-run the whole matrix from scratch (or reuse a dir to resume a partial run).
     for arm in ["control", "cat2", "cat4", "validated5", "arm_ref", "arm_full8"]:
         C.append(_cell("mcp", arm, GPT, cap=RAISED_CAP, sample="rep"))
     # orthogonal frugal-generic (vs control) — "could you just coach the generic with _elements?"
