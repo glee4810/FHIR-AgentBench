@@ -1,0 +1,58 @@
+[
+  {
+    "comparison": "curve 1->2 (rep): control(1g) -> 2 tools",
+    "n_paired": 30,
+    "a_acc": 0.8,
+    "b_acc": 0.7,
+    "delta": -0.1,
+    "ci95": [
+      -0.233,
+      0.033
+    ],
+    "b01_a_wrong_b_right": 1,
+    "b10_a_right_b_wrong": 4,
+    "mcnemar_p": 0.375
+  },
+  {
+    "comparison": "curve 2->4 (rep): 2 -> 4 tools",
+    "n_paired": 30,
+    "a_acc": 0.7,
+    "b_acc": 0.8,
+    "delta": 0.1,
+    "ci95": [
+      -0.033,
+      0.233
+    ],
+    "b01_a_wrong_b_right": 4,
+    "b10_a_right_b_wrong": 1,
+    "mcnemar_p": 0.375
+  },
+  {
+    "comparison": "curve 4->5 (rep): 4 -> 5 tools",
+    "n_paired": 30,
+    "a_acc": 0.8,
+    "b_acc": 0.767,
+    "delta": -0.033,
+    "ci95": [
+      -0.133,
+      0.067
+    ],
+    "b01_a_wrong_b_right": 1,
+    "b10_a_right_b_wrong": 2,
+    "mcnemar_p": 1.0
+  },
+  {
+    "comparison": "curve 5->6 (rep): 5 -> +resolve_refs(6)",
+    "n_paired": 30,
+    "a_acc": 0.767,
+    "b_acc": 0.833,
+    "delta": 0.067,
+    "ci95": [
+      -0.067,
+      0.2
+    ],
+    "b01_a_wrong_b_right": 3,
+    "b10_a_right_b_wrong": 1,
+    "mcnemar_p": 0.625
+  }
+]

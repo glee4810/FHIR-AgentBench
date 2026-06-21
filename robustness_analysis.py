@@ -127,23 +127,39 @@ def main():
     print("=" * 78)
     print(
         "\nPROVENANCE / what is computed vs reconstructed:\n"
-        "  * COMPUTED LIVE from committed data (medplum-eval/results/*.json): the §1 deterministic\n"
-        "    re-score curve and its McNemar steps in §3 (gpt curve(det): ...).\n"
-        "  * RECONSTRUCTED CONSTANTS (hardcoded below) from a scoring run whose raw data was on a\n"
-        "    torn-down box: the §1 LLM-judge accuracies and ALL the opus p-values in §3. The committed\n"
-        "    per-question JSON carries agent answers but NOT the judge's correctness labels, and the\n"
-        "    entire Opus run (incl. the cap-factorial / p_holm=0.005 finding) has no committed raw data.\n"
-        "    Those numbers are reproducible only by re-running the eval, not from this repo's artifacts."
+        "  * COMPUTED from committed data: the §1 deterministic re-score curve + its McNemar steps in §3\n"
+        "    (from medplum-eval/results/mcp.*.json), AND the §1 GPT-5.5 LLM-judge accuracies (loaded from\n"
+        "    the committed _scores.csv; the GPT cells were re-judged 2026-06-21 with per-question labels\n"
+        "    frozen in *.judged.json, so they are now recomputable, not hardcoded).\n"
+        "  * STILL RECONSTRUCTED (hardcoded): ALL the opus p-values in §3. The entire Opus run (incl. the\n"
+        "    cap-factorial / p_holm=0.005 finding) was lost with a torn-down box and has NO committed raw\n"
+        "    data — those numbers are reproducible only by re-running the Opus eval from scratch."
     )
 
     # ---- 1. deterministic re-score of the GPT-5.5 curve cells ----
     print("\n## 1. Judge-free deterministic re-score (vs the gpt-5-mini LLM judge)\n")
-    # LLM-judge accuracies captured from the original scoring (the on-disk _scores.csv was clobbered):
-    llm_judge = {"control": 0.80, "cat2": 0.70, "cat4": 0.767, "validated5": 0.767, "arm_ref": 0.833}
+    # LLM-judge accuracies: load from the COMMITTED _scores.csv (the GPT-5.5 cells were re-judged on
+    # 2026-06-21 from the surviving raw answers, with per-question labels frozen in *.judged.json). Falls
+    # back to the prior reconstructed constants only if _scores.csv is missing.
+    llm_judge = {"control": 0.80, "cat2": 0.70, "cat4": 0.767, "validated5": 0.767, "arm_ref": 0.833}  # fallback
+    _scores_csv = os.path.join(rdir, "_scores.csv")
+    if os.path.exists(_scores_csv):
+        import csv
+        with open(_scores_csv) as _f:
+            for row in csv.DictReader(_f):
+                arm = row["cell"].split(".")[1]
+                if arm == "arm_full8":  # all rate-limit; not a judge result
+                    continue
+                try:
+                    llm_judge[arm] = round(float(row["raw_acc"]), 3)
+                except (KeyError, ValueError, TypeError):
+                    pass
     order = {"control": 1, "cat2": 2, "cat4": 4, "validated5": 5, "arm_ref": 6, "arm_full8": 8}
     det = {}
     perq = {}
     for p in sorted(glob.glob(os.path.join(rdir, "mcp.*.json"))):
+        if p.endswith(".judged.json"):
+            continue  # skip our own per-question label sidecars
         arm = os.path.basename(p).split(".")[1]
         recs = json.load(open(p))
         scored = {r.get("question_id"): det_correct(r.get("agent_answer"), r.get("true_answer")) for r in recs}

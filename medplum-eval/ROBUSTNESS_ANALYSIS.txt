@@ -3,20 +3,20 @@ ROBUSTNESS ANALYSIS (judge-free re-score + MDE + Holm)
 ==============================================================================
 
 PROVENANCE / what is computed vs reconstructed:
-  * COMPUTED LIVE from committed data (medplum-eval/results/*.json): the §1 deterministic
-    re-score curve and its McNemar steps in §3 (gpt curve(det): ...).
-  * RECONSTRUCTED CONSTANTS (hardcoded below) from a scoring run whose raw data was on a
-    torn-down box: the §1 LLM-judge accuracies and ALL the opus p-values in §3. The committed
-    per-question JSON carries agent answers but NOT the judge's correctness labels, and the
-    entire Opus run (incl. the cap-factorial / p_holm=0.005 finding) has no committed raw data.
-    Those numbers are reproducible only by re-running the eval, not from this repo's artifacts.
+  * COMPUTED from committed data: the §1 deterministic re-score curve + its McNemar steps in §3
+    (from medplum-eval/results/mcp.*.json), AND the §1 GPT-5.5 LLM-judge accuracies (loaded from
+    the committed _scores.csv; the GPT cells were re-judged 2026-06-21 with per-question labels
+    frozen in *.judged.json, so they are now recomputable, not hardcoded).
+  * STILL RECONSTRUCTED (hardcoded): ALL the opus p-values in §3. The entire Opus run (incl. the
+    cap-factorial / p_holm=0.005 finding) was lost with a torn-down box and has NO committed raw
+    data — those numbers are reproducible only by re-running the Opus eval from scratch.
 
 ## 1. Judge-free deterministic re-score (vs the gpt-5-mini LLM judge)
 
 tools  arm            judge(raw)  det(answerable)    |Δ|
     1  control              0.80             0.57   0.23
     2  cat2                 0.70             0.55   0.15
-    4  cat4                 0.77             0.61   0.16
+    4  cat4                 0.80             0.61   0.19
     5  validated5           0.77             0.56   0.21
     6  arm_ref              0.83             0.57   0.26
     8  arm_full8               (all-error/quota)

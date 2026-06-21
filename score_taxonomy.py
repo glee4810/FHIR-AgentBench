@@ -184,12 +184,14 @@ def mcnemar_bootstrap(perq_a, perq_b, n_boot=5000, seed=0):
 def main():
     d = sys.argv[1] if len(sys.argv) > 1 else "runs/tier1"
     paths = sorted(p for p in glob.glob(os.path.join(d, "*.json"))
-                   if not os.path.basename(p).startswith("_"))
+                   if not os.path.basename(p).startswith("_")
+                   and not p.endswith(".judged.json"))  # don't re-score our own per-question label sidecars
     if not paths:
         print(f"no cell files in {d}")
         return
     rows = []
-    perq_by_key = {}  # (arm, sample, cap) -> {question_id: 0/1}
+    perq_by_key = {}      # (arm, sample, cap) -> {question_id: 0/1}
+    answered_by_key = {}  # (arm, sample, cap) -> count of gradeable answers
     for p in paths:
         print(f"scoring {os.path.basename(p)} ...", flush=True)
         row, perq = score_cell(p)
@@ -197,6 +199,7 @@ def main():
         parts = row["cell"].split(".")  # surface.arm.model.sample.cXXk
         if len(parts) >= 4:
             perq_by_key[(parts[1], parts[-2], parts[-1])] = perq
+            answered_by_key[(parts[1], parts[-2], parts[-1])] = row["answered"] + row["no_answer"]
     cols = ["cell", "n", "judge_errors", "answered", "no_answer", "overflow", "rate_limit",
             "harness_error", "raw_acc", "raw_ci", "answerable_n", "answerable_acc", "ans_ci"]
     out_csv = os.path.join(d, "_scores.csv")
@@ -214,29 +217,34 @@ def main():
     print(f"\nsaved {out_csv}")
 
     # ---- PAIRED comparisons (the headline: decomposes coaching-lift vs structure-lift) ----
-    def g(arm, sample, cap):
-        return perq_by_key.get((arm, sample, cap))
+    # comps are KEYS (arm,sample,cap), resolved in the loop, so we can also screen for degenerate cells.
     comps = [
         # DOSE-RESPONSE CURVE (rep): nested staircase — each step ADDS tools; watch for a peak-then-decline
-        ("curve 1->2 (rep): control(1g) -> 2 tools", g("control", "rep", "c100k"), g("cat2", "rep", "c100k")),
-        ("curve 2->4 (rep): 2 -> 4 tools", g("cat2", "rep", "c100k"), g("cat4", "rep", "c100k")),
-        ("curve 4->5 (rep): 4 -> 5 tools", g("cat4", "rep", "c100k"), g("validated5", "rep", "c100k")),
-        ("curve 5->6 (rep): 5 -> +resolve_refs(6)", g("validated5", "rep", "c100k"), g("arm_ref", "rep", "c100k")),
-        ("curve 6->8 (rep): 6 -> 8 tools  [DIMINISHING-RETURNS TEST]", g("arm_ref", "rep", "c100k"), g("arm_full8", "rep", "c100k")),
-        ("curve TOTAL (rep): control -> full 8-tool", g("control", "rep", "c100k"), g("arm_full8", "rep", "c100k")),
-        ("frugal (rep): control -> c0(_elements)", g("control", "rep", "c100k"), g("c0", "rep", "c100k")),
+        ("curve 1->2 (rep): control(1g) -> 2 tools", ("control", "rep", "c100k"), ("cat2", "rep", "c100k")),
+        ("curve 2->4 (rep): 2 -> 4 tools", ("cat2", "rep", "c100k"), ("cat4", "rep", "c100k")),
+        ("curve 4->5 (rep): 4 -> 5 tools", ("cat4", "rep", "c100k"), ("validated5", "rep", "c100k")),
+        ("curve 5->6 (rep): 5 -> +resolve_refs(6)", ("validated5", "rep", "c100k"), ("arm_ref", "rep", "c100k")),
+        ("curve 6->8 (rep): 6 -> 8 tools  [DIMINISHING-RETURNS TEST]", ("arm_ref", "rep", "c100k"), ("arm_full8", "rep", "c100k")),
+        ("curve TOTAL (rep): control -> full 8-tool", ("control", "rep", "c100k"), ("arm_full8", "rep", "c100k")),
+        ("frugal (rep): control -> c0(_elements)", ("control", "rep", "c100k"), ("c0", "rep", "c100k")),
         # MEDICATION 3-arm decomposition
-        ("coaching-lift  (med): control -> control_include", g("control", "med", "c100k"), g("control_include", "med", "c100k")),
-        ("structure-lift (med): control_include -> arm_ref", g("control_include", "med", "c100k"), g("arm_ref", "med", "c100k")),
-        ("TOTAL lift     (med): control -> arm_ref", g("control", "med", "c100k"), g("arm_ref", "med", "c100k")),
-        ("cap effect on control (med): 32k -> 100k", g("control", "med", "c32k"), g("control", "med", "c100k")),
-        ("cap effect on arm_ref (med): 32k -> 100k", g("arm_ref", "med", "c32k"), g("arm_ref", "med", "c100k")),
+        ("coaching-lift  (med): control -> control_include", ("control", "med", "c100k"), ("control_include", "med", "c100k")),
+        ("structure-lift (med): control_include -> arm_ref", ("control_include", "med", "c100k"), ("arm_ref", "med", "c100k")),
+        ("TOTAL lift     (med): control -> arm_ref", ("control", "med", "c100k"), ("arm_ref", "med", "c100k")),
+        ("cap effect on control (med): 32k -> 100k", ("control", "med", "c32k"), ("control", "med", "c100k")),
+        ("cap effect on arm_ref (med): 32k -> 100k", ("arm_ref", "med", "c32k"), ("arm_ref", "med", "c100k")),
     ]
     print("\n=== PAIRED comparisons (McNemar + paired-bootstrap 95% CI; * = p<.05) ===")
     paired_out = []
-    for label, a, b in comps:
-        if not (a and b):
+    for label, ka, kb in comps:
+        a, b = perq_by_key.get(ka), perq_by_key.get(kb)
+        if a is None or b is None:
             print(f"  {label}: (cell missing)")
+            continue
+        # A cell that produced ZERO gradeable answers (all overflow/rate-limit/error) never actually ran;
+        # pairing against it manufactures a fake significant 'drop' (e.g. arm_full8's quota failure). Skip it.
+        if answered_by_key.get(ka, 0) == 0 or answered_by_key.get(kb, 0) == 0:
+            print(f"  {label}: (skipped — a cell produced 0 gradeable answers / all infra-failure, not a result)")
             continue
         r = mcnemar_bootstrap(a, b)
         if not r:
