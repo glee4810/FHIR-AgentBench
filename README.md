@@ -88,11 +88,13 @@ plenty. Full write-up + tables + paired stats: **[REPORT.md](REPORT.md)**.
 > ([2307.03172](https://arxiv.org/abs/2307.03172)), RULER ([2404.06654](https://arxiv.org/abs/2404.06654)),
 > Chroma's "context rot," and RAG-MCP (tool-selection collapses ~43%→<14% as the tool pool grows). The
 > parent paper itself reports **~3M-token full FHIR records** and that "naive loading consistently failed"
-> (arXiv 2509.19319). Community FHIR MCP servers are independently moving the same way — e.g.
-> [WSO2's FHIR MCP server](https://github.com/wso2/fhir-mcp-server) adds FHIRPath response-*filtering*
-> (payload reduction). Our FHIR-specific contribution is narrower and sharper: naming `_include`/
-> reference-**expansion** tools as a concrete budget-overflow anti-pattern (design for response-*filtering*/
-> projection instead).
+> (arXiv 2509.19319). Community FHIR MCP servers are independently moving the same way — most
+> ([WSO2](https://github.com/wso2/fhir-mcp-server) ~121★ Apache-2.0, [Aidbox](https://docs.aidbox.app/modules/other-modules/mcp),
+> Medplum) expose a generic request tool + CRUD rather than a purpose-built typed retrieval catalog, and
+> WSO2's answer to payload size is **FHIRPath response-*filtering*** (`response_filter_fhirpaths`, shipped
+> mid-2025) — i.e. the field is solving the bottleneck with projection, not tool count. Our FHIR-specific
+> contribution is narrower and sharper: naming `_include`/reference-**expansion** tools as a concrete
+> budget-overflow anti-pattern (design for response-*filtering*/projection instead).
 
 ## Setup (Docker) — verified boot path
 
