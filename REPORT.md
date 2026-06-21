@@ -24,6 +24,18 @@ This is a **null result, and a clean one.** Across two frontier models, a catalo
 
 ## 2. The arc: how a +11pp win became a null
 
+> **Prior art — the headline null is a replication, and we say so.** The parent FHIR-AgentBench paper's
+> *own* ablation already found specialized retrieval does **not** beat generic: o4-mini single-turn,
+> **generic FHIR Query Generator 0.25 vs specialized Retriever 0.22**, with the lift to the 0.50 ceiling
+> coming from a **code interpreter**, not specialization ([arXiv 2509.19319](https://arxiv.org/abs/2509.19319),
+> Table 3; the paper also reports ~3M-token full records and that "naive loading consistently failed" at
+> the fixed 32k cap). So the generic-vs-typed question was **already answered null in the literature we
+> forked.** Our result corroborates it on a different tool surface (an MCP server's single generic tool).
+> What this study *adds* is the method they did not run — paired statistics and a **manipulated** context-cap
+> factorial (they held the cap fixed) — which is what lets us trace the apparent +11pp below to context
+> budget. Read §2–§5 as "replicate the known null under stronger controls + isolate the cap as the real
+> lever," not "discover that tools don't help."
+
 **RUN-0 (original, confounded):** Generic Medplum tool ≈39% → 5-tool catalog ≈50%, a **+11pp** apparent win. This is the result that motivated the whole pitch. But it was measured **without any of the controls that would let you trust it**:
 
 - **No cap-factorial.** The 32k vs 100k context cap was never varied. The 5-tool arm and the 1-tool arm were not matched on context budget, so any difference in how often each arm *overflowed* the cap got silently scored as a "tool quality" difference.
@@ -136,7 +148,7 @@ The only robust, significant lever in the entire experiment is the **context cap
 
 ## 7. What it means + recommendation
 
-**Do NOT pitch Medplum on "your generic tool is worse, buy our tool catalog."** The data says the opposite. For strong models the single generic tool is plenty. (A *tempting* but unsound add-on: "GPT-5.5 with the bare generic, 0.80, beat Opus, 0.72." Don't lean on it — those two numbers are from **different slices** (GPT rep n=30 vs Opus medication n=25), different question sets, both with lost raw data, and the 8pp gap is **well inside the MDE (~34–46pp, §9.2)**. It's apples-to-oranges and below noise; mention it at most as a hand-wave, not evidence.) If anything, this result **validates Medplum's minimalist single-tool design.** Pitching a confounded +11pp you've already disproven is a fast way to get eaten alive by a maintainer who reads your raw data.
+**Do NOT pitch Medplum on "your generic tool is worse, buy our tool catalog."** The data says the opposite. For strong models the single generic tool is plenty. If anything, this result **validates Medplum's minimalist single-tool design** — and it is exactly what the parent FHIR-AgentBench paper already found (generic 0.25 ≥ specialized 0.22; see §2). Pitching a confounded +11pp you've already disproven is a fast way to get eaten alive by a maintainer who reads your raw data.
 
 **Instead, ship the methodology and the overflow finding as the contribution.** The accuracy result is null, but the *experiment* is the asset. You built a paired-McNemar + bootstrap + cap-factorial harness that **catches a confound a naive eval (RUN-0, and frankly most vendor eval blog posts) would have shipped as a win.** The reframed, defensible thesis:
 
@@ -153,6 +165,9 @@ That is true, specific, useful to a Medplum maintainer, and a strong hiring sign
 - **Underpowered.** n=25–30/cell. An 8pp effect cannot be resolved at this sample size (MDE would need ~n≥150). The honest claim is "no effect *detectable at this power*; the effect, if any, is ≤8pp and dwarfed by the cap effect" — **not** "tools definitively don't help."
 - **8-tool endpoint incomplete.** All 30 arm_full8 records are quota errors; the 8-tool agent never ran. The strong form of the diminishing-returns hypothesis is untestable. Disclose this before anyone finds the RateLimitErrors.
 - **Single benchmark, single-patient.** FHIR-AgentBench only, MIMIC-IV-on-FHIR demo (100 patients), single-patient retrieval QA. No cohort/aggregate coverage.
+- **Single-attempt accuracy — no reliability metric.** Each question is scored once; we report no τ-bench-style `pass^k` reliability ([2406.12045](https://arxiv.org/abs/2406.12045)). With this n, run-to-run variance could rival the between-arm deltas we call null.
+- **The 1→8 tool staircase is not chance-corrected.** A random-selection baseline grows with the number of tools, so a flat raw curve conflates capability with that tool-count-dependent baseline. A Bits-over-Random-style correction would be the right way to read the staircase; we don't apply one, so treat the curve as directional only.
+- **Result is a replication, not a discovery.** The generic-vs-typed null was already reported intra-paper by FHIR-AgentBench (0.25 vs 0.22; §2), and "token economics dominate" is established context-bottleneck literature (Lost-in-the-Middle, RULER, RAG-MCP). The novel part is the *method bundle* + the manipulated-cap finding, not the headline number.
 - **Both API accounts hit quota mid-experiment.** Anthropic, then OpenAI. Quota/cost management was the real operational bottleneck, and the `resolve_references`/`_include` cells are token-expensive on any model — itself part of the finding.
 - **LLM-as-judge ground truth.** gpt-5-mini judge; *mitigated* by an independent crude deterministic re-score that reproduced the GPT-5.5 curve, so the directional conclusion is not judge-sensitive.
 - **Judge uncalibrated.** No human gold set, Cohen's κ unmeasured, no inter-rater/ICC. The correctness labels are an unvalidated proxy, and judge noise biases *toward* the null — so the null result is the conclusion most exposed to this gap. The deterministic re-score (§9) is the partial mitigation, not a substitute for a calibrated judge.
