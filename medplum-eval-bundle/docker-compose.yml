@@ -23,7 +23,8 @@ services:
       timeout: 5s
       retries: 5
   medplum-server:
-    image: medplum/medplum-server:latest
+    # Pinned to the version the smoke test was run against (SMOKE_TEST.md). Bump deliberately, not via :latest.
+    image: medplum/medplum-server:5.1.21
     restart: unless-stopped
     depends_on:
       postgres: {condition: service_healthy}

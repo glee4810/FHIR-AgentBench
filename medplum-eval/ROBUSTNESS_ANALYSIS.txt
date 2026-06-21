@@ -13,19 +13,19 @@ PROVENANCE / what is computed vs reconstructed:
 
 ## 1. Judge-free deterministic re-score (vs the gpt-5-mini LLM judge)
 
-tools  arm            LLM-judge deterministic    |Δ|
-    1  control             0.80          0.57   0.23
-    2  cat2                0.70          0.55   0.15
-    4  cat4                0.77          0.61   0.16
-    5  validated5          0.77          0.56   0.21
-    6  arm_ref             0.83          0.57   0.26
-    8  arm_full8            (all-error/quota)
+tools  arm            judge(raw)  det(answerable)    |Δ|
+    1  control              0.80             0.57   0.23
+    2  cat2                 0.70             0.55   0.15
+    4  cat4                 0.77             0.61   0.16
+    5  validated5           0.77             0.56   0.21
+    6  arm_ref              0.83             0.57   0.26
+    8  arm_full8               (all-error/quota)
 
-  -> the STRICT scorer floors ~20pp below the semantic LLM judge (it misses semantic
-     equivalents, e.g. 'urgent'=='UR'), so absolute levels are judge-dependent. But the
-     CURVE IS FLAT under BOTH scorers (deterministic range 0.55-0.61; judge 0.70-0.83):
-     control(1 tool) ~ arm_ref(6 tools) either way. The NULL/flat pattern is robust to the
-     scorer; only the absolute number depends on the judge.
+  -> NOTE the columns use DIFFERENT denominators (judge=raw over all questions;
+     deterministic=answerable-set, un-gradable rows dropped), so the |Δ| is not a like-for-like
+     gap. The point is the SHAPE: within EACH scorer the curve is FLAT (deterministic range
+     0.55-0.61; judge 0.70-0.83), control(1 tool) ~ arm_ref(6 tools).
+     The NULL/flat pattern is robust to the scorer; only the absolute level depends on the judge.
 
 ## 2. Minimum detectable effect (paired McNemar, alpha=.05, power=.80)
 

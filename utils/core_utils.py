@@ -343,6 +343,11 @@ def count_tokens_in_messages(messages) -> int:
                 tokens += len(count_token_encoding.encode("\n".join(texts)))
         else:
             tokens += len(count_token_encoding.encode(str(content)))
+        # assistant tool_calls live OUTSIDE `content` but are billed — count them so the MCP cap gate
+        # doesn't undercount the very thing this experiment studies (tool usage / context budget).
+        tcs = msg.get("tool_calls")
+        if tcs:
+            tokens += len(count_token_encoding.encode(json.dumps(tcs, default=str)))
     return tokens + 2
 
 
@@ -350,6 +355,10 @@ def safe_llm_call(model, messages, tools=None, temperature=0.0, parallel_tool_ca
     """Safe LLM API call with context length validation and retry logic."""
     
     input_tokens = count_tokens_in_messages(messages)
+    if tools:
+        # the tools schema is re-sent on EVERY turn and billed as input; include it in the cap gate so
+        # the MCP arm's budget matches reality and the $ai arm (which already counts tool tokens).
+        input_tokens += len(count_token_encoding.encode(json.dumps(tools, default=str)))
     if input_tokens > max_tokens:
         return None, f"Input tokens exceeded: {input_tokens} > {max_tokens}", None
 

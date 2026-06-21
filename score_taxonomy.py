@@ -84,16 +84,25 @@ def score_cell(path):
     correct_total = 0
     answerable = 0
     correct_answerable = 0
+    judge_errors = 0
+    n_to_judge = 0
     perq = {}  # question_id -> 0/1 raw correctness (infra failures count as 0) for PAIRED stats
     for r in recs:
         c = classify(r)
         causes[c] = causes.get(c, 0) + 1
         in_answerable = c not in INFRA_EXCLUDED
-        v = 0
         if c in ("answered", "no_answer"):
+            n_to_judge += 1
             j = judge(r)
             r["_judged"] = j
+            if j is None:
+                # FAIL-CLOSED: a judge error is NOT a wrong answer. Exclude it from every denominator
+                # (and from paired stats) so a broken judge can't masquerade as a valid 0% table.
+                judge_errors += 1
+                continue
             v = 1 if j == 1 else 0
+        else:
+            v = 0  # infra / overflow failure -> genuinely counts as wrong in raw_acc
         qid = r.get("question_id")
         if qid is not None:
             perq[qid] = v
@@ -103,19 +112,36 @@ def score_cell(path):
                 correct_answerable += 1
         if in_answerable:
             answerable += 1
+    if n_to_judge and judge_errors == n_to_judge:
+        raise SystemExit(
+            f"[FATAL] judge produced NO labels for {os.path.basename(path)} "
+            f"({judge_errors}/{n_to_judge} judge calls failed) — check EVAL_JUDGE_MODEL (='{JUDGE}'). "
+            f"Refusing to emit a misleading all-wrong table.")
+    if judge_errors:
+        print(f"  WARN {os.path.basename(path)}: {judge_errors}/{n_to_judge} judge calls failed -> those "
+              f"questions are EXCLUDED from accuracy denominators (not scored 0).", file=sys.stderr)
+    # PERSIST per-question judge labels (P0 fix): the prior version wrote ONLY aggregate _scores.csv, so
+    # losing the run box destroyed the correctness evidence. Write a per-cell sidecar every time.
+    judged_path = (path[:-5] if path.endswith(".json") else path) + ".judged.json"
+    with open(judged_path, "w") as jf:
+        json.dump([{"question_id": r.get("question_id"), "cause": classify(r), "judged": r.get("_judged"),
+                    "agent_answer": r.get("agent_answer"), "true_answer": r.get("true_answer")}
+                   for r in recs], jf, indent=2, default=str)
     n = len(recs)
-    raw_acc = round(correct_total / n, 3) if n else 0.0
+    scored_n = n - judge_errors  # judge-errored questions are unscoreable -> out of the raw denominator
+    raw_acc = round(correct_total / scored_n, 3) if scored_n else 0.0
     ans_acc = round(correct_answerable / answerable, 3) if answerable else 0.0
     row = {
         "cell": os.path.splitext(os.path.basename(path))[0],
         "n": n,
+        "judge_errors": judge_errors,
         "answered": causes.get("answered", 0),
         "no_answer": causes.get("no_answer", 0),
         "overflow": causes.get("context_overflow", 0),
         "rate_limit": causes.get("rate_limit", 0),
         "harness_error": causes.get("harness_error", 0),
         "raw_acc": raw_acc,
-        "raw_ci": wilson_hw(raw_acc, n),
+        "raw_ci": wilson_hw(raw_acc, scored_n),
         "answerable_n": answerable,
         "answerable_acc": ans_acc,
         "ans_ci": wilson_hw(ans_acc, answerable),
@@ -171,8 +197,8 @@ def main():
         parts = row["cell"].split(".")  # surface.arm.model.sample.cXXk
         if len(parts) >= 4:
             perq_by_key[(parts[1], parts[-2], parts[-1])] = perq
-    cols = ["cell", "n", "answered", "no_answer", "overflow", "rate_limit", "harness_error",
-            "raw_acc", "raw_ci", "answerable_n", "answerable_acc", "ans_ci"]
+    cols = ["cell", "n", "judge_errors", "answered", "no_answer", "overflow", "rate_limit",
+            "harness_error", "raw_acc", "raw_ci", "answerable_n", "answerable_acc", "ans_ci"]
     out_csv = os.path.join(d, "_scores.csv")
     with open(out_csv, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols)

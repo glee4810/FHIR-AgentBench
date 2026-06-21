@@ -26,7 +26,7 @@ import socket
 import threading
 import argparse
 import subprocess
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 
 # Point the agents at the LOCAL treatment server BEFORE importing them (module reads env at import).
 os.environ.setdefault("MEDPLUM_MCP_URL", "http://127.0.0.1:8765/mcp")
@@ -48,25 +48,32 @@ def _cell(surface, arm, model, seed=0, cap=RAISED_CAP, sample="rep", tag=""):
 
 
 def tier1_cells():
-    """GPT-5.5 curve run (Claude too expensive). The DOSE-RESPONSE staircase the founder wanted:
-    incrementally add tools (1 generic -> 5 -> 6 -> 7 -> 8) on the representative slice, PLUS the
-    medication 3-arm decomposition + cap-factorial. All gpt-5.5 x MCP (~10x cheaper than opus).
-    Real hypothesis: GPT is weaker at raw FHIR query construction, so the typed-tool lift may be
-    LARGER than on opus."""
+    """The full matrix behind REPORT.md. Two runs, selected by EVAL_RUN (default 'gpt'):
+
+      EVAL_RUN=gpt   RUN-2: the GPT-5.5 nested dose-response staircase on the representative slice
+                     (control -> 2 -> 4 -> 5 -> 6 -> 8 tools) + the orthogonal frugal-generic.
+      EVAL_RUN=opus  RUN-1: the Opus medication-slice 3-arm decomposition + the 2x2 cap-factorial
+                     (the headline cap effect) + a representative anchor.
+
+    Run each into a SEPARATE --out-dir and score them separately: score_taxonomy.py keys cells by
+    arm/sample/cap (NOT by model), so opus and gpt cells with the same arm/sample/cap must not share an
+    out-dir. Cells are CORE-FIRST so a budget stop still yields the headline result. run_cell() skips a
+    cell whose output JSON already exists, so use a FRESH --out-dir to re-run from scratch."""
+    which = os.environ.get("EVAL_RUN", "gpt").lower()
     C = []
-    # Full nested dose-response staircase on the representative slice: 1 generic -> 2 -> 4 -> 5 -> 6 -> 8 tools.
-    # NOTE: run_cell() skips any cell whose output JSON already exists in --out-dir, so point at a FRESH
-    # --out-dir to re-run the whole matrix from scratch (or reuse a dir to resume a partial run).
-    for arm in ["control", "cat2", "cat4", "validated5", "arm_ref", "arm_full8"]:
-        C.append(_cell("mcp", arm, GPT, cap=RAISED_CAP, sample="rep"))
-    # orthogonal frugal-generic (vs control) — "could you just coach the generic with _elements?"
-    C.append(_cell("mcp", "c0", GPT, cap=RAISED_CAP, sample="rep"))
-    # MEDICATION 3-arm decomposition (med sample): control / control_include(coached) / arm_ref(structure)
-    for arm in ["control", "control_include", "arm_ref"]:
-        C.append(_cell("mcp", arm, GPT, cap=RAISED_CAP, sample="med"))
-    # cap-factorial on the med slice: control & arm_ref at the STOCK 32k cap (100k pair is above)
-    C.append(_cell("mcp", "control", GPT, cap=STOCK_CAP, sample="med"))
-    C.append(_cell("mcp", "arm_ref", GPT, cap=STOCK_CAP, sample="med"))
+    if which == "opus":
+        # RUN-1 (Opus): cap-factorial @32k FIRST (it produces the one robust effect), then the @100k
+        # 3-arm decomposition (which also supplies the @100k half of the cap-factorial), then rep anchor.
+        C.append(_cell("mcp", "control", OPUS, cap=STOCK_CAP, sample="med"))
+        C.append(_cell("mcp", "arm_ref", OPUS, cap=STOCK_CAP, sample="med"))
+        for arm in ["control", "control_include", "arm_ref"]:
+            C.append(_cell("mcp", arm, OPUS, cap=RAISED_CAP, sample="med"))
+        C.append(_cell("mcp", "control", OPUS, cap=RAISED_CAP, sample="rep"))
+        C.append(_cell("mcp", "arm_full8", OPUS, cap=RAISED_CAP, sample="rep"))
+    else:  # gpt (default; ~10x cheaper than opus)
+        for arm in ["control", "cat2", "cat4", "validated5", "arm_ref", "arm_full8"]:
+            C.append(_cell("mcp", arm, GPT, cap=RAISED_CAP, sample="rep"))
+        C.append(_cell("mcp", "c0", GPT, cap=RAISED_CAP, sample="rep"))  # frugal-generic (_elements)
     # Paired McNemar + bootstrap come from score_taxonomy.py (arms share question_ids per sample).
     return C
 
@@ -164,33 +171,51 @@ def run_cell(cell, df, ledger, out_dir):
 
     try:
         rows = [row for _, row in df.iterrows()]
+        rows_it = iter(rows)
+        # Bounded submission: keep at most `workers` questions in flight and stop submitting NEW ones
+        # the moment the budget trips. So a cap crossing halts the cell after the in-flight batch
+        # (<= EVAL_WORKERS questions) finishes, instead of letting the whole cell run to completion.
         with ThreadPoolExecutor(max_workers=workers) as ex:
-            futs = [ex.submit(do_q, row) for row in rows]
-            for fut in as_completed(futs):
-                row, out = fut.result()
-                usage = out.get("usage") or {}
-                rec = {
-                    "question_id": row.get("question_id"),
-                    "question": row.get("question"),
-                    "true_answer": row.get("true_answer"),
-                    "true_fhir_ids": row.get("true_fhir_ids"),
-                    "patient_fhir_id": row.get("patient_fhir_id"),
-                    "agent_answer": out.get("agent_answer"),
-                    "agent_fhir_resources": out.get("agent_fhir_resources"),
-                    "trace": out.get("trace"),  # tool-call trace -> the before/after artifact
-                    "error": out.get("error"),
-                    "usage": usage,
-                    "_cell": cell["tag"],
-                }
-                with lock:
-                    records.append(rec)
-                    try:
-                        ledger.charge_usage(model, usage)
-                    except BudgetExceeded as e:
-                        stopped[0] = f"budget: {e}"  # in-flight finish; main() stops at next cell
-                    if len(records) % 5 == 0:
-                        _save(out_path, records)
-                        print(f"  [{cell['tag']}] {len(records)}/{len(rows)} spent=${ledger.spent:.2f}", flush=True)
+            pending = set()
+            for _ in range(workers):
+                nxt = next(rows_it, None)
+                if nxt is None:
+                    break
+                pending.add(ex.submit(do_q, nxt))
+            while pending:
+                done, pending = wait(pending, return_when=FIRST_COMPLETED)
+                for fut in done:
+                    row, out = fut.result()
+                    usage = out.get("usage") or {}
+                    rec = {
+                        "question_id": row.get("question_id"),
+                        "question": row.get("question"),
+                        "true_answer": row.get("true_answer"),
+                        "true_fhir_ids": row.get("true_fhir_ids"),
+                        "patient_fhir_id": row.get("patient_fhir_id"),
+                        "agent_answer": out.get("agent_answer"),
+                        "agent_fhir_resources": out.get("agent_fhir_resources"),
+                        "trace": out.get("trace"),  # tool-call trace -> the before/after artifact
+                        "error": out.get("error"),
+                        "usage": usage,
+                        "_cell": cell["tag"],
+                    }
+                    with lock:
+                        records.append(rec)
+                        try:
+                            ledger.charge_usage(model, usage)
+                        except BudgetExceeded as e:
+                            stopped[0] = f"budget: {e}"  # stop submitting new questions immediately
+                        if len(records) % 5 == 0:
+                            _save(out_path, records)
+                            print(f"  [{cell['tag']}] {len(records)}/{len(rows)} spent=${ledger.spent:.2f}", flush=True)
+                # only backfill new questions while under budget
+                if stopped[0] is None:
+                    for _ in range(len(done)):
+                        nxt = next(rows_it, None)
+                        if nxt is None:
+                            break
+                        pending.add(ex.submit(do_q, nxt))
     finally:
         stop_server(srv)
     _save(out_path, records)
