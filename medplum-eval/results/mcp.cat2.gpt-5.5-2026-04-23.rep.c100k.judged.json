@@ -1,0 +1,212 @@
+[
+  {
+    "question_id": "1613b932a1fa398b6bb15ef8",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. At least one laboratory Observation is present for patient 10016150 in 2142.\n\nExample found:\n- TOBRAMYCIN susceptibility test \u2014 final, effectiveDateTime: 2142-05-21T10:55:00-04:00, result: Resistant.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "db7f20610bfa0be1f5377ba9",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "The admission type during the first hospital admission for patient 10021118 was **urgent** (`UR`).",
+    "true_answer": "[['URGENT']]"
+  },
+  {
+    "question_id": "580f56a66f7626bbcd078c21",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "No. The last urine microbiology test in 2137 was:\n\n- **URINE CULTURE** on **2137-06-22T08:46:00-04:00**\n- Result: **\"NO GROWTH.  \"**\n\nSo I found no organisms detected in his last urine microbiology test in 2137.",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "a3585e47c9d9845ccde194bf",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. Since 2184-09-30, patient 10037975 had a **Creatinine, Urine** laboratory test:\n\n- **2185-01-19 11:22:00-05:00** \u2014 **Creatinine, Urine: 52 mg/dL**",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "e198cf387b6b22216a593d12",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "I found no Output observations for patient 10004720 from 2183-02-08 through 2183-12-31 23:59.\n\nFinal sum of retrieved output results: 0.",
+    "true_answer": "[[None]]"
+  },
+  {
+    "question_id": "ee06998b93ca5610c35e7925",
+    "cause": "context_overflow",
+    "judged": null,
+    "agent_answer": "Error: Input tokens exceeded: 118107 > 100000",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "0eba370644940aed20760324",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "Heparin",
+    "true_answer": "[['Insulin']]"
+  },
+  {
+    "question_id": "6dc27e0c371f7e5dd9d2a981",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "The first ICU stay was encounter `cf02e219-926c-58d1-b937-603eceb3628d` (start `2201-10-30T12:25:00-04:00`).\n\nFor SpO2 (`O2 saturation pulseoxymetry`) observations on that ICU encounter, the earliest value greater than `95.0` was:\n\n- `2201-10-30T12:03:00-04:00` \u2014 `98 %`\n\nNote: this observation is linked to the first ICU encounter, although its effective time is shortly before the encounter period start shown in FHIR. If restricting strictly to times at/after the ICU encounter start, the first value >95.0 is:\n\n- `2201-10-30T12:31:00-04:00` \u2014 `100 %`",
+    "true_answer": "[['2201-10-30 12:03:00']]"
+  },
+  {
+    "question_id": "56cc41f276a6e10711d396f4",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10004720\u2019s first microbiology test found was **MRSA SCREEN**, done at **2186-11-13T12:00:00-05:00**.",
+    "true_answer": "[['2186-11-13 12:00:00']]"
+  },
+  {
+    "question_id": "8bfea1a0b78f2e98d30ee271",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10004422 first left the hospital at:\n\n**2111-01-25T15:00:00-05:00**\n\nThis is the end time of the hospital Encounter `21255400`, with discharge disposition **HOME HEALTH CARE**.",
+    "true_answer": "[['2111-01-25 15:00:00']]"
+  },
+  {
+    "question_id": "cd72a23c76002c4a524a1b61",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10022880 had **1 ICU visit** during 2177.\n\n- ICU encounter: **39623478**\n- Period: **2177-03-15T05:49:26-04:00 to 2177-03-15T22:47:09-04:00**\n- Location: **Surgical Intensive Care Unit (SICU)**",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "2fcffbbef2cf3c4109b6345d",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. Patient 10007795 had procedures during 2136, including:\n\n- 2136-04-11: Parenteral infusion of concentrated nutritional substances\n- 2136-04-13: Diagnostic ultrasound of digestive system\n- 2136-04-13: Other endoscopy of small intestine\n- 2136-04-13: Other operations on intestines\n- 2136-04-17: Other operations on intestines\n- 2136-04-17: Diagnostic ultrasound of digestive system\n- 2136-04-17: Other endoscopy of small intestine\n- 2136-04-19: Percutaneous abdominal drainage\n- 2136-04-22 to 2136-04-23: PICC Line\n- 2136-04-23: Chest X-Ray\n- 2136-04-23: 22 Gauge\n- 2136-04-25: Enteral infusion of concentrated nutritional substances\n- 2136-05-05: Drainage of pancreatic cyst by catheter\n- 2136-05-05: Other excision or destruction of lesion or tissue of pancreas or pancreatic duct\n- 2136-05-06: Enteral infusion of concentrated nutritional substances\n- 2136-05-08: Central venous catheter placement with guidance\n- 2136-07-24: Enteral infusion of concentrated nutritional substances\n- 2136-08-04: Triage: emergency center\n- 2136-08-04: Taking patient vital signs assessment\n- 2136-08-04: Taking patient vital signs assessment\n- 2136-08-06: Enteral infusion of concentrated nutritional substances\n- 2136-08-09: Central venous catheter placement with guidance\n- 2136-08-10: Central venous catheter placement with guidance\n- 2136-09-22: Triage: emergency center\n- 2136-09-22: Taking patient vital signs assessment\n- 2136-09-22: Taking patient vital signs assessment\n- 2136-09-22: Taking patient vital signs assessment\n- 2136-09-22: Taking patient vital signs assessment",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "20c3ddd36c65c44890c3f3e5",
+    "cause": "context_overflow",
+    "judged": null,
+    "agent_answer": "Error: Input tokens exceeded: 115101 > 100000",
+    "true_answer": "[['MRSA SCREEN']]"
+  },
+  {
+    "question_id": "3508fba9387d18248281be4e",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. The last hospital encounter I found was Encounter `e2363523-1e90-571e-b18e-135098eb3be3`, from `2166-08-21T23:09:00-04:00` to `2166-08-26T14:48:00-04:00`.\n\nDiagnoses recorded for that encounter were:\n\n- `1369` \u2014 Unspecified infectious and parasitic diseases\n- `25000` \u2014 Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- `2252` \u2014 Benign neoplasm of cerebral meninges\n- `34830` \u2014 Encephalopathy, unspecified\n- `3453` \u2014 Grand mal status\n- `4019` \u2014 Unspecified essential hypertension\n- `2724` \u2014 Other and unspecified hyperlipidemia",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "6bb8d0b3a6e2b6227b56f595",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10038081\u2019s first **Oxygen** value during the first hospital stay was:\n\n- **94 %** at **2115-10-07T18:17:00-04:00**.",
+    "true_answer": "[[94.]]"
+  },
+  {
+    "question_id": "01038856e72fffdbf13016be",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. I found laboratory Observations for patient 10025463 in 11/2136.\n\nLab testing dates found:\n- 2136-11-01\n- 2136-11-02\n\nExamples of tests returned include:\n- PT\n- INR(PT)\n- Sodium\n- Potassium\n- Chloride\n- Magnesium\n- Urea Nitrogen\n- Creatinine\n\nThere were 14 laboratory Observation resources returned for 2136-11-01 through 2136-11-30.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "ffcf49b4d60d6ba61111c10d",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "I cannot find any heart rate observations for patient 10006053 on 2111-11-17, so an average heart rate for that date cannot be calculated from the available FHIR data.",
+    "true_answer": "[[None]]"
+  },
+  {
+    "question_id": "eb20ba71a6257201e3668689",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "The first \u201cDaily Weight\u201d measurement for patient 10006580 was **82.2 kg**.",
+    "true_answer": "[[82.2]]"
+  },
+  {
+    "question_id": "4b10d0fec2f23acab915e3f3",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "In the first hospital visit (Encounter `50437dde-70e1-5b84-b35d-ed4bbd41246e`, hospital encounter ID `21039249`, starting `2140-09-17T13:41:00-04:00`), I found **1** completed procedure matching **\u201cCoronary arteriography using two catheters\u201d**.\n\nCount: **1**",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "facfb8f560238eb16739c85e",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. Patient 10015860 received a **Lymphocytes** laboratory test during their first hospital visit.\n\nFirst hospital visit found: **Encounter 25085565** (`Encounter/c499c31a-dcda-5fa6-b05b-5b616c8eeab8`), period **2186-09-15T16:12:00-04:00 to 2186-09-29T18:05:00-04:00**.\n\nLymphocytes results found for that visit:\n- **2186-09-15T13:30:00-04:00** \u2014 **6 %** (same ED/admission day; Observation did not include an encounter reference)\n- **2186-09-16T04:03:00-04:00** \u2014 **14.1 %** (encounter reference: first hospital visit)\n- **2186-09-22T07:12:00-04:00** \u2014 **16 %** (encounter reference: first hospital visit)",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "dd025c270eae097731034a6c",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "The first MCV lab test I found during the current hospital encounter (Encounter/05c742f8-5896-5e36-9933-b5c5eca443a1) was at:\n\n- 2133-12-18T17:28:00-05:00\n\nAssuming the current time is 2133-12-31 23:59:00, the elapsed time is:\n\n- 318.52 hours (approximately)",
+    "true_answer": "[]"
+  },
+  {
+    "question_id": "eea838bba39870d24a4fe781",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "2375 ml",
+    "true_answer": "[[2375]]"
+  },
+  {
+    "question_id": "4b72e7b13c37b47053d926d9",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "For patient 10022041, I found the following monthly **Pre-Admission** output values:\n\n- **2187-05**: **250 ml**\n\nOnly one Pre-Admission output measurement was found for that month, so the maximum is **250 ml**.",
+    "true_answer": "[]"
+  },
+  {
+    "question_id": "73710b96b938a24a7a5c86d5",
+    "cause": "context_overflow",
+    "judged": null,
+    "agent_answer": "Error: Input tokens exceeded: 118448 > 100000",
+    "true_answer": "[['Milk of Magnesia']]"
+  },
+  {
+    "question_id": "f356b6267c56b07e1f3e3045",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "The minimum **Arterial Blood Pressure systolic** value found was **85 mmHg**.\n\nThe last time this minimum value occurred was:\n\n**2120-05-13T17:35:00-04:00**",
+    "true_answer": "[['2120-05-13 17:35:00']]"
+  },
+  {
+    "question_id": "ebd6cc5909117f9e521d66c9",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "During the last ICU stay (2167-05-05T12:54:06-04:00 to 2167-05-06T18:40:10-04:00), the maximum respiratory rate found was **36 insp/min**.\n\nThe first time this maximum occurred was:\n\n**2167-05-06T05:00:00-04:00**",
+    "true_answer": "[['2167-05-06 05:00:00']]"
+  },
+  {
+    "question_id": "7bb4dd3032dd60767f552577",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. Since 13 months before the assumed current time (cutoff approximately **2136-11-30 23:59:00**), the chart contains multiple **MedicationRequest** records for patient **10006580**, dated **2137-08-10 through 2137-08-14**.\n\nDistinct medications found include:\n\n- Heparin\n- Insulin\n- Glucose Gel\n- Sodium Chloride 0.9% Flush\n- HYDROmorphone (Dilaudid)\n- HydrALAzine\n- Senna\n- Magnesium Sulfate\n- Acetaminophen IV\n- Ranitidine\n- Glucagon\n- Docusate Sodium\n- Acetaminophen\n- Aspirin\n- Bisacodyl\n- Sucralfate\n- MetFORMIN (Glucophage)\n- Lactated Ringers\n- OxycoDONE (Immediate Release)\n- Famotidine\n- Influenza Vaccine Quadrivalent\n- Potassium Chloride\n- Omeprazole\n- Dextrose 50%\n- Ondansetron\n- Promethazine\n- IV therapy\n\nSo, **yes \u2014 medication records are present since 13 months ago**.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "472793119170f9c8adb0b84b",
+    "cause": "context_overflow",
+    "judged": null,
+    "agent_answer": "Error: Input tokens exceeded: 166835 > 100000",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "45b34eeae5d3c8d44b703194",
+    "cause": "context_overflow",
+    "judged": null,
+    "agent_answer": "Error: Input tokens exceeded: 105197 > 100000",
+    "true_answer": "[[100]]"
+  },
+  {
+    "question_id": "666f86f3566bfabb76e587a7",
+    "cause": "context_overflow",
+    "judged": null,
+    "agent_answer": "Error: Input tokens exceeded: 132595 > 100000",
+    "true_answer": "[['2185-11-02 21:00:00']]"
+  }
+]

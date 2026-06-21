@@ -177,21 +177,21 @@ since been torn down. Be precise about what survives:
 - The Docker **boot path** (steps 1–2): containers up, Medplum healthy, bare-PKCE token, FHIR read/write
   round-trip, MCP advertises the generic `fhir-request` tool — smoke-verified on macOS
   ([`medplum-eval-bundle/SMOKE_TEST.md`](medplum-eval-bundle/SMOKE_TEST.md)).
-- The **GPT-5.5 deterministic re-score curve + overflow taxonomy** — recomputed live from the committed
-  per-question JSON by `robustness_analysis.py` (REPORT §9.1).
+- The **entire GPT-5.5 side**: the deterministic re-score curve + overflow taxonomy (`robustness_analysis.py`,
+  REPORT §9.1), *and* — recovered 2026-06-21 by re-judging the surviving committed raw answers with
+  `gpt-5-mini` — the **LLM-judge accuracies + paired stats**, with per-question labels frozen in
+  `medplum-eval/results/*.judged.json` and aggregates in `_scores.csv` / `_paired.json`.
 
-**NOT reproducible (reconstructed from lost runs):**
-- **All LLM-judge accuracies.** The committed per-question JSON carries agent *answers* but **no
-  correctness labels** — the judge scoring run was lost with its box.
-- **All paired p-values, and the entire Opus run** (including the cap-factorial and the headline "only
-  robust effect," cap-on-`arm_ref` p_holm=0.005). There is **no committed Opus data at all**.
+**NOT reproducible (lost with a torn-down box):**
+- **The entire Opus run** (including the cap-factorial and the headline "only robust effect,"
+  cap-on-`arm_ref` p_holm=0.005). The raw per-question data was never pulled off the box before teardown —
+  there is **no committed Opus data at all** — so the Opus numbers are reconstructed from console output.
 
-So treat the bundle as a faithful, boot-smoke-verified **recipe** of the EC2 environment — not an
-independently reproduced result. The load-bearing, verifiable claims are the **null** and the **flat
-deterministic curve**; the cap finding and the absolute accuracies are credible-but-unverifiable.
-Re-running steps 3–4 on Docker and committing the raw per-question + judge labels is the open
-reproducibility item. (`robustness_analysis.py` prints a provenance banner that separates computed-live
-from reconstructed numbers.)
+So treat the bundle as a faithful, boot-smoke-verified **recipe** of the EC2 environment. The load-bearing,
+verifiable claims are the **null** and the **GPT-5.5 curve** (now fully recomputable); only the **Opus cap
+finding** is credible-but-unverifiable. Re-running the Opus arm on Docker (the scorer now persists
+per-question labels, so it can't be lost the same way) is the one open reproducibility item.
+(`robustness_analysis.py` prints a provenance banner separating computed-from-committed-data vs reconstructed.)
 
 ## Caveats — this is experimental
 
@@ -233,7 +233,7 @@ medplum-eval-bundle/         # docker compose substrate + MIMIC loader + smoke t
   ├── README.md              # Docker runbook
   └── SMOKE_TEST.md          # verified boot path
 medplum-eval/                # design docs, results data, robustness output
-  ├── results/               # committed GPT-5.5 per-question answers (no correctness labels)
+  ├── results/               # committed GPT-5.5 per-question answers + judge labels (*.judged.json) + _scores.csv/_paired.json
   └── ROBUSTNESS_ANALYSIS.txt
 REPORT.md                    # full honest synthesis (numbers, stats, limitations)
 ```

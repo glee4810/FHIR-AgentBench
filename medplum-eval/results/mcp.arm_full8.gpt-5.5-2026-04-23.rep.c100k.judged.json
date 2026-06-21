@@ -1,0 +1,212 @@
+[
+  {
+    "question_id": "ee06998b93ca5610c35e7925",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "56cc41f276a6e10711d396f4",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['2186-11-13 12:00:00']]"
+  },
+  {
+    "question_id": "6dc27e0c371f7e5dd9d2a981",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['2201-10-30 12:03:00']]"
+  },
+  {
+    "question_id": "1613b932a1fa398b6bb15ef8",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "db7f20610bfa0be1f5377ba9",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['URGENT']]"
+  },
+  {
+    "question_id": "580f56a66f7626bbcd078c21",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "45b34eeae5d3c8d44b703194",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[100]]"
+  },
+  {
+    "question_id": "a3585e47c9d9845ccde194bf",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "e198cf387b6b22216a593d12",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[None]]"
+  },
+  {
+    "question_id": "0eba370644940aed20760324",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['Insulin']]"
+  },
+  {
+    "question_id": "2fcffbbef2cf3c4109b6345d",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "20c3ddd36c65c44890c3f3e5",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['MRSA SCREEN']]"
+  },
+  {
+    "question_id": "ffcf49b4d60d6ba61111c10d",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[None]]"
+  },
+  {
+    "question_id": "8bfea1a0b78f2e98d30ee271",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['2111-01-25 15:00:00']]"
+  },
+  {
+    "question_id": "cd72a23c76002c4a524a1b61",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "73710b96b938a24a7a5c86d5",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['Milk of Magnesia']]"
+  },
+  {
+    "question_id": "6bb8d0b3a6e2b6227b56f595",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[94.]]"
+  },
+  {
+    "question_id": "3508fba9387d18248281be4e",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "01038856e72fffdbf13016be",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "dd025c270eae097731034a6c",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[]"
+  },
+  {
+    "question_id": "4b10d0fec2f23acab915e3f3",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "facfb8f560238eb16739c85e",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "eb20ba71a6257201e3668689",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[82.2]]"
+  },
+  {
+    "question_id": "472793119170f9c8adb0b84b",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "eea838bba39870d24a4fe781",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[2375]]"
+  },
+  {
+    "question_id": "ebd6cc5909117f9e521d66c9",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['2167-05-06 05:00:00']]"
+  },
+  {
+    "question_id": "4b72e7b13c37b47053d926d9",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[]"
+  },
+  {
+    "question_id": "7bb4dd3032dd60767f552577",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "666f86f3566bfabb76e587a7",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['2185-11-02 21:00:00']]"
+  },
+  {
+    "question_id": "f356b6267c56b07e1f3e3045",
+    "cause": "rate_limit",
+    "judged": null,
+    "agent_answer": "Error: Max retries exceeded: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "true_answer": "[['2120-05-13 17:35:00']]"
+  }
+]

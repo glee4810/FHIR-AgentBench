@@ -1,0 +1,212 @@
+[
+  {
+    "question_id": "db7f20610bfa0be1f5377ba9",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "The admission type during the first hospital admission was **urgent** (`UR`).",
+    "true_answer": "[['URGENT']]"
+  },
+  {
+    "question_id": "1613b932a1fa398b6bb15ef8",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. I found laboratory Observation resources for patient 10016150 in 2142.\n\nExamples returned include microbiology antibiotic susceptibility lab observations performed on **2142-05-21T10:55:00-04:00**, such as:\n\n- CEFTRIAXONE \u2014 Resistant\n- CIPROFLOXACIN \u2014 Resistant\n- AMPICILLIN \u2014 Resistant\n- CEFEPIME \u2014 Resistant/Indeterminate\n- CEFTAZIDIME \u2014 Resistant\n- TOBRAMYCIN \u2014 Resistant\n\nSo, at least one lab test was performed in 2142.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "580f56a66f7626bbcd078c21",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "No. The patient\u2019s last urine microbiology test in 2137 was a **URINE CULTURE** collected/effective **2137-06-22T08:46:00-04:00**, and the result was:\n\n- **\u201cNO GROWTH.  \u201d**\n\nAfter ignoring surrounding whitespace and letter case, this indicates **no organisms were detected**.",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "a3585e47c9d9845ccde194bf",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. I found a **Creatinine, Urine** laboratory Observation since 15 months ago:\n\n- **Date/time:** 2185-01-19T11:22:00-05:00  \n- **Test:** Creatinine, Urine  \n- **Result:** 52 mg/dL  \n- **Status:** final",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "6dc27e0c371f7e5dd9d2a981",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "The first SpO2 (\u201cO2 saturation pulseoxymetry\u201d) value greater than 95.0 on patient 10027602\u2019s first ICU stay was:\n\n**2201-10-30T12:03:00-04:00** \u2014 SpO2 **98 %**.",
+    "true_answer": "[['2201-10-30 12:03:00']]"
+  },
+  {
+    "question_id": "ee06998b93ca5610c35e7925",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "Yes. In hospital encounter `4080c645-33a8-5829-8c31-0b12aea92a61` for patient `10004733`, I found prescriptions/orders for all three:\n\n- **Clonidine Patch 0.3 mg/24 hr** \u2014 MedicationRequest `aeea14c2-5176-5bc2-8d54-8746116c3233`, status `stopped`, authoredOn `2174-12-12T20:33:02-05:00`\n- **Amlodipine** \u2014 MedicationRequest `77673ff9-1856-5879-8475-20095d12deea`, status `stopped`, authoredOn `2174-12-17T13:34:53-05:00`\n- **5% dextrose** \u2014 found as **D5NS** / formulary code `D5NS1000` in MedicationRequest `0fe6c873-482a-5407-af49-4563a1b04134`, status `completed`, authoredOn `2174-12-20T15:07:52-05:00`  \n  - Medication identifier name returned: `D5NS`  \n  - Dosage text: `1000mL Bag`",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "2fcffbbef2cf3c4109b6345d",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. Patient 10007795 had multiple completed procedures during 2136, including:\n\n- PICC Line \u2014 2136-04-22 to 2136-04-23\n- 22 Gauge \u2014 2136-04-23\n- Chest X-Ray \u2014 2136-04-23\n- Parenteral infusion of concentrated nutritional substances \u2014 2136-04-11\n- Diagnostic ultrasound of digestive system \u2014 2136-04-13 and 2136-04-17\n- Other endoscopy of small intestine \u2014 2136-04-13 and 2136-04-17\n- Percutaneous abdominal drainage \u2014 2136-04-19\n- Other excision or destruction of lesion or tissue of pancreas or pancreatic duct \u2014 2136-05-05\n- Drainage of pancreatic cyst by catheter \u2014 2136-05-05\n- Enteral infusion of concentrated nutritional substances \u2014 2136-05-06, 2136-07-24, 2136-08-06\n- Central venous catheter placement with guidance \u2014 2136-05-08, 2136-08-09, 2136-08-10\n- ED triage / vital signs assessment procedures \u2014 2136-08-04 and 2136-09-22",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "56cc41f276a6e10711d396f4",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10004720\u2019s first microbiology test was done on:\n\n**2186-11-13T12:00:00-05:00**\n\nTest: **MRSA SCREEN**.",
+    "true_answer": "[['2186-11-13 12:00:00']]"
+  },
+  {
+    "question_id": "0eba370644940aed20760324",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "Heparin",
+    "true_answer": "[['Insulin']]"
+  },
+  {
+    "question_id": "8bfea1a0b78f2e98d30ee271",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10004422 first left the hospital at:\n\n**2111-01-25T15:00:00-05:00**\n\nThis is the end time of the patient\u2019s hospital Encounter (`Encounter/d483e067-7dd5-59c7-b65d-e87e851fdb18`).",
+    "true_answer": "[['2111-01-25 15:00:00']]"
+  },
+  {
+    "question_id": "20c3ddd36c65c44890c3f3e5",
+    "cause": "context_overflow",
+    "judged": null,
+    "agent_answer": "Error: Input tokens exceeded: 114171 > 100000",
+    "true_answer": "[['MRSA SCREEN']]"
+  },
+  {
+    "question_id": "cd72a23c76002c4a524a1b61",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10022880 had **1 ICU visit** during the year **2177**.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "e198cf387b6b22216a593d12",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "I could not find any Output observations for patient 10004720 from 2183-02-08 through 2183-12-31 23:59:00.\n\nFinal sum of retrieved output results: **0**.",
+    "true_answer": "[[None]]"
+  },
+  {
+    "question_id": "ffcf49b4d60d6ba61111c10d",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "I could not find any Heart Rate observations for patient 10006053 on 2111-11-17, so the average heart rate for that date cannot be calculated from the available FHIR data.",
+    "true_answer": "[[None]]"
+  },
+  {
+    "question_id": "3508fba9387d18248281be4e",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. Patient 10014078\u2019s last hospital encounter was Encounter `e2363523-1e90-571e-b18e-135098eb3be3`, from `2166-08-21T23:09:00-04:00` to `2166-08-26T14:48:00-04:00`.\n\nEncounter diagnoses recorded for that hospital encounter were:\n\n- `1369` \u2014 Unspecified infectious and parasitic diseases\n- `25000` \u2014 Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- `2252` \u2014 Benign neoplasm of cerebral meninges\n- `2724` \u2014 Other and unspecified hyperlipidemia\n- `34830` \u2014 Encephalopathy, unspecified\n- `4019` \u2014 Unspecified essential hypertension\n- `3453` \u2014 Grand mal status",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "01038856e72fffdbf13016be",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. Patient 10025463 had laboratory testing in 11/2136.\n\nFound lab Observations on:\n- 2136-11-01\n- 2136-11-02\n\nExamples include PT, INR(PT), sodium, potassium, chloride, magnesium, urea nitrogen, and creatinine.",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "45b34eeae5d3c8d44b703194",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "I found the first hospital encounter for patient 10007818 as Encounter `f5cd04ba-2d1a-5601-82a5-1fb9b784fd58` starting `2146-06-10T16:37:00-04:00`.\n\nFor `Docusate Sodium (Liquid)` on that encounter, I found one MedicationRequest:\n\n- MedicationRequest `6137f28d-a061-513f-98b9-6f4ac07c75fd`\n- Medication: `Docusate Sodium (Liquid)`\n- Status: `stopped`\n- Authored: `2146-06-28T09:20:45-04:00`\n- Dose value: not present in the returned resource\n\nBecause no `dose_val_rx`/dose quantity value was present for the retrieved matching medication request, I cannot compute a numeric sum from the available FHIR data.",
+    "true_answer": "[[100]]"
+  },
+  {
+    "question_id": "eb20ba71a6257201e3668689",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "The first \u201cDaily Weight\u201d measurement found was **82.2 kg**.",
+    "true_answer": "[[82.2]]"
+  },
+  {
+    "question_id": "6bb8d0b3a6e2b6227b56f595",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10038081\u2019s first **Oxygen** value during the first hospital stay was:\n\n- **94 %** at **2115-10-07T18:17:00-04:00**",
+    "true_answer": "[[94.]]"
+  },
+  {
+    "question_id": "4b10d0fec2f23acab915e3f3",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "In the first hospital visit (Encounter `50437dde-70e1-5b84-b35d-ed4bbd41246e`, starting `2140-09-17T13:41:00-04:00`), I found:\n\n- `Coronary arteriography using two catheters` \u2014 1 occurrence\n\nCount: **1**",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "eea838bba39870d24a4fe781",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "2375 ml",
+    "true_answer": "[[2375]]"
+  },
+  {
+    "question_id": "facfb8f560238eb16739c85e",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. The patient\u2019s first hospital visit was Encounter `c499c31a-dcda-5fa6-b05b-5b616c8eeab8` with hospital identifier `25085565`, starting `2186-09-15T16:12:00-04:00` and ending `2186-09-29T18:05:00-04:00` (with ED location beginning `2186-09-15T12:56:00-04:00`).\n\nLymphocytes tests found during that first hospital visit:\n\n- `2186-09-15T13:30:00-04:00` \u2014 Lymphocytes: `6 %`\n- `2186-09-16T04:03:00-04:00` \u2014 Lymphocytes: `14.1 %`\n- `2186-09-22T07:12:00-04:00` \u2014 Lymphocytes: `16 %`",
+    "true_answer": "[[1]]"
+  },
+  {
+    "question_id": "73710b96b938a24a7a5c86d5",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "The earliest prescription time I found was **2125-02-27T16:30:43-05:00**. Multiple medications were prescribed at that same first time:\n\n- **Oxycodone-Acetaminophen (5mg-325mg)** \u2014 dosage text: **5mL Cup**\n- **Morphine Sulfate** \u2014 **0.5 mg**, dosage text: **2mg Syringe**, route **IV**\n- **Acetaminophen** \u2014 **650 mg**, dosage text: **650mg Supp**, route **PR**\n- **Metoclopramide** \u2014 **10 mg**, dosage text: **5mg/mL-2mL Vial**, route **IV**\n- **Meperidine** \u2014 **12.5 mg**, dosage text: **25mg Syringe**, route **IV**\n- **Docusate** \u2014 **100 mg**, dosage text: **100mg / 10 mL**, route **PO/NG**\n- **Acetaminophen** \u2014 **650 mg**, dosage text: **325mg Tablet**, route **PO**\n- **Magnesium Sulfate--MAG2PM--00409672924_Bag--BAG50** \u2014 **50 mL**, dosage text: **50 mL Bag**, route **IV**\n- **Lactated Ringers** \u2014 **1000 mL**, dosage text: **1000ml Bag**, route **IV**\n- **Chlorhexidine Gluconate 0.12% Oral Rinse** \u2014 **15 mL**, dosage text: **15ml Cup**, route **ORAL**\n- **Docusate** \u2014 **100 mg**, dosage text: **100mg Capsule**, route **PO/NG**\n- **Oxycodone-Acetaminophen (5mg-325mg)** \u2014 dosage text: **5mg/325mg Tablet**, route **PO**\n- **Milk of Magnesia** \u2014 **30 mL**, dosage text: **30mL UD Cup**, route **PO**\n- **Dextrose 50%** \u2014 **12.5 gm**, dosage text: **25 g / 50 mL Syringe**, route **IV**\n- **Morphine Sulfate** \u2014 **5 mg**, dosage text: **5 mg Vial**, route **IV**\n- **Acetaminophen** \u2014 **650 mg**, dosage text: **650mg UD Cup**, route **PO**",
+    "true_answer": "[['Milk of Magnesia']]"
+  },
+  {
+    "question_id": "ebd6cc5909117f9e521d66c9",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "During the last ICU stay (Encounter `30665396`, `2167-05-05T12:54:06-04:00` to `2167-05-06T18:40:10-04:00`), the maximum recorded Respiratory Rate was **36 insp/min**.\n\nThe first time this maximum occurred was:\n\n- **2167-05-06T05:00:00-04:00** \u2014 **36 insp/min**",
+    "true_answer": "[['2167-05-06 05:00:00']]"
+  },
+  {
+    "question_id": "472793119170f9c8adb0b84b",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "No. I found no \u201cArterial Blood Pressure diastolic\u201d observations for patient 10021487 with a value less than 31.0 mmHg from 2116-09-08 through 2116-12-31.",
+    "true_answer": "[[0]]"
+  },
+  {
+    "question_id": "4b72e7b13c37b47053d926d9",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "Monthly maximum pre-admission output for patient 10022041:\n\n- **2187-05:** **250 ml**\n\nOnly one \u201cPre-Admission\u201d output observation was found, measured at **2187-05-18T18:40:00-04:00**.",
+    "true_answer": "[]"
+  },
+  {
+    "question_id": "f356b6267c56b07e1f3e3045",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "The minimum **Arterial Blood Pressure systolic** value found was **85 mmHg**.\n\nThe last time this minimum occurred was:\n\n- **2120-05-13T17:35:00-04:00**",
+    "true_answer": "[['2120-05-13 17:35:00']]"
+  },
+  {
+    "question_id": "dd025c270eae097731034a6c",
+    "cause": "answered",
+    "judged": 0,
+    "agent_answer": "The first MCV lab test I found during the current hospital encounter (`Encounter/05c742f8-5896-5e36-9933-b5c5eca443a1`) was at:\n\n- `2133-12-18T17:28:00-05:00`\n\nUsing the assumed current time `2133-12-31 23:59:00`, the elapsed time is:\n\n- **318.52 hours** since the first MCV lab test.",
+    "true_answer": "[]"
+  },
+  {
+    "question_id": "666f86f3566bfabb76e587a7",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Patient 10038992 was last prescribed a drug via the **NEB** route on:\n\n**2185-11-02T20:28:57-04:00**\n\nThis was from MedicationRequest **a3c1bb2d-fbbe-5c9a-9b0a-b33462d72e2c**, with route code **NEB** and dosage text **\u201c(0.5mg - 3 mg) - 3 mL Neb\u201d**.",
+    "true_answer": "[['2185-11-02 21:00:00']]"
+  },
+  {
+    "question_id": "7bb4dd3032dd60767f552577",
+    "cause": "answered",
+    "judged": 1,
+    "agent_answer": "Yes. Since 13 months before the assumed current time is approximately **2136-11-30 23:59**, patient **10006580** has medication-related records after that date.\n\nI found **MedicationRequest** records dated **2137-08-10 through 2137-08-14**, with validity periods extending to **2137-08-15T17:00:00-04:00**.\n\nMedications found include:\n\n- Heparin\n- Insulin\n- Glucose Gel\n- Sodium Chloride 0.9% Flush\n- HYDROmorphone (Dilaudid)\n- HydrALAzine\n- Senna\n- Magnesium Sulfate\n- Acetaminophen IV\n- Ranitidine\n- Glucagon\n- Docusate Sodium\n- Acetaminophen\n- Aspirin\n- Bisacodyl\n- Sucralfate\n- MetFORMIN (Glucophage)\n- Lactated Ringers\n- OxycoDONE (Immediate Release)\n- Famotidine\n- Influenza Vaccine Quadrivalent\n- Potassium Chloride\n- Omeprazole\n- Dextrose 50%\n- Ondansetron\n- Promethazine\n- IV therapy\n\nSo, **yes \u2014 the patient has had medication records within the last 13 months**.",
+    "true_answer": "[[1]]"
+  }
+]

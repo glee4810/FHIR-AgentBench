@@ -1,0 +1,7 @@
+cell,n,judge_errors,answered,no_answer,overflow,rate_limit,harness_error,raw_acc,raw_ci,answerable_n,answerable_acc,ans_ci
+mcp.arm_full8.gpt-5.5-2026-04-23.rep.c100k,30,0,0,0,0,30,0,0.0,0.057,0,0.0,0.0
+mcp.arm_ref.gpt-5.5-2026-04-23.rep.c100k,30,0,30,0,0,0,0,0.833,0.131,30,0.833,0.131
+mcp.cat2.gpt-5.5-2026-04-23.rep.c100k,30,0,24,0,6,0,0,0.7,0.156,24,0.875,0.133
+mcp.cat4.gpt-5.5-2026-04-23.rep.c100k,30,0,30,0,0,0,0,0.8,0.139,30,0.8,0.139
+mcp.control.gpt-5.5-2026-04-23.rep.c100k,30,0,30,0,0,0,0,0.8,0.139,30,0.8,0.139
+mcp.validated5.gpt-5.5-2026-04-23.rep.c100k,30,0,29,0,1,0,0,0.767,0.146,29,0.793,0.143

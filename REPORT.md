@@ -11,14 +11,15 @@
 This is a **null result, and a clean one.** Across two frontier models, a catalog of purpose-built FHIR tools showed **no statistically significant accuracy advantage** over Medplum's single generic `fhir_request` tool on single-patient retrieval. The original headline ("5 tools beat 1 by +11pp") was **confounded** — it folded in a context-budget/overflow artifact and had no paired statistics or controls, and it does not replicate on either model under rigorous testing. The **only robust, significant effect anywhere** is the context cap: `_include`/reference-resolution tools are token-hungry and overflow the default 32k budget, and fixing that — not adding tools — is what moved accuracy.
 
 > **⚠️ Reproducibility status (read before citing any number).** This is exploratory work, and the
-> runs were executed on ephemeral EC2 boxes that have been torn down. From the committed artifacts you
-> can regenerate **only** the GPT-5.5 *deterministic* re-score curve and the overflow taxonomy (§9.1,
-> `python robustness_analysis.py medplum-eval/results`). Everything else is **reconstructed from lost
-> runs**: all LLM-judge accuracies (the per-question JSON has agent answers but no correctness labels),
-> all paired p-values, and the **entire Opus run including the cap-factorial** — so the headline
-> "only robust effect" (cap-on-`arm_ref`, p=0.0005 → p_holm=0.005) is an *unreproduced observation from
-> a destroyed run*, not a result you can recompute here. Treat the null + the deterministic flat curve
-> as the load-bearing claims; treat the cap finding and the absolute accuracies as credible-but-unverifiable.
+> runs were executed on ephemeral EC2 boxes that have been torn down. **Reproducible from committed
+> artifacts:** the entire **GPT-5.5** side — the deterministic re-score curve + overflow taxonomy (§9.1),
+> *and* (recovered 2026-06-21 by re-judging the surviving raw answers with `gpt-5-mini`) the LLM-judge
+> accuracies + paired stats, with per-question judge labels frozen in `medplum-eval/results/*.judged.json`
+> and aggregates in `_scores.csv` / `_paired.json`. **Still NOT reproducible:** the **entire Opus run,
+> including the cap-factorial** — its raw per-question data was never pulled off the box before teardown,
+> so the headline "only robust effect" (cap-on-`arm_ref`, p=0.0005 → p_holm=0.005) is an *unreproduced
+> observation from a destroyed run*. Treat the null + the (now fully reproducible) GPT-5.5 flat curve as
+> the load-bearing claims; treat the Opus cap finding as credible-but-unverifiable.
 
 ---
 
@@ -61,7 +62,7 @@ This is a **null result, and a clean one.** Across two frontier models, a catalo
 
 **RUN-2 (GPT-5.5, nested staircase):** Re-ran across 1→2→4→5→6 tools on a second, stronger model. The curve is **flat and noisy (0.70–0.83)**, every paired step is null, and the 1-tool generic (0.80) is **never beaten** by the 5-tool catalog (0.767). The effect is model-specific *and* artifact-driven — it survives on neither model.
 
-> An independent judge-free deterministic re-score of the GPT-5.5 raw answers (strict string/number match, see §9.1) reproduces the **flat *shape*** — control (1 tool) ≈ arm_ref (6 tools) — but it floors **~20pp below** the LLM judge (deterministic 0.55–0.61 vs judge 0.70–0.83), because strict matching misses semantic equivalents (e.g. `'urgent'=='UR'`). So the *null/flat conclusion* is not an LLM-judge artifact; only the absolute level is judge-dependent. **Reproducibility caveat (read §8):** the committed per-question JSON (`medplum-eval/results/`) carries the agent answers but **not** the judge's correctness labels — the scoring run was lost with its box — so the LLM-judge accuracies in §3 are *reconstructed constants*, not recomputable from the repo. The deterministic curve in §9.1 is the one thing you can regenerate from committed data (`python robustness_analysis.py medplum-eval/results`).
+> An independent judge-free deterministic re-score of the GPT-5.5 raw answers (strict string/number match, see §9.1) reproduces the **flat *shape*** — control (1 tool) ≈ arm_ref (6 tools) — but it floors **~20pp below** the LLM judge (deterministic 0.55–0.61 vs judge 0.70–0.83), because strict matching misses semantic equivalents (e.g. `'urgent'=='UR'`). So the *null/flat conclusion* is not an LLM-judge artifact; only the absolute level is judge-dependent. **Reproducibility note (updated):** the GPT-5.5 LLM-judge accuracies in §3 were originally lost (the scoring run was clobbered) but have since been **recovered** by re-judging the surviving committed raw answers — the per-question labels are now frozen in `medplum-eval/results/*.judged.json` and the aggregates in `_scores.csv`, so the GPT side is recomputable. Only the **Opus** numbers remain reconstructed (no committed raw data).
 
 ---
 
@@ -188,7 +189,8 @@ That is true, specific, useful to a Medplum maintainer, and a strong hiring sign
 - **Single seed per cell.** Run-to-run (decoding) variance is unmeasured. Each cell is one sample at one seed; the flat curve could hide seed-level wobble we never observed. A SOTA design would run ≥3 seeds/cell and report the variance component.
 - **No multiple-comparison correction in the headline numbers.** The per-comparison p-values in §3 are uncorrected. After Holm-Bonferroni over the full family (§9), **only the cap-on-arm_ref effect survives** (p_holm=0.005); the cap-on-control effect (p=0.039) does **not** (p_holm=0.35). Secondary findings beyond the context-cap effect should be treated as exploratory.
 - **No pre-registration.** Arms, slices, and the primary comparison were not pre-registered; the cap-factorial was added after RUN-0 surprised us. This is honest exploratory work, not a confirmatory trial.
-- **Opus raw data lost** with its torn-down box (reproducibility hole) — there is **no committed Opus data anywhere in the repo**, so every Opus number and the cap-factorial finding are reconstructed (see §1). The GPT-5.5 raw answers are committed at [`medplum-eval/results/mcp.*.gpt-5.5-2026-04-23.rep.c100k.json`](medplum-eval/results/) — but they carry **agent answers only, not correctness labels**, so they back the *deterministic* re-score (§9.1) and the overflow taxonomy, not the LLM-judge accuracies. The original `_scores.csv` / `_paired.json` aggregates were zeroed-out unscored artifacts and are deliberately **not committed** — do not reconstruct or cite them.
+- **Opus raw data lost** with its torn-down box (reproducibility hole) — there is **no committed Opus data anywhere in the repo**, so every Opus number and the cap-factorial finding are reconstructed (see §1). This was a real data-stewardship failure: the raw per-question artifacts were never pulled off the ephemeral box before its dead-man timer terminated it.
+- **GPT-5.5 side recovered (2026-06-21).** The GPT-5.5 raw answers are committed; the judge correctness labels were *originally* lost (the scorer only wrote aggregates, and a re-run after the OpenAI judge died clobbered them with zeros). They have since been **regenerated** by re-judging the surviving committed answers with `gpt-5-mini` — per-question labels are now frozen in [`medplum-eval/results/*.judged.json`](medplum-eval/results/) and aggregates in `_scores.csv` / `_paired.json`, so the GPT curve + paired stats are recomputable from committed data. (Re-judging is mildly non-deterministic, ~±3pp run-to-run; the committed `*.judged.json` labels are the frozen record. The fixes that prevent recurrence — per-question label persistence + fail-closed scoring — are in `score_taxonomy.py`.)
 
 ---
 
