@@ -73,12 +73,21 @@ python score_taxonomy.py runs/curve
 
 ## Caveats — this is experimental
 
-- **Preliminary & underpowered** (n=25–30/cell): an ≤8pp effect can't be resolved. "No effect
-  *detectable at this power*," not "definitively none."
+- **Badly underpowered** (n=25–30/cell): the minimum detectable effect at this n is **~34–46pp**
+  (paired-McNemar power sim — see [REPORT.md](REPORT.md) §9.2), so a commercially-decisive 5–10pp lift
+  is structurally invisible here. The honest null is "no tool effect larger than ~the MDE," not
+  "definitively none."
+- **Uncalibrated judge**: gpt-5-mini LLM-as-judge, no human gold set, κ unmeasured. Mitigated — not
+  replaced — by a judge-free deterministic re-score that reproduces the same flat curve (§9.1).
+- **Family-wise correction matters**: after Holm-Bonferroni over all 10 comparisons, **only the
+  context-cap overflow effect survives** (p_holm=0.005); every tool-count/tool-design comparison is null
+  (§9.3). Treat anything else as exploratory. No pre-registration; single seed/cell.
 - **Incomplete in places**: the 8-tool GPT endpoint never ran (API quota exhausted mid-experiment), so
   the strong "too many tools *hurt*" hypothesis is untested; the 1→6 curve is flat.
 - **Narrow scope**: one benchmark, single-patient retrieval only (MIMIC-IV-on-FHIR demo, 100 patients).
   Says nothing about multi-patient cohort/aggregate queries.
 - Raw GPT-5.5 per-question answers are under `medplum-eval/results/` (with a note on what's real vs the
   errored 8-tool cell). Don't cite the zeroed `_scores.csv` aggregates — the per-question JSON is the
-  source of truth. See [REPORT.md](REPORT.md) §8 for the full limitations list.
+  source of truth. The post-hoc robustness pass ([`robustness_analysis.py`](robustness_analysis.py),
+  output in [`medplum-eval/ROBUSTNESS_ANALYSIS.txt`](medplum-eval/ROBUSTNESS_ANALYSIS.txt)) and
+  [REPORT.md](REPORT.md) §8–§9 carry the full limitations list.

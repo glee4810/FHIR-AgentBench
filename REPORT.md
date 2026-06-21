@@ -145,4 +145,47 @@ That is true, specific, useful to a Medplum maintainer, and a strong hiring sign
 - **Single benchmark, single-patient.** FHIR-AgentBench only, MIMIC-IV-on-FHIR demo (100 patients), single-patient retrieval QA. No cohort/aggregate coverage.
 - **Both API accounts hit quota mid-experiment.** Anthropic, then OpenAI. Quota/cost management was the real operational bottleneck, and the `resolve_references`/`_include` cells are token-expensive on any model — itself part of the finding.
 - **LLM-as-judge ground truth.** gpt-5-mini judge; *mitigated* by an independent crude deterministic re-score that reproduced the GPT-5.5 curve, so the directional conclusion is not judge-sensitive.
+- **Judge uncalibrated.** No human gold set, Cohen's κ unmeasured, no inter-rater/ICC. The correctness labels are an unvalidated proxy, and judge noise biases *toward* the null — so the null result is the conclusion most exposed to this gap. The deterministic re-score (§9) is the partial mitigation, not a substitute for a calibrated judge.
+- **Single seed per cell.** Run-to-run (decoding) variance is unmeasured. Each cell is one sample at one seed; the flat curve could hide seed-level wobble we never observed. A SOTA design would run ≥3 seeds/cell and report the variance component.
+- **No multiple-comparison correction in the headline numbers.** The per-comparison p-values in §3 are uncorrected. After Holm-Bonferroni over the full family (§9), **only the cap-on-arm_ref effect survives** (p_holm=0.005); the cap-on-control effect (p=0.039) does **not** (p_holm=0.35). Secondary findings beyond the context-cap effect should be treated as exploratory.
+- **No pre-registration.** Arms, slices, and the primary comparison were not pre-registered; the cap-factorial was added after RUN-0 surprised us. This is honest exploratory work, not a confirmatory trial.
 - **Opus raw data lost** with its torn-down box (reproducibility hole); the GPT-5.5 raw answers survive at `medplum-eval-results/runs/gptcurve/mcp.*.gpt-5.5-2026-04-23.rep.c100k.json` and carry the load. The `_scores.csv` / `_paired.json` in that dir are zeroed-out unscored artifacts — **do not cite them.**
+
+---
+
+## 9. Robustness analysis (post-hoc, judge-free)
+
+Three of the §8 gaps can be closed with **no re-run and no extra spend**, using only the saved per-question answers + benchmark ground truth. Script: [`robustness_analysis.py`](robustness_analysis.py); full output: [`medplum-eval/ROBUSTNESS_ANALYSIS.txt`](medplum-eval/ROBUSTNESS_ANALYSIS.txt). All three **reinforce the null and sharpen the one real finding.**
+
+**9.1 — Judge-free deterministic re-score.** Re-scored every GPT-5.5 answer with a strict string/number match against the ground truth (no LLM in the loop) to check the conclusion isn't an artifact of a small uncalibrated judge.
+
+| tools | arm | LLM-judge | deterministic |
+|---|---|---|---|
+| 1 | control | 0.80 | 0.57 |
+| 2 | cat2 | 0.70 | 0.55 |
+| 4 | cat4 | 0.77 | 0.61 |
+| 5 | validated5 | 0.77 | 0.56 |
+| 6 | arm_ref | 0.83 | 0.57 |
+
+The strict scorer floors ~20pp below the semantic judge (it misses equivalents like `'urgent'=='UR'`), so the **absolute level is judge-dependent** — but the **curve is flat under both scorers** (deterministic 0.55–0.61; judge 0.70–0.83), and control (1 tool) ≈ arm_ref (6 tools) either way. The flat/null pattern is robust to the scorer; only the absolute number moves.
+
+**9.2 — Minimum detectable effect (MDE).** Simulated paired-McNemar power at our n to report the smallest accuracy delta we were actually powered to detect.
+
+| n | MDE (optimistic, e=.05) | MDE (conservative, e=.10) |
+|---|---|---|
+| 25 | 39 pp | 46 pp |
+| 30 | 34 pp | 40 pp |
+
+Under any plausible discordance-noise assumption the MDE is **~34–46pp**. The correct reading of the null is therefore **"no tool effect larger than ~the MDE,"** not "no effect." A commercially-decisive 5–10pp lift is far below this floor — **structurally invisible** to this design. This is the single most important honesty caveat: the experiment is badly underpowered for realistic effect sizes.
+
+**9.3 — Holm-Bonferroni (family-wise correction).** Corrected all 10 paired p-values for multiple comparisons.
+
+| comparison | p | p_holm | survives? |
+|---|---|---|---|
+| opus med: cap effect on **arm_ref** (32k→100k) | 0.0005 | **0.005** | **YES** |
+| opus med: cap effect on control (32k→100k) | 0.039 | 0.351 | no |
+| opus med: structure-lift (control_include→arm_ref) | 0.69 | 1.0 | no |
+| opus med: total-lift (control→arm_ref) | 0.625 | 1.0 | no |
+| all GPT-5.5 curve steps (1→2→4→5→6) | ≈1.0 | 1.0 | no |
+
+After correction, **exactly one effect is credible: the `_include`/reference-resolution overflow at the 32k cap (p_holm=0.005).** Even the cap-on-control effect drops out. This is the cleanest possible statement of the result: the *only* thing that robustly moves accuracy, family-wise-corrected, is the context-budget trap — not tool count, not tool design.
