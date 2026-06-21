@@ -1,0 +1,54 @@
+==============================================================================
+ROBUSTNESS ANALYSIS (judge-free re-score + MDE + Holm)  
+==============================================================================
+
+PROVENANCE / what is computed vs reconstructed:
+  * COMPUTED LIVE from committed data (medplum-eval/results/*.json): the §1 deterministic
+    re-score curve and its McNemar steps in §3 (gpt curve(det): ...).
+  * RECONSTRUCTED CONSTANTS (hardcoded below) from a scoring run whose raw data was on a
+    torn-down box: the §1 LLM-judge accuracies and ALL the opus p-values in §3. The committed
+    per-question JSON carries agent answers but NOT the judge's correctness labels, and the
+    entire Opus run (incl. the cap-factorial / p_holm=0.005 finding) has no committed raw data.
+    Those numbers are reproducible only by re-running the eval, not from this repo's artifacts.
+
+## 1. Judge-free deterministic re-score (vs the gpt-5-mini LLM judge)
+
+tools  arm            LLM-judge deterministic    |Δ|
+    1  control             0.80          0.57   0.23
+    2  cat2                0.70          0.55   0.15
+    4  cat4                0.77          0.61   0.16
+    5  validated5          0.77          0.56   0.21
+    6  arm_ref             0.83          0.57   0.26
+    8  arm_full8            (all-error/quota)
+
+  -> the STRICT scorer floors ~20pp below the semantic LLM judge (it misses semantic
+     equivalents, e.g. 'urgent'=='UR'), so absolute levels are judge-dependent. But the
+     CURVE IS FLAT under BOTH scorers (deterministic range 0.55-0.61; judge 0.70-0.83):
+     control(1 tool) ~ arm_ref(6 tools) either way. The NULL/flat pattern is robust to the
+     scorer; only the absolute number depends on the judge.
+
+## 2. Minimum detectable effect (paired McNemar, alpha=.05, power=.80)
+
+          optimistic (e=.05)  conservative (e=.10)
+  n=25                 39 pp                 46 pp
+  n=30                 34 pp                 40 pp
+  -> Under ANY plausible noise assumption the MDE is ~34-46pp. Reframe the null as 'no
+     tool effect larger than ~the MDE,' NOT 'no effect.' A commercially-decisive 5-10pp
+     lift is far below our MDE -> structurally invisible to this design.
+
+## 3. Holm-Bonferroni correction (family-wise)
+
+  comparison                                                 p  p_holm  sig?
+  opus med: coaching-lift (control->control_include)       1.0     1.0    no
+  opus med: structure-lift (control_include->arm_ref)     0.69     1.0    no
+  opus med: total-lift (control->arm_ref)                0.625     1.0    no
+  opus med: cap effect on control (32k->100k)            0.039   0.351    no
+  opus med: cap effect on arm_ref (32k->100k)           0.0005   0.005   YES
+  opus rep: control->arm_full8                             1.0     1.0    no
+  gpt curve(det): control->cat2                            1.0     1.0    no
+  gpt curve(det): cat2->cat4                               1.0     1.0    no
+  gpt curve(det): cat4->validated5                         1.0     1.0    no
+  gpt curve(det): validated5->arm_ref                      1.0     1.0    no
+
+  -> after correction, only effects with p_holm<.05 are credible.
+==============================================================================

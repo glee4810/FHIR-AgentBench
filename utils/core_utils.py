@@ -86,6 +86,9 @@ def get_model_provider(model: str) -> str:
     # Meta-Llama models
     elif any(name in model_lower for name in ['meta-llama']):
         return 'meta-llama'
+    # Anthropic / Claude models
+    elif any(name in model_lower for name in ['claude', 'anthropic']):
+        return 'anthropic'
     else:
         raise NotImplementedError(f"Unknown model provider: {model}")
 
@@ -276,7 +279,8 @@ def create_agent(agent_strategy, model, verbose=False, base_url=None):
         "single_turn_resource": ("agent.single_turn_resource_agent", "SingleTurnResourceAgent"),
         "single_turn_code_resource": ("agent.single_turn_code_resource_agent", "SingleTurnCodeResourceAgent"),
         "multi_turn_resource": ("agent.multi_turn_resource_agent", "MultiTurnResourceAgent"),
-        "multi_turn_code_resource": ("agent.multi_turn_code_resource_agent", "MultiTurnCodeResourceAgent")
+        "multi_turn_code_resource": ("agent.multi_turn_code_resource_agent", "MultiTurnCodeResourceAgent"),
+        "mcp": ("agent.mcp_agent", "MCPAgent"),
     }
     
     if agent_strategy not in agents:
@@ -351,13 +355,14 @@ def safe_llm_call(model, messages, tools=None, temperature=0.0, parallel_tool_ca
 
     # Retry logic for API calls
     num_turns = len(messages)
+    _temp = None if is_reasoning_llm(model) else temperature  # may be forced None on a temp-400 below
     for attempt in range(max_retries):
         try:
             output = litellm.completion(
-                model=model, 
-                messages=messages, 
-                tools=tools, 
-                temperature=None if is_reasoning_llm(model) else temperature,
+                model=model,
+                messages=messages,
+                tools=tools,
+                temperature=_temp,
                 parallel_tool_calls=parallel_tool_calls if tools else None,
                 base_url=base_url,
                 custom_llm_provider="openai" if base_url else None
@@ -385,6 +390,10 @@ def safe_llm_call(model, messages, tools=None, temperature=0.0, parallel_tool_ca
             return response, None, usage_info
         
         except BadRequestError as e:
+            # future-proof safety net: any model that deprecates/rejects temperature -> retry without it
+            if _temp is not None and 'temperature' in str(e).lower():
+                _temp = None
+                continue
             return None, f"BadRequestError: {e}", None
         except Exception as e:
             if attempt < max_retries - 1:
@@ -395,11 +404,13 @@ def safe_llm_call(model, messages, tools=None, temperature=0.0, parallel_tool_ca
 
 
 def is_reasoning_llm(model: str) -> bool:
-    # These models do not support the temperature parameter
-    supported_models = [
-        'o4-mini'
-    ]
-    return model in supported_models
+    # Models that REJECT/deprecate a non-default `temperature` (must omit the param).
+    # gpt-5* and the o-series 400 on temperature!=1; the latest Claude 4.x models 400 with
+    # "temperature is deprecated for this model". litellm.drop_params can't help (too new for its
+    # registry). The original list only had o4-mini.
+    m = (model or "").lower()
+    return any(k in m for k in ['o4-mini', 'o1', 'o3', 'o4', 'gpt-5',
+                                'claude-opus-4', 'claude-sonnet-4', 'claude-haiku-4'])
 
 # =============================================================================
 # Evaluation Metrics

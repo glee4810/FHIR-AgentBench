@@ -1,0 +1,9 @@
+
+# medplum-eval additions
+__pycache__/
+*.pyc
+/results/
+runs/
+*.pem
+.eval-secrets*
+*.tmp
