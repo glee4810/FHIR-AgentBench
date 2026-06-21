@@ -70,14 +70,29 @@ statistically significant accuracy advantage** over the single generic tool. The
 context-budget/overflow artifact, has no paired statistics, and does not replicate on either model. The
 only robust, significant effect was the **context cap**: reference-resolution (`_include`) tools overflow
 the default budget (e.g. one Opus arm overflowed 20/25 medication questions at the stock 32k cap;
-p=0.0005, the one comparison that survives Holm-Bonferroni). Takeaway: **MCP tool ergonomics on frontier
-models are dominated by token economics, not tool count** — and, at least here, a well-designed single
-tool is plenty. Full write-up + tables + paired stats: **[REPORT.md](REPORT.md)**.
+p=0.0005, the one comparison that survives Holm-Bonferroni). At least here, a well-designed single tool is
+plenty. Full write-up + tables + paired stats: **[REPORT.md](REPORT.md)**.
 
-> Externally corroborated: the FHIR-AgentBench paper itself reports ~3M-token full records and that
-> "naive loading consistently failed," and the [WSO2 FHIR MCP server](https://github.com/wso2/fhir-mcp-server)
-> recently shipped FHIRPath response-*filtering* (payload reduction) — both point at token economics, not
-> tool count, as the bottleneck.
+> **⚠️ This is a replication, not a discovery — and we say so up front.** The parent benchmark's *own*
+> paper already ran a generic-vs-specialized retrieval ablation and found specialization does **not** help:
+> o4-mini single-turn, **generic FHIR Query Generator 0.25 vs specialized Retriever 0.22**, with the lift
+> to the 0.50 ceiling coming from a **code interpreter**, not specialization
+> ([arXiv 2509.19319](https://arxiv.org/abs/2509.19319), Table 3). Our null **corroborates their
+> intra-paper result** on a different tool surface (an MCP server's single generic tool) — what we add is
+> the *method* they didn't run: paired stats + a **manipulated context-cap factorial** (they held the cap
+> fixed at 32k), which traces the apparent +11pp to context budget. The contribution is the harness and the
+> cap finding, **not** the (already-known) "tools don't beat generic" number.
+
+> **The "token economics, not tool count" headline is consistent with established work, not new.** The
+> input-token budget dominating retrieval over large records is documented in Lost-in-the-Middle
+> ([2307.03172](https://arxiv.org/abs/2307.03172)), RULER ([2404.06654](https://arxiv.org/abs/2404.06654)),
+> Chroma's "context rot," and RAG-MCP (tool-selection collapses ~43%→<14% as the tool pool grows). The
+> parent paper itself reports **~3M-token full FHIR records** and that "naive loading consistently failed"
+> (arXiv 2509.19319). Community FHIR MCP servers are independently moving the same way — e.g.
+> [WSO2's FHIR MCP server](https://github.com/wso2/fhir-mcp-server) adds FHIRPath response-*filtering*
+> (payload reduction). Our FHIR-specific contribution is narrower and sharper: naming `_include`/
+> reference-**expansion** tools as a concrete budget-overflow anti-pattern (design for response-*filtering*/
+> projection instead).
 
 ## Setup (Docker) — verified boot path
 
@@ -192,6 +207,11 @@ from reconstructed numbers.)
   Says nothing about multi-patient cohort/aggregate queries.
 - **Control is a faithful re-implementation**, not Medplum's production MCP tool path (description copied
   byte-for-byte; see the harness table).
+- **Replication, not discovery**: the generic-vs-typed null was already reported by the parent paper
+  (0.25 vs 0.22); "token economics dominate" is established context-bottleneck literature. The novelty is
+  the method bundle + the manipulated-cap finding, not the headline number.
+- **Single-attempt accuracy** (no τ-bench `pass^k` reliability), and the **1→8 staircase isn't
+  chance-corrected** (a random baseline grows with tool count) — read the curve as directional only.
 
 Full limitations + reproducibility status: [REPORT.md](REPORT.md) §1 and §8–§9.
 
