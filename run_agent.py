@@ -41,7 +41,7 @@ parser.add_argument("--date",
                     )
 parser.add_argument("--agent_strategy",
                     required=True,
-                    choices=["single_turn_request", "single_turn_resource", "single_turn_code_resource", "multi_turn_resource", "multi_turn_code_resource"],
+                    choices=["single_turn_request", "single_turn_resource", "single_turn_code_resource", "multi_turn_resource", "multi_turn_code_resource", "mcp"],
                     type=str,
                     help="Which agent strategy to use"
                     )
@@ -183,8 +183,9 @@ if __name__ == "__main__":
         """
     )
 
-    # Checking tool credentials
-    check_tool_credentials()
+    # Checking tool credentials (GCP-backed tools only; the MCP agent uses its own backend)
+    if args.agent_strategy != "mcp":
+        check_tool_credentials()
 
     num_processes = min(args.num_processes, len(remaining_inputs))
     if num_processes == 1:
