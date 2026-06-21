@@ -169,7 +169,7 @@ Three of the §8 gaps can be closed with **no re-run and no extra spend**, using
 
 **9.1 — Judge-free deterministic re-score.** Re-scored every GPT-5.5 answer with a strict string/number match against the ground truth (no LLM in the loop) to check the conclusion isn't an artifact of a small uncalibrated judge.
 
-| tools | arm | LLM-judge | deterministic |
+| tools | arm | judge (raw) | deterministic (answerable-set) |
 |---|---|---|---|
 | 1 | control | 0.80 | 0.57 |
 | 2 | cat2 | 0.70 | 0.55 |
@@ -177,7 +177,7 @@ Three of the §8 gaps can be closed with **no re-run and no extra spend**, using
 | 5 | validated5 | 0.77 | 0.56 |
 | 6 | arm_ref | 0.83 | 0.57 |
 
-The strict scorer floors ~20pp below the semantic judge (it misses equivalents like `'urgent'=='UR'`), so the **absolute level is judge-dependent** — but the **curve is flat under both scorers** (deterministic 0.55–0.61; judge 0.70–0.83), and control (1 tool) ≈ arm_ref (6 tools) either way. The flat/null pattern is robust to the scorer; only the absolute number moves.
+**The two columns use different denominators** — `judge (raw)` is correct / *all* questions; `deterministic` is correct / questions the strict scorer could grade (un-parseable answers dropped) — so the per-row gap is **not** a like-for-like comparison and shouldn't be read as a 20pp "error rate." The point is the **shape within each scorer**: the curve is **flat under both** (deterministic 0.55–0.61; judge 0.70–0.83), with control (1 tool) ≈ arm_ref (6 tools) either way. The flat/null pattern is robust to the scorer; only the absolute level is judge-dependent.
 
 **9.2 — Minimum detectable effect (MDE).** Simulated paired-McNemar power at our n to report the smallest accuracy delta we were actually powered to detect.
 

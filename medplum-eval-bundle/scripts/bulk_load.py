@@ -87,6 +87,11 @@ def run(files):
         print(f"  queued {os.path.basename(path)} ok={ok[0]} fail={fail[0]} t={int(time.time()-t0)}s", flush=True)
     ex.shutdown(wait=True)
     print(f"DONE ok={ok[0]} fail={fail[0]} in {time.time()-t0:.0f}s", flush=True)
+    if fail[0] > 0:
+        # an eval substrate must NOT silently finish with a partial load (it would corrupt every
+        # downstream true_fhir_ids match). Fail loudly so the caller knows the store is incomplete.
+        print(f"ERROR: {fail[0]} FHIR writes failed — the store is INCOMPLETE. Aborting nonzero.", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,11 @@
 # Revised eval design (post-Codex REVISE, 2026-06-21)
 
+> ⚠️ **SUPERSEDED — this is the pre-run DESIGN/hypothesis doc, not the result.** The "HEADLINE CLAIM"
+> below (that `resolve_references` produces a paired, CI-separated lift) did **NOT** hold: the actual
+> outcome was a **NULL** — no significant tool advantage on either model — with the only robust effect
+> being the context-cap/`_include` overflow. See **[../REPORT.md](../REPORT.md)** for the real findings.
+> Kept only as a record of the planned design.
+
 THESIS: Medplum's shipped agentic surfaces ($ai + MCP) expose ONE generic `fhir_request` tool.
 Purpose-built read-only FHIR tools beat it on FHIR-AgentBench (MIMIC-IV-on-FHIR, single-patient
 retrieval QA). Goal: contribution + hire at Medplum.

@@ -150,21 +150,22 @@ def main():
         answered = {q: v for q, v in scored.items() if v is not None}
         det[arm] = (sum(answered.values()) / len(answered)) if answered else None
         perq[arm] = answered
-    print(f"{'tools':>5}  {'arm':<14} {'LLM-judge':>9} {'deterministic':>13} {'|Δ|':>6}")
+    # DENOMINATOR NOTE: judge(raw) = correct / ALL questions; det(answerable) = correct / questions the
+    # strict scorer could grade (drops un-parseable). They are NOT the same denominator — labelled so.
+    print(f"{'tools':>5}  {'arm':<14} {'judge(raw)':>10} {'det(answerable)':>16} {'|Δ|':>6}")
     for arm in sorted(det, key=lambda a: order.get(a, 99)):
         if det[arm] is None:
-            print(f"{order.get(arm,'?'):>5}  {arm:<14} {'(all-error/quota)':>23}")
+            print(f"{order.get(arm,'?'):>5}  {arm:<14} {'(all-error/quota)':>26}")
             continue
         lj = llm_judge.get(arm)
         diff = abs(lj - det[arm]) if lj is not None else None
-        print(f"{order.get(arm,'?'):>5}  {arm:<14} {('%.2f'%lj) if lj else '-':>9} {det[arm]:>13.2f} {('%.2f'%diff) if diff is not None else '-':>6}")
+        print(f"{order.get(arm,'?'):>5}  {arm:<14} {('%.2f'%lj) if lj else '-':>10} {det[arm]:>16.2f} {('%.2f'%diff) if diff is not None else '-':>6}")
     detvals = [det[a] for a in det if det[a] is not None]
-    print(f"\n  -> the STRICT scorer floors ~20pp below the semantic LLM judge (it misses semantic"
-          f"\n     equivalents, e.g. 'urgent'=='UR'), so absolute levels are judge-dependent. But the"
-          f"\n     CURVE IS FLAT under BOTH scorers (deterministic range {min(detvals):.2f}-{max(detvals):.2f};"
-          f" judge 0.70-0.83):"
-          f"\n     control(1 tool) ~ arm_ref(6 tools) either way. The NULL/flat pattern is robust to the"
-          f"\n     scorer; only the absolute number depends on the judge.")
+    print(f"\n  -> NOTE the columns use DIFFERENT denominators (judge=raw over all questions;"
+          f"\n     deterministic=answerable-set, un-gradable rows dropped), so the |Δ| is not a like-for-like"
+          f"\n     gap. The point is the SHAPE: within EACH scorer the curve is FLAT (deterministic range"
+          f"\n     {min(detvals):.2f}-{max(detvals):.2f}; judge 0.70-0.83), control(1 tool) ~ arm_ref(6 tools)."
+          f"\n     The NULL/flat pattern is robust to the scorer; only the absolute level depends on the judge.")
 
     # ---- 2. MDE ----
     print("\n## 2. Minimum detectable effect (paired McNemar, alpha=.05, power=.80)\n")

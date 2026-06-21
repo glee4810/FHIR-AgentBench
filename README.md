@@ -52,7 +52,7 @@ The reusable artifact is this methodology, not any one number.
 |---|---|
 | `agent/mcp_agent.py` | Agent that retrieves through an **MCP server** — the only variable across arms is the advertised tool surface. |
 | `agent/ai_agent.py` | Variant that routes completions through a server-side LLM proxy (here, Medplum's in-FHIR `$ai` op) — test the lift on the platform's *own* agentic surface, not just an external client. |
-| `treatment_mcp_server.py` | **Catalog-driven** FastMCP server: one server, `TOOL_SUBSET`-selectable arms. The baseline "generic" arm is a **local FastMCP re-implementation** whose *description string* is copied byte-for-byte from Medplum's shipped `fhir-request` tool, proxying the same FHIR REST surface — it is **not** the platform's production MCP tool path (the smoke test confirms the real server advertises an identically-named tool; the runs used this faithful re-implementation). Typed tools toggle in on top. |
+| `treatment_mcp_server.py` | **Catalog-driven** FastMCP server: one server, `TOOL_SUBSET`-selectable arms. The baseline "generic" arm is a **local FastMCP re-implementation** whose *description string* is copied byte-for-byte from Medplum's shipped `fhir-request` tool, proxying the same FHIR REST surface — it is **not** the platform's production MCP tool path. (The smoke test confirms Medplum advertises a tool playing the same role — named `fhir-request` with a hyphen; our local control registers `fhir_request` with an underscore — so it's a description-matched reimplementation, not the identical tool.) Typed tools toggle in on top. |
 | `run_matrix.py` | Parameterized ablation runner: per-cell tool subset, a **nested dose-response staircase** (1→2→4→… tools), the cap-factorial, and a **hard $-budget ledger** that stops cleanly instead of surprising you. |
 | `score_taxonomy.py` | raw + **answerable-set** accuracy, by-cause failure taxonomy, **paired McNemar + bootstrap**. |
 | `robustness_analysis.py` | Judge-free post-hoc pass (no re-run, no spend): deterministic re-score, minimum-detectable-effect (MDE) power sim, Holm-Bonferroni. |
@@ -132,16 +132,21 @@ inside the bundle); `run_matrix.py` / `score_taxonomy.py` / `robustness_analysis
 root** (step 4). `run_matrix.py` skips any cell whose output JSON already exists in `--out-dir`, so use a
 fresh `--out-dir` to re-run from scratch.
 
-Knobs (all env-overridable, defaults shown): `EVAL_OPUS_MODEL=claude-opus-4-8`, `EVAL_GPT_MODEL=gpt-5`,
-`EVAL_JUDGE_MODEL=gpt-5-mini`, `EVAL_STOCK_CAP=32000` / `EVAL_RAISED_CAP=100000` (the cap-factorial),
-`EVAL_WORKERS=6`. `run_matrix.py` spawns `treatment_mcp_server.py` per cell with the right `TOOL_SUBSET`
-(preset `control`/`cat2`/`cat4`/`validated5`/`arm_ref`/`arm_full8`, or a comma-list) and points the agent
-at it via `MEDPLUM_MCP_URL` (the local treatment server at `127.0.0.1:8765/mcp`) — **not** Medplum's own
+Knobs (all env-overridable, defaults shown): `EVAL_RUN=gpt` (or `opus` — selects the GPT-5.5 staircase
+[RUN-2] vs the Opus medication-slice + cap-factorial [RUN-1]; run each into a **separate** `--out-dir` and
+score separately), `EVAL_OPUS_MODEL=claude-opus-4-8`, `EVAL_GPT_MODEL=gpt-5`, `EVAL_JUDGE_MODEL=gpt-5-mini`,
+`EVAL_STOCK_CAP=32000` / `EVAL_RAISED_CAP=100000` (the cap-factorial), `EVAL_WORKERS=6`. `run_matrix.py`
+spawns `treatment_mcp_server.py` per cell with the right `TOOL_SUBSET` (preset
+`control`/`cat2`/`cat4`/`validated5`/`arm_ref`/`arm_full8`, or a comma-list) and points the agent at it via
+`MEDPLUM_MCP_URL` (the local treatment server at `127.0.0.1:8765/mcp`) — **not** Medplum's own
 `8103/mcp/stream` surface, which is only the smoke-test target. Don't override `MEDPLUM_MCP_URL` by hand or
-you'll silently measure the wrong server. `--cap` is a **hard dollar budget** for the whole matrix; it
-stops cleanly rather than overspending. Two footguns: (1) the judge defaults to `gpt-5-mini` — if that
-model id 404s for your account, `score_taxonomy` swallows the error and reports **0 correct**, so smoke the
-judge first or set `EVAL_JUDGE_MODEL`; (2) the cost projector has no built-in rate for `gpt-5.5`, so it
+you'll silently measure the wrong server. `--cap` is a **dollar budget** enforced by a shared ledger: it
+stops submitting new questions the moment the cap trips, so overspend is bounded to the in-flight batch
+(≤ `EVAL_WORKERS` questions) — hard *between and within* cells, not just between them. Two footguns:
+(1) the judge defaults to `gpt-5-mini` — if that model id 404s for your account, `score_taxonomy` now
+**fails closed** (raises if a cell's judging totally fails, and excludes judge-errored questions from the
+denominator rather than scoring them 0), so set `EVAL_JUDGE_MODEL` if needed; (2) the cost projector has
+no built-in rate for `gpt-5.5`, so it
 falls back to `gpt-5`'s rate — set `EVAL_RATES` for a precise projection.
 
 ## Where this was actually run — reproducibility status
