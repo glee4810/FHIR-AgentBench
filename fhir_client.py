@@ -114,6 +114,12 @@ def get_fhir_client(
     Callers can pass explicit params or rely on env/config.
     """
 
+    # Medplum backend (self-hosted): transparent swap so the STANDARD reference agents run unchanged
+    # against Medplum instead of GCP Cloud Healthcare API. FHIR R4 is FHIR R4.
+    if os.environ.get("MEDPLUM_BASE_URL"):
+        from medplum_fhir_client import MedplumFHIRClient
+        return MedplumFHIRClient()
+
     cfg = get_fhir_config()
     project_id = project_id or cfg.get("PROJECT_ID")
     location = location or cfg.get("LOCATION")

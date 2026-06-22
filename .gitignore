@@ -7,3 +7,4 @@ runs/
 *.pem
 .eval-secrets*
 *.tmp
+.tool_cache/
