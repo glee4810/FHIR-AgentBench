@@ -1,0 +1,151 @@
+question_id,arm,verdict,gold_ids,control_recall,arm_recall,recall_delta,control_precision,arm_precision,precision_delta,extra_tp,extra_fp,extra_retrieved,prompt_delta,bloat_per_extra_tp,gold_types,question
+01038856e72fffdbf13016be,arm_full8,retrieval_regression,14,1.0,0.0,-1.0,1.0,0.0,-1.0,-14,0,-14,-10238,,Observation,Did patient 10025463 receive any lab testing in 11/2136?
+01038856e72fffdbf13016be,arm_ref,same_or_cheaper,14,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,1061,,Observation,Did patient 10025463 receive any lab testing in 11/2136?
+01038856e72fffdbf13016be,cat2,same_or_cheaper,14,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,243,,Observation,Did patient 10025463 receive any lab testing in 11/2136?
+01038856e72fffdbf13016be,cat4,same_or_cheaper,14,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,621,,Observation,Did patient 10025463 receive any lab testing in 11/2136?
+01038856e72fffdbf13016be,validated5,same_or_cheaper,14,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,749,,Observation,Did patient 10025463 receive any lab testing in 11/2136?
+0eba370644940aed20760324,arm_full8,retrieval_regression,2,0.5,0.0,-0.5,0.018,0.0,-0.018,-1,-55,-56,-60275,,"Medication,MedicationRequest",What was the name of the drug that patient 10006580 was first prescribed via a sc route in their first hospital visit?
+0eba370644940aed20760324,arm_ref,recall_bought_with_bloat,2,0.5,1.0,0.5,0.018,0.023,0.005,1,29,30,-19740,29.0,"Medication,MedicationRequest",What was the name of the drug that patient 10006580 was first prescribed via a sc route in their first hospital visit?
+0eba370644940aed20760324,cat2,recall_bought_with_bloat,2,0.5,1.0,0.5,0.018,0.021,0.003,1,40,41,-20306,40.0,"Medication,MedicationRequest",What was the name of the drug that patient 10006580 was first prescribed via a sc route in their first hospital visit?
+0eba370644940aed20760324,cat4,clean_recall_win,2,0.5,1.0,0.5,0.018,0.035,0.017,1,0,1,-1327,0.0,"Medication,MedicationRequest",What was the name of the drug that patient 10006580 was first prescribed via a sc route in their first hospital visit?
+0eba370644940aed20760324,validated5,same_or_cheaper,2,0.5,0.5,0.0,0.018,0.018,0.0,0,0,0,-1415,,"Medication,MedicationRequest",What was the name of the drug that patient 10006580 was first prescribed via a sc route in their first hospital visit?
+1613b932a1fa398b6bb15ef8,arm_full8,retrieval_regression,135,0.007,0.0,-0.007,1.0,0.0,-1.0,-1,0,-1,-2225,,Observation,Has any lab test been performed on patient 10016150 in 2142?
+1613b932a1fa398b6bb15ef8,arm_ref,retrieval_regression,135,0.007,0.0,-0.007,1.0,0.0,-1.0,-1,5,4,2765,,Observation,Has any lab test been performed on patient 10016150 in 2142?
+1613b932a1fa398b6bb15ef8,cat2,retrieval_regression,135,0.007,0.0,-0.007,1.0,0.0,-1.0,-1,1,0,-27,,Observation,Has any lab test been performed on patient 10016150 in 2142?
+1613b932a1fa398b6bb15ef8,cat4,retrieval_regression,135,0.007,0.0,-0.007,1.0,0.0,-1.0,-1,10,9,4740,,Observation,Has any lab test been performed on patient 10016150 in 2142?
+1613b932a1fa398b6bb15ef8,validated5,retrieval_regression,135,0.007,0.0,-0.007,1.0,0.0,-1.0,-1,10,9,4868,,Observation,Has any lab test been performed on patient 10016150 in 2142?
+20c3ddd36c65c44890c3f3e5,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.019,0.0,-0.019,-1,-51,-52,-59825,,Observation,What was the name of the specimen test that patient 10021666 was given for the first time since 03/2172?
+20c3ddd36c65c44890c3f3e5,arm_ref,pure_bloat,1,1.0,1.0,0.0,0.019,0.004,-0.015,0,198,198,116684,,Observation,What was the name of the specimen test that patient 10021666 was given for the first time since 03/2172?
+20c3ddd36c65c44890c3f3e5,cat2,pure_bloat,1,1.0,1.0,0.0,0.019,0.003,-0.016,0,275,275,136278,,Observation,What was the name of the specimen test that patient 10021666 was given for the first time since 03/2172?
+20c3ddd36c65c44890c3f3e5,cat4,pure_bloat,1,1.0,1.0,0.0,0.019,0.005,-0.014,0,150,150,71469,,Observation,What was the name of the specimen test that patient 10021666 was given for the first time since 03/2172?
+20c3ddd36c65c44890c3f3e5,validated5,pure_bloat,1,1.0,1.0,0.0,0.019,0.001,-0.018,0,939,939,58277,,Observation,What was the name of the specimen test that patient 10021666 was given for the first time since 03/2172?
+2fcffbbef2cf3c4109b6345d,arm_full8,retrieval_regression,17,1.0,0.0,-1.0,0.607,0.0,-0.607,-17,-11,-28,-10108,,Procedure,Has patient 10007795 had a procedure during this year?
+2fcffbbef2cf3c4109b6345d,arm_ref,same_or_cheaper,17,1.0,1.0,0.0,0.607,0.607,0.0,0,0,0,1188,,Procedure,Has patient 10007795 had a procedure during this year?
+2fcffbbef2cf3c4109b6345d,cat2,pure_bloat,17,1.0,1.0,0.0,0.607,0.567,-0.04,0,2,2,1077,,Procedure,Has patient 10007795 had a procedure during this year?
+2fcffbbef2cf3c4109b6345d,cat4,same_or_cheaper,17,1.0,1.0,0.0,0.607,0.607,0.0,0,0,0,748,,Procedure,Has patient 10007795 had a procedure during this year?
+2fcffbbef2cf3c4109b6345d,validated5,same_or_cheaper,17,1.0,1.0,0.0,0.607,0.607,0.0,0,0,0,876,,Procedure,Has patient 10007795 had a procedure during this year?
+3508fba9387d18248281be4e,arm_full8,retrieval_regression,7,1.0,0.0,-1.0,0.7,0.0,-0.7,-7,-3,-10,-7998,,Condition,Was patient 10014078 diagnosed with a disease during their last hospital encounter?
+3508fba9387d18248281be4e,arm_ref,pure_bloat,7,1.0,1.0,0.0,0.7,0.636,-0.064,0,1,1,-986,,Condition,Was patient 10014078 diagnosed with a disease during their last hospital encounter?
+3508fba9387d18248281be4e,cat2,pure_bloat,7,1.0,1.0,0.0,0.7,0.438,-0.262,0,6,6,-697,,Condition,Was patient 10014078 diagnosed with a disease during their last hospital encounter?
+3508fba9387d18248281be4e,cat4,pure_bloat,7,1.0,1.0,0.0,0.7,0.636,-0.064,0,1,1,-1426,,Condition,Was patient 10014078 diagnosed with a disease during their last hospital encounter?
+3508fba9387d18248281be4e,validated5,pure_bloat,7,1.0,1.0,0.0,0.7,0.438,-0.262,0,6,6,-191,,Condition,Was patient 10014078 diagnosed with a disease during their last hospital encounter?
+45b34eeae5d3c8d44b703194,arm_full8,retrieval_regression,2,1.0,0.0,-1.0,0.013,0.0,-0.013,-2,-156,-158,-495749,,"Medication,MedicationRequest",How much docusate sodium (liquid) dose has been prescribed to patient 10007818 on the first hospital encounter?
+45b34eeae5d3c8d44b703194,arm_ref,pure_bloat,2,1.0,1.0,0.0,0.013,0.004,-0.009,0,290,290,-9689,,"Medication,MedicationRequest",How much docusate sodium (liquid) dose has been prescribed to patient 10007818 on the first hospital encounter?
+45b34eeae5d3c8d44b703194,cat2,pure_bloat,2,1.0,1.0,0.0,0.013,0.004,-0.009,0,340,340,-119103,,"Medication,MedicationRequest",How much docusate sodium (liquid) dose has been prescribed to patient 10007818 on the first hospital encounter?
+45b34eeae5d3c8d44b703194,cat4,pure_bloat,2,1.0,1.0,0.0,0.013,0.004,-0.009,0,292,292,222473,,"Medication,MedicationRequest",How much docusate sodium (liquid) dose has been prescribed to patient 10007818 on the first hospital encounter?
+45b34eeae5d3c8d44b703194,validated5,retrieval_regression,2,1.0,0.0,-1.0,0.013,0.0,-0.013,-2,46,44,-323688,,"Medication,MedicationRequest",How much docusate sodium (liquid) dose has been prescribed to patient 10007818 on the first hospital encounter?
+472793119170f9c8adb0b84b,arm_full8,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-100,-100,-79708,,,Is patient 10021487's diastolic blood pressure ever less than 31.0 since 09/08/2116?
+472793119170f9c8adb0b84b,arm_ref,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,100,100,723,,,Is patient 10021487's diastolic blood pressure ever less than 31.0 since 09/08/2116?
+472793119170f9c8adb0b84b,cat2,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,210,210,43161,,,Is patient 10021487's diastolic blood pressure ever less than 31.0 since 09/08/2116?
+472793119170f9c8adb0b84b,cat4,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,100,100,63,,,Is patient 10021487's diastolic blood pressure ever less than 31.0 since 09/08/2116?
+472793119170f9c8adb0b84b,validated5,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,100,100,40240,,,Is patient 10021487's diastolic blood pressure ever less than 31.0 since 09/08/2116?
+4b10d0fec2f23acab915e3f3,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.071,0.0,-0.071,-1,-13,-14,-15425,,Procedure,Count how many times in the first hospital visit patient 10004457 had coronary arteriography using two catheters.
+4b10d0fec2f23acab915e3f3,arm_ref,pure_bloat,1,1.0,1.0,0.0,0.071,0.027,-0.044,0,23,23,2983,,Procedure,Count how many times in the first hospital visit patient 10004457 had coronary arteriography using two catheters.
+4b10d0fec2f23acab915e3f3,cat2,pure_bloat,1,1.0,1.0,0.0,0.071,0.022,-0.049,0,32,32,4254,,Procedure,Count how many times in the first hospital visit patient 10004457 had coronary arteriography using two catheters.
+4b10d0fec2f23acab915e3f3,cat4,pure_bloat,1,1.0,1.0,0.0,0.071,0.027,-0.044,0,23,23,2543,,Procedure,Count how many times in the first hospital visit patient 10004457 had coronary arteriography using two catheters.
+4b10d0fec2f23acab915e3f3,validated5,pure_bloat,1,1.0,1.0,0.0,0.071,0.027,-0.044,0,23,23,2671,,Procedure,Count how many times in the first hospital visit patient 10004457 had coronary arteriography using two catheters.
+4b72e7b13c37b47053d926d9,arm_full8,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-25,-25,-13530,,,"Can you provide the monthly output of pre-admission for patient 10022041? if multiple pre-admission outputs are measured monthly, take the maximum."
+4b72e7b13c37b47053d926d9,arm_ref,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-24,-24,-8310,,,"Can you provide the monthly output of pre-admission for patient 10022041? if multiple pre-admission outputs are measured monthly, take the maximum."
+4b72e7b13c37b47053d926d9,cat2,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-24,-24,-11522,,,"Can you provide the monthly output of pre-admission for patient 10022041? if multiple pre-admission outputs are measured monthly, take the maximum."
+4b72e7b13c37b47053d926d9,cat4,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-22,-22,-8120,,,"Can you provide the monthly output of pre-admission for patient 10022041? if multiple pre-admission outputs are measured monthly, take the maximum."
+4b72e7b13c37b47053d926d9,validated5,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-24,-24,-8778,,,"Can you provide the monthly output of pre-admission for patient 10022041? if multiple pre-admission outputs are measured monthly, take the maximum."
+56cc41f276a6e10711d396f4,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.04,0.0,-0.04,-1,-24,-25,-32915,,Observation,When was patient 10004720's first microbiology test done?
+56cc41f276a6e10711d396f4,arm_ref,pure_bloat,1,1.0,1.0,0.0,0.04,0.002,-0.038,0,482,482,101250,,Observation,When was patient 10004720's first microbiology test done?
+56cc41f276a6e10711d396f4,cat2,pure_bloat,1,1.0,1.0,0.0,0.04,0.005,-0.035,0,184,184,140844,,Observation,When was patient 10004720's first microbiology test done?
+56cc41f276a6e10711d396f4,cat4,pure_bloat,1,1.0,1.0,0.0,0.04,0.005,-0.035,0,189,189,106427,,Observation,When was patient 10004720's first microbiology test done?
+56cc41f276a6e10711d396f4,validated5,pure_bloat,1,1.0,1.0,0.0,0.04,0.004,-0.036,0,238,238,206299,,Observation,When was patient 10004720's first microbiology test done?
+580f56a66f7626bbcd078c21,arm_full8,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-122,-122,-137512,,,Has patient 10023239 had any organisms detected in his last urine microbiology test in 2137?
+580f56a66f7626bbcd078c21,arm_ref,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-98,-98,-114218,,,Has patient 10023239 had any organisms detected in his last urine microbiology test in 2137?
+580f56a66f7626bbcd078c21,cat2,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-116,-116,-129639,,,Has patient 10023239 had any organisms detected in his last urine microbiology test in 2137?
+580f56a66f7626bbcd078c21,cat4,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-118,-118,-133200,,,Has patient 10023239 had any organisms detected in his last urine microbiology test in 2137?
+580f56a66f7626bbcd078c21,validated5,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-116,-116,-123832,,,Has patient 10023239 had any organisms detected in his last urine microbiology test in 2137?
+666f86f3566bfabb76e587a7,arm_full8,retrieval_regression,2,0.5,0.0,-0.5,0.032,0.0,-0.032,-1,-30,-31,-16816,,"Medication,MedicationRequest",When was patient 10038992 last prescribed a drug via the neb route since 07/2185?
+666f86f3566bfabb76e587a7,arm_ref,recall_bought_with_bloat,2,0.5,1.0,0.5,0.032,0.018,-0.014,1,80,81,136649,80.0,"Medication,MedicationRequest",When was patient 10038992 last prescribed a drug via the neb route since 07/2185?
+666f86f3566bfabb76e587a7,cat2,recall_bought_with_bloat,2,0.5,1.0,0.5,0.032,0.01,-0.022,1,178,179,291862,178.0,"Medication,MedicationRequest",When was patient 10038992 last prescribed a drug via the neb route since 07/2185?
+666f86f3566bfabb76e587a7,cat4,recall_bought_with_bloat,2,0.5,1.0,0.5,0.032,0.018,-0.014,1,80,81,135801,80.0,"Medication,MedicationRequest",When was patient 10038992 last prescribed a drug via the neb route since 07/2185?
+666f86f3566bfabb76e587a7,validated5,pure_bloat,2,0.5,0.5,0.0,0.032,0.009,-0.023,0,80,80,79874,,"Medication,MedicationRequest",When was patient 10038992 last prescribed a drug via the neb route since 07/2185?
+6bb8d0b3a6e2b6227b56f595,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.25,0.0,-0.25,-1,-3,-4,-12138,,Observation,Tell me patient 10038081's first oxygen value on the first hospital stay.
+6bb8d0b3a6e2b6227b56f595,arm_ref,same_or_cheaper,1,1.0,1.0,0.0,0.25,0.25,0.0,0,0,0,-7056,,Observation,Tell me patient 10038081's first oxygen value on the first hospital stay.
+6bb8d0b3a6e2b6227b56f595,cat2,pure_bloat,1,1.0,1.0,0.0,0.25,0.125,-0.125,0,4,4,-6792,,Observation,Tell me patient 10038081's first oxygen value on the first hospital stay.
+6bb8d0b3a6e2b6227b56f595,cat4,same_or_cheaper,1,1.0,1.0,0.0,0.25,0.25,0.0,0,0,0,-797,,Observation,Tell me patient 10038081's first oxygen value on the first hospital stay.
+6bb8d0b3a6e2b6227b56f595,validated5,same_or_cheaper,1,1.0,1.0,0.0,0.25,0.25,0.0,0,0,0,-7368,,Observation,Tell me patient 10038081's first oxygen value on the first hospital stay.
+6dc27e0c371f7e5dd9d2a981,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.067,0.0,-0.067,-1,-14,-15,-25084,,Observation,When was the first time on the first icu stay that patient 10027602's spo2 was greater than 95.0?
+6dc27e0c371f7e5dd9d2a981,arm_ref,pure_bloat,1,1.0,1.0,0.0,0.067,0.005,-0.062,0,204,204,72596,,Observation,When was the first time on the first icu stay that patient 10027602's spo2 was greater than 95.0?
+6dc27e0c371f7e5dd9d2a981,cat2,pure_bloat,1,1.0,1.0,0.0,0.067,0.004,-0.063,0,265,265,217910,,Observation,When was the first time on the first icu stay that patient 10027602's spo2 was greater than 95.0?
+6dc27e0c371f7e5dd9d2a981,cat4,pure_bloat,1,1.0,1.0,0.0,0.067,0.005,-0.062,0,204,204,71938,,Observation,When was the first time on the first icu stay that patient 10027602's spo2 was greater than 95.0?
+6dc27e0c371f7e5dd9d2a981,validated5,pure_bloat,1,1.0,1.0,0.0,0.067,0.004,-0.063,0,240,240,87638,,Observation,When was the first time on the first icu stay that patient 10027602's spo2 was greater than 95.0?
+73710b96b938a24a7a5c86d5,arm_full8,retrieval_regression,2,1.0,0.0,-1.0,0.056,0.0,-0.056,-2,-34,-36,-28887,,"Medication,MedicationRequest",Tell me the medication that patient 10014729 was prescribed for the first time?
+73710b96b938a24a7a5c86d5,arm_ref,pure_bloat,2,1.0,1.0,0.0,0.056,0.007,-0.049,0,253,253,57724,,"Medication,MedicationRequest",Tell me the medication that patient 10014729 was prescribed for the first time?
+73710b96b938a24a7a5c86d5,cat2,pure_bloat,2,1.0,1.0,0.0,0.056,0.006,-0.05,0,295,295,170155,,"Medication,MedicationRequest",Tell me the medication that patient 10014729 was prescribed for the first time?
+73710b96b938a24a7a5c86d5,cat4,pure_bloat,2,1.0,1.0,0.0,0.056,0.017,-0.039,0,80,80,57048,,"Medication,MedicationRequest",Tell me the medication that patient 10014729 was prescribed for the first time?
+73710b96b938a24a7a5c86d5,validated5,pure_bloat,2,1.0,1.0,0.0,0.056,0.017,-0.039,0,80,80,57240,,"Medication,MedicationRequest",Tell me the medication that patient 10014729 was prescribed for the first time?
+7bb4dd3032dd60767f552577,arm_full8,retrieval_regression,79,0.127,0.0,-0.127,1.0,0.0,-1.0,-10,0,-10,-6928,,"Medication,MedicationRequest",Has patient 10006580 had any medication since 13 months ago?
+7bb4dd3032dd60767f552577,arm_ref,clean_recall_win,79,0.127,0.544,0.417,1.0,0.827,-0.173,33,9,42,21360,0.3,"Medication,MedicationRequest",Has patient 10006580 had any medication since 13 months ago?
+7bb4dd3032dd60767f552577,cat2,recall_bought_with_bloat,79,0.127,1.0,0.873,1.0,0.878,-0.122,69,11,80,31407,0.2,"Medication,MedicationRequest",Has patient 10006580 had any medication since 13 months ago?
+7bb4dd3032dd60767f552577,cat4,recall_bought_with_bloat,79,0.127,1.0,0.873,1.0,0.878,-0.122,69,11,80,31785,0.2,"Medication,MedicationRequest",Has patient 10006580 had any medication since 13 months ago?
+7bb4dd3032dd60767f552577,validated5,recall_bought_with_bloat,79,0.127,1.0,0.873,1.0,0.878,-0.122,69,11,80,31913,0.2,"Medication,MedicationRequest",Has patient 10006580 had any medication since 13 months ago?
+8bfea1a0b78f2e98d30ee271,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.5,0.0,-0.5,-1,-1,-2,-2409,,Encounter,When was patient 10004422 for the first time leaving the hospital?
+8bfea1a0b78f2e98d30ee271,arm_ref,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,1229,,Encounter,When was patient 10004422 for the first time leaving the hospital?
+8bfea1a0b78f2e98d30ee271,cat2,pure_bloat,1,1.0,1.0,0.0,0.5,0.143,-0.357,0,5,5,1841,,Encounter,When was patient 10004422 for the first time leaving the hospital?
+8bfea1a0b78f2e98d30ee271,cat4,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,789,,Encounter,When was patient 10004422 for the first time leaving the hospital?
+8bfea1a0b78f2e98d30ee271,validated5,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,919,,Encounter,When was patient 10004422 for the first time leaving the hospital?
+a3585e47c9d9845ccde194bf,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.077,0.0,-0.077,-1,-12,-13,-9518,,Observation,"Has patient 10037975 been given a creatinine, urine test since 15 months ago?"
+a3585e47c9d9845ccde194bf,arm_ref,pure_bloat,1,1.0,1.0,0.0,0.077,0.04,-0.037,0,12,12,6384,,Observation,"Has patient 10037975 been given a creatinine, urine test since 15 months ago?"
+a3585e47c9d9845ccde194bf,cat2,same_or_cheaper,1,1.0,1.0,0.0,0.077,0.077,0.0,0,0,0,1502,,Observation,"Has patient 10037975 been given a creatinine, urine test since 15 months ago?"
+a3585e47c9d9845ccde194bf,cat4,same_or_cheaper,1,1.0,1.0,0.0,0.077,0.077,0.0,0,0,0,777,,Observation,"Has patient 10037975 been given a creatinine, urine test since 15 months ago?"
+a3585e47c9d9845ccde194bf,validated5,pure_bloat,1,1.0,1.0,0.0,0.077,0.04,-0.037,0,12,12,17142,,Observation,"Has patient 10037975 been given a creatinine, urine test since 15 months ago?"
+cd72a23c76002c4a524a1b61,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.5,0.0,-0.5,-1,-1,-2,-2698,,Encounter,How many icu visits did patient 10022880 have during this year?
+cd72a23c76002c4a524a1b61,arm_ref,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,1178,,Encounter,How many icu visits did patient 10022880 have during this year?
+cd72a23c76002c4a524a1b61,cat2,pure_bloat,1,1.0,1.0,0.0,0.5,0.143,-0.357,0,5,5,1710,,Encounter,How many icu visits did patient 10022880 have during this year?
+cd72a23c76002c4a524a1b61,cat4,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,738,,Encounter,How many icu visits did patient 10022880 have during this year?
+cd72a23c76002c4a524a1b61,validated5,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,866,,Encounter,How many icu visits did patient 10022880 have during this year?
+db7f20610bfa0be1f5377ba9,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.5,0.0,-0.5,-1,-1,-2,-2558,,Encounter,What was the admission type during the first hospital admission for patient 10021118?
+db7f20610bfa0be1f5377ba9,arm_ref,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,1242,,Encounter,What was the admission type during the first hospital admission for patient 10021118?
+db7f20610bfa0be1f5377ba9,cat2,pure_bloat,1,1.0,1.0,0.0,0.5,0.125,-0.375,0,6,6,2052,,Encounter,What was the admission type during the first hospital admission for patient 10021118?
+db7f20610bfa0be1f5377ba9,cat4,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,802,,Encounter,What was the admission type during the first hospital admission for patient 10021118?
+db7f20610bfa0be1f5377ba9,validated5,same_or_cheaper,1,1.0,1.0,0.0,0.5,0.5,0.0,0,0,0,918,,Encounter,What was the admission type during the first hospital admission for patient 10021118?
+dd025c270eae097731034a6c,arm_full8,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-43,-43,-67905,,,How many hours has it been since patient 10018081 first received a mcv lab test during this hospital encounter?
+dd025c270eae097731034a6c,arm_ref,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,32,32,42944,,,How many hours has it been since patient 10018081 first received a mcv lab test during this hospital encounter?
+dd025c270eae097731034a6c,cat2,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,40,40,81510,,,How many hours has it been since patient 10018081 first received a mcv lab test during this hospital encounter?
+dd025c270eae097731034a6c,cat4,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,32,32,36080,,,How many hours has it been since patient 10018081 first received a mcv lab test during this hospital encounter?
+dd025c270eae097731034a6c,validated5,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,32,32,42476,,,How many hours has it been since patient 10018081 first received a mcv lab test during this hospital encounter?
+e198cf387b6b22216a593d12,arm_full8,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-45,-45,-57078,,,Please show the total amount of output patient 10004720 had since 02/08/2183.
+e198cf387b6b22216a593d12,arm_ref,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,169,169,46811,,,Please show the total amount of output patient 10004720 had since 02/08/2183.
+e198cf387b6b22216a593d12,cat2,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,155,155,23850,,,Please show the total amount of output patient 10004720 had since 02/08/2183.
+e198cf387b6b22216a593d12,cat4,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,965,965,114264,,,Please show the total amount of output patient 10004720 had since 02/08/2183.
+e198cf387b6b22216a593d12,validated5,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,469,469,56397,,,Please show the total amount of output patient 10004720 had since 02/08/2183.
+eb20ba71a6257201e3668689,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,1.0,0.0,-1.0,-1,0,-1,-1547,,Observation,What was the weight of patient 10006580 in the first measurement?
+eb20ba71a6257201e3668689,arm_ref,same_or_cheaper,1,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,1229,,Observation,What was the weight of patient 10006580 in the first measurement?
+eb20ba71a6257201e3668689,cat2,same_or_cheaper,1,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,411,,Observation,What was the weight of patient 10006580 in the first measurement?
+eb20ba71a6257201e3668689,cat4,same_or_cheaper,1,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,789,,Observation,What was the weight of patient 10006580 in the first measurement?
+eb20ba71a6257201e3668689,validated5,same_or_cheaper,1,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,917,,Observation,What was the weight of patient 10006580 in the first measurement?
+ebd6cc5909117f9e521d66c9,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.012,0.0,-0.012,-1,-84,-85,-69798,,Observation,What was the first time patient 10018423 had their maximum respiratory rate during their last icu stay?
+ebd6cc5909117f9e521d66c9,arm_ref,same_or_cheaper,1,1.0,1.0,0.0,0.012,0.015,0.003,0,-19,-19,8257,,Observation,What was the first time patient 10018423 had their maximum respiratory rate during their last icu stay?
+ebd6cc5909117f9e521d66c9,cat2,same_or_cheaper,1,1.0,1.0,0.0,0.012,0.014,0.002,0,-12,-12,-102,,Observation,What was the first time patient 10018423 had their maximum respiratory rate during their last icu stay?
+ebd6cc5909117f9e521d66c9,cat4,same_or_cheaper,1,1.0,1.0,0.0,0.012,0.015,0.003,0,-19,-19,-4887,,Observation,What was the first time patient 10018423 had their maximum respiratory rate during their last icu stay?
+ebd6cc5909117f9e521d66c9,validated5,same_or_cheaper,1,1.0,1.0,0.0,0.012,0.015,0.003,0,-19,-19,-37805,,Observation,What was the first time patient 10018423 had their maximum respiratory rate during their last icu stay?
+ee06998b93ca5610c35e7925,arm_full8,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,-107,-107,-224186,,,"Has clonidine patch 0.3 mg/24 hr, amlodipine, or 5% dextrose been prescribed for patient 10004733 in this hospital encounter?"
+ee06998b93ca5610c35e7925,arm_ref,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,167,167,-63394,,,"Has clonidine patch 0.3 mg/24 hr, amlodipine, or 5% dextrose been prescribed for patient 10004733 in this hospital encounter?"
+ee06998b93ca5610c35e7925,cat2,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,172,172,-25437,,,"Has clonidine patch 0.3 mg/24 hr, amlodipine, or 5% dextrose been prescribed for patient 10004733 in this hospital encounter?"
+ee06998b93ca5610c35e7925,cat4,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,169,169,33859,,,"Has clonidine patch 0.3 mg/24 hr, amlodipine, or 5% dextrose been prescribed for patient 10004733 in this hospital encounter?"
+ee06998b93ca5610c35e7925,validated5,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,72,72,-134974,,,"Has clonidine patch 0.3 mg/24 hr, amlodipine, or 5% dextrose been prescribed for patient 10004733 in this hospital encounter?"
+eea838bba39870d24a4fe781,arm_full8,retrieval_regression,11,1.0,0.0,-1.0,1.0,0.0,-1.0,-11,0,-11,-15509,,Observation,Tell me what patient 10018501's void output was since 06/05/2141.
+eea838bba39870d24a4fe781,arm_ref,same_or_cheaper,11,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,-8382,,Observation,Tell me what patient 10018501's void output was since 06/05/2141.
+eea838bba39870d24a4fe781,cat2,same_or_cheaper,11,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,16742,,Observation,Tell me what patient 10018501's void output was since 06/05/2141.
+eea838bba39870d24a4fe781,cat4,same_or_cheaper,11,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,1882,,Observation,Tell me what patient 10018501's void output was since 06/05/2141.
+eea838bba39870d24a4fe781,validated5,same_or_cheaper,11,1.0,1.0,0.0,1.0,1.0,0.0,0,0,0,-8694,,Observation,Tell me what patient 10018501's void output was since 06/05/2141.
+f356b6267c56b07e1f3e3045,arm_full8,retrieval_regression,1,1.0,0.0,-1.0,0.045,0.0,-0.045,-1,-21,-22,-13022,,Observation,What was the last time that patient 10035185 had the minimum value of the systolic blood pressure?
+f356b6267c56b07e1f3e3045,arm_ref,same_or_cheaper,1,1.0,1.0,0.0,0.045,0.045,0.0,0,0,0,1236,,Observation,What was the last time that patient 10035185 had the minimum value of the systolic blood pressure?
+f356b6267c56b07e1f3e3045,cat2,same_or_cheaper,1,1.0,1.0,0.0,0.045,0.045,0.0,0,0,0,415,,Observation,What was the last time that patient 10035185 had the minimum value of the systolic blood pressure?
+f356b6267c56b07e1f3e3045,cat4,same_or_cheaper,1,1.0,1.0,0.0,0.045,0.045,0.0,0,0,0,793,,Observation,What was the last time that patient 10035185 had the minimum value of the systolic blood pressure?
+f356b6267c56b07e1f3e3045,validated5,same_or_cheaper,1,1.0,1.0,0.0,0.045,0.045,0.0,0,0,0,921,,Observation,What was the last time that patient 10035185 had the minimum value of the systolic blood pressure?
+facfb8f560238eb16739c85e,arm_full8,retrieval_regression,2,1.0,0.0,-1.0,0.143,0.0,-0.143,-2,-12,-14,-18385,,Observation,Did patient 10015860 receive a lymphocytes test on their first hospital visit?
+facfb8f560238eb16739c85e,arm_ref,pure_bloat,2,1.0,1.0,0.0,0.143,0.032,-0.111,0,49,49,23742,,Observation,Did patient 10015860 receive a lymphocytes test on their first hospital visit?
+facfb8f560238eb16739c85e,cat2,pure_bloat,2,1.0,1.0,0.0,0.143,0.027,-0.116,0,61,61,25822,,Observation,Did patient 10015860 receive a lymphocytes test on their first hospital visit?
+facfb8f560238eb16739c85e,cat4,pure_bloat,2,1.0,1.0,0.0,0.143,0.032,-0.111,0,49,49,23312,,Observation,Did patient 10015860 receive a lymphocytes test on their first hospital visit?
+facfb8f560238eb16739c85e,validated5,pure_bloat,2,1.0,1.0,0.0,0.143,0.032,-0.111,0,49,49,23428,,Observation,Did patient 10015860 receive a lymphocytes test on their first hospital visit?
+ffcf49b4d60d6ba61111c10d,arm_full8,same_or_cheaper,0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,-4375,,,"On last month/17, what was the average of heart rate for patient 10006053?"
+ffcf49b4d60d6ba61111c10d,arm_ref,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,200,200,84903,,,"On last month/17, what was the average of heart rate for patient 10006053?"
+ffcf49b4d60d6ba61111c10d,cat2,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,200,200,78915,,,"On last month/17, what was the average of heart rate for patient 10006053?"
+ffcf49b4d60d6ba61111c10d,cat4,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,50,50,22280,,,"On last month/17, what was the average of heart rate for patient 10006053?"
+ffcf49b4d60d6ba61111c10d,validated5,pure_bloat,0,0.0,0.0,0.0,0.0,0.0,0.0,0,250,250,63868,,,"On last month/17, what was the average of heart rate for patient 10006053?"

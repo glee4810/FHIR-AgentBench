@@ -51,6 +51,9 @@ services:
       MEDPLUM_MAX_BATCH_SIZE: '50mb'
       MEDPLUM_MCP_ENABLED: 'true'
       MEDPLUM_INTROSPECTION_ENABLED: 'true'
+      # raise the rate limit so the eval agents' many FHIR retrieval calls don't get 429'd
+      MEDPLUM_DEFAULT_RATE_LIMIT: '6000000'
+      MEDPLUM_DEFAULT_AUTH_RATE_LIMIT: '600000'
       MEDPLUM_SHUTDOWN_TIMEOUT_MILLISECONDS: 30000
     healthcheck:
       test: ['CMD', 'node', '-e', 'fetch("http://localhost:8103/healthcheck").then(r => r.json()).then(console.log).catch(() => { process.exit(1); })']

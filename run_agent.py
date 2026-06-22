@@ -183,8 +183,10 @@ if __name__ == "__main__":
         """
     )
 
-    # Checking tool credentials (GCP-backed tools only; the MCP agent uses its own backend)
-    if args.agent_strategy != "mcp":
+    # Checking tool credentials (GCP-backed tools only). Skip for the MCP agent (own backend) and for the
+    # Medplum backend (MEDPLUM_BASE_URL set) — the GCP cred-check issues an invalid `Patient?patient=` query
+    # that Medplum (correctly) rejects; the Medplum adapter validates connectivity itself.
+    if args.agent_strategy != "mcp" and not os.environ.get("MEDPLUM_BASE_URL"):
         check_tool_credentials()
 
     num_processes = min(args.num_processes, len(remaining_inputs))
