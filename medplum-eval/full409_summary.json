@@ -1,0 +1,28 @@
+{
+  "n_paired": 409,
+  "n_total": 409,
+  "resource_acc": 0.2763,
+  "code_acc": 0.3863,
+  "delta": 0.11,
+  "code_fixed": 76,
+  "code_broke": 31,
+  "net": 45,
+  "code_fixed_compute_heavy": "68/76 (89%; temporal-ordering + aggregation, keyword heuristic)",
+  "mcnemar_p": 1.6e-05,
+  "significant": true,
+  "code_arm_answered": "390/409 (19 unanswered scored wrong -> +11pp is conservative)",
+  "cost_total_agent_usd": 34.38,
+  "cost_resource_usd": 11.63,
+  "cost_code_usd": 22.75,
+  "model": "gpt-5.5-2026-04-23",
+  "judge": "gpt-5-mini-2025-08-07",
+  "n200_preview": {
+    "resource_acc": 0.21,
+    "code_acc": 0.275,
+    "delta": 0.065,
+    "mcnemar_p": 0.010622,
+    "code_fixed": 18,
+    "code_broke": 5
+  },
+  "note": "Full 409-question test split. Supersedes the n=200 preview. Re-judged 2026-06-23 after the first scoring pass erred on OpenAI quota; agent answers were intact."
+}

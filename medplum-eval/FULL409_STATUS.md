@@ -1,14 +1,31 @@
-# Full 409-question test-set run — status (judge quota-blocked, recoverable)
+# Full 409-question test-set run — COMPLETE
 
 *2026-06-23. The full-test-set extension of the n=200 code-vs-resource experiment (`../CODE_EXPERIMENT.md`).*
 
-## TL;DR
+## TL;DR — DONE (2026-06-23)
 
-The committed result remains **n=200** (+6.5pp, McNemar **p=0.0106**, significant). The full 409-question
+**Full 409-question result: resource (no code) 27.6% → code (+`execute_python_code`) 38.6%, delta +11.0pp,
+McNemar exact p = 1.6e-5 (highly significant). Code fixed 76, broke 31 (net +45).** The code arm only
+*answered* 390/409 (19 errored on heavy patients, scored wrong), so the lift is conservative. This is
+*stronger* than the n=200 preview (+6.5pp, p=0.0106) — the extra 209 questions skew more compute-heavy.
+Final summary: `full409_summary.json`. The conclusion holds and strengthens: a code interpreter is the lever.
+
+### How it got here (recovery record)
+
+The agent passes finished (resource 409/409, code 390/409, ~$34) but the LLM judge hit OpenAI quota
+mid-scoring, leaving 418 labels (~209 new questions × 2 arms) as `None` — so the first `_summary.json` was
+the n=200 numbers mislabeled n_total=409. The agent answers were intact in `full409_answers.json`, so once
+OpenAI billing was restored, `../rejudge_409.py` re-judged only the 418 failed labels (reusing the 400 valid
+ones, <$1) and produced the real 409 score above. The original blocker writeup is preserved below for the
+record.
+
+---
+
+## Original status (judge quota-blocked) — RESOLVED, kept for the record
+
+The committed result was **n=200** (+6.5pp, McNemar **p=0.0106**, significant). The full 409-question
 run **completed its agent passes** but the LLM judge ran out of OpenAI quota mid-scoring, so only 200 of the
-409 questions are validly scored. **Do not cite `runs/full409/_summary.json` as a 409 result** — its numbers
-are the n=200 numbers (n_paired=200) mislabeled `n_total=409`. The 409 score is one cheap command away once
-OpenAI billing is restored.
+409 questions were validly scored. (Resolved above via `rejudge_409.py`.)
 
 ## What ran
 
