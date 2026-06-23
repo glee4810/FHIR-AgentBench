@@ -10,20 +10,40 @@
 
 ## TL;DR
 
-- **Question:** does a catalog of purpose-built FHIR tools beat Medplum's single generic `fhir-request`
-  tool on single-patient retrieval QA, across **Claude Opus 4.8** and **GPT-5.5**?
-- **Result — an underpowered null.** No *detectable* tool advantage (MDE at this n is ~34–46pp), and the
-  early, promising **+11pp** (generic ≈39% → 5-tool catalog ≈50%) turned out to be a **context-budget
-  confound**, not a tool win. Read this as "no big tool win, and the headline was an artifact" — *not*
-  "tools provably don't help."
-- **The one robust effect** is the model's **context budget**: `_include`/reference-resolution tools are
-  token-hungry and overflow the default cap (one Opus arm overflowed 20/25 questions at 32k). FHIR agent
-  ergonomics are dominated by **token economics, not tool count**.
-- **The contribution is the methodology** — a paired-stats + cap-factorial + budget-ledger harness that
-  catches a confound a naive eval (and most vendor eval blog posts) would ship as a win.
-- ⚠️ **Most numbers were produced on now-torn-down EC2 boxes and are not recomputable from committed
-  data.** Be precise about what survives — see [below](#where-this-was-actually-run--reproducibility-status).
-- Full write-up, tables, paired stats, and limitations: **[REPORT.md](REPORT.md)**.
+**What actually makes an LLM agent more accurate on FHIR clinical QA?** We swept the levers an engineer
+would reach for, each a **paired** comparison with exact stats. **Every "win" decomposed to one thing: the
+context budget.** Tool catalog, payload coaching, and thinking time are nulls; the code interpreter's
+apparent win is a context-overflow artifact (a null at matched budget), not a reasoning gain.
+
+- **Bigger / purpose-built tool catalog → NULL.** No detectable advantage over one generic `fhir-request`
+  on either **Opus 4.8** or **GPT-5.5** (Opus structure-lift p=0.69; GPT-5.5 curve flat, 1 tool never
+  beaten). The early **+11pp** (≈39%→50%) was a **context-budget confound**, not a tool win — and it
+  replicates the parent paper's own ablation.
+- **Payload shaping → cost-only** (Δ0.00). **Reasoning effort medium→high → NULL** (0/30 answer flips).
+- **Code interpreter → overflow-avoidance, not a reasoning win.** Under **trustworthy grading**
+  (deterministic numeric + a 3-Claude-judge panel, cross-checked by an independent codex/GPT panel and
+  validated against non-LLM ground truth), the code arm shows **no significant benefit where the no-code
+  agent can answer** — matched budget (both arms produced a real answer): **71.4% vs 67.9%, −3.6pp, 95% CI
+  −7.7…+0.6, McNemar p=0.18 → not significant** (slight negative point estimate). Its large pooled lift
+  (**+39.9pp**) is **entirely** the 262/409 (64%) questions where the no-code agent **overflows the 32k cap**
+  and the code agent sidesteps it via a sandbox. **The bottleneck is *getting bounded data into context* —
+  not tool design, payload, thinking time, or compute.** A code path helps only because sandboxing the
+  payload dodges the overflow; payload projection plausibly pulls the same lever.
+- **⚠️ The benchmark's default judge is unreliable — and we quantified it.** Against **non-LLM ground truth**
+  on the 97 numeric questions, gpt-5-mini is **61% accurate** (43 false-negatives, a one-directional
+  precision-punishing bias), while 3-vote panels score **98–99%** (Claude 98.2%, codex/GPT 99.1%). That bias
+  manufactured an earlier spurious "code HURTS −8.6pp." Always audit your LLM judge against ground truth and
+  use a panel. See [TRUSTWORTHY_REGRADE.md](TRUSTWORTHY_REGRADE.md).
+- **Contributions:** (1) the *correct decomposition* — the code "win" is a context-overflow artifact, not a
+  compute gain; the same confound faked the tool-catalog "win"; (2) a **judge-reliability finding** — the
+  default judge is 61% accurate vs ground truth; a multi-vote panel (two model families, 97% mutual
+  agreement) fixes it; (3) the grading methodology that also caught a boolean Yes/No grading bug in our own
+  first fix; (4) the cap-factorial + paired-stats harness that caught the confound twice.
+- ⚠️ **Reproducibility is split.** The **trustworthy re-grade is fully reproducible** from committed data
+  (`runs/full409/{det_labels,panel_votes*,human_review}.json`, `build_labels.py`, `final_grade.py`). The
+  **Opus tool-ablation numbers are not** (run on torn-down EC2). See [Reproducibility status](#where-this-was-actually-run--reproducibility-status).
+- **Start here: [FINDINGS.md](FINDINGS.md)** (the capstone conclusion). Then the tool-ablation deep-dive
+  **[REPORT.md](REPORT.md)** and the code result **[CODE_EXPERIMENT.md](CODE_EXPERIMENT.md)**.
 
 ## What we're actually trying to do
 
@@ -82,6 +102,12 @@ plenty. Full write-up + tables + paired stats: **[REPORT.md](REPORT.md)**.
 > the *method* they didn't run: paired stats + a **manipulated context-cap factorial** (they held the cap
 > fixed at 32k), which traces the apparent +11pp to context budget. The contribution is the harness and the
 > cap finding, **not** the (already-known) "tools don't beat generic" number.
+>
+> **We further refine the paper's code-interpreter attribution.** Under trustworthy grading on GPT-5.5, the
+> code interpreter's lift is **also** a context-budget effect: it is **not significant at matched budget**
+> (−3.6pp, p=0.18) and shows up only on the 64% of questions where the no-code agent overflows. So the code
+> path doesn't reason better — it avoids the overflow. See [CODE_EXPERIMENT.md](CODE_EXPERIMENT.md) and
+> [TRUSTWORTHY_REGRADE.md](TRUSTWORTHY_REGRADE.md).
 
 > **The "token economics, not tool count" headline is consistent with established work, not new.** The
 > input-token budget dominating retrieval over large records is documented in Lost-in-the-Middle

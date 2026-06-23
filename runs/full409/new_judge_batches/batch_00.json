@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "01038856e72fffdbf13016be",
+    "question": "Did patient 10025463 receive any lab testing in 11/2136?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10025463 received lab testing in 11/2136, with 14 laboratory Observation records found in November 2136."
+  },
+  {
+    "qid": "0298d7de83dc23f17441f202",
+    "question": "Were there any procedures conducted on patient 10006580 during the previous year?",
+    "gold": "[[0]]",
+    "resource_answer": "The final answer is: No. I could not find any procedures conducted during the previous calendar year (2136).",
+    "code_answer": "The final answer is: No. I found no Procedure records for patient 10006580 during the previous calendar year, 2136."
+  },
+  {
+    "qid": "04e0b332c01bf8b36c4973b5",
+    "question": "Was the mean blood pressure of patient 10014729 ever less than 79.0 on 03/07/this year?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. I found no \u201cArterial Blood Pressure mean\u201d observations for patient 10014729 on 03/07/2125, so there were no recorded mean blood pressure values less than 79.0 on that date."
+  },
+  {
+    "qid": "0552fb2fb3c9ef8054e31fe0",
+    "question": "How many times since 2132 did patient 10005817 visit the hospital?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 hospital visit since 2132.",
+    "code_answer": "The final answer is: 1 hospital visit since 2132."
+  },
+  {
+    "qid": "08bd537529e959a773c05e95",
+    "question": "Count the number of occasions in 2187 when patient 10019777 received injection or infusion of thrombolytic agent.",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: 1 occasion in 2187."
+  },
+  {
+    "qid": "0d3f767c99e8d250fc86ba71",
+    "question": "Was patient 10015272's mcv second measured on the last hospital visit greater than the value from the first measurement on the last hospital visit?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. The second MCV measurement on the last hospital visit was 113, which is greater than the first measurement value of 112."
+  },
+  {
+    "qid": "0d61464fe9f411c1b299ffef",
+    "question": "Count the number of times that patient 10009035 in 12/last year had a or urine output.",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: 0 times."
+  },
+  {
+    "qid": "10b2e18ba65bee267f263e57",
+    "question": "Does the heart rate of patient 10018081 ever go greater than 105.0 according to the database?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. The patient\u2019s heart rate does go greater than 105.0 according to the database. There are 6 heart rate observations greater than 105.0, with a maximum value of 120.0."
+  },
+  {
+    "qid": "135380cceeececcc1d31beb3",
+    "question": "Did patient 10021666 come into an er on their first hospital encounter?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10021666 came into an ER on their first hospital encounter.",
+    "code_answer": "The final answer is: Yes. Patient 10021666 did come into an ER on their first hospital encounter."
+  },
+  {
+    "qid": "14c735141eaad27a37dfacce",
+    "question": "Has any lab tests occurred for patient 10026406 since 01/2129?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10026406 had lab tests since 01/2129. I found 77 laboratory Observation records between 2129-01-01 and 2129-12-31 23:59:00."
+  },
+  {
+    "qid": "1613b932a1fa398b6bb15ef8",
+    "question": "Has any lab test been performed on patient 10016150 in 2142?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. There were 167 laboratory Observation records performed on patient 10016150 in 2142."
+  },
+  {
+    "qid": "1cb7346d2299d0467b9fcb27",
+    "question": "In 03/last year, was the respiratory rate of patient 10020187 ever greater than 12.0?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No, in 03/2168 the respiratory rate of patient 10020187 was never greater than 12.0."
+  },
+  {
+    "qid": "1dffdf5fe800e0b9a0dcf1b3",
+    "question": "Has patient 10005866 been in the hospital?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10005866 has been in the hospital.",
+    "code_answer": "The final answer is: Yes. Patient 10005866 has been in the hospital, with 7 hospital encounters found."
+  },
+  {
+    "qid": "1eff45de74ada2d6145da372",
+    "question": "Has any laboratory test been performed on patient 10004733 this month?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. 764 laboratory Observation records were performed for patient 10004733 during this month (2174-12-01 through 2174-12-31 23:59)."
+  },
+  {
+    "qid": "24612cf5da1e8c7c6a9fca8f",
+    "question": "Was the spo2 of patient 10021487 ever greater than 97.0 on 12/12/2116?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. I found no \u201cO2 saturation pulseoxymetry\u201d SpO2 observations recorded on 12/12/2116, so there is no evidence that the SpO2 was ever greater than 97.0 on that date."
+  }
+]

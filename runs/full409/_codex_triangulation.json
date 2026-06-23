@@ -1,0 +1,37 @@
+{
+  "codex_files_parsed": 63,
+  "codex_panel_passes": 3,
+  "triangulation": {
+    "shared_nonnumeric_labels": 420,
+    "claude_vs_codex_agreement": 0.9714,
+    "gpt5mini_vs_claude_agreement": 0.6714,
+    "gpt5mini_vs_codex_agreement": 0.6524
+  },
+  "codex_graded_result": {
+    "matched_budget": {
+      "n": 140,
+      "resource_acc": 0.6857,
+      "code_acc": 0.65,
+      "delta": -0.0357,
+      "fixed": 2,
+      "broke": 7,
+      "mcnemar_p": 0.179688,
+      "significant": false
+    },
+    "large_record": {
+      "n": 262,
+      "resource_acc": 0.0,
+      "code_acc": 0.645
+    },
+    "pooled": {
+      "n": 409,
+      "resource_acc": 0.2445,
+      "code_acc": 0.6357,
+      "delta": 0.3912,
+      "fixed": 171,
+      "broke": 11,
+      "mcnemar_p": 0.0,
+      "significant": true
+    }
+  }
+}

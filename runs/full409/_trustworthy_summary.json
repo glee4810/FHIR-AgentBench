@@ -1,0 +1,68 @@
+{
+  "grading": "deterministic(clean numerics + failures) + 3-Claude-judge panel majority (boolean/categorical/other)",
+  "pooled": {
+    "n": 409,
+    "resource": 104,
+    "code": 267,
+    "resource_acc": 0.2543,
+    "code_acc": 0.6528,
+    "delta": 0.3985,
+    "ci95": [
+      0.346,
+      0.451
+    ],
+    "fixed": 174,
+    "broke": 11,
+    "mcnemar_p": 0.0,
+    "significant": true
+  },
+  "matched_budget_BOTH_real": {
+    "n": 140,
+    "resource": 100,
+    "code": 95,
+    "resource_acc": 0.7143,
+    "code_acc": 0.6786,
+    "delta": -0.0357,
+    "ci95": [
+      -0.0773,
+      0.0059
+    ],
+    "fixed": 2,
+    "broke": 7,
+    "mcnemar_p": 0.179688,
+    "significant": false
+  },
+  "resource_real_PREDEFINED": {
+    "n": 147,
+    "resource": 104,
+    "code": 95,
+    "resource_acc": 0.7075,
+    "code_acc": 0.6463,
+    "delta": -0.0612,
+    "ci95": [
+      -0.1083,
+      -0.0142
+    ],
+    "fixed": 2,
+    "broke": 11,
+    "mcnemar_p": 0.022461,
+    "significant": true
+  },
+  "large_record": {
+    "n": 262,
+    "resource_acc": 0.0,
+    "code_acc": 0.6565,
+    "code_real": 240
+  },
+  "panel_unresolved_ties": 0,
+  "gpt5mini_disagree_realanswers": {
+    "rate": 0.3435,
+    "n": "181/527",
+    "note": "genuine judge unreliability: gpt-5-mini vs trustworthy on answers that were REAL (not auto-failed)"
+  },
+  "gpt5mini_disagree_allpairs": {
+    "rate": 0.2787,
+    "n": "228/818",
+    "note": "includes failure rows gpt mis-credited due to the harness bug (overstates pure judge error)"
+  }
+}

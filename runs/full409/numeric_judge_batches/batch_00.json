@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "06b6dc7feba30e1bda1c5617",
+    "question": "Could you retrieve patient 10005909's monthly weight since 09/2144? if multiple weights are measured monthly, take the average.",
+    "gold": "[[115.8]\n [117.7]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: [\n  {\"month\": \"2144-09\", \"average_weight\": null, \"unit\": null, \"number_of_measurements\": 0},\n  {\"month\": \"2144-10\", \"average_weight\": 115.8, \"unit\": \"kg\", \"number_of_measurements\": 1},\n  {\"month\": \"2144-11\", \"average_weight\": 117.7, \"unit\": \"kg\", \"number_of_measurements\": 1},\n  {\"month\": \"2144-12\", \"average_weight\": null, \"unit\": null, \"number_of_measurements\": 0}\n]"
+  },
+  {
+    "qid": "0b01e88a1ff2627ccad33628",
+    "question": "What is the number of times patient 10014729 visited the hospital in 2125?",
+    "gold": "[[2]]",
+    "resource_answer": "The final answer is: 2",
+    "code_answer": "The final answer is: 2 hospital visits in 2125."
+  },
+  {
+    "qid": "0e9be6448c82613884bebdf5",
+    "question": "So, what was the maximum 25-oh vitamin d value of patient 10029484 since 11/2160?",
+    "gold": "[[33.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 33 ng/mL"
+  },
+  {
+    "qid": "101023c9d00c778450601539",
+    "question": "Calculate the length of stay in days for patient 10007928's last hospital stay.",
+    "gold": "[[5.77013889]]",
+    "resource_answer": "The final answer is: 5.77 days",
+    "code_answer": "The final answer is: 5.770138888888889 days"
+  },
+  {
+    "qid": "103963052c1ac6130cd2db9a",
+    "question": "What is the sum of patient 10003046's or urine output during the last icu visit.",
+    "gold": "[[150]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 150"
+  },
+  {
+    "qid": "1718f0835a82b0bb7c0517f1",
+    "question": "Since 14 months ago, what was the weight of patient 10016742 in the first measurement?",
+    "gold": "[[61.5]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 61.5 kg"
+  },
+  {
+    "qid": "19a51debb0c5754456d20d1f",
+    "question": "How many distinct medications were prescribed to patient 10022017 since 2189?",
+    "gold": "[[56]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 77 distinct medications were prescribed to patient 10022017 since 2189."
+  },
+  {
+    "qid": "1d433e5813c63b26ef517551",
+    "question": "What was the last glucose lab test result for patient 10022880 in 03/2177?",
+    "gold": "[[115.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 115 mg/dL"
+  },
+  {
+    "qid": "25b2ba84dbb2d8d8d138ee64",
+    "question": "What was patient 10027445's first weight since 21 months ago?",
+    "gold": "[[103.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 103 kg at 2142-08-30 16:00:00."
+  },
+  {
+    "qid": "264edd3d4d5f3f14d0173879",
+    "question": "What was the last height record for patient 10011398 since 12/2146?",
+    "gold": "[[160.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: The last height record since 12/2146 was 160 cm on 2146-12-15 09:54:00."
+  },
+  {
+    "qid": "2b27156e1bc6e928eb6b916e",
+    "question": "Get patient 10039831's yearly weight information since 08/2115. if multiple weights are measured yearly, take the minimum.",
+    "gold": "[[61.7]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: [{'year': 2115, 'weight': 61.7, 'unit': 'kg', 'date': '2115-12-28 21:00:00'}]"
+  },
+  {
+    "qid": "2e3384d7ef9a76c0237df519",
+    "question": "Tell me patient 10026354's first measured heart rate.",
+    "gold": "[[99.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 99 bpm at 2119-10-26T08:44:00-04:00."
+  },
+  {
+    "qid": "2f0d855d95535316ee099fde",
+    "question": "Could you retrieve patient 10018081's daily weight? if multiple weights are measured daily, take the minimum.",
+    "gold": "[[ 90.7]\n [ 94. ]\n [ 97.4]\n [100.7]\n [ 98.6]\n [100. ]\n [ 93.6]\n [ 87.2]\n [ 83.5]\n [ 83. ]\n [ 81.5]\n [ 83. ]\n [ 84.9]\n [ 83.7]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: [\n  {\"date\": \"2133-12-18\", \"weight\": 90.7, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-19\", \"weight\": 94.0, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-20\", \"weight\": 97.4, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-21\", \"weight\": 100.7, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-24\", \"weight\": 93.6, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-26\", \"weight\": 87.2, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-28\", \"weight\": 83.5, \"unit\": \"kg\"},\n  {\"date\": \"2134-01-01\", \"weight\": 84.9, \"unit\": \"kg\"}\n]"
+  },
+  {
+    "qid": "310609c75ba9429428209b11",
+    "question": "What was the length of stay in days for patient 10002495 during the first icu stay?",
+    "gold": "[[5.08751157]]",
+    "resource_answer": "The final answer is: 5.0875 days",
+    "code_answer": "The final answer is: 5.087511574074074 days"
+  },
+  {
+    "qid": "317471edec57125589ff563e",
+    "question": "Calculate the duration in days of patient 10002495's stay in the last icu.",
+    "gold": "[[5.08751157]]",
+    "resource_answer": "The final answer is: 5.0875 days",
+    "code_answer": "The final answer is: 5.087511574074074 days"
+  }
+]

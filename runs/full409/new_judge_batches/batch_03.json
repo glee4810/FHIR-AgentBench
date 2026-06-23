@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "6375d8b399f74f248505155f",
+    "question": "Count the number of times patient 10021487 in the current hospital encounter underwent the thoracentesis procedure.",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: 0"
+  },
+  {
+    "qid": "666e67f82411b8a3b4b429e7",
+    "question": "Has patient 10005909 been to the e.r. in 2144?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10005909 had an emergency room encounter in 2144 from 2144-10-28T18:29:00-04:00 to 2144-10-29T00:10:00-04:00.",
+    "code_answer": "The final answer is: Yes. Patient 10005909 had 1 e.r. encounter in 2144: Encounter/abbd935e-e46a-56cd-a609-3d9be0c646ba starting 2144-10-28T18:29:00-04:00."
+  },
+  {
+    "qid": "68f60925ee10fafbe0a043b1",
+    "question": "Is systolic blood pressure of patient 10027602 last measured on the last icu visit greater than the first value measured on the last icu visit?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: I cannot determine this because I could not find any \u201cArterial Blood Pressure systolic\u201d Observation records during the patient\u2019s last ICU visit. The last ICU visit was Encounter/063983ba-71d7-5e3e-8f64-08433c20e377 from 2201-12-11T20:11:52-05:00 to 2201-12-13T18:29:00-05:00, and there were 0 matching systolic blood pressure measurements found for that ICU encounter."
+  },
+  {
+    "qid": "694ef79b1e8ab1b548efa5b3",
+    "question": "Has patient 10018423 received any lab testing in 2162?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No, I could not find any lab testing (laboratory Observation records) for patient 10018423 in 2162."
+  },
+  {
+    "qid": "69c8cd3610b365b38e9dc8fb",
+    "question": "Has patient 10004235 received the endoscopic insertion of stent (tube) into bile duct procedure?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10004235 received the procedure \"Endoscopic insertion of stent (tube) into bile duct\" (code: 5187) on 2196-02-26T00:00:00-05:00.",
+    "code_answer": "The final answer is: Yes. Patient 10004235 received the procedure: Endoscopic insertion of stent (tube) into bile duct."
+  },
+  {
+    "qid": "6affdda52b5c91cdefb3ac90",
+    "question": "Is patient 10027602's free calcium second measured on the last hospital visit less than the value first measured on the last hospital visit?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. On the last hospital visit, the first Free Calcium value was 1.06 mmol/L, and the second Free Calcium value was 1.08 mmol/L. The second value is not less than the first."
+  },
+  {
+    "qid": "6b48b47dea05709d8dddd909",
+    "question": "Was the calculated total co2 level of patient 10038933 last measured on the first hospital visit less than the second to last measurement on the first hospital visit?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. The last measured Calculated Total CO2 level on the first hospital visit was 26 mEq/L, and the second-to-last measurement was also 26 mEq/L, so the last measurement was not less than the second-to-last measurement."
+  },
+  {
+    "qid": "6d14fafef38d93f2e020c386",
+    "question": "Count how many times in the first hospital encounter patient 10018328 experienced the restriction of left internal carotid artery with intraluminal device, percutaneous approach procedure.",
+    "gold": "[[0]]",
+    "resource_answer": "The final answer is: 0 times.",
+    "code_answer": "The final answer is: During the patient's first hospital encounter, the procedure occurred 0 times."
+  },
+  {
+    "qid": "6d1e9f74415d70381cffcd18",
+    "question": "Has patient 10021938 had a procedure since 2181?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10021938 has had procedures since 2181, including Hemodialysis on 2181-10-13T00:00:00-04:00 and 2181-10-25T00:00:00-04:00.",
+    "code_answer": "The final answer is: Yes. Patient 10021938 has had 16 Procedure records since 2181."
+  },
+  {
+    "qid": "70b7e8f278566e9443f31eaf",
+    "question": "Has there been any results of the microbiological mrsa screen test for patient 10031757 since 2137?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. There have been 3 microbiological MRSA SCREEN test results for patient 10031757 since 2137:\n\n- 2137-10-12T23:01:00-04:00 \u2014 MRSA SCREEN \u2014 `No MRSA isolated.  `\n- 2137-10-14T09:46:00-04:00 \u2014 MRSA SCREEN \u2014 `No MRSA isolated.  `\n- 2137-10-15T18:30:00-04:00 \u2014 MRSA SCREEN \u2014 `No MRSA isolated.  `"
+  },
+  {
+    "qid": "71fb7280916537b48dea629f",
+    "question": "How many times was patient 10020786 admitted to the hospital since 2189?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 hospital admission since 2189.",
+    "code_answer": "The final answer is: 1 time."
+  },
+  {
+    "qid": "729c62dcfd9ac11a32a56161",
+    "question": "Has patient 10015860 been prescribed a drug since 1 year ago?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10015860 has 61 MedicationRequest records authored since 1 year ago (from 2185-12-31 23:59:00 through 2186-12-31 23:59:00)."
+  },
+  {
+    "qid": "740f87417b7715602b678286",
+    "question": "Did patient 10029484 have any tests for creatine kinase, mb isoenzyme during the previous month?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10029484 had 2 tests for Creatine Kinase, MB Isoenzyme during the previous month (November 2160):\n- 2160-11-09 11:13:00 \u2014 value: 3 ng/mL\n- 2160-11-08 03:28:00 \u2014 value: 1 ng/mL"
+  },
+  {
+    "qid": "7559da6b7b189084f45242ea",
+    "question": "Was patient 10020944 to the e.r. in their first hospital visit?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10020944 was to the e.r. during their first hospital visit.",
+    "code_answer": "The final answer is: Yes. Patient 10020944 was in the E.R. during their first hospital visit."
+  },
+  {
+    "qid": "76a3b26583f61cc00377b6a2",
+    "question": "Count the distinct medications that patient 10004720 was prescribed since 04/2183.",
+    "gold": "[[0]]",
+    "resource_answer": "The final answer is: 0 distinct medications prescribed since 04/2183 through 2183-12-31 23:59:00.",
+    "code_answer": "The final answer is: 0 distinct medications were prescribed from 04/2183 through 2183-12-31 23:59:00."
+  }
+]

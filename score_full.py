@@ -10,7 +10,8 @@ sys.argv = [sys.argv[0], "--input", "_unused"]
 from evaluation_metrics import check_answer_correctness_with_llm
 
 JUDGE = "gpt-5-mini-2025-08-07"
-CACHE = "runs/full/judged_cache.json"
+D = os.environ.get("RUN_DIR", "runs/full")
+CACHE = f"{D}/judged_cache.json"
 labels = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
 
 
@@ -27,8 +28,8 @@ def judged(arm, qid, ans, true):
     return v
 
 
-res = {r["question_id"]: r for r in json.load(open("runs/full/multi_turn_resource.json"))}
-cod = {r["question_id"]: r for r in json.load(open("runs/full/multi_turn_code_resource.json"))}
+res = {r["question_id"]: r for r in json.load(open(f"{D}/multi_turn_resource.json"))}
+cod = {r["question_id"]: r for r in json.load(open(f"{D}/multi_turn_code_resource.json"))}
 ids = [q for q in res if q in cod]
 print(f"scoring {len(ids)} paired questions ({len(labels)} cached)...", flush=True)
 
@@ -55,8 +56,8 @@ summary = {"n_paired": n, "n_total": len(ids),
            "delta": round((ca - ra) / n, 4), "code_fixed": b01, "code_broke": b10,
            "mcnemar_p": round(p, 6), "significant": p < 0.05,
            "cost_resource": round(rc, 2), "cost_code": round(cc, 2), "cost_total": round(rc + cc, 2)}
-json.dump(summary, open("runs/full/_summary.json", "w"), indent=2)
-open("runs/full/SCORE_DONE", "w").write("done")
+json.dump(summary, open(f"{D}/_summary.json", "w"), indent=2)
+open(f"{D}/SCORE_DONE", "w").write("done")
 print("\n=== RESULT ===")
 print(f"  resource (no code): {ra}/{n} = {ra/n:.1%}")
 print(f"  code (+interpreter): {ca}/{n} = {ca/n:.1%}  delta={(ca-ra)/n:+.1%}")

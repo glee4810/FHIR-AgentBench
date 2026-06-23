@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "bd928ffb40c6b3f69d82f2da",
+    "question": "What was the last height record for patient 10019777 since 01/2187?",
+    "gold": "[[178.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: I cannot find any Observation record for \"Height (cm)\" for patient 10019777 since 01/2187."
+  },
+  {
+    "qid": "c2eca2905474a01bac57fe3d",
+    "question": "In the first icu visit, what was the first mean blood pressure for patient 10018328?",
+    "gold": "[[79.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 79 mmHg"
+  },
+  {
+    "qid": "c8a2241d70df2c163edad761",
+    "question": "What was patient 10039997's last value of the heart rate since 08/13/2134?",
+    "gold": "[[91.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 59 beats/minute at 2134-09-26 15:49:00."
+  },
+  {
+    "qid": "c8c043eb89e83c83b6beeeb3",
+    "question": "Can you calculate the duration in days of patient 10031757's first stay in the intensive care unit?",
+    "gold": "[[1.76640046]]",
+    "resource_answer": "The final answer is: 1.77 days",
+    "code_answer": "The final answer is: 1.766400462962963 days."
+  },
+  {
+    "qid": "c8edd5309596df31109a68a1",
+    "question": "What is the average value of mesothelial cells of patient 10021487 since 04/2116?",
+    "gold": "[[1.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 1.0"
+  },
+  {
+    "qid": "cada9d0e90575a50cef72fe4",
+    "question": "What was patient 10007818's diastolic blood pressure at the last measurement since 06/22/2146?",
+    "gold": "[[70.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 64 mmHg at 2146-07-12T13:00:00-04:00."
+  },
+  {
+    "qid": "ce229386a278fc4dbc3f4f87",
+    "question": "What was patient 10021487's last weight since 20 months ago?",
+    "gold": "[[147.7]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: {'code': 'kg', 'unit': 'kg', 'value': 153.2, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}"
+  },
+  {
+    "qid": "cf75e230ba259301517169ac",
+    "question": "What was the total output for patient 10001217 since 12/02/2157?",
+    "gold": "[[2475]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 2475 ml"
+  },
+  {
+    "qid": "d39e6cca12842e2e3d53b7cd",
+    "question": "What was the first measurement of patient 10013049's height since 25 months ago?",
+    "gold": "[[183.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: {'code': 'cm', 'unit': 'cm', 'value': 183, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}"
+  },
+  {
+    "qid": "d6d0cf531ac1d23c6fa0a6b6",
+    "question": "What is the number of times patient 10019172 visited the hospital?",
+    "gold": "[[2]]",
+    "resource_answer": "The final answer is: 2",
+    "code_answer": "The final answer is: 2"
+  },
+  {
+    "qid": "d704f27fd79c99e4a27f1581",
+    "question": "Count the number of unique medicines that patient 10026354 was prescribed in 11/this year.",
+    "gold": "[[3]]",
+    "resource_answer": "The final answer is: 2 unique medicines.",
+    "code_answer": "The final answer is: 2 unique medicines."
+  },
+  {
+    "qid": "d8c4bcdab05c48a114af4957",
+    "question": "Calculate the total number of outputs from patient 10027602 since 06/22/2201.",
+    "gold": "[[42636]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 41518.0 ml"
+  },
+  {
+    "qid": "e57140ff3a3e15a2db33f62d",
+    "question": "How much of a difference is there in patient 10006580's white blood cells second measured on the first hospital visit compared to the first value measured on the first hospital visit?",
+    "gold": "[[-2.1]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: -2.1 K/uL (the second White Blood Cells value was 7.8 K/uL compared to the first value of 9.9 K/uL, a decrease of 2.1 K/uL)."
+  },
+  {
+    "qid": "eb20ba71a6257201e3668689",
+    "question": "What was the weight of patient 10006580 in the first measurement?",
+    "gold": "[[82.2]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 82.2 kg"
+  },
+  {
+    "qid": "ee8306d4a542175197a6d200",
+    "question": "What was the maximum value for patient 10009049's specific gravity?",
+    "gold": "[[1.028]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 1.028"
+  }
+]

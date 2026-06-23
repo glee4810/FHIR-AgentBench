@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "aaa0dd1684e01424ce21edfd",
+  "question": "When was the last occasion that patient 10018423 underwent a fluoroscopy of multiple coronary arteries using low osmolar contrast procedure since 1 year ago?",
+  "gold": "[]",
+  "resource_answer": "I cannot find any record that patient 10018423 underwent \"Fluoroscopy of Multiple Coronary Arteries using Low Osmolar Contrast\" since 1 year ago (from 2161-12-31 23:59:00 through 2162-12-31 23:59:00).",
+  "code_answer": "No matching \"fluoroscopy of multiple coronary arteries using low osmolar contrast\" procedure was found since 1 year ago.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "ac9de4303d9e69514c759992",
+  "question": "What was the organism found in the last urine microbiology test for patient 10038081?",
+  "gold": "[['YEAST']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "MIXED BACTERIAL FLORA ( >= 3 COLONY TYPES), CONSISTENT WITH SKIN AND/OR GENITAL CONTAMINATION.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "ad25b33f618fbda4463dc6d1",
+  "question": "Is patient 10021938 recorded as male or female?",
+  "gold": "[['M']]",
+  "resource_answer": "I cannot find the Patient resource or gender information for patient FHIR ID af0e5009-d87d-52a8-ac8a-676e471c41f1.",
+  "code_answer": "I cannot find the Patient resource for patient FHIR ID af0e5009-d87d-52a8-ac8a-676e471c41f1, so I cannot determine whether patient 10021938 is recorded as male or female.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "aef4b8676c07216d65074512",
+  "question": "How many days have passed since patient 10018081 was given a osmolality, urine laboratory test for the last time in the current hospital encounter?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "8 days, 21 hours, and 56 minutes have passed since the last Osmolality, Urine laboratory test in the current hospital encounter.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "b0bde5b825a0b0039eb609d0",
+  "question": "Since 178 days ago, when was the mean blood pressure of patient 10005817, for the last time, observed at less than 76.0?",
+  "gold": "[['2132-12-16 14:02:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2132-12-16T14:02:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "b472da76f7e2b4d53f38f131",
+  "question": "Can you tell me the last care unit patient 10003046 was in during their last hospital visit, according to the transfer record?",
+  "gold": "[['Med/Surg']]",
+  "resource_answer": "I cannot find the care unit name in the retrieved data. The last transfer/location record during the last hospital visit points to `Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a`, but the corresponding Location resource was not available.",
+  "code_answer": "I cannot find the care unit name because the referenced Location resource was not available. According to the transfer record in the last hospital Encounter, the last recorded location was `Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a`, with period start `2154-01-04T15:19:56-05:00` and end `2154-01-09T11:53:26-05:00`.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "b6e85f562fb3d32bcc7d415f",
+  "question": "Since 02/2116, what was patient 10021487's first microbiology test time?",
+  "gold": "[['2116-12-03 01:16:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2116-12-03T01:16:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "b710f2ea6d630a9c88a40fc2",
+  "question": "What was the name of the prescription drug that patient 10017492 was prescribed last in 04/this year?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any prescription drug prescribed in 04/2114 for this patient.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "b71bf47188930e8abb1e562f",
+  "question": "When was patient 10036156's last procedure conducted in this year?",
+  "gold": "[['2157-07-01 00:00:00']]",
+  "resource_answer": "2157-07-02T14:18:00-04:00",
+  "code_answer": "2157-07-02T14:18:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "bba49bd752af25f7a63d7766",
+  "question": "What was the admission type for patient 10002930's last hospital admission?",
+  "gold": "[['EU OBSERVATION']]",
+  "resource_answer": "routine",
+  "code_answer": "Hospital observation per hr",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "bc393399923f7dabaa005804",
+  "question": "Tell me the marital status of patient 10004720 during the first hospital encounter.",
+  "gold": "[['SINGLE']]",
+  "resource_answer": "I cannot find the marital status of patient 10004720 during the first hospital encounter in the retrieved Patient or Encounter data.",
+  "code_answer": "I cannot find the marital status for patient 10004720 during the first hospital encounter. The Patient resource was not found, and the first hospital Encounter resource does not contain a marital status field.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "bc98931efa8f80d2a3e2aa4d",
+  "question": "What were the specimen tests that patient 10002930 first had in 08/this year?",
+  "gold": "[['SEROLOGY/BLOOD']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "In 08/2193, the first specimen tests were on 2193-08-02T09:15:00. The tests were: ['Atypical Lymphocytes', 'Platelet Smear', 'Hypochromia', 'Ovalocytes', 'Poikilocytosis', 'Lymphocytes', 'Microcytes', 'CD8 Cells, Percent', 'Bands', 'Polychromasia', 'Myelocytes', 'Metamyelocytes', 'Monocytes', 'Basophils', 'Eosinophils', 'Neutrophils', 'Anisocytosis', 'Absolute CD3 Count', 'Macrocytes', 'Glucose', 'CD4/CD8 Ratio', 'Absolute CD4 Count', 'Lymphocytes, Percent', 'WBC Count', 'CD3 Cells, Percent', 'A",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "bed5da859030d9c461ef882a",
+  "question": "What was the amount of foley output patient 10038933 has on 09/26/2148?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "0",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "bede0977c8868b145f17fa5e",
+  "question": "What was the name of the last specimen test patient 10021938 got since 07/2181?",
+  "gold": "[['MRSA SCREEN']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "['Anion Gap', 'Basophils', 'Bicarbonate', 'Calcium, Total', 'Chloride', 'Creatinine', 'Eosinophils', 'Glucose', 'Hematocrit', 'Hemoglobin', 'Lymphocytes', 'MCH', 'MCHC', 'MCV', 'Magnesium', 'Monocytes', 'Neutrophils', 'Phosphate', 'Platelet Count', 'Potassium', 'RDW', 'Red Blood Cells', 'Sodium', 'Urea Nitrogen', 'White Blood Cells']",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "c09d11621a07d7d859c16278",
+  "question": "When was the last time that patient 10014354 has the maximum spo2 value since 08/19/2146?",
+  "gold": "[['2146-10-09 19:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any “O2 saturation pulseoxymetry” / SpO2 Observation records for patient 10014354 from 08/19/2146 through the assumed current time of 2146-12-31 23:59:00, so there is no maximum SpO2 value or last time to report for that period.",
+  "grade_resource": false,
+  "grade_code": true
+ }
+]

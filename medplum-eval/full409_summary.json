@@ -1,0 +1,53 @@
+{
+  "headline": "A code interpreter gives NO significant accuracy benefit on questions the no-code agent can answer (point estimate slightly NEGATIVE); its entire large pooled advantage is mechanical context-overflow avoidance on big patients. Architecture/data-plumbing, not compute.",
+  "grading": "deterministic(clean numerics + failures) + 3-Claude-judge panel; cross-checked by an independent codex/GPT judge panel; numeric subset validated against non-LLM ground truth",
+  "n_paired": 409,
+  "model": "gpt-5.5-2026-04-23",
+  "agent_arms": "FHIR-AgentBench multi_turn_resource (no code) vs multi_turn_code_resource (+execute_python_code)",
+  "trustworthy_result": {
+    "matched_budget_both_answered": {
+      "n": 140, "resource_acc": 0.7143, "code_acc": 0.6786, "delta": -0.0357,
+      "ci95": [-0.0773, 0.0059], "code_fixed": 2, "code_broke": 7, "mcnemar_p": 0.179688,
+      "significant": false,
+      "reading": "no significant difference; slight negative point estimate when both arms actually answer"
+    },
+    "resource_real_predefined": {
+      "n": 147, "resource_acc": 0.7075, "code_acc": 0.6463, "delta": -0.0612,
+      "ci95": [-0.1083, -0.0142], "code_fixed": 2, "code_broke": 11, "mcnemar_p": 0.022461,
+      "significant": true,
+      "broke_decomposition": "11 broke = 4 code errored/overflowed (reliability) + 7 wrong real answer (reasoning)",
+      "reading": "predefined by resource success; code significantly worse, ~1/3 driven by code's higher error rate"
+    },
+    "large_record_resource_overflow": {
+      "n": 262, "resource_acc": 0.0, "code_acc": 0.6565, "code_real": 240,
+      "reading": "resource overflows 32k by construction; code routes payload to a sandbox — the only positive effect, and it is architectural"
+    },
+    "pooled": {
+      "n": 409, "resource_acc": 0.2543, "code_acc": 0.6528, "delta": 0.3985,
+      "ci95": [0.346, 0.451], "mcnemar_p": 0.0, "significant": true,
+      "reading": "ENTIRELY the overflow stratum; valid as a deployed-architecture comparison, NOT as a reasoning gain"
+    }
+  },
+  "failure_ledger": {
+    "resource": {"real": 147, "overflow_32k": 262, "other_error_empty": 0},
+    "code": {"real": 380, "overflow_32k": 9, "other_error_empty": 20}
+  },
+  "judge_reliability": {
+    "accuracy_vs_nonLLM_ground_truth_numeric_subset": {
+      "n_arm_answers": 111,
+      "gpt5mini_benchmark_default": {"accuracy": 0.6126, "false_neg_precision_punished": 43, "false_pos_miss_rewarded": 0},
+      "codex_GPT_panel_3vote": {"accuracy": 0.991, "false_neg": 1, "false_pos": 0},
+      "claude_panel_3vote": {"accuracy": 0.982, "false_neg": 1, "false_pos": 1}
+    },
+    "gpt5mini_disagree_with_trustworthy_real_answers": "181/527 = 34.3%",
+    "claude_panel_vs_codex_panel_agreement": "408/420 = 97.1%",
+    "gpt5mini_vs_panels_agreement": "65-67%",
+    "magnitude_finding": "gpt-5-mini wrongly rejected 43-44 essentially-exact numeric answers (median rel-error 0.0) and wrongly accepted 0 gross misses — one-directional precision-punishing bias; this manufactured the earlier phantom 'code hurts'."
+  },
+  "cost_total_agent_usd": 34.38,
+  "superseded_passes": {
+    "note": "Two earlier headlines were SUPERSEDED and are kept for the audit trail (TRUSTWORTHY_REGRADE.md): (1) gpt-5-mini naive '+11pp code wins' = context-overflow + harness-bug artifact; (2) a deterministic-numeric-only pass mis-graded the 115 boolean Yes/No golds as numeric, inflating a '+1.4pp matched-budget null'. The boolean bug is fixed here (build_labels.py routes 0/1 golds to the semantic panel)."
+  },
+  "reproduce": "python build_labels.py && python final_grade.py ; python judge_leaderboard.py ; python magnitude_analysis.py ; bash codex_panel.sh && python codex_judge_compare.py",
+  "see": ["TRUSTWORTHY_REGRADE.md", "FINDINGS.md", "CODE_EXPERIMENT.md", "runs/full409/human_review.csv"]
+}

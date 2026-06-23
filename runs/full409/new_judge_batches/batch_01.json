@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "28070d8edf72fb2952e28930",
+    "question": "Count the number of times patient 10040025 went to the hospital during this year.",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 hospital visit during this year (2143).",
+    "code_answer": "The final answer is: 1 hospital visit during this year (2143)."
+  },
+  {
+    "qid": "2c251f13cfc63c34883bcbcd",
+    "question": "Has there been any microbiological urine tests for patient 10005348 in 08/last year?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. I found 0 microbiological urine tests for patient 10005348 in 08/2127."
+  },
+  {
+    "qid": "2fcffbbef2cf3c4109b6345d",
+    "question": "Has patient 10007795 had a procedure during this year?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10007795 had procedures during this year (2136), including procedures performed on dates such as 2136-04-11, 2136-04-13, 2136-04-17, 2136-04-19, 2136-04-22, 2136-04-23, 2136-04-25, 2136-05-05, 2136-05-06, 2136-05-08, 2136-07-24, 2136-08-04, 2136-08-06, 2136-08-09, 2136-08-10, and 2136-09-22.",
+    "code_answer": "The final answer is: Yes. Patient 10007795 had procedures during this year (2136); 28 Procedure records were found."
+  },
+  {
+    "qid": "3508fba9387d18248281be4e",
+    "question": "Was patient 10014078 diagnosed with a disease during their last hospital encounter?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10014078 was diagnosed with diseases during their last hospital encounter. Diagnoses included:\n\n- Unspecified infectious and parasitic diseases\n- Benign neoplasm of cerebral meninges\n- Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- Other and unspecified hyperlipidemia\n- Unspecified essential hypertension\n- Grand mal status\n- Encephalopathy, unspecified",
+    "code_answer": "The final answer is: Yes. Patient 10014078 was diagnosed with diseases during their last hospital encounter. Conditions recorded were: \n[\n  \"Unspecified infectious and parasitic diseases\",\n  \"Benign neoplasm of cerebral meninges\",\n  \"Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\",\n  \"Other and unspecified hyperlipidemia\",\n  \"Unspecified essential hypertension\",\n  \"Grand mal status\",\n  \"Encephalopathy, unspecified\",\n  \"Grand mal status\"\n]"
+  },
+  {
+    "qid": "3813f972b07ceee5031bb452",
+    "question": "Did patient 10021666 receive a diagnosis during their last hospital encounter?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10021666 received diagnoses during their last hospital encounter (Encounter/f96dcfb3-1c84-5040-b9b9-c227d21a21a1). There were 32 Condition records directly linked to that hospital encounter.",
+    "code_answer": "The final answer is: Yes. Patient 10021666 received diagnoses during their last hospital encounter.\n\nLast hospital encounter:\n- ID: f96dcfb3-1c84-5040-b9b9-c227d21a21a1\n- Start: 2172-03-12T23:47:00-04:00\n- End: 2172-03-23T15:40:00-04:00\n\nThere were 35 Condition records associated with that encounter and its related child encounters. Diagnoses included:\n- 412 \u2014 Old myocardial infarction\n- 3898 \u2014 Other specified forms of hearing loss\n- V4986 \u2014 Do not resuscitate status\n- 85201 \u2014 Subarachnoid hemorrhage following injury without mention of open intracranial wound, with no loss of consciousness\n- 2930 \u2014 Delirium due to conditions classified elsewhere\n- 2875 \u2014 Thrombocytopenia, unspecified\n- 42731 \u2014 Atrial fibrillation\n- 2252 \u2014 Benign neoplasm of cerebral meninges\n- 40390 \u2014 Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage I through stage IV, or unspecified\n- 28860 \u2014 Leukocytosis, unspecified\n- 4280 \u2014 Congestive heart failure, unspecified\n- 60000 \u2014 Hypertrophy (benign) of prostate without urinary obstruction and other lower urinary tract symptom (LUTS)\n- 49390 \u2014 Asthma, unspecified type, unspecified\n- E8889 \u2014 Unspecified fall\n- 56400 \u2014 Constipation, unspecified\n- V4364 \u2014 Hip joint replacement\n- 5849 \u2014 Acute kidney failure, unspecified\n- 41401 \u2014 Coronary atherosclerosis of native coronary artery\n- 42822 \u2014 Chronic systolic heart failure\n- 2724 \u2014 Other and unspecified hyperlipidemia\n- 78729 \u2014 Other dysphagia\n- 58389 \u2014 Nephritis and nephropathy, not specified as acute or chronic, with other specified pathological lesion in kidney\n- 34831 \u2014 Metabolic encephalopathy\n- 85221 \u2014 Subdural hemorrhage following injury without mention of open intracranial wound, with no loss of consciousness\n- 30501 \u2014 Alcohol abuse, continuous\n- 3682 \u2014 Diplopia\n- 29420 \u2014 Dementia, unspecified, without behavioral disturbance\n- 2760 \u2014 Hyperosmolality and/or hypernatremia\n- 2819 \u2014 Unspecified deficiency anemia\n- V4502 \u2014 Automatic implantable cardiac defibrillator in situ\n- 5853 \u2014 Chronic kidney disease, Stage III (moderate)\n- 81342 \u2014 Other closed fractures of distal end of radius (alone)\n- 85220 \u2014 TRAUMATIC SUBDURAL HEM\n- E8809 \u2014 FALL ON STAIR/STEP NEC\n- 85200 \u2014 TRAUM SUBARACHNOID HEM"
+  },
+  {
+    "qid": "3a676bfafee66c27173904e8",
+    "question": "On the first hospital visit, was patient 10005866 admitted to the emergency room?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. On the first hospital visit, patient 10005866 was admitted from the emergency room: EMERGENCY ROOM.",
+    "code_answer": "The final answer is: Yes. On the first hospital visit, patient 10005866 was admitted from the emergency room."
+  },
+  {
+    "qid": "3de4eeab52c93e43309156d7",
+    "question": "Has any medication been designated for patient 10029484 in 04/last year?",
+    "gold": "[[0]]",
+    "resource_answer": "The final answer is: No. I could not find any medication designated for patient 10029484 in 04/2159.",
+    "code_answer": "The final answer is: No. I could not find any MedicationRequest designated for the patient in 04/2159."
+  },
+  {
+    "qid": "3e69022ac78531ddbbfd8b99",
+    "question": "Has patient 10016742 had any introduction of nutritional substance into lower gi, via natural or artificial opening treatment since 2178?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10016742 had the following treatment since 2178:\n\n- Introduction of Nutritional Substance into Lower GI, Via Natural or Artificial Opening \u2014 performedDateTime: 2178-07-25T00:00:00-04:00, code: 3E0H76Z",
+    "code_answer": "The final answer is: Yes. Patient 10016742 had the treatment since 2178:\n\n[{'id': '0b1d4fed-9792-590f-939e-b2bf4559dc86', 'performed': '2178-07-25T00:00:00-04:00', 'code': {'coding': [{'code': '3E0H76Z', 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-icd10', 'display': 'Introduction of Nutritional Substance into Lower GI, Via Natural or Artificial Opening'}]}}]"
+  },
+  {
+    "qid": "40bd0f4265c38c258e1d9e19",
+    "question": "Has there been any organism found in patient 10021118's last urine microbiological examination in 12/this year?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: I cannot find any urine microbiological examination for patient 10021118 in 12/2161, so I cannot determine whether any organism was found in that period."
+  },
+  {
+    "qid": "461ff9eeedf5e9452cbf12b2",
+    "question": "Has patient 10007818 had any drainage of peritoneal cavity, percutaneous approach, diagnostic treatment in 2146?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10007818 had the following Procedure records in 2146 matching \"Drainage of Peritoneal Cavity, Percutaneous Approach, Diagnostic\":\n\n- Drainage of Peritoneal Cavity, Percutaneous Approach, Diagnostic \u2014 performedDateTime: 2146-06-19T00:00:00-04:00\n- Drainage of Peritoneal Cavity, Percutaneous Approach, Diagnostic \u2014 performedDateTime: 2146-07-02T00:00:00-04:00",
+    "code_answer": "The final answer is: Yes. Patient 10007818 had drainage of peritoneal cavity, percutaneous approach, diagnostic treatment in 2146 on:\n- 2146-06-19T00:00:00-04:00\n- 2146-07-02T00:00:00-04:00"
+  },
+  {
+    "qid": "4724c2961dfc05d2b08ea4be",
+    "question": "Did patient 10020187 receive restriction of intracranial artery with intraluminal device, percutaneous approach in the last hospital encounter?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10020187 received Restriction of Intracranial Artery with Intraluminal Device, Percutaneous Approach during the last hospital encounter (Encounter/e8470431-ffa9-5aaf-866e-208723038786).",
+    "code_answer": "The final answer is: Yes. Patient 10020187 received Restriction of Intracranial Artery with Intraluminal Device, Percutaneous Approach in the last hospital encounter."
+  },
+  {
+    "qid": "472793119170f9c8adb0b84b",
+    "question": "Is patient 10021487's diastolic blood pressure ever less than 31.0 since 09/08/2116?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. Since 09/08/2116, patient 10021487\u2019s \u201cArterial Blood Pressure diastolic\u201d was never less than 31.0. The lowest found value was 35.0 on 2116-12-17T02:00:00-05:00."
+  },
+  {
+    "qid": "4b10d0fec2f23acab915e3f3",
+    "question": "Count how many times in the first hospital visit patient 10004457 had coronary arteriography using two catheters.",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1",
+    "code_answer": "The final answer is: 1"
+  },
+  {
+    "qid": "4b635ac1325eaf0dd75988d5",
+    "question": "In 04/last year, has patient 10001725 been prescribed with pantoprazole, albuterol 0.083% neb soln, or propranolol?",
+    "gold": "[[0]]",
+    "resource_answer": "The final answer is: No. I could not find any MedicationRequest records in 04/2109 for pantoprazole, albuterol 0.083% neb soln, or propranolol.",
+    "code_answer": "The final answer is: No. In 04/last year (April 2109), patient 10001725 was not prescribed pantoprazole, albuterol 0.083% neb soln, or propranolol."
+  },
+  {
+    "qid": "519da8c653b3284432571957",
+    "question": "Has there been any results of microbiology tests for the blood culture of patient 10007818 since 2146?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Since 2146, patient 10007818 had 14 final `Blood Culture, Routine` microbiology observations.\n\nResults found:\n- `2146-06-19T15:30:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-22T20:00:00-04:00` \u2014 organism: `ESCHERICHIA COLI`\n  - Susceptibility results: `CEFEPIME`, `AMPICILLIN/SULBACTAM`, `CEFTRIAXONE`, `PIPERACILLIN/TAZO`, `AMPICILLIN`, `TRIMETHOPRIM/SULFA`, `CEFAZOLIN`, `CIPROFLOXACIN`, `TOBRAMYCIN`, `MEROPENEM`, `GENTAMICIN`, `CEFTAZIDIME` \u2014 all `Susceptible`\n- `2146-06-22T23:30:00-04:00` \u2014 organism: `ESCHERICHIA COLI`; value: `No susceptibility data present`\n- `2146-06-23T09:15:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-24T02:50:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-24T03:25:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-25T03:49:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-26T03:43:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-30T10:29:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-30T10:29:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-07-02T12:40:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-07-03T04:25:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-07-05T17:44:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-07-07T04:00:00-04:00` \u2014 `NO GROWTH.  `"
+  }
+]

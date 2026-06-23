@@ -1,0 +1,3278 @@
+{
+ "resource": {
+  "01038856e72fffdbf13016be": {
+   "answer": "Error: Input tokens exceeded: 400817 > 32000",
+   "true": "[[1]]"
+  },
+  "0298d7de83dc23f17441f202": {
+   "answer": "The final answer is: No. I could not find any procedures conducted during the previous calendar year (2136).",
+   "true": "[[0]]"
+  },
+  "04e0b332c01bf8b36c4973b5": {
+   "answer": "Error: Input tokens exceeded: 1349829 > 32000",
+   "true": "[[0]]"
+  },
+  "0552fb2fb3c9ef8054e31fe0": {
+   "answer": "The final answer is: 1 hospital visit since 2132.",
+   "true": "[[1]]"
+  },
+  "06b6dc7feba30e1bda1c5617": {
+   "answer": "Error: Input tokens exceeded: 1145463 > 32000",
+   "true": "[[115.8]\n [117.7]]"
+  },
+  "06fbb15466649cd31a1f3b18": {
+   "answer": "Error: Input tokens exceeded: 1349928 > 32000",
+   "true": "[['STAPH AUREUS COAG +']]"
+  },
+  "08bd537529e959a773c05e95": {
+   "answer": "Error: Input tokens exceeded: 64226 > 32000",
+   "true": "[[1]]"
+  },
+  "0a6429bfa48cdb76d66bf9a6": {
+   "answer": "The final answer is: 28 days and 23 hours 36 minutes (approximately 29 days).",
+   "true": "[]"
+  },
+  "0b01e88a1ff2627ccad33628": {
+   "answer": "The final answer is: 2",
+   "true": "[[2]]"
+  },
+  "0b519b394a591392e5d6f8e3": {
+   "answer": "Error: Input tokens exceeded: 3205739 > 32000",
+   "true": "[['2133-12-31 02:00:00']]"
+  },
+  "0bef44d46b407af716e48911": {
+   "answer": "Error: Input tokens exceeded: 2737761 > 32000",
+   "true": "[[None]]"
+  },
+  "0d3f767c99e8d250fc86ba71": {
+   "answer": "Error: Input tokens exceeded: 588838 > 32000",
+   "true": "[[1]]"
+  },
+  "0d61464fe9f411c1b299ffef": {
+   "answer": "Error: Input tokens exceeded: 494240 > 32000",
+   "true": "[[0]]"
+  },
+  "0e4bb22781a9b0bc9dedffb9": {
+   "answer": "Error: Input tokens exceeded: 2861663 > 32000",
+   "true": "[]"
+  },
+  "0e9be6448c82613884bebdf5": {
+   "answer": "Error: Input tokens exceeded: 291930 > 32000",
+   "true": "[[33.]]"
+  },
+  "0eba370644940aed20760324": {
+   "answer": "The final answer is: I cannot find the drug name in the retrieved data. The first SC prescription in the first hospital visit was for `Medication/920f43f3-a418-5eda-b39d-d3bc4fd403f1`.",
+   "true": "[['Insulin']]"
+  },
+  "0fae80f812674773157d9f2a": {
+   "answer": "The final answer is: I cannot find the gender information for patient 10022880 in the retrieved patient data.",
+   "true": "[['M']]"
+  },
+  "101023c9d00c778450601539": {
+   "answer": "The final answer is: 5.77 days",
+   "true": "[[5.77013889]]"
+  },
+  "103963052c1ac6130cd2db9a": {
+   "answer": "Error: Input tokens exceeded: 978456 > 32000",
+   "true": "[[150]]"
+  },
+  "104c93f89e19274578bafb8d": {
+   "answer": "The final answer is: 2131-05-29T00:00:00-04:00",
+   "true": "[['2131-05-29 00:00:00']]"
+  },
+  "10b2e18ba65bee267f263e57": {
+   "answer": "Error: Input tokens exceeded: 3205707 > 32000",
+   "true": "[[1]]"
+  },
+  "135380cceeececcc1d31beb3": {
+   "answer": "The final answer is: Yes. Patient 10021666 came into an ER on their first hospital encounter.",
+   "true": "[[1]]"
+  },
+  "1436276ff4d05d626c742fa4": {
+   "answer": "Error: Input tokens exceeded: 152589 > 32000",
+   "true": "[]"
+  },
+  "14c735141eaad27a37dfacce": {
+   "answer": "Error: Input tokens exceeded: 329115 > 32000",
+   "true": "[[1]]"
+  },
+  "14d8196b90cb8b401ebd3a91": {
+   "answer": "Error: Input tokens exceeded: 152501 > 32000",
+   "true": "[]"
+  },
+  "15a9e84696cb054763055092": {
+   "answer": "The final answer is: I cannot find a careunit value of \"neurology\" in the retrieved Encounter location data for patient 10004733, so I cannot determine how many hours have elapsed since the first visit to neurology.",
+   "true": "[]"
+  },
+  "15b35d75bfa2fee08c48a6c6": {
+   "answer": "Error: Input tokens exceeded: 741093 > 32000",
+   "true": "[['2146-12-16 03:30:00']]"
+  },
+  "15b4990f761db52edf38273c": {
+   "answer": "Error: Input tokens exceeded: 3355611 > 32000",
+   "true": "[]"
+  },
+  "1613b932a1fa398b6bb15ef8": {
+   "answer": "Error: Input tokens exceeded: 144730 > 32000",
+   "true": "[[1]]"
+  },
+  "1718f0835a82b0bb7c0517f1": {
+   "answer": "Error: Input tokens exceeded: 2857494 > 32000",
+   "true": "[[61.5]]"
+  },
+  "1757b6190d9346fb05196adf": {
+   "answer": "Error: Input tokens exceeded: 3199140 > 32000",
+   "true": "[['BLOOD CULTURE']]"
+  },
+  "17bb906271e8d84bf499f645": {
+   "answer": "Error: Input tokens exceeded: 2930497 > 32000",
+   "true": "[[None]]"
+  },
+  "19858b1d6157d97c01ffb3cf": {
+   "answer": "The final answer is: 2157-12-20T14:27:00-05:00",
+   "true": "[['2157-12-19 00:00:00']]"
+  },
+  "19a51debb0c5754456d20d1f": {
+   "answer": "Error: Input tokens exceeded: 40602 > 32000",
+   "true": "[[56]]"
+  },
+  "19d0768436838216fd47a301": {
+   "answer": "The final answer is: I cannot find the care unit name in the retrieved data. The last transfer/location record for the last hospital encounter references: Location/0fc2d23b-0e5b-5f91-8369-6d37301fea51.",
+   "true": "[['Medicine']]"
+  },
+  "1afade11184c7bc98c9756f8": {
+   "answer": "Error: Input tokens exceeded: 1147255 > 32000",
+   "true": "[['2144-10-30 05:35:00']]"
+  },
+  "1c26aa5ab4b654a27fb0f4a6": {
+   "answer": "Error: Input tokens exceeded: 3349683 > 32000",
+   "true": "[['2116-12-27 16:27:00']]"
+  },
+  "1cb7346d2299d0467b9fcb27": {
+   "answer": "Error: Input tokens exceeded: 2434019 > 32000",
+   "true": "[[0]]"
+  },
+  "1d433e5813c63b26ef517551": {
+   "answer": "Error: Input tokens exceeded: 358494 > 32000",
+   "true": "[[115.]]"
+  },
+  "1dffdf5fe800e0b9a0dcf1b3": {
+   "answer": "The final answer is: Yes. Patient 10005866 has been in the hospital.",
+   "true": "[[1]]"
+  },
+  "1eff45de74ada2d6145da372": {
+   "answer": "Error: Input tokens exceeded: 2860354 > 32000",
+   "true": "[[1]]"
+  },
+  "1fcac336ef5d4a18372aeae5": {
+   "answer": "Error: Input tokens exceeded: 152494 > 32000",
+   "true": "[]"
+  },
+  "204b55b1a8a2dbeafa89b76c": {
+   "answer": "Error: Input tokens exceeded: 494224 > 32000",
+   "true": "[]"
+  },
+  "20c3ddd36c65c44890c3f3e5": {
+   "answer": "Error: Input tokens exceeded: 336509 > 32000",
+   "true": "[['MRSA SCREEN']]"
+  },
+  "20d7ef0b9116aab70a4d883c": {
+   "answer": "Error: Input tokens exceeded: 813850 > 32000",
+   "true": "[['2181-10-25 12:00:00']]"
+  },
+  "20db068481b9b06cc4340c25": {
+   "answer": "The final answer is: 2133-12-18T12:09:00-05:00",
+   "true": "[['2133-12-18 00:00:00']]"
+  },
+  "20e38a034dc27e9626dfa8d9": {
+   "answer": "The final answer is: emergency",
+   "true": "[['Emergency Department']]"
+  },
+  "2143a6938a83abd7a5830ec5": {
+   "answer": "Error: Input tokens exceeded: 338256 > 32000",
+   "true": "[['2137-08-11 04:11:00']]"
+  },
+  "220a7871615e4c1a12e5cf08": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10006580 on the last hospital stay in the retrieved Patient or Encounter data.",
+   "true": "[['MARRIED']]"
+  },
+  "230ffeaf99bdda6a8e74e380": {
+   "answer": "Error: Input tokens exceeded: 1349825 > 32000",
+   "true": "[[None]]"
+  },
+  "24612cf5da1e8c7c6a9fca8f": {
+   "answer": "Error: Input tokens exceeded: 3349683 > 32000",
+   "true": "[[1]]"
+  },
+  "254b58ea3d513164000b4a51": {
+   "answer": "Error: Input tokens exceeded: 569482 > 32000",
+   "true": "[['2120-05-12 15:00:00']]"
+  },
+  "2592fc0c41e2b7144c374342": {
+   "answer": "Error: Input tokens exceeded: 152507 > 32000",
+   "true": "[]"
+  },
+  "25b2ba84dbb2d8d8d138ee64": {
+   "answer": "Error: Input tokens exceeded: 2341462 > 32000",
+   "true": "[[103.]]"
+  },
+  "264e8e9083e7fe02916af314": {
+   "answer": "The final answer is: I cannot find the medication name in the retrieved data. The latest MedicationRequest(s) in 10/2125 were authoredOn `2125-10-02T11:17:54-04:00`, but they only contain medication references:\n\n- `Medication/d20a8921-5554-5d8c-ad5c-f7f4e2ff1ae0`\n- `Medication/5cbae514-bad1-5a8d-852f-5e39e0bba746`",
+   "true": "[['Potassium Chloride']]"
+  },
+  "264edd3d4d5f3f14d0173879": {
+   "answer": "Error: Input tokens exceeded: 741102 > 32000",
+   "true": "[[160.]]"
+  },
+  "26fba96883d9bde92fd8e95f": {
+   "answer": "Error: Input tokens exceeded: 2861690 > 32000",
+   "true": "[]"
+  },
+  "28070d8edf72fb2952e28930": {
+   "answer": "The final answer is: 1 hospital visit during this year (2143).",
+   "true": "[[1]]"
+  },
+  "282f008dd8dfb8f4a1dd6999": {
+   "answer": "Error: Input tokens exceeded: 2772659 > 32000",
+   "true": "[['ENTEROCOCCUS SP.']]"
+  },
+  "2b27156e1bc6e928eb6b916e": {
+   "answer": "Error: Input tokens exceeded: 691620 > 32000",
+   "true": "[[61.7]]"
+  },
+  "2c251f13cfc63c34883bcbcd": {
+   "answer": "Error: Input tokens exceeded: 1047882 > 32000",
+   "true": "[[0]]"
+  },
+  "2cd96b3599e3450802308c45": {
+   "answer": "The final answer is: 13 days since hospital admission on 2133-12-18T16:58:00-05:00.",
+   "true": "[]"
+  },
+  "2dfc862bcecf1f1b2c037bc9": {
+   "answer": "Error: Input tokens exceeded: 3199063 > 32000",
+   "true": "[['2146-07-01 03:10:00']]"
+  },
+  "2e3384d7ef9a76c0237df519": {
+   "answer": "Error: Input tokens exceeded: 534882 > 32000",
+   "true": "[[99.]]"
+  },
+  "2e773c48c344e7f33a29892f": {
+   "answer": "The final answer is: I cannot find any Procedure resources for the patient since 2162 up to the current time 2162-12-31 23:59:00.",
+   "true": "[]"
+  },
+  "2f0d855d95535316ee099fde": {
+   "answer": "Error: Input tokens exceeded: 3205716 > 32000",
+   "true": "[[ 90.7]\n [ 94. ]\n [ 97.4]\n [100.7]\n [ 98.6]\n [100. ]\n [ 93.6]\n [ 87.2]\n [ 83.5]\n [ 83. ]\n [ 81.5]\n [ 83. ]\n [ 84.9]\n [ 83.7]]"
+  },
+  "2fcffbbef2cf3c4109b6345d": {
+   "answer": "The final answer is: Yes. Patient 10007795 had procedures during this year (2136), including procedures performed on dates such as 2136-04-11, 2136-04-13, 2136-04-17, 2136-04-19, 2136-04-22, 2136-04-23, 2136-04-25, 2136-05-05, 2136-05-06, 2136-05-08, 2136-07-24, 2136-08-04, 2136-08-06, 2136-08-09, 2136-08-10, and 2136-09-22.",
+   "true": "[[1]]"
+  },
+  "304589d2a4159d23de6243b4": {
+   "answer": "Error: Input tokens exceeded: 588923 > 32000",
+   "true": "[['2137-06-12 22:35:00']]"
+  },
+  "310609c75ba9429428209b11": {
+   "answer": "The final answer is: 5.0875 days",
+   "true": "[[5.08751157]]"
+  },
+  "3173d5e9349394956703946f": {
+   "answer": "Error: Input tokens exceeded: 3349672 > 32000",
+   "true": "[['2116-12-17 23:52:00']]"
+  },
+  "317471edec57125589ff563e": {
+   "answer": "The final answer is: 5.0875 days",
+   "true": "[[5.08751157]]"
+  },
+  "32fa88a37c2489a86ba893e5": {
+   "answer": "The final answer is: 2145-12-19T14:36:00-05:00",
+   "true": "[['2145-12-19 14:36:00']]"
+  },
+  "346a6c07df798347268b1abd": {
+   "answer": "Error: Input tokens exceeded: 56347 > 32000",
+   "true": "[[750]]"
+  },
+  "3508fba9387d18248281be4e": {
+   "answer": "The final answer is: Yes. Patient 10014078 was diagnosed with diseases during their last hospital encounter. Diagnoses included:\n\n- Unspecified infectious and parasitic diseases\n- Benign neoplasm of cerebral meninges\n- Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- Other and unspecified hyperlipidemia\n- Unspecified essential hypertension\n- Grand mal status\n- Encephalopathy, unspecified",
+   "true": "[[1]]"
+  },
+  "3721cde992fe90dd17278b65": {
+   "answer": "The final answer is: 695.6 hours have passed since the hospital admission at 2116-12-03T00:23:00-05:00.",
+   "true": "[]"
+  },
+  "37b440fc3a82a50003dce7ed": {
+   "answer": "Error: Input tokens exceeded: 780719 > 32000",
+   "true": "[['2180-03-05 19:00:00']]"
+  },
+  "3813f972b07ceee5031bb452": {
+   "answer": "The final answer is: Yes. Patient 10021666 received diagnoses during their last hospital encounter (Encounter/f96dcfb3-1c84-5040-b9b9-c227d21a21a1). There were 32 Condition records directly linked to that hospital encounter.",
+   "true": "[[1]]"
+  },
+  "3857136499aee33dbb04cab5": {
+   "answer": "Error: Input tokens exceeded: 1657245 > 32000",
+   "true": "[['2115-09-28 13:08:00']]"
+  },
+  "390c4f9e4e7b5c353eff9da7": {
+   "answer": "The final answer is: 1000",
+   "true": "[['1000']]"
+  },
+  "393404a584eb0bb1b6bbe900": {
+   "answer": "Error: Input tokens exceeded: 2848889 > 32000",
+   "true": "[]"
+  },
+  "3a676bfafee66c27173904e8": {
+   "answer": "The final answer is: Yes. On the first hospital visit, patient 10005866 was admitted from the emergency room: EMERGENCY ROOM.",
+   "true": "[[1]]"
+  },
+  "3c3a60ef6ea248ad69d36deb": {
+   "answer": "The final answer is: 2145-10-01T13:10:49-04:00",
+   "true": "[['2145-10-01 14:00:00']]"
+  },
+  "3c71f198ffca8a3ba108d583": {
+   "answer": "Error: Input tokens exceeded: 2782983 > 32000",
+   "true": "[['STAPH AUREUS COAG +']]"
+  },
+  "3d5c7c8185dc079c5e416e14": {
+   "answer": "Error: Input tokens exceeded: 3200698 > 32000",
+   "true": "[['2143-03-19 08:50:00']]"
+  },
+  "3de4eeab52c93e43309156d7": {
+   "answer": "The final answer is: No. I could not find any medication designated for patient 10029484 in 04/2159.",
+   "true": "[[0]]"
+  },
+  "3de8ef9d5ffcc52173897ea8": {
+   "answer": "Error: Input tokens exceeded: 3060165 > 32000",
+   "true": "[[180.]]"
+  },
+  "3e4b52c69a2bdf36e4f03676": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10005866 in the retrieved Patient or Encounter data.",
+   "true": "[['SINGLE']]"
+  },
+  "3e69022ac78531ddbbfd8b99": {
+   "answer": "The final answer is: Yes. Patient 10016742 had the following treatment since 2178:\n\n- Introduction of Nutritional Substance into Lower GI, Via Natural or Artificial Opening \u2014 performedDateTime: 2178-07-25T00:00:00-04:00, code: 3E0H76Z",
+   "true": "[[1]]"
+  },
+  "3e8b5080c946a24c2fb71498": {
+   "answer": "Error: Input tokens exceeded: 3355587 > 32000",
+   "true": "[[2]]"
+  },
+  "3ec03a348a536f8a80e9d54e": {
+   "answer": "Error: Input tokens exceeded: 1319086 > 32000",
+   "true": "[]"
+  },
+  "3f3eaf9f4ef204effd22e28b": {
+   "answer": "The final answer is: 4.19 days",
+   "true": "[[4.19097222]]"
+  },
+  "3f83bca7c25ce27ab09a7ef0": {
+   "answer": "Error: Input tokens exceeded: 978447 > 32000",
+   "true": "[[2.]]"
+  },
+  "40bd0f4265c38c258e1d9e19": {
+   "answer": "Error: Input tokens exceeded: 690371 > 32000",
+   "true": "[[0]]"
+  },
+  "411239af52a2ceaa4e79d867": {
+   "answer": "Error: Input tokens exceeded: 35296 > 32000",
+   "true": "[[58]]"
+  },
+  "419163a7cde49786dfda6fcd": {
+   "answer": "The final answer is: 2118-10-11T20:15:00-04:00",
+   "true": "[['2118-10-11 20:15:00']]"
+  },
+  "426ce736177896950ecec77f": {
+   "answer": "The final answer is: 2148-09-11T00:00:00-04:00",
+   "true": "[['2148-09-11 00:00:00']]"
+  },
+  "4344afd25464e3304de00b90": {
+   "answer": "The final answer is: 1.1769 days",
+   "true": "[[1.1769213]]"
+  },
+  "43da3486df026843872b9af4": {
+   "answer": "The final answer is: elective",
+   "true": "[['ELECTIVE']]"
+  },
+  "44ba2f356939ab27e43cbc9a": {
+   "answer": "Error: Input tokens exceeded: 484492 > 32000",
+   "true": "[['2180-05-07 05:05:00']]"
+  },
+  "45b34eeae5d3c8d44b703194": {
+   "answer": "Error: Input tokens exceeded: 110116 > 32000",
+   "true": "[[100]]"
+  },
+  "45b3c545de90501570505db8": {
+   "answer": "Error: Input tokens exceeded: 74112 > 32000",
+   "true": "[['1']]"
+  },
+  "461ff9eeedf5e9452cbf12b2": {
+   "answer": "The final answer is: Yes. Patient 10007818 had the following Procedure records in 2146 matching \"Drainage of Peritoneal Cavity, Percutaneous Approach, Diagnostic\":\n\n- Drainage of Peritoneal Cavity, Percutaneous Approach, Diagnostic \u2014 performedDateTime: 2146-06-19T00:00:00-04:00\n- Drainage of Peritoneal Cavity, Percutaneous Approach, Diagnostic \u2014 performedDateTime: 2146-07-02T00:00:00-04:00",
+   "true": "[[1]]"
+  },
+  "4724c2961dfc05d2b08ea4be": {
+   "answer": "The final answer is: Yes. Patient 10020187 received Restriction of Intracranial Artery with Intraluminal Device, Percutaneous Approach during the last hospital encounter (Encounter/e8470431-ffa9-5aaf-866e-208723038786).",
+   "true": "[[1]]"
+  },
+  "472793119170f9c8adb0b84b": {
+   "answer": "Error: Input tokens exceeded: 3349693 > 32000",
+   "true": "[[0]]"
+  },
+  "473f0352cd0b38c085ce1628": {
+   "answer": "Error: Input tokens exceeded: 2334240 > 32000",
+   "true": "[[0.5]]"
+  },
+  "48859a4418a3875bf6082407": {
+   "answer": "Error: Input tokens exceeded: 2307255 > 32000",
+   "true": "[[2.6]]"
+  },
+  "49a4cd3cf6fcacac9a3bf922": {
+   "answer": "Error: Input tokens exceeded: 1710616 > 32000",
+   "true": "[['2125-09-28 08:00:00']]"
+  },
+  "4a73f78af6f830619516e24b": {
+   "answer": "Error: Input tokens exceeded: 1147240 > 32000",
+   "true": "[['2144-11-02 15:00:00']]"
+  },
+  "4b10d0fec2f23acab915e3f3": {
+   "answer": "The final answer is: 1",
+   "true": "[[1]]"
+  },
+  "4b635ac1325eaf0dd75988d5": {
+   "answer": "The final answer is: No. I could not find any MedicationRequest records in 04/2109 for pantoprazole, albuterol 0.083% neb soln, or propranolol.",
+   "true": "[[0]]"
+  },
+  "4b72e7b13c37b47053d926d9": {
+   "answer": "Error: Input tokens exceeded: 866027 > 32000",
+   "true": "[]"
+  },
+  "4bff1dd96412ee933ce201a2": {
+   "answer": "The final answer is: 1.7513657407 days",
+   "true": "[[1.75136574]]"
+  },
+  "4e79db3380f81126bc756ee5": {
+   "answer": "Error: Input tokens exceeded: 844530 > 32000",
+   "true": "[[0.1]]"
+  },
+  "4ff852f95fae6d06622555a4": {
+   "answer": "Error: Input tokens exceeded: 829320 > 32000",
+   "true": "[[83.6]\n [84.2]]"
+  },
+  "519da8c653b3284432571957": {
+   "answer": "Error: Input tokens exceeded: 3199159 > 32000",
+   "true": "[[1]]"
+  },
+  "52132e5911d6dc1ae05dcf5a": {
+   "answer": "The final answer is: 2142-07-31T00:00:00-04:00",
+   "true": "[['2142-07-31 00:00:00']]"
+  },
+  "524208cb99d72ea26c67c3f9": {
+   "answer": "The final answer is: 1 ICU check-in during this year (2180).",
+   "true": "[[1]]"
+  },
+  "52c6c669438001d194f1c9a8": {
+   "answer": "The final answer is: 4.963 days",
+   "true": "[[4.96319444]]"
+  },
+  "52f6bc8e9873cce45456c38e": {
+   "answer": "The final answer is: I cannot find the gender information for patient 10025463 in the retrieved patient data.",
+   "true": "[['M']]"
+  },
+  "53388f93019e894471f1753a": {
+   "answer": "The final answer is: Yes. Patient 10026354 has undergone procedures, including:\n\n- Reposition Left Maxilla with External Fixation Device, Percutaneous Approach\n- Reposition Right Mandible with Internal Fixation Device, Open Approach\n- Repair Upper Artery, Open Approach\n- Reposition Left Mandible with External Fixation Device, Percutaneous Approach\n- 20 Gauge\n- OR Sent\n- Arterial Line\n- Invasive Ventilation\n- Extubation\n- Foley Catheter\n- Cordis/Introducer\n- Triage: emergency center (procedure)",
+   "true": "[[1]]"
+  },
+  "5436413908d5e902536630e8": {
+   "answer": "Error: Input tokens exceeded: 709013 > 32000",
+   "true": "[['URINE']]"
+  },
+  "5437dceb1f465a249b318f40": {
+   "answer": "The final answer is: 88 hours 44 minutes since admission to the hospital.",
+   "true": "[]"
+  },
+  "545a6730c778873c467d8235": {
+   "answer": "Error: Input tokens exceeded: 1658605 > 32000",
+   "true": "[[0]]"
+  },
+  "552b047a4b16894db1150381": {
+   "answer": "Error: Input tokens exceeded: 3977086 > 32000",
+   "true": "[]"
+  },
+  "55d4903b176bcfa711e73e0f": {
+   "answer": "The final answer is: Yes. Patient 10006580 had the procedure \"Implantation or replacement of carotid sinus stimulation device, total system\" on 2137-08-11T00:00:00-04:00.",
+   "true": "[[1]]"
+  },
+  "5614cf0da6a6dc8d7f53e2e4": {
+   "answer": "Error: Input tokens exceeded: 780696 > 32000",
+   "true": "[[67.16216216]]"
+  },
+  "568a32b005438f0d65d4f758": {
+   "answer": "Error: Input tokens exceeded: 408095 > 32000",
+   "true": "[['2189-06-12 06:35:00']]"
+  },
+  "56919090958387812584e77a": {
+   "answer": "Error: Input tokens exceeded: 70905 > 32000",
+   "true": "[[1]]"
+  },
+  "56cc41f276a6e10711d396f4": {
+   "answer": "Error: Input tokens exceeded: 2652111 > 32000",
+   "true": "[['2186-11-13 12:00:00']]"
+  },
+  "571b776d0c624ec21b51af31": {
+   "answer": "Error: Input tokens exceeded: 827428 > 32000",
+   "true": "[[0]]"
+  },
+  "580f56a66f7626bbcd078c21": {
+   "answer": "Error: Input tokens exceeded: 1719986 > 32000",
+   "true": "[[0]]"
+  },
+  "5886a94103455554061fb16a": {
+   "answer": "Error: Input tokens exceeded: 141150 > 32000",
+   "true": "[[15]]"
+  },
+  "58a17f0e9f1fb5701047c022": {
+   "answer": "The final answer is: Yes. The first hospital encounter had admitSource code: EMERGENCY ROOM.",
+   "true": "[[1]]"
+  },
+  "590d8305084857287efef413": {
+   "answer": "Error: Input tokens exceeded: 2930473 > 32000",
+   "true": "[[98.8]]"
+  },
+  "5a67eba88dd963170a026d15": {
+   "answer": "The final answer is: 10 mg",
+   "true": "[[10]]"
+  },
+  "5ad1c0bd8c724486755abcd6": {
+   "answer": "The final answer is: 1 ICU visit during the first hospital encounter.",
+   "true": "[[1]]"
+  },
+  "5c2b95425f850cf9aee654aa": {
+   "answer": "Error: Input tokens exceeded: 3052622 > 32000",
+   "true": "[]"
+  },
+  "5c365a198595d213cd5d103a": {
+   "answer": "Error: Input tokens exceeded: 2860377 > 32000",
+   "true": "[[0]]"
+  },
+  "5c5d37eab2cf65bcaafade09": {
+   "answer": "The final answer is: 0",
+   "true": "[[0]]"
+  },
+  "5cf885d109f3f215844f994e": {
+   "answer": "The final answer is: 459.93 hours have passed since the patient's last stay in careunit medical/surgical intensive care unit (micu/sicu), which ended at 2174-12-12T20:03:01-05:00.",
+   "true": "[]"
+  },
+  "5d31a8336f838e5062d60d2d": {
+   "answer": "The final answer is: Yes. Patient 10038999 received the procedure \"Drainage of Left Pleural Cavity, Percutaneous Approach, Diagnostic\" in 2131 on 2131-05-29T00:00:00-04:00.",
+   "true": "[[1]]"
+  },
+  "5d5a07118525dfe5b79a0611": {
+   "answer": "Error: Input tokens exceeded: 765577 > 32000",
+   "true": "[[1]]"
+  },
+  "5da6b605b949e3c4c068537e": {
+   "answer": "Error: Input tokens exceeded: 691625 > 32000",
+   "true": "[['2115-12-28 16:21:00']]"
+  },
+  "5db87efd687aa472406c44c6": {
+   "answer": "Error: Input tokens exceeded: 131346 > 32000",
+   "true": "[[1]]"
+  },
+  "601558b753933c463ad3089a": {
+   "answer": "Error: Input tokens exceeded: 3211281 > 32000",
+   "true": "[[0]]"
+  },
+  "6236365bb1b1dab256878dbe": {
+   "answer": "The final answer is: Yes. Patient 10020187 has MedicationRequest records, indicating they have been prescribed medications.",
+   "true": "[[1]]"
+  },
+  "6336898e3861f505fd6e2a25": {
+   "answer": "The final answer is: 3 days, 16 hours, 44 minutes since hospital admission at 2115-12-28T07:15:00-05:00.",
+   "true": "[]"
+  },
+  "633d7843ff15021b4c6b6ac9": {
+   "answer": "Error: Input tokens exceeded: 1702504 > 32000",
+   "true": "[['WIDOWED']]"
+  },
+  "6375d8b399f74f248505155f": {
+   "answer": "Error: Input tokens exceeded: 32442 > 32000",
+   "true": "[[0]]"
+  },
+  "6381c60f67186bd31083fcdf": {
+   "answer": "The final answer is: emergency",
+   "true": "[['EW EMER.']]"
+  },
+  "647bc08d18cac6dbda791c42": {
+   "answer": "The final answer is: 2184-10-09T11:34:19-04:00",
+   "true": "[['2184-10-09 16:00:00']]"
+  },
+  "666e67f82411b8a3b4b429e7": {
+   "answer": "The final answer is: Yes. Patient 10005909 had an emergency room encounter in 2144 from 2144-10-28T18:29:00-04:00 to 2144-10-29T00:10:00-04:00.",
+   "true": "[[1]]"
+  },
+  "666f86f3566bfabb76e587a7": {
+   "answer": "Error: Input tokens exceeded: 41538 > 32000",
+   "true": "[['2185-11-02 21:00:00']]"
+  },
+  "672d81cda5b780896726e4f2": {
+   "answer": "Error: Input tokens exceeded: 2209742 > 32000",
+   "true": "[['2186-09-15 18:00:00']]"
+  },
+  "68e2938f96286a982888a1f6": {
+   "answer": "The final answer is: Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a",
+   "true": "[['Med/Surg']]"
+  },
+  "68f60925ee10fafbe0a043b1": {
+   "answer": "Error: Input tokens exceeded: 2772573 > 32000",
+   "true": "[[0]]"
+  },
+  "694ef79b1e8ab1b548efa5b3": {
+   "answer": "Error: Input tokens exceeded: 655610 > 32000",
+   "true": "[[0]]"
+  },
+  "69c8cd3610b365b38e9dc8fb": {
+   "answer": "The final answer is: Yes. Patient 10004235 received the procedure \"Endoscopic insertion of stent (tube) into bile duct\" (code: 5187) on 2196-02-26T00:00:00-05:00.",
+   "true": "[[1]]"
+  },
+  "6ac4cfa978f125a71ca0e9b0": {
+   "answer": "The final answer is: 100 mg",
+   "true": "[['100']]"
+  },
+  "6aea46a3a6bf0c02fb9bd415": {
+   "answer": "Error: Input tokens exceeded: 2769667 > 32000",
+   "true": "[]"
+  },
+  "6affdda52b5c91cdefb3ac90": {
+   "answer": "Error: Input tokens exceeded: 2772570 > 32000",
+   "true": "[[0]]"
+  },
+  "6b1fe6a4f18cb1365ffa3764": {
+   "answer": "Error: Input tokens exceeded: 2654079 > 32000",
+   "true": "[[1.]]"
+  },
+  "6b48b47dea05709d8dddd909": {
+   "answer": "Error: Input tokens exceeded: 2334248 > 32000",
+   "true": "[[0]]"
+  },
+  "6bb8d0b3a6e2b6227b56f595": {
+   "answer": "Error: Input tokens exceeded: 1658496 > 32000",
+   "true": "[[94.]]"
+  },
+  "6d14fafef38d93f2e020c386": {
+   "answer": "The final answer is: 0 times.",
+   "true": "[[0]]"
+  },
+  "6d1e9f74415d70381cffcd18": {
+   "answer": "The final answer is: Yes. Patient 10021938 has had procedures since 2181, including Hemodialysis on 2181-10-13T00:00:00-04:00 and 2181-10-25T00:00:00-04:00.",
+   "true": "[[1]]"
+  },
+  "6d23077db7dbc8321431bf64": {
+   "answer": "The final answer is: 27 days and 12 hours 31 minutes have passed since hospital admission at 2174-12-04T11:28:00-05:00.",
+   "true": "[]"
+  },
+  "6dc27e0c371f7e5dd9d2a981": {
+   "answer": "Error: Input tokens exceeded: 2772567 > 32000",
+   "true": "[['2201-10-30 12:03:00']]"
+  },
+  "6df8c8add4bde78a73d76071": {
+   "answer": "The final answer is: 2161-04-27T00:00:00-04:00",
+   "true": "[['2161-04-27 00:00:00']]"
+  },
+  "6e19826cc8478fa8a97d1dee": {
+   "answer": "Error: Input tokens exceeded: 3199081 > 32000",
+   "true": "[['2146-07-06 16:00:00']]"
+  },
+  "6e7e6e42109e147a8c37d95d": {
+   "answer": "Error: Input tokens exceeded: 2316307 > 32000",
+   "true": "[[5770.]]"
+  },
+  "6f8551a85f07e537ff14bede": {
+   "answer": "Error: Input tokens exceeded: 140031 > 32000",
+   "true": "[]"
+  },
+  "70516111809660e05336d719": {
+   "answer": "Error: Input tokens exceeded: 3374988 > 32000",
+   "true": "[['2116-12-03 16:18:00']]"
+  },
+  "7066a7025a2c0442a511c5e1": {
+   "answer": "Error: Input tokens exceeded: 587018 > 32000",
+   "true": "[[97.]]"
+  },
+  "70b7e8f278566e9443f31eaf": {
+   "answer": "Error: Input tokens exceeded: 1786851 > 32000",
+   "true": "[[1]]"
+  },
+  "712595edb391862c04d6ec79": {
+   "answer": "The final answer is: 5.0083 days (from 2187-05-18T17:08:00-04:00 to 2187-05-23T17:20:00-04:00).",
+   "true": "[[5.00833333]]"
+  },
+  "71cdc4002dd9037845bd713a": {
+   "answer": "The final answer is: 2113-08-04T00:00:00-04:00",
+   "true": "[['2113-08-04 00:00:00']]"
+  },
+  "71fb7280916537b48dea629f": {
+   "answer": "The final answer is: 1 hospital admission since 2189.",
+   "true": "[[1]]"
+  },
+  "727aea1d64b5ba869e4b3dc8": {
+   "answer": "The final answer is: 0",
+   "true": "[[10]]"
+  },
+  "729c62dcfd9ac11a32a56161": {
+   "answer": "Error: Input tokens exceeded: 238483 > 32000",
+   "true": "[[1]]"
+  },
+  "72e0ab522c86eeb3cfdf64d1": {
+   "answer": "Error: Input tokens exceeded: 2857483 > 32000",
+   "true": "[['2178-07-15 15:00:00']]"
+  },
+  "7329fbf5056c86af263e9033": {
+   "answer": "Error: Input tokens exceeded: 827412 > 32000",
+   "true": "[[6850]]"
+  },
+  "732aa8afc5a1fa558876a572": {
+   "answer": "Error: Input tokens exceeded: 3009037 > 32000",
+   "true": "[[0.]]"
+  },
+  "73710b96b938a24a7a5c86d5": {
+   "answer": "Error: Input tokens exceeded: 80547 > 32000",
+   "true": "[['Milk of Magnesia']]"
+  },
+  "740f87417b7715602b678286": {
+   "answer": "Error: Input tokens exceeded: 291928 > 32000",
+   "true": "[[1]]"
+  },
+  "741720ef5045654c9099edd9": {
+   "answer": "Error: Input tokens exceeded: 140028 > 32000",
+   "true": "[]"
+  },
+  "74968f3f69d0e352733f0a96": {
+   "answer": "Error: Input tokens exceeded: 2769681 > 32000",
+   "true": "[['2201-12-13 03:08:00']]"
+  },
+  "7535579b90cfcb61fed1c380": {
+   "answer": "Error: Input tokens exceeded: 3374994 > 32000",
+   "true": "[['CLOSTRIDIUM PERFRINGENS']\n ['BACTEROIDES FRAGILIS GROUP']]"
+  },
+  "7559da6b7b189084f45242ea": {
+   "answer": "The final answer is: Yes. Patient 10020944 was to the e.r. during their first hospital visit.",
+   "true": "[[1]]"
+  },
+  "75687ea1705bf35f720606d4": {
+   "answer": "Error: Input tokens exceeded: 2783005 > 32000",
+   "true": "[[200]]"
+  },
+  "75b34f0cc40ad60222a3d432": {
+   "answer": "The final answer is: emergency",
+   "true": "[['EW EMER.']]"
+  },
+  "764c80fc36e53d7964e0f522": {
+   "answer": "Error: Input tokens exceeded: 2333037 > 32000",
+   "true": "[['2148-09-10 15:29:00']]"
+  },
+  "76a3b26583f61cc00377b6a2": {
+   "answer": "The final answer is: 0 distinct medications prescribed since 04/2183 through 2183-12-31 23:59:00.",
+   "true": "[[0]]"
+  },
+  "785297f1fb8d773e4c4a07e2": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10012853 on their first hospital visit in the retrieved patient or encounter data.",
+   "true": "[['WIDOWED']]"
+  },
+  "7995633cbc3e134de24ae114": {
+   "answer": "The final answer is: I cannot find the information needed to determine when patient 10004733 last stayed in the \"neurology\" careunit during this hospital encounter. The Encounter data references Location resources, but the Location details needed to identify a \"neurology\" careunit were not available in the retrieved data.",
+   "true": "[]"
+  },
+  "7a1d975dc39f51887f287327": {
+   "answer": "The final answer is: I cannot find the Patient resource information for patient 10020944, so I cannot determine whether the patient is recorded as male or female.",
+   "true": "[['M']]"
+  },
+  "7ae946cb6fe7f5a3cac9bfa8": {
+   "answer": "The final answer is: I cannot find any record of the bypass coronary artery, one artery from aorta with autologous venous tissue, open approach procedure in 2162.",
+   "true": "[]"
+  },
+  "7aea773bb0cb8d7705a8afa2": {
+   "answer": "The final answer is: 11.78 days",
+   "true": "[[11.78263889]]"
+  },
+  "7af6a3a42f264bdbbfb7c37a": {
+   "answer": "Error: Input tokens exceeded: 3205775 > 32000",
+   "true": "[[None]]"
+  },
+  "7b11c8a07c7b85627d2a9c47": {
+   "answer": "The final answer is: During the patient's first hospital encounter, that procedure occurred 1 time.",
+   "true": "[[1]]"
+  },
+  "7b18e66852f4386ce57b39c1": {
+   "answer": "Error: Input tokens exceeded: 291930 > 32000",
+   "true": "[[1]]"
+  },
+  "7b7f155abcaed396f4e612b6": {
+   "answer": "The final answer is: I cannot find the medication name in the retrieved data. The first MedicationRequest with route code `IV` since `05/2183` references `Medication/aabbc57b-1fca-5c0c-b6bd-2707ce8ec48c`, but the corresponding Medication resource could not be retrieved.",
+   "true": "[]"
+  },
+  "7bb4dd3032dd60767f552577": {
+   "answer": "The final answer is: Yes. Patient 10006580 had medication records since 13 months ago; MedicationRequest records were found in 2137-08, which is after 2136-11-30 23:59:00.",
+   "true": "[[1]]"
+  },
+  "7bef1a39879d33661976e78e": {
+   "answer": "Error: Input tokens exceeded: 400812 > 32000",
+   "true": "[['2136-11-01 06:20:00']]"
+  },
+  "7c6bef368aa5ba846c186719": {
+   "answer": "Error: Input tokens exceeded: 2930501 > 32000",
+   "true": "[[None]]"
+  },
+  "7d3d29193e98b64900b4be0a": {
+   "answer": "The final answer is: 7.87 days (from 2140-03-22T17:18:00-04:00 to 2140-03-30T14:10:00-04:00).",
+   "true": "[[7.86944444]]"
+  },
+  "7d5fe035bb44c9237b17dfe5": {
+   "answer": "Error: Input tokens exceeded: 50224 > 32000",
+   "true": "[[1]]"
+  },
+  "7e7f2de29fe0d6cf726ecfd4": {
+   "answer": "The final answer is: No. I found no hospital admission encounter during last calendar year (01/01/2128\u201312/31/2128).",
+   "true": "[[0]]"
+  },
+  "7ed170e256f209788ad3c985": {
+   "answer": "Error: Input tokens exceeded: 1991355 > 32000",
+   "true": "[[0]]"
+  },
+  "7edc30d3b6fa3b7308ebcd4a": {
+   "answer": "Error: Input tokens exceeded: 40684 > 32000",
+   "true": "[[56]]"
+  },
+  "7eeda0d4bfae5ffe07de0b9b": {
+   "answer": "The final answer is: 323.83 hours since the first emergency department stay on the current hospital encounter.",
+   "true": "[]"
+  },
+  "805a7efe25e2ce496220ee26": {
+   "answer": "The final answer is: elective",
+   "true": "[['ELECTIVE']]"
+  },
+  "809821a4009fe30207a67903": {
+   "answer": "Error: Input tokens exceeded: 3009420 > 32000",
+   "true": "[[156.]]"
+  },
+  "8223cedf8e150ea026676246": {
+   "answer": "Error: Input tokens exceeded: 741185 > 32000",
+   "true": "[['MRSA SCREEN']]"
+  },
+  "828f43dc5831cb08e5ce4ac8": {
+   "answer": "Error: Input tokens exceeded: 131370 > 32000",
+   "true": "[['2176-11-14 08:00:00']]"
+  },
+  "82b93a79d0dad5db6d3f5918": {
+   "answer": "The final answer is: Yes. Patient 10008454 had a hospital encounter this year from 2110-11-30T06:31:00-05:00 to 2110-12-10T15:53:00-05:00.",
+   "true": "[[1]]"
+  },
+  "82d84ee3f00fa576d3b70969": {
+   "answer": "Error: Input tokens exceeded: 3448222 > 32000",
+   "true": "[[None]]"
+  },
+  "82ee3d9b301ac0cf74fc8be8": {
+   "answer": "The final answer is: I cannot find the marital status of patient 10006580 during their first hospital visit in the retrieved data.",
+   "true": "[['MARRIED']]"
+  },
+  "833f3dcc0c1a68ee5c293d02": {
+   "answer": "The final answer is: Yes. Patient 10022041 had 13 Condition records during their last hospital visit, representing 12 unique diagnoses:\n\n- Other and unspecified alcohol dependence, unspecified\n- Other and unspecified hyperlipidemia\n- Unspecified essential hypertension\n- Unspecified fall\n- Alcohol withdrawal\n- Other psoriasis\n- Closed fracture of surgical neck of humerus\n- Backache, unspecified\n- Grand mal status\n- Altered mental status\n- Other convulsions\n- Pure hypercholesterolemia",
+   "true": "[[1]]"
+  },
+  "83b456769e420696daed1609": {
+   "answer": "Error: Input tokens exceeded: 332229 > 32000",
+   "true": "[[-11.]]"
+  },
+  "844c677f9eb40b4cc09e828a": {
+   "answer": "The final answer is: 2",
+   "true": "[[2]]"
+  },
+  "8465e809028d1263318be90f": {
+   "answer": "Error: Input tokens exceeded: 1048021 > 32000",
+   "true": "[[14.]]"
+  },
+  "849c73c34b291683b2d24907": {
+   "answer": "Error: Input tokens exceeded: 146578 > 32000",
+   "true": "[['Lactated Ringers']\n ['Famotidine']\n ['Iso-Osmotic Sodium Chloride']\n ['Fentanyl Citrate']]"
+  },
+  "84b9e35f62f23089ad08f03e": {
+   "answer": "Error: Input tokens exceeded: 569493 > 32000",
+   "true": "[[-9.]]"
+  },
+  "86741d2d640a5dbbfa5d1036": {
+   "answer": "Error: Input tokens exceeded: 1266566 > 32000",
+   "true": "[[4.7]]"
+  },
+  "8706d212667c3018e03000a7": {
+   "answer": "Error: Input tokens exceeded: 1788522 > 32000",
+   "true": "[[1]]"
+  },
+  "8777f5505af432365af01179": {
+   "answer": "Error: Input tokens exceeded: 3011475 > 32000",
+   "true": "[[3.4]]"
+  },
+  "878917a494e18bf3082ea4c4": {
+   "answer": "Error: Input tokens exceeded: 1788519 > 32000",
+   "true": "[[1]]"
+  },
+  "883c4d0f0f9708f99cf278d8": {
+   "answer": "Error: Input tokens exceeded: 3349689 > 32000",
+   "true": "[[15.2]]"
+  },
+  "88a650d28643d60da24b7b3f": {
+   "answer": "Error: Input tokens exceeded: 338242 > 32000",
+   "true": "[[147.]]"
+  },
+  "89a854beb29f40da67997b3c": {
+   "answer": "Error: Input tokens exceeded: 691628 > 32000",
+   "true": "[[63.]]"
+  },
+  "8a0d9ca8816e2d1ca14e3fca": {
+   "answer": "Error: Input tokens exceeded: 56290 > 32000",
+   "true": "[['Potassium Chloride']\n ['Furosemide']]"
+  },
+  "8a165a892467a3f42aa7f482": {
+   "answer": "The final answer is: 2200-09-18T00:05:00-04:00",
+   "true": "[['2200-09-17 00:00:00']]"
+  },
+  "8a2c412e28bd7e4d00a2c261": {
+   "answer": "Error: Input tokens exceeded: 3355608 > 32000",
+   "true": "[]"
+  },
+  "8a56f098370ca6af99a28b53": {
+   "answer": "Error: Input tokens exceeded: 254140 > 32000",
+   "true": "[['40']]"
+  },
+  "8bfea1a0b78f2e98d30ee271": {
+   "answer": "The final answer is: 2111-01-25T15:00:00-05:00",
+   "true": "[['2111-01-25 15:00:00']]"
+  },
+  "8c531cd9b0af5ba949b9fa91": {
+   "answer": "Error: Input tokens exceeded: 3355605 > 32000",
+   "true": "[]"
+  },
+  "8cfda20a9826789d8b58747a": {
+   "answer": "Error: Input tokens exceeded: 657827 > 32000",
+   "true": "[[-12.]]"
+  },
+  "8e96be7df6dd4cc4c1e2a3b4": {
+   "answer": "Error: Input tokens exceeded: 1788514 > 32000",
+   "true": "[[109.6]\n [110. ]]"
+  },
+  "8e97f8923eae1120693cf379": {
+   "answer": "Error: Input tokens exceeded: 768835 > 32000",
+   "true": "[[0]]"
+  },
+  "8f037d1cedf499b333e3a25d": {
+   "answer": "Error: Input tokens exceeded: 3149900 > 32000",
+   "true": "[['2176-12-22 10:57:00']]"
+  },
+  "905bf1d8d8b2ee5cc48396ca": {
+   "answer": "The final answer is: Yes \u2014 in 2134, I found a matching prescription for **Sodium Chloride 0.9% Flush**. I could not confirm **nicardipine iv** or **ondansetron** by name from the retrieved MedicationRequest data because those entries used medicationReference IDs and the referenced Medication details were not available.",
+   "true": "[[1]]"
+  },
+  "91509e2b22c1e7959786b337": {
+   "answer": "Error: Input tokens exceeded: 495450 > 32000",
+   "true": "[['2161-04-27 10:40:00']]"
+  },
+  "916c297dfa63e76557d57bb8": {
+   "answer": "Error: Input tokens exceeded: 1710588 > 32000",
+   "true": "[[0]]"
+  },
+  "92b8f8b9f70e026d369cdfbd": {
+   "answer": "Error: Input tokens exceeded: 977311 > 32000",
+   "true": "[[1]]"
+  },
+  "9444a73db82e2c64ae8bcdb3": {
+   "answer": "Error: Input tokens exceeded: 1319064 > 32000",
+   "true": "[[None]]"
+  },
+  "94d8481d364db4cbd70b366f": {
+   "answer": "Error: Input tokens exceeded: 3053094 > 32000",
+   "true": "[[95.1]]"
+  },
+  "964217a388912122a2c89866": {
+   "answer": "Error: Input tokens exceeded: 2848897 > 32000",
+   "true": "[[8.54705882]]"
+  },
+  "96ac404e31dae66aaf3c7df0": {
+   "answer": "Error: Input tokens exceeded: 2924925 > 32000",
+   "true": "[[-1.]]"
+  },
+  "96b1d3fe1090aafcf5bcc954": {
+   "answer": "Error: Input tokens exceeded: 1989638 > 32000",
+   "true": "[['2110-12-04 01:00:00']]"
+  },
+  "97bd7321746aeee64c00043b": {
+   "answer": "Error: Input tokens exceeded: 1352571 > 32000",
+   "true": "[[-0.1]]"
+  },
+  "97f99846bf73b8acd7a1318e": {
+   "answer": "Error: Input tokens exceeded: 506421 > 32000",
+   "true": "[[28]]"
+  },
+  "9930fa67b91f89cc964e7df3": {
+   "answer": "Error: Input tokens exceeded: 3349680 > 32000",
+   "true": "[[4110]]"
+  },
+  "9a126c3d410cde7047840e30": {
+   "answer": "Error: Input tokens exceeded: 597151 > 32000",
+   "true": "[[None]]"
+  },
+  "9a53c5a84a90577e106b30ec": {
+   "answer": "The final answer is: 2142-05-10T20:23:00-04:00",
+   "true": "[['2142-05-10 00:00:00']]"
+  },
+  "9a8ac4df220dc07a83eeae9b": {
+   "answer": "The final answer is: 2187-02-12T00:00:00-05:00",
+   "true": "[['2187-02-12 00:00:00']]"
+  },
+  "9ab8b4d1a143e09289a29059": {
+   "answer": "Error: Input tokens exceeded: 776401 > 32000",
+   "true": "[[0.]]"
+  },
+  "9aff84dfbc8d4cb85bb5267f": {
+   "answer": "Error: Input tokens exceeded: 2930493 > 32000",
+   "true": "[[None]]"
+  },
+  "9b79fc00bb70e04132ba060c": {
+   "answer": "Error: Input tokens exceeded: 3205748 > 32000",
+   "true": "[[68]]"
+  },
+  "9cdee4aaa2811035370a1c86": {
+   "answer": "Error: Input tokens exceeded: 691625 > 32000",
+   "true": "[[61.7]]"
+  },
+  "9d71dca8add09e321ec57dd9": {
+   "answer": "Error: Input tokens exceeded: 534933 > 32000",
+   "true": "[['2119-10-26 08:50:00']]"
+  },
+  "9eda5afbe00ed4d5f058ec11": {
+   "answer": "Error: Input tokens exceeded: 2210313 > 32000",
+   "true": "[['2185-01-21 11:03:00']]"
+  },
+  "9fc0ac6b29d8a361fd6e2512": {
+   "answer": "Error: Input tokens exceeded: 598712 > 32000",
+   "true": "[[1.]]"
+  },
+  "9fd9c725dd075244d0eab9a8": {
+   "answer": "Error: Input tokens exceeded: 2434014 > 32000",
+   "true": "[[143.]]"
+  },
+  "a07e014b5e2eb6177b5978a3": {
+   "answer": "Error: Input tokens exceeded: 741100 > 32000",
+   "true": "[[70.3]]"
+  },
+  "a12d2706258e7cd94b157f13": {
+   "answer": "The final answer is: 2",
+   "true": "[[2]]"
+  },
+  "a13bd95a1540c1bc4c4568db": {
+   "answer": "Error: Input tokens exceeded: 3052608 > 32000",
+   "true": "[[384.]]"
+  },
+  "a16e5eeb260d3b031762211d": {
+   "answer": "Error: Input tokens exceeded: 146551 > 32000",
+   "true": "[['Glucagon']]"
+  },
+  "a1db6846c07bdc99c68fda58": {
+   "answer": "Error: Input tokens exceeded: 2927783 > 32000",
+   "true": "[[0]]"
+  },
+  "a2de199eb11275f923c798c8": {
+   "answer": "Error: Input tokens exceeded: 86675 > 32000",
+   "true": "[['Multivitamins']\n ['Nicotine Patch']\n ['Duloxetine']\n ['Tamoxifen Citrate']]"
+  },
+  "a3585e47c9d9845ccde194bf": {
+   "answer": "Error: Input tokens exceeded: 2210335 > 32000",
+   "true": "[[1]]"
+  },
+  "a4371b693f24038ad04881c2": {
+   "answer": "The final answer is: Yes. During the first hospital visit (Encounter/4bf70b2e-29af-5519-8752-052b2f833a81), the patient was prescribed duloxetine.",
+   "true": "[[1]]"
+  },
+  "a4aeae6cbe8fff13d7e4d651": {
+   "answer": "Error: Input tokens exceeded: 1349821 > 32000",
+   "true": "[[None]]"
+  },
+  "a4e1867554fe617ae563f780": {
+   "answer": "Error: Input tokens exceeded: 3349694 > 32000",
+   "true": "[[None]]"
+  },
+  "a5356c6c205e9f088964bb9a": {
+   "answer": "The final answer is: Yes. MedicationRequest records were found for patient 10006580. No MedicationAdministration resources were found.",
+   "true": "[[1]]"
+  },
+  "a69440dfa419dc0ff7d88b64": {
+   "answer": "Error: Input tokens exceeded: 35352 > 32000",
+   "true": "[[75]]"
+  },
+  "aaa0dd1684e01424ce21edfd": {
+   "answer": "The final answer is: I cannot find any record that patient 10018423 underwent \"Fluoroscopy of Multiple Coronary Arteries using Low Osmolar Contrast\" since 1 year ago (from 2161-12-31 23:59:00 through 2162-12-31 23:59:00).",
+   "true": "[]"
+  },
+  "ab2159e2914558a41cd56bff": {
+   "answer": "Error: Input tokens exceeded: 56348 > 32000",
+   "true": "[[500]]"
+  },
+  "ac9de4303d9e69514c759992": {
+   "answer": "Error: Input tokens exceeded: 1657221 > 32000",
+   "true": "[['YEAST']]"
+  },
+  "ad25b33f618fbda4463dc6d1": {
+   "answer": "The final answer is: I cannot find the Patient resource or gender information for patient FHIR ID af0e5009-d87d-52a8-ac8a-676e471c41f1.",
+   "true": "[['M']]"
+  },
+  "aef4b8676c07216d65074512": {
+   "answer": "Error: Input tokens exceeded: 3211329 > 32000",
+   "true": "[]"
+  },
+  "b05a0cc27584db59d2dc4a8b": {
+   "answer": "The final answer is: 14.02 days (from 2131-02-27T15:34:00-05:00 to 2131-03-13T17:01:00-04:00).",
+   "true": "[[14.06041667]]"
+  },
+  "b0bde5b825a0b0039eb609d0": {
+   "answer": "Error: Input tokens exceeded: 3053115 > 32000",
+   "true": "[['2132-12-16 14:02:00']]"
+  },
+  "b26e5939c6b846e6073358d5": {
+   "answer": "Error: Input tokens exceeded: 57379 > 32000",
+   "true": "[[36]]"
+  },
+  "b2e898b5d1ad3e826001b202": {
+   "answer": "Error: Input tokens exceeded: 3009514 > 32000",
+   "true": "[]"
+  },
+  "b41f33bd6784e344776668f2": {
+   "answer": "Error: Input tokens exceeded: 131568 > 32000",
+   "true": "[['100']]"
+  },
+  "b472da76f7e2b4d53f38f131": {
+   "answer": "The final answer is: I cannot find the care unit name in the retrieved data. The last transfer/location record during the last hospital visit points to `Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a`, but the corresponding Location resource was not available.",
+   "true": "[['Med/Surg']]"
+  },
+  "b6e85f562fb3d32bcc7d415f": {
+   "answer": "Error: Input tokens exceeded: 3349754 > 32000",
+   "true": "[['2116-12-03 01:16:00']]"
+  },
+  "b710f2ea6d630a9c88a40fc2": {
+   "answer": "Error: Input tokens exceeded: 34852 > 32000",
+   "true": "[]"
+  },
+  "b71bf47188930e8abb1e562f": {
+   "answer": "The final answer is: 2157-07-02T14:18:00-04:00",
+   "true": "[['2157-07-01 00:00:00']]"
+  },
+  "b822a4c44ce54f12b21a2ba9": {
+   "answer": "Error: Input tokens exceeded: 3149808 > 32000",
+   "true": "[[0]]"
+  },
+  "ba93c08f689f2e3af0763012": {
+   "answer": "The final answer is: 1 hospital visit in 2174.",
+   "true": "[[1]]"
+  },
+  "bba49bd752af25f7a63d7766": {
+   "answer": "The final answer is: routine",
+   "true": "[['EU OBSERVATION']]"
+  },
+  "bc393399923f7dabaa005804": {
+   "answer": "The final answer is: I cannot find the marital status of patient 10004720 during the first hospital encounter in the retrieved Patient or Encounter data.",
+   "true": "[['SINGLE']]"
+  },
+  "bc98931efa8f80d2a3e2aa4d": {
+   "answer": "Error: Input tokens exceeded: 1294870 > 32000",
+   "true": "[['SEROLOGY/BLOOD']]"
+  },
+  "bd928ffb40c6b3f69d82f2da": {
+   "answer": "Error: Input tokens exceeded: 2923122 > 32000",
+   "true": "[[178.]]"
+  },
+  "bed5da859030d9c461ef882a": {
+   "answer": "Error: Input tokens exceeded: 2332981 > 32000",
+   "true": "[[None]]"
+  },
+  "bede0977c8868b145f17fa5e": {
+   "answer": "Error: Input tokens exceeded: 813944 > 32000",
+   "true": "[['MRSA SCREEN']]"
+  },
+  "c09d11621a07d7d859c16278": {
+   "answer": "Error: Input tokens exceeded: 4556575 > 32000",
+   "true": "[['2146-10-09 19:00:00']]"
+  },
+  "c1088984666feded19fe629d": {
+   "answer": "The final answer is: I cannot find the patient's sex/gender information in the retrieved patient data.",
+   "true": "[['F']]"
+  },
+  "c15288bf26d6222c25fe91c5": {
+   "answer": "The final answer is: 1 ICU visit during this year (2125).",
+   "true": "[[1]]"
+  },
+  "c1ffcaa8f6eaee005e37aa5d": {
+   "answer": "Error: Input tokens exceeded: 1147322 > 32000",
+   "true": "[['2144-11-01 02:09:00']]"
+  },
+  "c2a42482b7f7bf97e37b7a73": {
+   "answer": "The final answer is: Yes. Patient 10018328 has hospital admission encounters since 1 year ago (since 2153-12-31 23:59:00):\n\n- Encounter/13418f64-5c33-565c-9263-4e9584b4e052, start: 2154-02-05T21:58:00-05:00, end: 2154-02-09T15:15:00-05:00\n- Encounter/894cc90b-329e-56ea-b26e-61ba1059ae96, start: 2154-04-24T03:15:00-04:00, end: 2154-05-03T14:00:00-04:00",
+   "true": "[[1]]"
+  },
+  "c2ca78801b0bb755ec80903e": {
+   "answer": "The final answer is: Location/9152585d-31b9-50ca-9476-a4db49030917",
+   "true": "[['Transplant']]"
+  },
+  "c2eca2905474a01bac57fe3d": {
+   "answer": "Error: Input tokens exceeded: 2740648 > 32000",
+   "true": "[[79.]]"
+  },
+  "c35acfb89f468f360b299535": {
+   "answer": "The final answer is: Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f",
+   "true": "[['Emergency Department']]"
+  },
+  "c387a4c3a7bc1f1536ae7916": {
+   "answer": "The final answer is: I cannot find the patient gender information in the retrieved data.",
+   "true": "[['F']]"
+  },
+  "c486d3f623a7c682d0051190": {
+   "answer": "The final answer is: Yes. 33 Procedure resources were carried out on patient 10010471 in 2155, including:\n\n- Performance of Urinary Filtration, Multiple \u2014 2155-05-09T00:00:00-04:00\n- Fluoroscopy of Multiple Coronary Arteries using Other Contrast \u2014 2155-12-05T00:00:00-05:00\n- Measurement of Cardiac Sampling and Pressure, Right Heart, Percutaneous Approach \u2014 2155-12-05T00:00:00-05:00\n- Blood Cultured \u2014 2155-12-03T20:23:00-05:00 to 2155-12-03T20:24:00-05:00\n- Foley Catheter \u2014 2155-12-02T21:16:00-05:00 to 2155-12-03T12:05:00-05:00\n- 22 Gauge \u2014 2155-12-02T21:13:00-05:00 to 2155-12-07T09:16:00-05:00\n- Dialysis Catheter \u2014 2155-12-02T21:13:00-05:00 to 2155-12-03T09:00:00-05:00\n- Hemodialysis \u2014 2155-12-04T13:30:00-05:00 to 2155-12-04T15:41:00-05:00\n- Multi Lumen \u2014 2155-12-02T20:53:00-05:00 to 2155-12-05T17:49:00-05:00\n- 18 Gauge \u2014 2155-12-02T20:52:00-05:00 to 2155-12-02T21:59:00-05:00\n- EKG \u2014 2155-12-04T15:46:00-05:00 to 2155-12-04T15:47:00-05:00\n- Multi Lumen \u2014 2155-12-05T17:55:00-05:00 to 2155-12-07T18:19:00-05:00\n- Multiple Taking patient vital signs assessment (procedure) entries in May and December 2155\n- Triage: emergency center (procedure) entries in May and December 2155",
+   "true": "[[1]]"
+  },
+  "c4b26c0ae57a5f77fcd0c46d": {
+   "answer": "The final answer is: Yes. Patient 10022281 has MedicationRequest prescriptions since 24 months ago (since 2123-12-31 23:59:00), with prescriptions authored in 2125-06.",
+   "true": "[[1]]"
+  },
+  "c511f734e9fd03e177de1e9c": {
+   "answer": "Error: Input tokens exceeded: 773594 > 32000",
+   "true": "[[0]]"
+  },
+  "c58538af9651b0425098d396": {
+   "answer": "The final answer is: I cannot find any medication prescription via the IV DRIP route in 07/2189 for this patient.",
+   "true": "[]"
+  },
+  "c5d97a3fa6b67acc42a60f3f": {
+   "answer": "The final answer is: I cannot find the Location/careunit name needed to confirm a stay in careunit `discharge lounge`, so I cannot determine how many days have passed.",
+   "true": "[]"
+  },
+  "c60ed59c6b7df6bf5fbfa0cf": {
+   "answer": "Error: Input tokens exceeded: 2861699 > 32000",
+   "true": "[]"
+  },
+  "c639ce3944c3e8b1431b7f0d": {
+   "answer": "Error: Input tokens exceeded: 742341 > 32000",
+   "true": "[['2146-12-15 12:39:00']]"
+  },
+  "c6b253614a8ea885b3619a02": {
+   "answer": "Error: Input tokens exceeded: 407041 > 32000",
+   "true": "[]"
+  },
+  "c747e1b668edc722be015e38": {
+   "answer": "Error: Input tokens exceeded: 141123 > 32000",
+   "true": "[['2150-07-10 01:00:00']]"
+  },
+  "c814a79881c8be3a4809fdb9": {
+   "answer": "Error: Input tokens exceeded: 655628 > 32000",
+   "true": "[]"
+  },
+  "c86ef1c99a73bd58d05ad456": {
+   "answer": "The final answer is: 28 days",
+   "true": "[]"
+  },
+  "c8a2241d70df2c163edad761": {
+   "answer": "Error: Input tokens exceeded: 642481 > 32000",
+   "true": "[[91.]]"
+  },
+  "c8c043eb89e83c83b6beeeb3": {
+   "answer": "The final answer is: 1.77 days",
+   "true": "[[1.76640046]]"
+  },
+  "c8edd5309596df31109a68a1": {
+   "answer": "Error: Input tokens exceeded: 3349684 > 32000",
+   "true": "[[1.]]"
+  },
+  "c996bd83ae8f43a3717a6f64": {
+   "answer": "The final answer is: 1",
+   "true": "[[1]]"
+  },
+  "cada9d0e90575a50cef72fe4": {
+   "answer": "Error: Input tokens exceeded: 3199068 > 32000",
+   "true": "[[70.]]"
+  },
+  "cb5bf7d37033da680feb9abe": {
+   "answer": "The final answer is: 1 hospital visit in 2119.",
+   "true": "[[1]]"
+  },
+  "ccedb8f78a6736b132f3b079": {
+   "answer": "Error: Input tokens exceeded: 1788602 > 32000",
+   "true": "[['YEAST']]"
+  },
+  "cd72a23c76002c4a524a1b61": {
+   "answer": "The final answer is: 1 ICU visit during this year (2177).",
+   "true": "[[1]]"
+  },
+  "cd8edc01787dda933e12fd99": {
+   "answer": "Error: Input tokens exceeded: 442387 > 32000",
+   "true": "[]"
+  },
+  "ce229386a278fc4dbc3f4f87": {
+   "answer": "Error: Input tokens exceeded: 3349666 > 32000",
+   "true": "[[147.7]]"
+  },
+  "ce3edde36063a4aeb5180c6d": {
+   "answer": "Error: Input tokens exceeded: 1319047 > 32000",
+   "true": "[[None]]"
+  },
+  "cf75e230ba259301517169ac": {
+   "answer": "Error: Input tokens exceeded: 890696 > 32000",
+   "true": "[[2475]]"
+  },
+  "cfe831c90fd2c89d0116f576": {
+   "answer": "Error: Input tokens exceeded: 53295 > 32000",
+   "true": "[['Nicotine Patch']]"
+  },
+  "d0be97adb482380a1a57585d": {
+   "answer": "Error: Input tokens exceeded: 2769685 > 32000",
+   "true": "[[0]]"
+  },
+  "d198804fbc8f627ea7a4dd74": {
+   "answer": "The final answer is: Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f. The care unit name could not be found in the available retrieved data.",
+   "true": "[['Emergency Department']]"
+  },
+  "d2d7d8b52a277ffa44cfb072": {
+   "answer": "The final answer is: I cannot find the information.",
+   "true": "[['M']]"
+  },
+  "d331061cc248eb79de709879": {
+   "answer": "The final answer is: Yes. Patient 10038933 has been diagnosed with the following conditions:\n\n- Retention of urine, unspecified\n- Hyposmolality and/or hyponatremia\n- Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- Alcohol withdrawal delirium\n- Unspecified essential hypertension\n- Candidiasis of mouth\n- Dysphagia, unspecified\n- FALL ON STAIR/STEP NEC\n- Encephalopathy, unspecified\n- Pneumonitis due to inhalation of food or vomitus\n- Other and unspecified cerebral laceration and contusion, without mention of open intracranial wound, with loss of consciousness of unspecified duration\n- Other and unspecified alcohol dependence, unspecified",
+   "true": "[[1]]"
+  },
+  "d39e6cca12842e2e3d53b7cd": {
+   "answer": "Error: Input tokens exceeded: 660124 > 32000",
+   "true": "[[183.]]"
+  },
+  "d3f0d98539d2e9134a435816": {
+   "answer": "Error: Input tokens exceeded: 152591 > 32000",
+   "true": "[]"
+  },
+  "d4949e694ea61ec816d403c4": {
+   "answer": "Error: Input tokens exceeded: 1073216 > 32000",
+   "true": "[[None]]"
+  },
+  "d4b6c0167cad9291a4e1dbec": {
+   "answer": "Error: Input tokens exceeded: 598719 > 32000",
+   "true": "[[1]]"
+  },
+  "d69a4b8b51374de9e093dde2": {
+   "answer": "The final answer is: 459.93 hours",
+   "true": "[]"
+  },
+  "d6ab8927156136206a55d8a8": {
+   "answer": "Error: Input tokens exceeded: 152590 > 32000",
+   "true": "[[0]]"
+  },
+  "d6d0cf531ac1d23c6fa0a6b6": {
+   "answer": "The final answer is: 2",
+   "true": "[[2]]"
+  },
+  "d704f27fd79c99e4a27f1581": {
+   "answer": "The final answer is: 2 unique medicines.",
+   "true": "[[3]]"
+  },
+  "d738685ff207376b36d479fc": {
+   "answer": "Error: Input tokens exceeded: 691571 > 32000",
+   "true": "[[0]]"
+  },
+  "d8c4bcdab05c48a114af4957": {
+   "answer": "Error: Input tokens exceeded: 2769681 > 32000",
+   "true": "[[42636]]"
+  },
+  "d8eb075e768231338b08ef56": {
+   "answer": "Error: Input tokens exceeded: 2341486 > 32000",
+   "true": "[[0]]"
+  },
+  "d91a86b3f19888f5557a404a": {
+   "answer": "Error: Input tokens exceeded: 2860379 > 32000",
+   "true": "[[1]]"
+  },
+  "d91bb87c28806cef8d1448de": {
+   "answer": "The final answer is: 2170-10-09T16:30:00-04:00",
+   "true": "[['2170-10-09 16:30:00']]"
+  },
+  "daad7a245a02c2817e1dab51": {
+   "answer": "Error: Input tokens exceeded: 3219191 > 32000",
+   "true": "[['2146-07-10 23:00:00']]"
+  },
+  "db7f20610bfa0be1f5377ba9": {
+   "answer": "The final answer is: urgent",
+   "true": "[['URGENT']]"
+  },
+  "dbe56779e1a5f940e7fde7f8": {
+   "answer": "Error: Input tokens exceeded: 2848903 > 32000",
+   "true": "[[0]]"
+  },
+  "dbf9297a4c1d683faa792fef": {
+   "answer": "Error: Input tokens exceeded: 890716 > 32000",
+   "true": "[]"
+  },
+  "dc671c0fb18f291e1d417779": {
+   "answer": "Error: Input tokens exceeded: 3005925 > 32000",
+   "true": "[]"
+  },
+  "dc8216b0660d0fb91f366b9e": {
+   "answer": "The final answer is: Yes. The following procedures were conducted on patient 10001725 since 2110 (through 2110-12-31 23:59:00):\n\n- Insertion of biological graft \u2014 performedDateTime: 2110-04-11T00:00:00-04:00\n- Insertion or replacement of other neurostimulator pulse generator \u2014 performedDateTime: 2110-04-11T00:00:00-04:00\n- Repair of rectocele with graft or prosthesis \u2014 performedDateTime: 2110-04-11T00:00:00-04:00\n- 20 Gauge \u2014 performedPeriod: start 2110-04-11T16:02:00-04:00, end 2110-04-12T23:59:00-04:00\n- 20 Gauge \u2014 performedPeriod: start 2110-04-11T16:35:00-04:00, end 2110-04-12T23:59:00-04:00",
+   "true": "[[1]]"
+  },
+  "dd025c270eae097731034a6c": {
+   "answer": "Error: Input tokens exceeded: 3211324 > 32000",
+   "true": "[]"
+  },
+  "df9f9f77da1cf00ef44d4e96": {
+   "answer": "The final answer is: Yes. Patient 10015931 had hospital admissions during this year (2176):\n\n- Encounter ID: 9a8d3981-0eaa-5f92-8c47-40ffa75340d8; identifier value: 28157142; period.start: 2176-11-14T18:02:00-05:00; period.end: 2176-11-27T13:30:00-05:00\n- Encounter ID: 202db44a-2332-54c4-af00-709ac5400e71; identifier value: 24420677; period.start: 2176-12-16T23:31:00-05:00; period.end: 2176-12-31T17:35:00-05:00",
+   "true": "[[1]]"
+  },
+  "e0693814cc896b83b3416d2d": {
+   "answer": "Error: Input tokens exceeded: 2862154 > 32000",
+   "true": "[[0]]"
+  },
+  "e134d64a96cc7940427b44cf": {
+   "answer": "Error: Input tokens exceeded: 978445 > 32000",
+   "true": "[[1]]"
+  },
+  "e198cf387b6b22216a593d12": {
+   "answer": "Error: Input tokens exceeded: 2652059 > 32000",
+   "true": "[[None]]"
+  },
+  "e19b3138fb3b80c47b5d5688": {
+   "answer": "The final answer is: Yes. Patient 10022041 has an emergency encounter with class.display = \"emergency\" and an ED encounter identifier system = \"http://mimic.mit.edu/fhir/mimic/identifier/encounter-ed\". The hospital encounter also lists admitSource code = \"EMERGENCY ROOM\".",
+   "true": "[[1]]"
+  },
+  "e19ea171900405ad202eba5f": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10038081 on their first hospital visit in the retrieved Patient or Encounter data.",
+   "true": "[['SINGLE']]"
+  },
+  "e1f82dce913d0a344d686dcb": {
+   "answer": "Error: Input tokens exceeded: 3055303 > 32000",
+   "true": "[[None]]"
+  },
+  "e2e9e3d582524db3f2e7d55a": {
+   "answer": "Error: Input tokens exceeded: 146759 > 32000",
+   "true": "[]"
+  },
+  "e38192db81eb4aedd18e81f8": {
+   "answer": "Error: Input tokens exceeded: 3053118 > 32000",
+   "true": "[[None]]"
+  },
+  "e4373b254aad4b11af3fda65": {
+   "answer": "Error: Input tokens exceeded: 3009422 > 32000",
+   "true": "[]"
+  },
+  "e4e38f5cdc7fa7972dbcbfcd": {
+   "answer": "The final answer is: 2118-11-21T18:31:00-05:00",
+   "true": "[['2118-11-21 18:31:00']]"
+  },
+  "e57140ff3a3e15a2db33f62d": {
+   "answer": "Error: Input tokens exceeded: 338269 > 32000",
+   "true": "[[-2.1]]"
+  },
+  "e59eccf79830c0ce43f8ca5c": {
+   "answer": "The final answer is: 1000 mg",
+   "true": "[['1000']]"
+  },
+  "e5e99a0d4249da9d001cf97b": {
+   "answer": "Error: Input tokens exceeded: 511258 > 32000",
+   "true": "[[1]]"
+  },
+  "e6ab1bc462921776329e8d65": {
+   "answer": "The final answer is: Yes. Patient 10027602 was in the hospital in the last year, with hospital encounters from 2201-10-30T12:05:00-04:00 to 2201-11-20T14:45:00-05:00 and from 2201-12-11T12:00:00-05:00 to 2201-12-17T13:45:00-05:00.",
+   "true": "[[0]]"
+  },
+  "e7d42c3433b73b5b7e9bab9a": {
+   "answer": "The final answer is: Yes. Patient 10021312 was treated with \"Destruction of Right Lower Lung Lobe, Via Natural or Artificial Opening Endoscopic\" on 2113-09-14T00:00:00-04:00.",
+   "true": "[[1]]"
+  },
+  "e840f7d25b661f8952fb1eb0": {
+   "answer": "Error: Input tokens exceeded: 3205745 > 32000",
+   "true": "[]"
+  },
+  "ea018f554b80d642628c416c": {
+   "answer": "The final answer is: 1 ICU visit since 2174.",
+   "true": "[[1]]"
+  },
+  "ea764357f7772ceb7cc1de9d": {
+   "answer": "The final answer is: Yes. Patient 10019385 has an emergency room encounter: Encounter/fa4f9df1-bfda-57ed-9493-d517885668a7, class.display: emergency, period.start: 2180-03-03T20:26:00-05:00, period.end: 2180-03-04T02:24:00-05:00.",
+   "true": "[[1]]"
+  },
+  "ea9a85005a244ffc9f78a09c": {
+   "answer": "Error: Input tokens exceeded: 1319076 > 32000",
+   "true": "[]"
+  },
+  "eb20ba71a6257201e3668689": {
+   "answer": "Error: Input tokens exceeded: 336540 > 32000",
+   "true": "[[82.2]]"
+  },
+  "ebd6cc5909117f9e521d66c9": {
+   "answer": "Error: Input tokens exceeded: 657794 > 32000",
+   "true": "[['2167-05-06 05:00:00']]"
+  },
+  "ed91e258dd31d6431b37bd91": {
+   "answer": "Error: Input tokens exceeded: 230115 > 32000",
+   "true": "[['Heparin']\n ['Docusate Sodium']\n ['Senna']\n ['Sodium Chloride 0.9%  Flush']\n ['Sodium Chloride 0.9%']]"
+  },
+  "ee06998b93ca5610c35e7925": {
+   "answer": "Error: Input tokens exceeded: 66495 > 32000",
+   "true": "[[0]]"
+  },
+  "ee8306d4a542175197a6d200": {
+   "answer": "Error: Input tokens exceeded: 511254 > 32000",
+   "true": "[[1.028]]"
+  },
+  "ee981ea61809ebc1e0cc8d32": {
+   "answer": "The final answer is: 7.7025 days",
+   "true": "[[7.70251157]]"
+  },
+  "eea838bba39870d24a4fe781": {
+   "answer": "Error: Input tokens exceeded: 616991 > 32000",
+   "true": "[[2375]]"
+  },
+  "eefb26cc5bd74a549f823166": {
+   "answer": "Error: Input tokens exceeded: 4556587 > 32000",
+   "true": "[]"
+  },
+  "ef3f743b0397c2df00366c56": {
+   "answer": "The final answer is: 6.36 days",
+   "true": "[[6.35689815]]"
+  },
+  "ef903edb8d2304b433a243cb": {
+   "answer": "The final answer is: 660.52 hours since admission to the hospital.",
+   "true": "[]"
+  },
+  "efc169498c87c222d5b7020b": {
+   "answer": "Error: Input tokens exceeded: 1878610 > 32000",
+   "true": "[['2141-05-22 21:29:00']]"
+  },
+  "f03742a9f076216fb37d4c2b": {
+   "answer": "Error: Input tokens exceeded: 813871 > 32000",
+   "true": "[]"
+  },
+  "f08654b0c2c58546d18b7efb": {
+   "answer": "Error: Input tokens exceeded: 3128888 > 32000",
+   "true": "[['BLOOD CULTURE']]"
+  },
+  "f147512eb438041a5186bf3e": {
+   "answer": "Error: Input tokens exceeded: 4556567 > 32000",
+   "true": "[[3075]]"
+  },
+  "f195f5a0d57e12581afdc61c": {
+   "answer": "The final answer is: 2140-09-18T12:40:00-04:00",
+   "true": "[['2140-09-18 12:40:00']]"
+  },
+  "f1ca5e6021ac2bbdb6b7e7bf": {
+   "answer": "Error: Input tokens exceeded: 489758 > 32000",
+   "true": "[[0]]"
+  },
+  "f1dd398aaf1b00d4a562b899": {
+   "answer": "Error: Input tokens exceeded: 2211288 > 32000",
+   "true": "[[-0.7]]"
+  },
+  "f3051b86c007dd34ade04ba9": {
+   "answer": "The final answer is: 2137-09-02T17:05:00-04:00",
+   "true": "[['2137-09-02 17:05:00']]"
+  },
+  "f356b6267c56b07e1f3e3045": {
+   "answer": "Error: Input tokens exceeded: 568249 > 32000",
+   "true": "[['2120-05-13 17:35:00']]"
+  },
+  "f3d6d302751188c87c7c1304": {
+   "answer": "Error: Input tokens exceeded: 65109 > 32000",
+   "true": "[['Sodium Chloride 0.9%  Flush']]"
+  },
+  "f8f6d23e64a92d83dd3fd151": {
+   "answer": "Error: Input tokens exceeded: 3199072 > 32000",
+   "true": "[[0]]"
+  },
+  "f97ed282c4c48f5e86f5b1e6": {
+   "answer": "Error: Input tokens exceeded: 780726 > 32000",
+   "true": "[[1]]"
+  },
+  "fa7797af0bc8368e7b76a129": {
+   "answer": "Error: Input tokens exceeded: 2860383 > 32000",
+   "true": "[[None]]"
+  },
+  "fa829a69da2e049d895218f5": {
+   "answer": "Error: Input tokens exceeded: 412325 > 32000",
+   "true": "[[0]]"
+  },
+  "facfb8f560238eb16739c85e": {
+   "answer": "Error: Input tokens exceeded: 2225271 > 32000",
+   "true": "[[1]]"
+  },
+  "fae84ce9cc96b0e677f844f8": {
+   "answer": "Error: Input tokens exceeded: 690264 > 32000",
+   "true": "[[36.4]]"
+  },
+  "fb2fc2ad15a779e94e21d070": {
+   "answer": "Error: Input tokens exceeded: 152513 > 32000",
+   "true": "[]"
+  },
+  "fbbb58618f0b12172d3a2c3f": {
+   "answer": "Error: Input tokens exceeded: 2654083 > 32000",
+   "true": "[[1.]]"
+  },
+  "fc9a1a57bacdb774ac5e8f68": {
+   "answer": "The final answer is: SS (short stay)",
+   "true": "[['SURGICAL SAME DAY ADMISSION']]"
+  },
+  "fd9b2daa83ce099cdf252c35": {
+   "answer": "The final answer is: Yes. Patient 10022880 had procedures in this year (2177):\n\n- Lumbar and lumbosacral fusion of the posterior column, posterior technique \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- Excision of bone for graft, unspecified site \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- Fusion or refusion of 2-3 vertebrae \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- 20 Gauge \u2014 performedPeriod: 2177-03-15T06:00:00-04:00 to 2177-03-16T00:17:00-04:00\n- 18 Gauge \u2014 performedPeriod: 2177-03-15T06:00:00-04:00 to 2177-03-15T16:55:00-04:00",
+   "true": "[[1]]"
+  },
+  "fde016b31923066cd34bb168": {
+   "answer": "Error: Input tokens exceeded: 330506 > 32000",
+   "true": "[]"
+  },
+  "fdf5fc622de2b8d98e233ad6": {
+   "answer": "Error: Input tokens exceeded: 141099 > 32000",
+   "true": "[]"
+  },
+  "feaa451705254e6b2a61a7fb": {
+   "answer": "Error: Input tokens exceeded: 144574 > 32000",
+   "true": "[['2132-12-12 11:00:00']]"
+  },
+  "ffcf49b4d60d6ba61111c10d": {
+   "answer": "Error: Input tokens exceeded: 886126 > 32000",
+   "true": "[[None]]"
+  }
+ },
+ "code": {
+  "01038856e72fffdbf13016be": {
+   "answer": "The final answer is: Yes. Patient 10025463 received lab testing in 11/2136, with 14 laboratory Observation records found in November 2136.",
+   "true": "[[1]]"
+  },
+  "0298d7de83dc23f17441f202": {
+   "answer": "The final answer is: No. I found no Procedure records for patient 10006580 during the previous calendar year, 2136.",
+   "true": "[[0]]"
+  },
+  "04e0b332c01bf8b36c4973b5": {
+   "answer": "The final answer is: No. I found no \u201cArterial Blood Pressure mean\u201d observations for patient 10014729 on 03/07/2125, so there were no recorded mean blood pressure values less than 79.0 on that date.",
+   "true": "[[0]]"
+  },
+  "0552fb2fb3c9ef8054e31fe0": {
+   "answer": "The final answer is: 1 hospital visit since 2132.",
+   "true": "[[1]]"
+  },
+  "06b6dc7feba30e1bda1c5617": {
+   "answer": "The final answer is: [\n  {\"month\": \"2144-09\", \"average_weight\": null, \"unit\": null, \"number_of_measurements\": 0},\n  {\"month\": \"2144-10\", \"average_weight\": 115.8, \"unit\": \"kg\", \"number_of_measurements\": 1},\n  {\"month\": \"2144-11\", \"average_weight\": 117.7, \"unit\": \"kg\", \"number_of_measurements\": 1},\n  {\"month\": \"2144-12\", \"average_weight\": null, \"unit\": null, \"number_of_measurements\": 0}\n]",
+   "true": "[[115.8]\n [117.7]]"
+  },
+  "06fbb15466649cd31a1f3b18": {
+   "answer": "The final answer is: STAPH AUREUS COAG +",
+   "true": "[['STAPH AUREUS COAG +']]"
+  },
+  "08bd537529e959a773c05e95": {
+   "answer": "The final answer is: 1 occasion in 2187.",
+   "true": "[[1]]"
+  },
+  "0a6429bfa48cdb76d66bf9a6": {
+   "answer": "The final answer is: 28 full days have passed since the hospital admission on 2116-12-03T00:23:00-05:00 (about 28.98 days).",
+   "true": "[]"
+  },
+  "0b01e88a1ff2627ccad33628": {
+   "answer": "The final answer is: 2 hospital visits in 2125.",
+   "true": "[[2]]"
+  },
+  "0b519b394a591392e5d6f8e3": {
+   "answer": "The final answer is: I cannot find any \u201cO2 saturation pulseoxymetry\u201d SpO2 observations for patient 10018081 today (2133-12-31), so there is no minimum SpO2 time to report.",
+   "true": "[['2133-12-31 02:00:00']]"
+  },
+  "0bef44d46b407af716e48911": {
+   "answer": "The final answer is: I cannot find respiratory rate measurements for patient 10018328 at either 2154-05-15 13:00:00 or 2154-05-15 14:00:00 in the retrieved Observation data, so the difference cannot be calculated.",
+   "true": "[[None]]"
+  },
+  "0d3f767c99e8d250fc86ba71": {
+   "answer": "The final answer is: Yes. The second MCV measurement on the last hospital visit was 113, which is greater than the first measurement value of 112.",
+   "true": "[[1]]"
+  },
+  "0d61464fe9f411c1b299ffef": {
+   "answer": "The final answer is: 0 times.",
+   "true": "[[0]]"
+  },
+  "0e4bb22781a9b0bc9dedffb9": {
+   "answer": "The final answer is: 2174-12-13T11:03:00-05:00",
+   "true": "[]"
+  },
+  "0e9be6448c82613884bebdf5": {
+   "answer": "The final answer is: 33 ng/mL",
+   "true": "[[33.]]"
+  },
+  "0eba370644940aed20760324": {
+   "answer": "The final answer is: I cannot find the drug name in the retrieved data. The first MedicationRequest via an SC route in the first hospital visit references `Medication/920f43f3-a418-5eda-b39d-d3bc4fd403f1`, but the corresponding Medication resource was not available.",
+   "true": "[['Insulin']]"
+  },
+  "0fae80f812674773157d9f2a": {
+   "answer": "The final answer is: I cannot find the Patient resource for patient FHIR ID 13df78e7-150e-5eb7-be5f-5f62b2baee87, so I cannot determine the gender.",
+   "true": "[['M']]"
+  },
+  "101023c9d00c778450601539": {
+   "answer": "The final answer is: 5.770138888888889 days",
+   "true": "[[5.77013889]]"
+  },
+  "103963052c1ac6130cd2db9a": {
+   "answer": "The final answer is: 150",
+   "true": "[[150]]"
+  },
+  "104c93f89e19274578bafb8d": {
+   "answer": "The final answer is: 2131-05-29T00:00:00-04:00",
+   "true": "[['2131-05-29 00:00:00']]"
+  },
+  "10b2e18ba65bee267f263e57": {
+   "answer": "The final answer is: Yes. The patient\u2019s heart rate does go greater than 105.0 according to the database. There are 6 heart rate observations greater than 105.0, with a maximum value of 120.0.",
+   "true": "[[1]]"
+  },
+  "135380cceeececcc1d31beb3": {
+   "answer": "The final answer is: Yes. Patient 10021666 did come into an ER on their first hospital encounter.",
+   "true": "[[1]]"
+  },
+  "1436276ff4d05d626c742fa4": {
+   "answer": "The final answer is: 687.37 hours since the last glucagon prescription on this hospital stay.",
+   "true": "[]"
+  },
+  "14c735141eaad27a37dfacce": {
+   "answer": "The final answer is: Yes. Patient 10026406 had lab tests since 01/2129. I found 77 laboratory Observation records between 2129-01-01 and 2129-12-31 23:59:00.",
+   "true": "[[1]]"
+  },
+  "14d8196b90cb8b401ebd3a91": {
+   "answer": "The final answer is: I cannot find a calcium carbonate prescription for patient 10021487 during the current hospital visit, so I cannot calculate the number of hours since it was first prescribed.",
+   "true": "[]"
+  },
+  "15a9e84696cb054763055092": {
+   "answer": "The final answer is: I cannot find the exact first visit time to the careunit neurology in the retrieved data. The patient\u2019s current hospital visit is present, but the referenced Location resources needed to identify which location/careunit is \u201cneurology\u201d were not available.",
+   "true": "[]"
+  },
+  "15b35d75bfa2fee08c48a6c6": {
+   "answer": "The final answer is: 2146-12-16T03:30:00-05:00, when the maximum Respiratory Rate was 17 insp/min.",
+   "true": "[['2146-12-16 03:30:00']]"
+  },
+  "15b4990f761db52edf38273c": {
+   "answer": "The final answer is: 3.76 days have passed since the last Hemoglobin lab test during the current hospital visit.",
+   "true": "[]"
+  },
+  "1613b932a1fa398b6bb15ef8": {
+   "answer": "The final answer is: Yes. There were 167 laboratory Observation records performed on patient 10016150 in 2142.",
+   "true": "[[1]]"
+  },
+  "1718f0835a82b0bb7c0517f1": {
+   "answer": "The final answer is: 61.5 kg",
+   "true": "[[61.5]]"
+  },
+  "1757b6190d9346fb05196adf": {
+   "answer": "The final answer is: ['MCHC', 'Red Blood Cells', 'RDW', 'RDW-SD', 'Hemoglobin', 'White Blood Cells', 'MCH', 'MCV', 'Urea Nitrogen', 'Potassium', 'Anion Gap', 'Asparate Aminotransferase (AST)', 'Chloride', 'Bicarbonate', 'Triglycerides', 'Sodium', 'Bilirubin, Total', 'Alkaline Phosphatase', 'Alanine Aminotransferase (ALT)', 'Glucose', 'Calcium, Total', 'INR(PT)', 'Magnesium', 'Platelet Count', 'Phosphate', 'PT', 'Creatinine', 'Hematocrit']",
+   "true": "[['BLOOD CULTURE']]"
+  },
+  "17bb906271e8d84bf499f645": {
+   "answer": "The final answer is: I cannot calculate the change because there were no \u201cMesothelial Cells\u201d Observation values found during the patient\u2019s last hospital visit (2132-05-17T23:32:00-04:00 to 2132-05-23T13:01:00-04:00).",
+   "true": "[[None]]"
+  },
+  "19858b1d6157d97c01ffb3cf": {
+   "answer": "The final answer is: 2157-12-20T14:27:00-05:00",
+   "true": "[['2157-12-19 00:00:00']]"
+  },
+  "19a51debb0c5754456d20d1f": {
+   "answer": "The final answer is: 77 distinct medications were prescribed to patient 10022017 since 2189.",
+   "true": "[[56]]"
+  },
+  "19d0768436838216fd47a301": {
+   "answer": "The final answer is: Location/0fc2d23b-0e5b-5f91-8369-6d37301fea51",
+   "true": "[['Medicine']]"
+  },
+  "1afade11184c7bc98c9756f8": {
+   "answer": "The final answer is: 2144-10-30T05:35:00-04:00",
+   "true": "[['2144-10-30 05:35:00']]"
+  },
+  "1c26aa5ab4b654a27fb0f4a6": {
+   "answer": "The final answer is: 2116-12-27T16:27:00-05:00",
+   "true": "[['2116-12-27 16:27:00']]"
+  },
+  "1cb7346d2299d0467b9fcb27": {
+   "answer": "The final answer is: No, in 03/2168 the respiratory rate of patient 10020187 was never greater than 12.0.",
+   "true": "[[0]]"
+  },
+  "1d433e5813c63b26ef517551": {
+   "answer": "The final answer is: 115 mg/dL",
+   "true": "[[115.]]"
+  },
+  "1dffdf5fe800e0b9a0dcf1b3": {
+   "answer": "The final answer is: Yes. Patient 10005866 has been in the hospital, with 7 hospital encounters found.",
+   "true": "[[1]]"
+  },
+  "1eff45de74ada2d6145da372": {
+   "answer": "The final answer is: Yes. 764 laboratory Observation records were performed for patient 10004733 during this month (2174-12-01 through 2174-12-31 23:59).",
+   "true": "[[1]]"
+  },
+  "1fcac336ef5d4a18372aeae5": {
+   "answer": "Error: Input tokens exceeded: 60188 > 32000",
+   "true": "[]"
+  },
+  "204b55b1a8a2dbeafa89b76c": {
+   "answer": "The final answer is: [{'year': 2161, 'l pleural #1 output': {'value': 70, 'unit': 'ml', 'code': 'ml'}}]",
+   "true": "[]"
+  },
+  "20c3ddd36c65c44890c3f3e5": {
+   "answer": "The final answer is: ['Acetaminophen', 'Amphetamine Screen, Urine', 'Anion Gap', 'Barbiturate Screen', 'Barbiturate Screen, Urine', 'Basophils', 'Benzodiazepine Screen', 'Benzodiazepine Screen, Urine', 'Bicarbonate', 'Chloride', 'Cocaine, Urine', 'Creatinine', 'Eosinophils', 'Estimated GFR (MDRD equation)', 'Ethanol', 'Glucose', 'Green Top Hold (plasma)', 'Hematocrit', 'Hemoglobin', 'INR(PT)', 'Length of Urine Collection', 'Light Green Top Hold', 'Lymphocytes', 'MCH', 'MCHC', 'MCV', 'Methadone, Urine', 'Monocytes', 'Neutrophils', 'Opiate Screen, Urine', 'PT', 'PTT', 'Platelet Count', 'Potassium', 'RDW', 'Red Blood Cells', 'Salicylate', 'Sodium', 'Tricyclic Antidepressant Screen', 'Uhold', 'Urea Nitrogen', 'Urine tube, held', 'White Blood Cells']",
+   "true": "[['MRSA SCREEN']]"
+  },
+  "20d7ef0b9116aab70a4d883c": {
+   "answer": "The final answer is: 2181-10-25T12:00:00-04:00",
+   "true": "[['2181-10-25 12:00:00']]"
+  },
+  "20db068481b9b06cc4340c25": {
+   "answer": "The final answer is: 2133-12-18T00:00:00-05:00",
+   "true": "[['2133-12-18 00:00:00']]"
+  },
+  "20e38a034dc27e9626dfa8d9": {
+   "answer": "The final answer is: I found the first transfer since 2166 at `2166-08-21T21:39:00-04:00`, but the retrieved transfer/location record only contains the location reference `Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f` and does not include the care unit name.",
+   "true": "[['Emergency Department']]"
+  },
+  "2143a6938a83abd7a5830ec5": {
+   "answer": "The final answer is: 2137-08-11T04:11:00-04:00 (maximum platelet count: 333 K/uL)",
+   "true": "[['2137-08-11 04:11:00']]"
+  },
+  "220a7871615e4c1a12e5cf08": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10006580 on the last hospital stay in the retrieved FHIR data.",
+   "true": "[['MARRIED']]"
+  },
+  "230ffeaf99bdda6a8e74e380": {
+   "answer": "The final answer is: I cannot find any \"Arterial Blood Pressure mean\" observations on 2125-03-07 for patient 10014729, so the average mean blood pressure cannot be calculated.",
+   "true": "[[None]]"
+  },
+  "24612cf5da1e8c7c6a9fca8f": {
+   "answer": "The final answer is: No. I found no \u201cO2 saturation pulseoxymetry\u201d SpO2 observations recorded on 12/12/2116, so there is no evidence that the SpO2 was ever greater than 97.0 on that date.",
+   "true": "[[1]]"
+  },
+  "254b58ea3d513164000b4a51": {
+   "answer": "The final answer is: 2120-05-12T15:00:00-04:00",
+   "true": "[['2120-05-12 15:00:00']]"
+  },
+  "2592fc0c41e2b7144c374342": {
+   "answer": "The final answer is: I cannot find a MedicationRequest or Medication resource that explicitly identifies \u201cclobetasol propionate 0.05% cream\u201d for patient 10021487 in the retrieved data, so I cannot determine the number of days since it was first prescribed.",
+   "true": "[]"
+  },
+  "25b2ba84dbb2d8d8d138ee64": {
+   "answer": "The final answer is: 103 kg at 2142-08-30 16:00:00.",
+   "true": "[[103.]]"
+  },
+  "264e8e9083e7fe02916af314": {
+   "answer": "The final answer is: I cannot find the medication name in the retrieved data. The last MedicationRequest in 10/2125 was authored on `2125-10-02T11:17:54-04:00` and references `Medication/5cbae514-bad1-5a8d-852f-5e39e0bba746`, but no Medication resource/name was available for that reference.",
+   "true": "[['Potassium Chloride']]"
+  },
+  "264edd3d4d5f3f14d0173879": {
+   "answer": "The final answer is: The last height record since 12/2146 was 160 cm on 2146-12-15 09:54:00.",
+   "true": "[[160.]]"
+  },
+  "26fba96883d9bde92fd8e95f": {
+   "answer": "The final answer is: 330.82 hours have elapsed since the last lactate dehydrogenase (LD) lab test during this hospital stay.",
+   "true": "[]"
+  },
+  "28070d8edf72fb2952e28930": {
+   "answer": "The final answer is: 1 hospital visit during this year (2143).",
+   "true": "[[1]]"
+  },
+  "282f008dd8dfb8f4a1dd6999": {
+   "answer": "The final answer is: No organism was detected; the last urine culture result was \"NO GROWTH.  \"",
+   "true": "[['ENTEROCOCCUS SP.']]"
+  },
+  "2b27156e1bc6e928eb6b916e": {
+   "answer": "The final answer is: [{'year': 2115, 'weight': 61.7, 'unit': 'kg', 'date': '2115-12-28 21:00:00'}]",
+   "true": "[[61.7]]"
+  },
+  "2c251f13cfc63c34883bcbcd": {
+   "answer": "The final answer is: No. I found 0 microbiological urine tests for patient 10005348 in 08/2127.",
+   "true": "[[0]]"
+  },
+  "2cd96b3599e3450802308c45": {
+   "answer": "The final answer is: 13 days since the hospital admission on 2133-12-18T16:58:00-05:00.",
+   "true": "[]"
+  },
+  "2dfc862bcecf1f1b2c037bc9": {
+   "answer": "The final answer is: 2146-07-01 03:10:00",
+   "true": "[['2146-07-01 03:10:00']]"
+  },
+  "2e3384d7ef9a76c0237df519": {
+   "answer": "The final answer is: 99 bpm at 2119-10-26T08:44:00-04:00.",
+   "true": "[[99.]]"
+  },
+  "2e773c48c344e7f33a29892f": {
+   "answer": "The final answer is: I cannot find any Procedure records for patient 10018423 since 2162 up to the assumed current time of 2162-12-31 23:59:00.",
+   "true": "[]"
+  },
+  "2f0d855d95535316ee099fde": {
+   "answer": "The final answer is: [\n  {\"date\": \"2133-12-18\", \"weight\": 90.7, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-19\", \"weight\": 94.0, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-20\", \"weight\": 97.4, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-21\", \"weight\": 100.7, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-24\", \"weight\": 93.6, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-26\", \"weight\": 87.2, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-28\", \"weight\": 83.5, \"unit\": \"kg\"},\n  {\"date\": \"2134-01-01\", \"weight\": 84.9, \"unit\": \"kg\"}\n]",
+   "true": "[[ 90.7]\n [ 94. ]\n [ 97.4]\n [100.7]\n [ 98.6]\n [100. ]\n [ 93.6]\n [ 87.2]\n [ 83.5]\n [ 83. ]\n [ 81.5]\n [ 83. ]\n [ 84.9]\n [ 83.7]]"
+  },
+  "2fcffbbef2cf3c4109b6345d": {
+   "answer": "The final answer is: Yes. Patient 10007795 had procedures during this year (2136); 28 Procedure records were found.",
+   "true": "[[1]]"
+  },
+  "304589d2a4159d23de6243b4": {
+   "answer": "The final answer is: 2137-06-12T22:35:00-04:00",
+   "true": "[['2137-06-12 22:35:00']]"
+  },
+  "310609c75ba9429428209b11": {
+   "answer": "The final answer is: 5.087511574074074 days",
+   "true": "[[5.08751157]]"
+  },
+  "3173d5e9349394956703946f": {
+   "answer": "The final answer is: 2116-12-17 23:00:00",
+   "true": "[['2116-12-17 23:52:00']]"
+  },
+  "317471edec57125589ff563e": {
+   "answer": "The final answer is: 5.087511574074074 days",
+   "true": "[[5.08751157]]"
+  },
+  "32fa88a37c2489a86ba893e5": {
+   "answer": "The final answer is: 2145-12-19T14:36:00-05:00",
+   "true": "[['2145-12-19 14:36:00']]"
+  },
+  "346a6c07df798347268b1abd": {
+   "answer": "",
+   "true": "[[750]]"
+  },
+  "3508fba9387d18248281be4e": {
+   "answer": "The final answer is: Yes. Patient 10014078 was diagnosed with diseases during their last hospital encounter. Conditions recorded were: \n[\n  \"Unspecified infectious and parasitic diseases\",\n  \"Benign neoplasm of cerebral meninges\",\n  \"Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\",\n  \"Other and unspecified hyperlipidemia\",\n  \"Unspecified essential hypertension\",\n  \"Grand mal status\",\n  \"Encephalopathy, unspecified\",\n  \"Grand mal status\"\n]",
+   "true": "[[1]]"
+  },
+  "3721cde992fe90dd17278b65": {
+   "answer": "The final answer is: 695.6 hours have passed since the patient was admitted to the hospital.",
+   "true": "[]"
+  },
+  "37b440fc3a82a50003dce7ed": {
+   "answer": "The final answer is: 2180-03-05T19:00:00-05:00",
+   "true": "[['2180-03-05 19:00:00']]"
+  },
+  "3813f972b07ceee5031bb452": {
+   "answer": "The final answer is: Yes. Patient 10021666 received diagnoses during their last hospital encounter.\n\nLast hospital encounter:\n- ID: f96dcfb3-1c84-5040-b9b9-c227d21a21a1\n- Start: 2172-03-12T23:47:00-04:00\n- End: 2172-03-23T15:40:00-04:00\n\nThere were 35 Condition records associated with that encounter and its related child encounters. Diagnoses included:\n- 412 \u2014 Old myocardial infarction\n- 3898 \u2014 Other specified forms of hearing loss\n- V4986 \u2014 Do not resuscitate status\n- 85201 \u2014 Subarachnoid hemorrhage following injury without mention of open intracranial wound, with no loss of consciousness\n- 2930 \u2014 Delirium due to conditions classified elsewhere\n- 2875 \u2014 Thrombocytopenia, unspecified\n- 42731 \u2014 Atrial fibrillation\n- 2252 \u2014 Benign neoplasm of cerebral meninges\n- 40390 \u2014 Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage I through stage IV, or unspecified\n- 28860 \u2014 Leukocytosis, unspecified\n- 4280 \u2014 Congestive heart failure, unspecified\n- 60000 \u2014 Hypertrophy (benign) of prostate without urinary obstruction and other lower urinary tract symptom (LUTS)\n- 49390 \u2014 Asthma, unspecified type, unspecified\n- E8889 \u2014 Unspecified fall\n- 56400 \u2014 Constipation, unspecified\n- V4364 \u2014 Hip joint replacement\n- 5849 \u2014 Acute kidney failure, unspecified\n- 41401 \u2014 Coronary atherosclerosis of native coronary artery\n- 42822 \u2014 Chronic systolic heart failure\n- 2724 \u2014 Other and unspecified hyperlipidemia\n- 78729 \u2014 Other dysphagia\n- 58389 \u2014 Nephritis and nephropathy, not specified as acute or chronic, with other specified pathological lesion in kidney\n- 34831 \u2014 Metabolic encephalopathy\n- 85221 \u2014 Subdural hemorrhage following injury without mention of open intracranial wound, with no loss of consciousness\n- 30501 \u2014 Alcohol abuse, continuous\n- 3682 \u2014 Diplopia\n- 29420 \u2014 Dementia, unspecified, without behavioral disturbance\n- 2760 \u2014 Hyperosmolality and/or hypernatremia\n- 2819 \u2014 Unspecified deficiency anemia\n- V4502 \u2014 Automatic implantable cardiac defibrillator in situ\n- 5853 \u2014 Chronic kidney disease, Stage III (moderate)\n- 81342 \u2014 Other closed fractures of distal end of radius (alone)\n- 85220 \u2014 TRAUMATIC SUBDURAL HEM\n- E8809 \u2014 FALL ON STAIR/STEP NEC\n- 85200 \u2014 TRAUM SUBARACHNOID HEM",
+   "true": "[[1]]"
+  },
+  "3857136499aee33dbb04cab5": {
+   "answer": "",
+   "true": "[['2115-09-28 13:08:00']]"
+  },
+  "390c4f9e4e7b5c353eff9da7": {
+   "answer": "",
+   "true": "[['1000']]"
+  },
+  "393404a584eb0bb1b6bbe900": {
+   "answer": "The final answer is: I cannot find a 'Height (cm)' Observation for patient 10020944 in 03/2131.",
+   "true": "[]"
+  },
+  "3a676bfafee66c27173904e8": {
+   "answer": "The final answer is: Yes. On the first hospital visit, patient 10005866 was admitted from the emergency room.",
+   "true": "[[1]]"
+  },
+  "3c3a60ef6ea248ad69d36deb": {
+   "answer": "The final answer is: 2145-10-01 13:10:49",
+   "true": "[['2145-10-01 14:00:00']]"
+  },
+  "3c71f198ffca8a3ba108d583": {
+   "answer": "",
+   "true": "[['STAPH AUREUS COAG +']]"
+  },
+  "3d5c7c8185dc079c5e416e14": {
+   "answer": "The final answer is: 2143-03-19T08:50:00 (minimum platelet count value: 202 K/uL)",
+   "true": "[['2143-03-19 08:50:00']]"
+  },
+  "3de4eeab52c93e43309156d7": {
+   "answer": "The final answer is: No. I could not find any MedicationRequest designated for the patient in 04/2159.",
+   "true": "[[0]]"
+  },
+  "3de8ef9d5ffcc52173897ea8": {
+   "answer": "The final answer is: 180 cm",
+   "true": "[[180.]]"
+  },
+  "3e4b52c69a2bdf36e4f03676": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10005866 during their last hospital encounter in the retrieved FHIR data. The last hospital Encounter is `ba829745-66af-547d-9425-5d71fc2fc0ff`, but it does not contain a marital status field, and no Patient resource was retrieved for the provided Patient FHIR ID.",
+   "true": "[['SINGLE']]"
+  },
+  "3e69022ac78531ddbbfd8b99": {
+   "answer": "The final answer is: Yes. Patient 10016742 had the treatment since 2178:\n\n[{'id': '0b1d4fed-9792-590f-939e-b2bf4559dc86', 'performed': '2178-07-25T00:00:00-04:00', 'code': {'coding': [{'code': '3E0H76Z', 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-procedure-icd10', 'display': 'Introduction of Nutritional Substance into Lower GI, Via Natural or Artificial Opening'}]}}]",
+   "true": "[[1]]"
+  },
+  "3e8b5080c946a24c2fb71498": {
+   "answer": "The final answer is: 2",
+   "true": "[[2]]"
+  },
+  "3ec03a348a536f8a80e9d54e": {
+   "answer": "The final answer is: [{'year': '2118', 'volume': 24.347826086956523, 'unit': 'ml'}]",
+   "true": "[]"
+  },
+  "3f3eaf9f4ef204effd22e28b": {
+   "answer": "The final answer is: 4.190972222222222 days",
+   "true": "[[4.19097222]]"
+  },
+  "3f83bca7c25ce27ab09a7ef0": {
+   "answer": "The final answer is: 2 kg",
+   "true": "[[2.]]"
+  },
+  "40bd0f4265c38c258e1d9e19": {
+   "answer": "The final answer is: I cannot find any urine microbiological examination for patient 10021118 in 12/2161, so I cannot determine whether any organism was found in that period.",
+   "true": "[[0]]"
+  },
+  "411239af52a2ceaa4e79d867": {
+   "answer": "The final answer is: 57 unique prescription drugs were ordered for patient 10020944 since 24 months ago.",
+   "true": "[[58]]"
+  },
+  "419163a7cde49786dfda6fcd": {
+   "answer": "The final answer is: 2118-10-11T20:15:00-04:00",
+   "true": "[['2118-10-11 20:15:00']]"
+  },
+  "426ce736177896950ecec77f": {
+   "answer": "The final answer is: 2148-09-11T00:00:00-04:00",
+   "true": "[['2148-09-11 00:00:00']]"
+  },
+  "4344afd25464e3304de00b90": {
+   "answer": "The final answer is: 1.1769212962962963 days",
+   "true": "[[1.1769213]]"
+  },
+  "43da3486df026843872b9af4": {
+   "answer": "The final answer is: ELECTIVE",
+   "true": "[['ELECTIVE']]"
+  },
+  "44ba2f356939ab27e43cbc9a": {
+   "answer": "The final answer is: 2180-05-06 22:25:00",
+   "true": "[['2180-05-07 05:05:00']]"
+  },
+  "45b34eeae5d3c8d44b703194": {
+   "answer": "The final answer is: I cannot find a `dose_val_rx` value for Docusate Sodium (Liquid) prescribed to patient 10007818 during the first hospital encounter. One matching MedicationRequest was found, but it contains no dose value to sum.",
+   "true": "[[100]]"
+  },
+  "45b3c545de90501570505db8": {
+   "answer": "The final answer is: I cannot find the dose_val_rx information for the last Heparin Flush (10 units/ml) prescription since 04/2196. The last matching MedicationRequest was authoredOn 2196-06-14T14:25:58-04:00, but the retrieved FHIR resource does not include a dose_val_rx value or dosageInstruction.",
+   "true": "[['1']]"
+  },
+  "461ff9eeedf5e9452cbf12b2": {
+   "answer": "The final answer is: Yes. Patient 10007818 had drainage of peritoneal cavity, percutaneous approach, diagnostic treatment in 2146 on:\n- 2146-06-19T00:00:00-04:00\n- 2146-07-02T00:00:00-04:00",
+   "true": "[[1]]"
+  },
+  "4724c2961dfc05d2b08ea4be": {
+   "answer": "The final answer is: Yes. Patient 10020187 received Restriction of Intracranial Artery with Intraluminal Device, Percutaneous Approach in the last hospital encounter.",
+   "true": "[[1]]"
+  },
+  "472793119170f9c8adb0b84b": {
+   "answer": "The final answer is: No. Since 09/08/2116, patient 10021487\u2019s \u201cArterial Blood Pressure diastolic\u201d was never less than 31.0. The lowest found value was 35.0 on 2116-12-17T02:00:00-05:00.",
+   "true": "[[0]]"
+  },
+  "473f0352cd0b38c085ce1628": {
+   "answer": "The final answer is: 0.5 kg",
+   "true": "[[0.5]]"
+  },
+  "48859a4418a3875bf6082407": {
+   "answer": "The final answer is: 2.6 mg/dL",
+   "true": "[[2.6]]"
+  },
+  "49a4cd3cf6fcacac9a3bf922": {
+   "answer": "The final answer is: 2125-09-28 08:00:00",
+   "true": "[['2125-09-28 08:00:00']]"
+  },
+  "4a73f78af6f830619516e24b": {
+   "answer": "The final answer is: 2144-11-02T15:00:00-05:00",
+   "true": "[['2144-11-02 15:00:00']]"
+  },
+  "4b10d0fec2f23acab915e3f3": {
+   "answer": "The final answer is: 1",
+   "true": "[[1]]"
+  },
+  "4b635ac1325eaf0dd75988d5": {
+   "answer": "The final answer is: No. In 04/last year (April 2109), patient 10001725 was not prescribed pantoprazole, albuterol 0.083% neb soln, or propranolol.",
+   "true": "[[0]]"
+  },
+  "4b72e7b13c37b47053d926d9": {
+   "answer": "The final answer is: [{'month': '2187-05', 'value': 250, 'unit': 'ml', 'code': 'ml'}]",
+   "true": "[]"
+  },
+  "4bff1dd96412ee933ce201a2": {
+   "answer": "The final answer is: 1.7513657407407408 days",
+   "true": "[[1.75136574]]"
+  },
+  "4e79db3380f81126bc756ee5": {
+   "answer": "The final answer is: 0.1 %",
+   "true": "[[0.1]]"
+  },
+  "4ff852f95fae6d06622555a4": {
+   "answer": "The final answer is: [{'date': '2117-04-12', 'weight': 83.6, 'unit': 'kg'}, {'date': '2117-04-13', 'weight': 84.2, 'unit': 'kg'}]",
+   "true": "[[83.6]\n [84.2]]"
+  },
+  "519da8c653b3284432571957": {
+   "answer": "The final answer is: Yes. Since 2146, patient 10007818 had 14 final `Blood Culture, Routine` microbiology observations.\n\nResults found:\n- `2146-06-19T15:30:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-22T20:00:00-04:00` \u2014 organism: `ESCHERICHIA COLI`\n  - Susceptibility results: `CEFEPIME`, `AMPICILLIN/SULBACTAM`, `CEFTRIAXONE`, `PIPERACILLIN/TAZO`, `AMPICILLIN`, `TRIMETHOPRIM/SULFA`, `CEFAZOLIN`, `CIPROFLOXACIN`, `TOBRAMYCIN`, `MEROPENEM`, `GENTAMICIN`, `CEFTAZIDIME` \u2014 all `Susceptible`\n- `2146-06-22T23:30:00-04:00` \u2014 organism: `ESCHERICHIA COLI`; value: `No susceptibility data present`\n- `2146-06-23T09:15:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-24T02:50:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-24T03:25:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-25T03:49:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-26T03:43:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-30T10:29:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-06-30T10:29:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-07-02T12:40:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-07-03T04:25:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-07-05T17:44:00-04:00` \u2014 `NO GROWTH.  `\n- `2146-07-07T04:00:00-04:00` \u2014 `NO GROWTH.  `",
+   "true": "[[1]]"
+  },
+  "52132e5911d6dc1ae05dcf5a": {
+   "answer": "The final answer is: 2142-07-31T00:00:00-04:00",
+   "true": "[['2142-07-31 00:00:00']]"
+  },
+  "524208cb99d72ea26c67c3f9": {
+   "answer": "The final answer is: 1 ICU check-in during this year (2180).",
+   "true": "[[1]]"
+  },
+  "52c6c669438001d194f1c9a8": {
+   "answer": "The final answer is: 4.9631944444444445 days",
+   "true": "[[4.96319444]]"
+  },
+  "52f6bc8e9873cce45456c38e": {
+   "answer": "The final answer is: I cannot find the Patient resource for patient 10025463 with FHIR ID 28776290-4349-56d3-8c13-adc554feabb8, so I cannot specify the gender.",
+   "true": "[['M']]"
+  },
+  "53388f93019e894471f1753a": {
+   "answer": "The final answer is: Yes. Patient 10026354 has undergone procedures. There are 13 Procedure records, including:\n\n- 0NSS35Z \u2014 Reposition Left Maxilla with External Fixation Device, Percutaneous Approach\n- 0NST04Z \u2014 Reposition Right Mandible with Internal Fixation Device, Open Approach\n- 03QY0ZZ \u2014 Repair Upper Artery, Open Approach\n- 0NSV35Z \u2014 Reposition Left Mandible with External Fixation Device, Percutaneous Approach\n- 224275 \u2014 20 Gauge\n- 225470 \u2014 OR Sent\n- 225752 \u2014 Arterial Line\n- 225792 \u2014 Invasive Ventilation\n- 224275 \u2014 20 Gauge\n- 227194 \u2014 Extubation\n- 229351 \u2014 Foley Catheter\n- 224267 \u2014 Cordis/Introducer\n- 386478007 \u2014 Triage: emergency center (procedure)",
+   "true": "[[1]]"
+  },
+  "5436413908d5e902536630e8": {
+   "answer": "The final answer is: ['Anion Gap', 'Bicarbonate', 'Calcium, Total', 'Chloride', 'Creatinine', 'Glucose', 'Hematocrit', 'Hemoglobin', 'MCH', 'MCHC', 'MCV', 'Magnesium', 'Phosphate', 'Platelet Count', 'Potassium', 'RDW', 'Red Blood Cells', 'Sodium', 'Urea Nitrogen', 'White Blood Cells']",
+   "true": "[['URINE']]"
+  },
+  "5437dceb1f465a249b318f40": {
+   "answer": "The final answer is: 88.73 hours since admission.",
+   "true": "[]"
+  },
+  "545a6730c778873c467d8235": {
+   "answer": "Error: Input tokens exceeded: 44487 > 32000",
+   "true": "[[0]]"
+  },
+  "552b047a4b16894db1150381": {
+   "answer": "Error: Input tokens exceeded: 51112 > 32000",
+   "true": "[]"
+  },
+  "55d4903b176bcfa711e73e0f": {
+   "answer": "The final answer is: Yes. Patient 10006580 had the procedure Implantation or replacement of carotid sinus stimulation device, total system in 2137, on 2137-08-11T00:00:00-04:00.",
+   "true": "[[1]]"
+  },
+  "5614cf0da6a6dc8d7f53e2e4": {
+   "answer": "The final answer is: 67.16216216216216 bpm",
+   "true": "[[67.16216216]]"
+  },
+  "568a32b005438f0d65d4f758": {
+   "answer": "The final answer is: 2189-06-12T06:35:00-04:00",
+   "true": "[['2189-06-12 06:35:00']]"
+  },
+  "56919090958387812584e77a": {
+   "answer": "The final answer is: In patient 10012853\u2019s first hospital encounter, warfarin and heparin were prescribed, but lisinopril was not prescribed.",
+   "true": "[[1]]"
+  },
+  "56cc41f276a6e10711d396f4": {
+   "answer": "The final answer is: 2186-11-13T12:00:00-05:00",
+   "true": "[['2186-11-13 12:00:00']]"
+  },
+  "571b776d0c624ec21b51af31": {
+   "answer": "The final answer is: No. The first MRSA SCREEN microbiology test since 1 year ago was on 2117-04-11T22:57:00, and its valueString was \"No MRSA isolated.  \"",
+   "true": "[[0]]"
+  },
+  "580f56a66f7626bbcd078c21": {
+   "answer": "The final answer is: No. In patient 10023239\u2019s last urine microbiology test in 2137, the URINE CULTURE result was `NO GROWTH.  `, so no organisms were detected.",
+   "true": "[[0]]"
+  },
+  "5886a94103455554061fb16a": {
+   "answer": "",
+   "true": "[[15]]"
+  },
+  "58a17f0e9f1fb5701047c022": {
+   "answer": "The final answer is: No. I found the first hospital encounter (ID: 493f1402-9b10-53db-9d78-7a5f25b710b8, from 2155-07-14T19:15:00-04:00 to 2155-07-15T18:37:00-04:00), and there were no ER/ED encounters during that first hospital encounter.",
+   "true": "[[1]]"
+  },
+  "590d8305084857287efef413": {
+   "answer": "The final answer is: 98.8 kg",
+   "true": "[[98.8]]"
+  },
+  "5a67eba88dd963170a026d15": {
+   "answer": "",
+   "true": "[[10]]"
+  },
+  "5ad1c0bd8c724486755abcd6": {
+   "answer": "The final answer is: 1 ICU visit during the first hospital encounter.",
+   "true": "[[1]]"
+  },
+  "5c2b95425f850cf9aee654aa": {
+   "answer": "The final answer is: [] \u2014 I could not find any stool volume (`Stool | 226579`, unit `ml`) measurements for patient 10020740 since 03/26/2150 through 12/31/2150.",
+   "true": "[]"
+  },
+  "5c365a198595d213cd5d103a": {
+   "answer": "The final answer is: No. I found no triglycerides tests for patient 10004733 in 10/last year (October 2173).",
+   "true": "[[0]]"
+  },
+  "5c5d37eab2cf65bcaafade09": {
+   "answer": "The final answer is: 0 times.",
+   "true": "[[0]]"
+  },
+  "5cf885d109f3f215844f994e": {
+   "answer": "The final answer is: 459.93305555555554 hours",
+   "true": "[]"
+  },
+  "5d31a8336f838e5062d60d2d": {
+   "answer": "The final answer is: Yes. Patient 10038999 received the procedure \"Drainage of Left Pleural Cavity, Percutaneous Approach, Diagnostic\" in 2131.",
+   "true": "[[1]]"
+  },
+  "5d5a07118525dfe5b79a0611": {
+   "answer": "The final answer is: Yes. Patient 10026255 had 7 Red Blood Cells tests since 04/2200:\n\n- 2200-09-17T19:40:00 \u2014 Red Blood Cells \u2014 4.7 m/uL\n- 2200-09-22T06:20:00 \u2014 Red Blood Cells \u2014 4 m/uL\n- 2200-09-26T06:45:00 \u2014 Red Blood Cells \u2014 4.2 m/uL\n- 2200-09-27T06:10:00 \u2014 Red Blood Cells \u2014 4.22 m/uL\n- 2200-09-28T06:50:00 \u2014 Red Blood Cells \u2014 4.06 m/uL\n- 2200-09-29T10:35:00 \u2014 Red Blood Cells \u2014 4.4 m/uL\n- 2200-12-07T10:45:00 \u2014 Red Blood Cells \u2014 4.36 m/uL",
+   "true": "[[1]]"
+  },
+  "5da6b605b949e3c4c068537e": {
+   "answer": "The final answer is: 2115-12-28T16:21:00-05:00",
+   "true": "[['2115-12-28 16:21:00']]"
+  },
+  "5db87efd687aa472406c44c6": {
+   "answer": "The final answer is: Yes. Patient 10015931 has been prescribed medication since 2176; there are 288 MedicationRequest records authored between 2176-01-01 00:00:00 and 2176-12-31 23:59:00.",
+   "true": "[[1]]"
+  },
+  "601558b753933c463ad3089a": {
+   "answer": "The final answer is: Yes. For ICU encounter Encounter/70b55a0d-3279-52be-bb6a-2ff9afdd452e, the respiratory rate was ever less than 35.0; the minimum recorded value was 11.0. For ICU encounter Encounter/677b526f-c52e-5c75-9fc0-601c48f308bb, I could not find any respiratory rate observations.",
+   "true": "[[0]]"
+  },
+  "6236365bb1b1dab256878dbe": {
+   "answer": "The final answer is: Yes. Patient 10020187 has been prescribed medications; there are 84 MedicationRequest records.",
+   "true": "[[1]]"
+  },
+  "6336898e3861f505fd6e2a25": {
+   "answer": "The final answer is: 3.6972222222222224 days since admission to the hospital.",
+   "true": "[]"
+  },
+  "633d7843ff15021b4c6b6ac9": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10012853 in their last hospital encounter.",
+   "true": "[['WIDOWED']]"
+  },
+  "6375d8b399f74f248505155f": {
+   "answer": "The final answer is: 0",
+   "true": "[[0]]"
+  },
+  "6381c60f67186bd31083fcdf": {
+   "answer": "The final answer is: emergency (code: EMER)",
+   "true": "[['EW EMER.']]"
+  },
+  "647bc08d18cac6dbda791c42": {
+   "answer": "The final answer is: 2184-10-09T11:34:19-04:00",
+   "true": "[['2184-10-09 16:00:00']]"
+  },
+  "666e67f82411b8a3b4b429e7": {
+   "answer": "The final answer is: Yes. Patient 10005909 had 1 e.r. encounter in 2144: Encounter/abbd935e-e46a-56cd-a609-3d9be0c646ba starting 2144-10-28T18:29:00-04:00.",
+   "true": "[[1]]"
+  },
+  "666f86f3566bfabb76e587a7": {
+   "answer": "The final answer is: 2185-11-02T20:28:57-04:00",
+   "true": "[['2185-11-02 21:00:00']]"
+  },
+  "672d81cda5b780896726e4f2": {
+   "answer": "The final answer is: 2186-09-15T12:56:00-04:00",
+   "true": "[['2186-09-15 18:00:00']]"
+  },
+  "68e2938f96286a982888a1f6": {
+   "answer": "The final answer is: Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a\n\nI could not resolve this Location reference to a human-readable care unit name because the Location resource was not found in the retrieved data.",
+   "true": "[['Med/Surg']]"
+  },
+  "68f60925ee10fafbe0a043b1": {
+   "answer": "The final answer is: I cannot determine this because I could not find any \u201cArterial Blood Pressure systolic\u201d Observation records during the patient\u2019s last ICU visit. The last ICU visit was Encounter/063983ba-71d7-5e3e-8f64-08433c20e377 from 2201-12-11T20:11:52-05:00 to 2201-12-13T18:29:00-05:00, and there were 0 matching systolic blood pressure measurements found for that ICU encounter.",
+   "true": "[[0]]"
+  },
+  "694ef79b1e8ab1b548efa5b3": {
+   "answer": "The final answer is: No, I could not find any lab testing (laboratory Observation records) for patient 10018423 in 2162.",
+   "true": "[[0]]"
+  },
+  "69c8cd3610b365b38e9dc8fb": {
+   "answer": "The final answer is: Yes. Patient 10004235 received the procedure: Endoscopic insertion of stent (tube) into bile duct.",
+   "true": "[[1]]"
+  },
+  "6ac4cfa978f125a71ca0e9b0": {
+   "answer": "",
+   "true": "[['100']]"
+  },
+  "6aea46a3a6bf0c02fb9bd415": {
+   "answer": "The final answer is: I cannot find a respiratory rate measurement for patient 10027602 on 2201-12-04.",
+   "true": "[]"
+  },
+  "6affdda52b5c91cdefb3ac90": {
+   "answer": "The final answer is: No. On the last hospital visit, the first Free Calcium value was 1.06 mmol/L, and the second Free Calcium value was 1.08 mmol/L. The second value is not less than the first.",
+   "true": "[[0]]"
+  },
+  "6b1fe6a4f18cb1365ffa3764": {
+   "answer": "The final answer is: 1.0 kg increase (from 73.9 kg to 74.9 kg).",
+   "true": "[[1.]]"
+  },
+  "6b48b47dea05709d8dddd909": {
+   "answer": "The final answer is: No. The last measured Calculated Total CO2 level on the first hospital visit was 26 mEq/L, and the second-to-last measurement was also 26 mEq/L, so the last measurement was not less than the second-to-last measurement.",
+   "true": "[[0]]"
+  },
+  "6bb8d0b3a6e2b6227b56f595": {
+   "answer": "The final answer is: {'code': '%', 'unit': '%', 'value': 94, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}",
+   "true": "[[94.]]"
+  },
+  "6d14fafef38d93f2e020c386": {
+   "answer": "The final answer is: During the patient's first hospital encounter, the procedure occurred 0 times.",
+   "true": "[[0]]"
+  },
+  "6d1e9f74415d70381cffcd18": {
+   "answer": "The final answer is: Yes. Patient 10021938 has had 16 Procedure records since 2181.",
+   "true": "[[1]]"
+  },
+  "6d23077db7dbc8321431bf64": {
+   "answer": "The final answer is: 27 days have passed since the patient was admitted to the hospital.",
+   "true": "[]"
+  },
+  "6dc27e0c371f7e5dd9d2a981": {
+   "answer": "The final answer is: 2201-11-01T00:00:00-04:00",
+   "true": "[['2201-10-30 12:03:00']]"
+  },
+  "6df8c8add4bde78a73d76071": {
+   "answer": "The final answer is: 2161-04-27T00:00:00-04:00",
+   "true": "[['2161-04-27 00:00:00']]"
+  },
+  "6e19826cc8478fa8a97d1dee": {
+   "answer": "The final answer is: 2146-07-06T16:00:00-04:00 \n",
+   "true": "[['2146-07-06 16:00:00']]"
+  },
+  "6e7e6e42109e147a8c37d95d": {
+   "answer": "The final answer is: {'code': '#/uL', 'unit': '#/uL', 'value': 5770, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}",
+   "true": "[[5770.]]"
+  },
+  "6f8551a85f07e537ff14bede": {
+   "answer": "",
+   "true": "[]"
+  },
+  "70516111809660e05336d719": {
+   "answer": "The final answer is: 2116-12-07T15:05:00-05:00",
+   "true": "[['2116-12-03 16:18:00']]"
+  },
+  "7066a7025a2c0442a511c5e1": {
+   "answer": "The final answer is: {'code': '%', 'unit': '%', 'value': 97, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}",
+   "true": "[[97.]]"
+  },
+  "70b7e8f278566e9443f31eaf": {
+   "answer": "The final answer is: Yes. There have been 3 microbiological MRSA SCREEN test results for patient 10031757 since 2137:\n\n- 2137-10-12T23:01:00-04:00 \u2014 MRSA SCREEN \u2014 `No MRSA isolated.  `\n- 2137-10-14T09:46:00-04:00 \u2014 MRSA SCREEN \u2014 `No MRSA isolated.  `\n- 2137-10-15T18:30:00-04:00 \u2014 MRSA SCREEN \u2014 `No MRSA isolated.  `",
+   "true": "[[1]]"
+  },
+  "712595edb391862c04d6ec79": {
+   "answer": "The final answer is: 5.008333333333334 days",
+   "true": "[[5.00833333]]"
+  },
+  "71cdc4002dd9037845bd713a": {
+   "answer": "The final answer is: 2113-08-04T00:00:00-04:00",
+   "true": "[['2113-08-04 00:00:00']]"
+  },
+  "71fb7280916537b48dea629f": {
+   "answer": "The final answer is: 1 time.",
+   "true": "[[1]]"
+  },
+  "727aea1d64b5ba869e4b3dc8": {
+   "answer": "",
+   "true": "[[10]]"
+  },
+  "729c62dcfd9ac11a32a56161": {
+   "answer": "The final answer is: Yes. Patient 10015860 has 61 MedicationRequest records authored since 1 year ago (from 2185-12-31 23:59:00 through 2186-12-31 23:59:00).",
+   "true": "[[1]]"
+  },
+  "72e0ab522c86eeb3cfdf64d1": {
+   "answer": "The final answer is: 2178-07-03 23:28:00",
+   "true": "[['2178-07-15 15:00:00']]"
+  },
+  "7329fbf5056c86af263e9033": {
+   "answer": "The final answer is: 6850 ml",
+   "true": "[[6850]]"
+  },
+  "732aa8afc5a1fa558876a572": {
+   "answer": "The final answer is: 0 kg",
+   "true": "[[0.]]"
+  },
+  "73710b96b938a24a7a5c86d5": {
+   "answer": "",
+   "true": "[['Milk of Magnesia']]"
+  },
+  "740f87417b7715602b678286": {
+   "answer": "The final answer is: Yes. Patient 10029484 had 2 tests for Creatine Kinase, MB Isoenzyme during the previous month (November 2160):\n- 2160-11-09 11:13:00 \u2014 value: 3 ng/mL\n- 2160-11-08 03:28:00 \u2014 value: 1 ng/mL",
+   "true": "[[1]]"
+  },
+  "741720ef5045654c9099edd9": {
+   "answer": "The final answer is: I cannot calculate the elapsed time because no metronidazole/flagyl MedicationRequest was found in the patient\u2019s current hospital visit.",
+   "true": "[]"
+  },
+  "74968f3f69d0e352733f0a96": {
+   "answer": "The final answer is: 2201-12-13T03:08:00-05:00",
+   "true": "[['2201-12-13 03:08:00']]"
+  },
+  "7535579b90cfcb61fed1c380": {
+   "answer": "Error: Input tokens exceeded: 39878 > 32000",
+   "true": "[['CLOSTRIDIUM PERFRINGENS']\n ['BACTEROIDES FRAGILIS GROUP']]"
+  },
+  "7559da6b7b189084f45242ea": {
+   "answer": "The final answer is: Yes. Patient 10020944 was in the E.R. during their first hospital visit.",
+   "true": "[[1]]"
+  },
+  "75687ea1705bf35f720606d4": {
+   "answer": "The final answer is: 200",
+   "true": "[[200]]"
+  },
+  "75b34f0cc40ad60222a3d432": {
+   "answer": "The final answer is: {'code': 'EMER', 'system': 'http://terminology.hl7.org/CodeSystem/v3-ActCode', 'display': 'emergency'}",
+   "true": "[['EW EMER.']]"
+  },
+  "764c80fc36e53d7964e0f522": {
+   "answer": "The final answer is: 2148-09-10 00:00:00 (URINE CULTURE)",
+   "true": "[['2148-09-10 15:29:00']]"
+  },
+  "76a3b26583f61cc00377b6a2": {
+   "answer": "The final answer is: 0 distinct medications were prescribed from 04/2183 through 2183-12-31 23:59:00.",
+   "true": "[[0]]"
+  },
+  "785297f1fb8d773e4c4a07e2": {
+   "answer": "",
+   "true": "[['WIDOWED']]"
+  },
+  "7995633cbc3e134de24ae114": {
+   "answer": "The final answer is: 459.93 hours",
+   "true": "[]"
+  },
+  "7a1d975dc39f51887f287327": {
+   "answer": "The final answer is: I cannot find the Patient resource for FHIR ID a87c1099-8c87-5548-8fc0-56972a82cebf, so I cannot determine whether patient 10020944 is recorded as male or female.",
+   "true": "[['M']]"
+  },
+  "7ae946cb6fe7f5a3cac9bfa8": {
+   "answer": "The final answer is: I cannot find any record of the bypass coronary artery, one artery from aorta with autologous venous tissue, open approach procedure in 2162 for patient 10018423.",
+   "true": "[]"
+  },
+  "7aea773bb0cb8d7705a8afa2": {
+   "answer": "The final answer is: 11.782638888888888 days",
+   "true": "[[11.78263889]]"
+  },
+  "7af6a3a42f264bdbbfb7c37a": {
+   "answer": "The final answer is: I cannot determine this comparison because I could not find any Observation for \u201cArterial Blood Pressure diastolic\u201d measured at 2133-12-31 22:00:00 or at 2133-12-31 23:00:00 in the retrieved patient data.",
+   "true": "[[None]]"
+  },
+  "7b11c8a07c7b85627d2a9c47": {
+   "answer": "The final answer is: During the patient's first hospital encounter, that procedure occurred 1 time.",
+   "true": "[[1]]"
+  },
+  "7b18e66852f4386ce57b39c1": {
+   "answer": "The final answer is: Yes. There was an MRSA SCREEN microbiology test done since 09/2160:\n\n- Date: 2160-11-08 06:14:00\n- Test: MRSA SCREEN\n- Result: No MRSA isolated.  \n- Status: final",
+   "true": "[[1]]"
+  },
+  "7b7f155abcaed396f4e612b6": {
+   "answer": "The final answer is: I cannot find any medication prescribed via IV route for patient 10004720 from 05/2183 through 2183-12-31 23:59:00.",
+   "true": "[]"
+  },
+  "7bb4dd3032dd60767f552577": {
+   "answer": "The final answer is: Yes. Patient 10006580 has had medication since 13 months ago. There are 52 MedicationRequest records dated on or after 2136-11-30 23:59:00; there are 0 MedicationAdministration records.",
+   "true": "[[1]]"
+  },
+  "7bef1a39879d33661976e78e": {
+   "answer": "The final answer is: 2136-10-31T06:45:00-04:00",
+   "true": "[['2136-11-01 06:20:00']]"
+  },
+  "7c6bef368aa5ba846c186719": {
+   "answer": "The final answer is: I cannot find any c-reactive protein measurements during patient 10038999\u2019s last hospital visit, so the difference between the last and first value cannot be calculated.",
+   "true": "[[None]]"
+  },
+  "7d3d29193e98b64900b4be0a": {
+   "answer": "The final answer is: 7.8694444444444445 days",
+   "true": "[[7.86944444]]"
+  },
+  "7d5fe035bb44c9237b17dfe5": {
+   "answer": "The final answer is: Yes \u2014 during the first hospital visit, patient 10031757 was prescribed `Enoxaparin Sodium`. They were not prescribed `heparin flush (10 units/ml)` or `vancomycin` in the prescription records for that visit.",
+   "true": "[[1]]"
+  },
+  "7e7f2de29fe0d6cf726ecfd4": {
+   "answer": "The final answer is: No. I found 0 hospital admission visits during last year (2128-01-01 through 2128-12-31).",
+   "true": "[[0]]"
+  },
+  "7ed170e256f209788ad3c985": {
+   "answer": "The final answer is: No. The last MRSA SCREEN since 03/2110 was on 2110-11-30T19:28:00, and the result was \"No MRSA isolated.  \"",
+   "true": "[[0]]"
+  },
+  "7edc30d3b6fa3b7308ebcd4a": {
+   "answer": "",
+   "true": "[[56]]"
+  },
+  "7eeda0d4bfae5ffe07de0b9b": {
+   "answer": "The final answer is: 323.8333333333333 hours.",
+   "true": "[]"
+  },
+  "805a7efe25e2ce496220ee26": {
+   "answer": "The final answer is: elective",
+   "true": "[['ELECTIVE']]"
+  },
+  "809821a4009fe30207a67903": {
+   "answer": "The final answer is: 156.0 mg/dL",
+   "true": "[[156.]]"
+  },
+  "8223cedf8e150ea026676246": {
+   "answer": "The final answer is: ['Hemoglobin', 'RDW', 'Platelet Count', 'White Blood Cells', 'MCHC', 'MCV', 'Red Blood Cells', 'Sodium', 'Urea Nitrogen', 'Creatinine', 'Chloride', 'Phosphate', 'Magnesium', 'Potassium', 'Hematocrit', 'MCH']",
+   "true": "[['MRSA SCREEN']]"
+  },
+  "828f43dc5831cb08e5ce4ac8": {
+   "answer": "The final answer is: 2176-11-14T21:39:52-05:00",
+   "true": "[['2176-11-14 08:00:00']]"
+  },
+  "82b93a79d0dad5db6d3f5918": {
+   "answer": "The final answer is: Yes. Patient 10008454 has been in the hospital this year. The hospital encounter was from 2110-11-30T06:31:00-05:00 to 2110-12-10T15:53:00-05:00.",
+   "true": "[[1]]"
+  },
+  "82d84ee3f00fa576d3b70969": {
+   "answer": "The final answer is: I cannot find an Anion Gap observation for patient 10003400 at either 2134-06-15 05:34:00 or 2134-06-14 06:15:00, so I cannot determine whether one level is less than the other.",
+   "true": "[[None]]"
+  },
+  "82ee3d9b301ac0cf74fc8be8": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10006580 during their first hospital visit in the retrieved data.",
+   "true": "[['MARRIED']]"
+  },
+  "833f3dcc0c1a68ee5c293d02": {
+   "answer": "The final answer is: Yes. Patient 10022041 had diagnoses in their last hospital visit.\n\nThere were 13 Condition records, with these unique diagnoses:\n- 30390 \u2014 Other and unspecified alcohol dependence, unspecified\n- 2724 \u2014 Other and unspecified hyperlipidemia\n- 4019 \u2014 Unspecified essential hypertension\n- E8889 \u2014 Unspecified fall\n- 29181 \u2014 Alcohol withdrawal\n- 6961 \u2014 Other psoriasis\n- 81201 \u2014 Closed fracture of surgical neck of humerus\n- 7245 \u2014 Backache, unspecified\n- 3453 \u2014 Grand mal status\n- 78097 \u2014 Altered mental status\n- 78039 \u2014 Other convulsions\n- 2720 \u2014 Pure hypercholesterolemia",
+   "true": "[[1]]"
+  },
+  "83b456769e420696daed1609": {
+   "answer": "The final answer is: -11",
+   "true": "[[-11.]]"
+  },
+  "844c677f9eb40b4cc09e828a": {
+   "answer": "The final answer is: 2",
+   "true": "[[2]]"
+  },
+  "8465e809028d1263318be90f": {
+   "answer": "The final answer is: 14 K/uL (last platelet count 244 K/uL minus first platelet count 230 K/uL during the first hospital visit).",
+   "true": "[[14.]]"
+  },
+  "849c73c34b291683b2d24907": {
+   "answer": "The final answer is: I cannot find the actual drug names because the referenced Medication resources were not available. The first IV MedicationRequest(s) since 09/2116 were prescribed at `2116-12-03T01:33:08-05:00`, with these medication references:\n\n- `Medication/f4f985c7-9c92-5ffa-b210-f55b31f3b056`\n- `Medication/31eca7f8-cb55-5ce5-97b2-bb0a64178b4e`\n- `Medication/ca884e85-d519-51b9-8c96-e0a24bb8ec06`",
+   "true": "[['Lactated Ringers']\n ['Famotidine']\n ['Iso-Osmotic Sodium Chloride']\n ['Fentanyl Citrate']]"
+  },
+  "84b9e35f62f23089ad08f03e": {
+   "answer": "The final answer is: 9 mmHg. The last measured Arterial Blood Pressure mean on the first ICU visit was 72 mmHg, and the second-to-last value was 81 mmHg, so the last value was 9 mmHg lower.",
+   "true": "[[-9.]]"
+  },
+  "86741d2d640a5dbbfa5d1036": {
+   "answer": "The final answer is: 4.7 uIU/mL on 2155-05-08T20:58:00-04:00.",
+   "true": "[[4.7]]"
+  },
+  "8706d212667c3018e03000a7": {
+   "answer": "The final answer is: Yes. The second measured mean blood pressure value on the first ICU visit was 86 mmHg, which is greater than the first measured value of -8 mmHg.",
+   "true": "[[1]]"
+  },
+  "8777f5505af432365af01179": {
+   "answer": "The final answer is: 3.4 kg  \n(Second Daily Weight on first hospital visit: 91.1 kg; first Daily Weight: 87.7 kg; difference: 91.1 \u2212 87.7 = 3.4 kg)",
+   "true": "[[3.4]]"
+  },
+  "878917a494e18bf3082ea4c4": {
+   "answer": "The final answer is: Yes. The second measured SpO2 value on the first ICU visit was 99, which is greater than the first measured value of 89.",
+   "true": "[[1]]"
+  },
+  "883c4d0f0f9708f99cf278d8": {
+   "answer": "The final answer is: 15.2 mg/dL",
+   "true": "[[15.2]]"
+  },
+  "88a650d28643d60da24b7b3f": {
+   "answer": "The final answer is: 147 cm",
+   "true": "[[147.]]"
+  },
+  "89a854beb29f40da67997b3c": {
+   "answer": "The final answer is: 63 mmHg",
+   "true": "[[63.]]"
+  },
+  "8a0d9ca8816e2d1ca14e3fca": {
+   "answer": "The final answer is: Medication/1c32b8fd-7f2a-5b00-b4a5-08463f28c27b",
+   "true": "[['Potassium Chloride']\n ['Furosemide']]"
+  },
+  "8a165a892467a3f42aa7f482": {
+   "answer": "The final answer is: 2200-09-18T00:05:00-04:00",
+   "true": "[['2200-09-17 00:00:00']]"
+  },
+  "8a2c412e28bd7e4d00a2c261": {
+   "answer": "The final answer is: 574.7 hours have passed since the patient first received a NTproBNP lab test during the current hospital visit.",
+   "true": "[]"
+  },
+  "8a56f098370ca6af99a28b53": {
+   "answer": "",
+   "true": "[['40']]"
+  },
+  "8bfea1a0b78f2e98d30ee271": {
+   "answer": "The final answer is: 2111-01-25T15:00:00-05:00",
+   "true": "[['2111-01-25 15:00:00']]"
+  },
+  "8c531cd9b0af5ba949b9fa91": {
+   "answer": "The final answer is: 690.8166666666667 hours since the first Free Calcium lab test during the current hospital encounter.",
+   "true": "[]"
+  },
+  "8cfda20a9826789d8b58747a": {
+   "answer": "The final answer is: -12 mmHg. The systolic blood pressure changed from 132 mmHg first measured on the last ICU visit to 120 mmHg last measured on the last ICU visit.",
+   "true": "[[-12.]]"
+  },
+  "8e96be7df6dd4cc4c1e2a3b4": {
+   "answer": "The final answer is: [\n  {\"date\": \"2137-10-15\", \"value\": 109.6, \"unit\": \"kg\"},\n  {\"date\": \"2137-10-16\", \"value\": 110, \"unit\": \"kg\"}\n]",
+   "true": "[[109.6]\n [110. ]]"
+  },
+  "8e97f8923eae1120693cf379": {
+   "answer": "The final answer is: No. The second measured mchc value on the last hospital visit was 32.8, which is not less than the first measured value of 32.2.",
+   "true": "[[0]]"
+  },
+  "8f037d1cedf499b333e3a25d": {
+   "answer": "The final answer is: 2176-12-22T10:57:00-05:00",
+   "true": "[['2176-12-22 10:57:00']]"
+  },
+  "905bf1d8d8b2ee5cc48396ca": {
+   "answer": "The final answer is: Yes. In 2134, the patient had a prescription matching:\n\n- Sodium Chloride 0.9% Flush \u2014 authoredOn: 2134-09-08T23:27:25-04:00, status: stopped\n\nNo 2134 prescription was found for:\n- nicardipine iv\n- ondansetron\n\nNo MedicationAdministration records were found for this patient.",
+   "true": "[[1]]"
+  },
+  "91509e2b22c1e7959786b337": {
+   "answer": "The final answer is: 2161-04-27T10:40:00-04:00",
+   "true": "[['2161-04-27 10:40:00']]"
+  },
+  "916c297dfa63e76557d57bb8": {
+   "answer": "The final answer is: No. I could not find any heart rate Observation greater than 104.0 on 10/03/2125.",
+   "true": "[[0]]"
+  },
+  "92b8f8b9f70e026d369cdfbd": {
+   "answer": "The final answer is: Yes. There was 1 MRSA SCREEN microbiology test result for patient 10003046 during this year (2154):\n\n- MRSA SCREEN | 90189 \u2014 valueString: No MRSA isolated. \u2014 date: 2154-01-02 16:36:00 \u2014 status: final",
+   "true": "[[1]]"
+  },
+  "9444a73db82e2c64ae8bcdb3": {
+   "answer": "The final answer is: 0 ml",
+   "true": "[[None]]"
+  },
+  "94d8481d364db4cbd70b366f": {
+   "answer": "The final answer is: 95.1 kg",
+   "true": "[[95.1]]"
+  },
+  "964217a388912122a2c89866": {
+   "answer": "The final answer is: 8.547058823529412 mg/dL",
+   "true": "[[8.54705882]]"
+  },
+  "96ac404e31dae66aaf3c7df0": {
+   "answer": "The final answer is: The last measured respiratory rate was 11 insp/min, and the second-to-last measured value was 12 insp/min. The difference is -1 insp/min, meaning the respiratory rate decreased by 1 insp/min.",
+   "true": "[[-1.]]"
+  },
+  "96b1d3fe1090aafcf5bcc954": {
+   "answer": "The final answer is: 2110-12-04T01:00:00-05:00",
+   "true": "[['2110-12-04 01:00:00']]"
+  },
+  "97bd7321746aeee64c00043b": {
+   "answer": "The final answer is: -0.1 pg (from 29.5 pg to 29.4 pg).",
+   "true": "[[-0.1]]"
+  },
+  "97f99846bf73b8acd7a1318e": {
+   "answer": "The final answer is: 29 unique medicines.",
+   "true": "[[28]]"
+  },
+  "9930fa67b91f89cc964e7df3": {
+   "answer": "The final answer is: 3710 mL",
+   "true": "[[4110]]"
+  },
+  "9a126c3d410cde7047840e30": {
+   "answer": "The final answer is: I cannot find any heart rate observations for patient 10007058 on 2167-11-25, so the average heart rate for that date cannot be calculated.",
+   "true": "[[None]]"
+  },
+  "9a53c5a84a90577e106b30ec": {
+   "answer": "The final answer is: 2142-05-10T20:23:00-04:00",
+   "true": "[['2142-05-10 00:00:00']]"
+  },
+  "9a8ac4df220dc07a83eeae9b": {
+   "answer": "The final answer is: 2187-02-12 00:00:00",
+   "true": "[['2187-02-12 00:00:00']]"
+  },
+  "9ab8b4d1a143e09289a29059": {
+   "answer": "The final answer is: 0.0 %",
+   "true": "[[0.]]"
+  },
+  "9aff84dfbc8d4cb85bb5267f": {
+   "answer": "The final answer is: I cannot compute the change because I found 0 \"Calcium, Total\" measurements during the patient's last hospital visit.",
+   "true": "[[None]]"
+  },
+  "9b79fc00bb70e04132ba060c": {
+   "answer": "The final answer is: 90 times.",
+   "true": "[[68]]"
+  },
+  "9cdee4aaa2811035370a1c86": {
+   "answer": "The final answer is: [{'date': '2115-12-28', 'average_weight': 61.7, 'unit': 'kg', 'measurements_count': 1}]",
+   "true": "[[61.7]]"
+  },
+  "9d71dca8add09e321ec57dd9": {
+   "answer": "The final answer is: Patient 10026354 last had OR Urine recorded on 2119-10-26 08:50:00, with a value of 1100 ml.",
+   "true": "[['2119-10-26 08:50:00']]"
+  },
+  "9eda5afbe00ed4d5f058ec11": {
+   "answer": "",
+   "true": "[['2185-01-21 11:03:00']]"
+  },
+  "9fc0ac6b29d8a361fd6e2512": {
+   "answer": "The final answer is: 1 % increase.",
+   "true": "[[1.]]"
+  },
+  "9fd9c725dd075244d0eab9a8": {
+   "answer": "The final answer is: 145.0 mEq/L",
+   "true": "[[143.]]"
+  },
+  "a07e014b5e2eb6177b5978a3": {
+   "answer": "The final answer is: 70.3 kg on 2146-12-16T09:00:00-05:00.",
+   "true": "[[70.3]]"
+  },
+  "a12d2706258e7cd94b157f13": {
+   "answer": "The final answer is: 2 times.",
+   "true": "[[2]]"
+  },
+  "a13bd95a1540c1bc4c4568db": {
+   "answer": "The final answer is: 384 ng/mL on 2150-03-17T04:21:00-04:00.",
+   "true": "[[384.]]"
+  },
+  "a16e5eeb260d3b031762211d": {
+   "answer": "The final answer is: I cannot find the drug name in the retrieved data. The first MedicationRequest prescribed through the IM route references `Medication/0b146275-8348-5a9f-b139-a68e1d319373`, but the corresponding Medication resource was not available.",
+   "true": "[['Glucagon']]"
+  },
+  "a1db6846c07bdc99c68fda58": {
+   "answer": "Error: Input tokens exceeded: 38440 > 32000",
+   "true": "[[0]]"
+  },
+  "a2de199eb11275f923c798c8": {
+   "answer": "The final answer is: Medication/9500bac0-b795-58eb-8f1f-0fbfca5e669e",
+   "true": "[['Multivitamins']\n ['Nicotine Patch']\n ['Duloxetine']\n ['Tamoxifen Citrate']]"
+  },
+  "a3585e47c9d9845ccde194bf": {
+   "answer": "The final answer is: Yes. Patient 10037975 has been given a Creatinine, Urine test since 15 months ago. The matching Observation was on 2185-01-19T11:22:00-05:00, with value 52 mg/dL.",
+   "true": "[[1]]"
+  },
+  "a4371b693f24038ad04881c2": {
+   "answer": "The final answer is: No. During the first hospital visit, patient 10005909 was not prescribed with either:\n- 0.9% sodium chloride, bag\n- duloxetine",
+   "true": "[[1]]"
+  },
+  "a4aeae6cbe8fff13d7e4d651": {
+   "answer": "The final answer is: 0 ml",
+   "true": "[[None]]"
+  },
+  "a4e1867554fe617ae563f780": {
+   "answer": "The final answer is: 0 ml",
+   "true": "[[None]]"
+  },
+  "a5356c6c205e9f088964bb9a": {
+   "answer": "The final answer is: No documented MedicationAdministration records were found for patient 10006580. However, the patient does have 52 MedicationRequest records, meaning medications were ordered/requested, but I cannot confirm they were actually administered from the available data.",
+   "true": "[[1]]"
+  },
+  "a69440dfa419dc0ff7d88b64": {
+   "answer": "",
+   "true": "[[75]]"
+  },
+  "aaa0dd1684e01424ce21edfd": {
+   "answer": "The final answer is: No matching \"fluoroscopy of multiple coronary arteries using low osmolar contrast\" procedure was found since 1 year ago.",
+   "true": "[]"
+  },
+  "ab2159e2914558a41cd56bff": {
+   "answer": "",
+   "true": "[[500]]"
+  },
+  "ac9de4303d9e69514c759992": {
+   "answer": "The final answer is: MIXED BACTERIAL FLORA ( >= 3 COLONY TYPES), CONSISTENT WITH SKIN AND/OR GENITAL CONTAMINATION.",
+   "true": "[['YEAST']]"
+  },
+  "ad25b33f618fbda4463dc6d1": {
+   "answer": "The final answer is: I cannot find the Patient resource for patient FHIR ID af0e5009-d87d-52a8-ac8a-676e471c41f1, so I cannot determine whether patient 10021938 is recorded as male or female.",
+   "true": "[['M']]"
+  },
+  "aef4b8676c07216d65074512": {
+   "answer": "The final answer is: 8 days, 21 hours, and 56 minutes have passed since the last Osmolality, Urine laboratory test in the current hospital encounter.",
+   "true": "[]"
+  },
+  "b05a0cc27584db59d2dc4a8b": {
+   "answer": "The final answer is: 14.060416666666667 days.",
+   "true": "[[14.06041667]]"
+  },
+  "b0bde5b825a0b0039eb609d0": {
+   "answer": "The final answer is: 2132-12-16T14:02:00",
+   "true": "[['2132-12-16 14:02:00']]"
+  },
+  "b26e5939c6b846e6073358d5": {
+   "answer": "The final answer is: 16 unique prescription drugs were ordered during patient 10018328\u2019s last hospital visit.",
+   "true": "[[36]]"
+  },
+  "b2e898b5d1ad3e826001b202": {
+   "answer": "Error: Input tokens exceeded: 47837 > 32000",
+   "true": "[]"
+  },
+  "b41f33bd6784e344776668f2": {
+   "answer": "",
+   "true": "[['100']]"
+  },
+  "b472da76f7e2b4d53f38f131": {
+   "answer": "The final answer is: I cannot find the care unit name because the referenced Location resource was not available. According to the transfer record in the last hospital Encounter, the last recorded location was `Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a`, with period start `2154-01-04T15:19:56-05:00` and end `2154-01-09T11:53:26-05:00`.",
+   "true": "[['Med/Surg']]"
+  },
+  "b6e85f562fb3d32bcc7d415f": {
+   "answer": "The final answer is: 2116-12-03T01:16:00-05:00",
+   "true": "[['2116-12-03 01:16:00']]"
+  },
+  "b710f2ea6d630a9c88a40fc2": {
+   "answer": "The final answer is: I cannot find any prescription drug prescribed in 04/2114 for this patient.",
+   "true": "[]"
+  },
+  "b71bf47188930e8abb1e562f": {
+   "answer": "The final answer is: 2157-07-02T14:18:00-04:00",
+   "true": "[['2157-07-01 00:00:00']]"
+  },
+  "b822a4c44ce54f12b21a2ba9": {
+   "answer": "The final answer is: No. I could not find any lab test Observation records performed on patient 10015931 in 10/last year (October 2175).",
+   "true": "[[0]]"
+  },
+  "ba93c08f689f2e3af0763012": {
+   "answer": "The final answer is: 1 hospital visit in 2174.",
+   "true": "[[1]]"
+  },
+  "bba49bd752af25f7a63d7766": {
+   "answer": "The final answer is: Hospital observation per hr",
+   "true": "[['EU OBSERVATION']]"
+  },
+  "bc393399923f7dabaa005804": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10004720 during the first hospital encounter. The Patient resource was not found, and the first hospital Encounter resource does not contain a marital status field.",
+   "true": "[['SINGLE']]"
+  },
+  "bc98931efa8f80d2a3e2aa4d": {
+   "answer": "The final answer is: In 08/2193, the first specimen tests were on 2193-08-02T09:15:00. The tests were: ['Atypical Lymphocytes', 'Platelet Smear', 'Hypochromia', 'Ovalocytes', 'Poikilocytosis', 'Lymphocytes', 'Microcytes', 'CD8 Cells, Percent', 'Bands', 'Polychromasia', 'Myelocytes', 'Metamyelocytes', 'Monocytes', 'Basophils', 'Eosinophils', 'Neutrophils', 'Anisocytosis', 'Absolute CD3 Count', 'Macrocytes', 'Glucose', 'CD4/CD8 Ratio', 'Absolute CD4 Count', 'Lymphocytes, Percent', 'WBC Count', 'CD3 Cells, Percent', 'Absolute Lymphocyte Count', 'Globulin', 'Bilirubin, Total', 'Alkaline Phosphatase', 'Potassium', 'Absolute CD8 Count', 'CD4 Cells, Percent', 'Bicarbonate', 'Chloride', 'Asparate Aminotransferase (AST)', 'Creatinine', 'Cholesterol Ratio (Total/HDL)', 'Triglycerides', 'Cholesterol, HDL', 'Calcium, Total', 'Protein, Total', 'Hematocrit', 'Sodium', 'Anion Gap', 'Albumin', 'Urea Nitrogen', 'Estimated GFR (MDRD equation)', 'Cholesterol, LDL, Calculated', 'Cholesterol, Total', 'MCH', 'Alanine Aminotransferase (ALT)', 'RDW', 'MCHC', 'Platelet Count', 'Red Blood Cells', 'White Blood Cells', 'MCV', 'Hemoglobin', 'HIV-1 Viral Load/Ultrasensitive', 'RAPID PLASMA REAGIN TEST']",
+   "true": "[['SEROLOGY/BLOOD']]"
+  },
+  "bd928ffb40c6b3f69d82f2da": {
+   "answer": "The final answer is: I cannot find any Observation record for \"Height (cm)\" for patient 10019777 since 01/2187.",
+   "true": "[[178.]]"
+  },
+  "bed5da859030d9c461ef882a": {
+   "answer": "The final answer is: 0",
+   "true": "[[None]]"
+  },
+  "bede0977c8868b145f17fa5e": {
+   "answer": "The final answer is: ['Anion Gap', 'Basophils', 'Bicarbonate', 'Calcium, Total', 'Chloride', 'Creatinine', 'Eosinophils', 'Glucose', 'Hematocrit', 'Hemoglobin', 'Lymphocytes', 'MCH', 'MCHC', 'MCV', 'Magnesium', 'Monocytes', 'Neutrophils', 'Phosphate', 'Platelet Count', 'Potassium', 'RDW', 'Red Blood Cells', 'Sodium', 'Urea Nitrogen', 'White Blood Cells']",
+   "true": "[['MRSA SCREEN']]"
+  },
+  "c09d11621a07d7d859c16278": {
+   "answer": "The final answer is: I cannot find any \u201cO2 saturation pulseoxymetry\u201d / SpO2 Observation records for patient 10014354 from 08/19/2146 through the assumed current time of 2146-12-31 23:59:00, so there is no maximum SpO2 value or last time to report for that period.",
+   "true": "[['2146-10-09 19:00:00']]"
+  },
+  "c1088984666feded19fe629d": {
+   "answer": "The final answer is: I cannot find the Patient resource for patient FHIR ID 27980ad8-77b7-5360-b211-bf4fac9c468c, so I cannot determine whether patient 10020306 is male or female.",
+   "true": "[['F']]"
+  },
+  "c15288bf26d6222c25fe91c5": {
+   "answer": "The final answer is: 1 ICU visit in this year (2125).",
+   "true": "[[1]]"
+  },
+  "c1ffcaa8f6eaee005e37aa5d": {
+   "answer": "The final answer is: 2144-11-01T02:09:00-05:00",
+   "true": "[['2144-11-01 02:09:00']]"
+  },
+  "c2a42482b7f7bf97e37b7a73": {
+   "answer": "The final answer is: Yes. Patient 10018328 has visited the hospital for admission since 1 year ago. There were 2 hospital admission encounters since 2153-12-31 23:59:00:\n- 2154-02-05T21:58:00-05:00 to 2154-02-09T15:15:00-05:00\n- 2154-04-24T03:15:00-04:00 to 2154-05-03T14:00:00-04:00",
+   "true": "[[1]]"
+  },
+  "c2ca78801b0bb755ec80903e": {
+   "answer": "The final answer is: I cannot find the care unit name in the retrieved data. The last transfer/location entry since 2196 starts at `2196-06-21T17:54:26-04:00` and references `Location/9152585d-31b9-50ca-9476-a4db49030917`, but the corresponding Location resource was not available.",
+   "true": "[['Transplant']]"
+  },
+  "c2eca2905474a01bac57fe3d": {
+   "answer": "The final answer is: 79 mmHg",
+   "true": "[[79.]]"
+  },
+  "c35acfb89f468f360b299535": {
+   "answer": "",
+   "true": "[['Emergency Department']]"
+  },
+  "c387a4c3a7bc1f1536ae7916": {
+   "answer": "The final answer is: I cannot find the Patient resource for FHIR ID 740b7686-fa6d-5574-9779-f17ed7661cbe, so I cannot determine whether patient 10031404 is male or female.",
+   "true": "[['F']]"
+  },
+  "c486d3f623a7c682d0051190": {
+   "answer": "The final answer is: Yes. Procedures were carried out on patient 10010471 in 2155. There are 33 Procedure records in 2155, including:\n\n- Performance of Urinary Filtration, Multiple\n- Fluoroscopy of Multiple Coronary Arteries using Other Contrast\n- Measurement of Cardiac Sampling and Pressure, Right Heart, Percutaneous Approach\n- Blood Cultured\n- Foley Catheter\n- 22 Gauge\n- Dialysis Catheter\n- Hemodialysis\n- Multi Lumen\n- 18 Gauge\n- EKG\n- Taking patient vital signs assessment (procedure)\n- Triage: emergency center (procedure)",
+   "true": "[[1]]"
+  },
+  "c4b26c0ae57a5f77fcd0c46d": {
+   "answer": "The final answer is: Yes. Patient 10022281 has been prescribed drugs since 24 months ago. There are 44 MedicationRequest records authored between 2123-12-31 23:59:00 and 2125-12-31 23:59:00.",
+   "true": "[[1]]"
+  },
+  "c511f734e9fd03e177de1e9c": {
+   "answer": "Error: Input tokens exceeded: 50973 > 32000",
+   "true": "[[0]]"
+  },
+  "c58538af9651b0425098d396": {
+   "answer": "The final answer is: I cannot find any MedicationRequest in 07/2189 with route code/display matching iv drip for patient 10020786.",
+   "true": "[]"
+  },
+  "c5d97a3fa6b67acc42a60f3f": {
+   "answer": "The final answer is: 1 day (approximately 1.31 days) has passed since the patient\u2019s last/ongoing Discharge Lounge stay began on 2115-12-30T16:31:48-05:00, as of 2115-12-31 23:59:00.",
+   "true": "[]"
+  },
+  "c60ed59c6b7df6bf5fbfa0cf": {
+   "answer": "The final answer is: 619.9833333333333 hours have passed since the first albumin lab test during this hospital encounter.",
+   "true": "[]"
+  },
+  "c639ce3944c3e8b1431b7f0d": {
+   "answer": "The final answer is: 2146-12-15T12:39:00-05:00",
+   "true": "[['2146-12-15 12:39:00']]"
+  },
+  "c6b253614a8ea885b3619a02": {
+   "answer": "The final answer is: I cannot find a \"Height (cm)\" measurement for patient 10020786 in 07/2189.",
+   "true": "[]"
+  },
+  "c747e1b668edc722be015e38": {
+   "answer": "The final answer is: 2150-07-10T00:23:27-04:00",
+   "true": "[['2150-07-10 01:00:00']]"
+  },
+  "c814a79881c8be3a4809fdb9": {
+   "answer": "The final answer is: I cannot find any \u201cDaily Weight\u201d Observation records for patient 10018423 in 2162.",
+   "true": "[]"
+  },
+  "c86ef1c99a73bd58d05ad456": {
+   "answer": "The final answer is: 28 days have passed since the patient last stayed in the emergency department during the current hospital visit.  \nExact elapsed time: 28 days, 22:57:00 (approximately 28.96 days).",
+   "true": "[]"
+  },
+  "c8a2241d70df2c163edad761": {
+   "answer": "The final answer is: 59 beats/minute at 2134-09-26 15:49:00.",
+   "true": "[[91.]]"
+  },
+  "c8c043eb89e83c83b6beeeb3": {
+   "answer": "The final answer is: 1.766400462962963 days.",
+   "true": "[[1.76640046]]"
+  },
+  "c8edd5309596df31109a68a1": {
+   "answer": "The final answer is: 1.0",
+   "true": "[[1.]]"
+  },
+  "c996bd83ae8f43a3717a6f64": {
+   "answer": "The final answer is: 1 time.",
+   "true": "[[1]]"
+  },
+  "cada9d0e90575a50cef72fe4": {
+   "answer": "The final answer is: 64 mmHg at 2146-07-12T13:00:00-04:00.",
+   "true": "[[70.]]"
+  },
+  "cb5bf7d37033da680feb9abe": {
+   "answer": "The final answer is: 1 hospital visit throughout this year (2119).",
+   "true": "[[1]]"
+  },
+  "ccedb8f78a6736b132f3b079": {
+   "answer": "Error: Input tokens exceeded: 33082 > 32000",
+   "true": "[['YEAST']]"
+  },
+  "cd72a23c76002c4a524a1b61": {
+   "answer": "The final answer is: 1 ICU visit during this year (2177).",
+   "true": "[[1]]"
+  },
+  "cd8edc01787dda933e12fd99": {
+   "answer": "The final answer is: I cannot find any \"Void\" output observation for patient 10021312 on or after 09/16/2113. The latest recorded \"Void\" output before then was at 2113-09-15T05:00:00-04:00.",
+   "true": "[]"
+  },
+  "ce229386a278fc4dbc3f4f87": {
+   "answer": "The final answer is: {'code': 'kg', 'unit': 'kg', 'value': 153.2, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}",
+   "true": "[[147.7]]"
+  },
+  "ce3edde36063a4aeb5180c6d": {
+   "answer": "The final answer is: I cannot find a respiratory rate observation for patient 10019172 on 2118-11-20, so the maximum value cannot be determined.",
+   "true": "[[None]]"
+  },
+  "cf75e230ba259301517169ac": {
+   "answer": "The final answer is: 2475 ml",
+   "true": "[[2475]]"
+  },
+  "cfe831c90fd2c89d0116f576": {
+   "answer": "",
+   "true": "[['Nicotine Patch']]"
+  },
+  "d0be97adb482380a1a57585d": {
+   "answer": "The final answer is: 0 times.",
+   "true": "[[0]]"
+  },
+  "d198804fbc8f627ea7a4dd74": {
+   "answer": "The final answer is: Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f\n\nI could not find a display/name for this care unit in the retrieved data; the first transfer record location only provides this Location reference.",
+   "true": "[['Emergency Department']]"
+  },
+  "d2d7d8b52a277ffa44cfb072": {
+   "answer": "The final answer is: I cannot find the patient information for patient 10019777 / FHIR ID 23f959c1-6ac2-562b-9cbe-c111f338e27b, so I cannot determine the patient's sex.",
+   "true": "[['M']]"
+  },
+  "d331061cc248eb79de709879": {
+   "answer": "The final answer is: Yes. Patient 10038933 has 12 recorded Condition diagnoses:\n\n- 78820 \u2014 Retention of urine, unspecified\n- 2761 \u2014 Hyposmolality and/or hyponatremia\n- 25000 \u2014 Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- 2910 \u2014 Alcohol withdrawal delirium\n- 4019 \u2014 Unspecified essential hypertension\n- 1120 \u2014 Candidiasis of mouth\n- 78720 \u2014 Dysphagia, unspecified\n- E8809 \u2014 FALL ON STAIR/STEP NEC\n- 34830 \u2014 Encephalopathy, unspecified\n- 5070 \u2014 Pneumonitis due to inhalation of food or vomitus\n- 85186 \u2014 Other and unspecified cerebral laceration and contusion, without mention of open intracranial wound, with loss of consciousness of unspecified duration\n- 30390 \u2014 Other and unspecified alcohol dependence, unspecified",
+   "true": "[[1]]"
+  },
+  "d39e6cca12842e2e3d53b7cd": {
+   "answer": "The final answer is: {'code': 'cm', 'unit': 'cm', 'value': 183, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}",
+   "true": "[[183.]]"
+  },
+  "d3f0d98539d2e9134a435816": {
+   "answer": "Error: Input tokens exceeded: 48530 > 32000",
+   "true": "[]"
+  },
+  "d4949e694ea61ec816d403c4": {
+   "answer": "The final answer is: I cannot find any respiratory rate observations for patient 10012552 on 04/05/2140, so the average value is not available.",
+   "true": "[[None]]"
+  },
+  "d4b6c0167cad9291a4e1dbec": {
+   "answer": "The final answer is: Yes. The last Troponin T measurement on the first hospital visit was 2.33 ng/mL, which is greater than the second-to-last measurement of 1.93 ng/mL.",
+   "true": "[[1]]"
+  },
+  "d69a4b8b51374de9e093dde2": {
+   "answer": "The final answer is: 459.93305555555554 hours",
+   "true": "[]"
+  },
+  "d6ab8927156136206a55d8a8": {
+   "answer": "The final answer is: No. During the current hospital visit, I found no MedicationRequest records for any of the following: readi-cat 2 (barium sulfate 2% suspension), plasmalyte, or acetazolamide sodium.",
+   "true": "[[0]]"
+  },
+  "d6d0cf531ac1d23c6fa0a6b6": {
+   "answer": "The final answer is: 2",
+   "true": "[[2]]"
+  },
+  "d704f27fd79c99e4a27f1581": {
+   "answer": "The final answer is: 2 unique medicines.",
+   "true": "[[3]]"
+  },
+  "d738685ff207376b36d479fc": {
+   "answer": "The final answer is: No. The second body temperature measurement on the last ICU visit was 36.4, which is not less than the first measurement of 36.2.",
+   "true": "[[0]]"
+  },
+  "d8c4bcdab05c48a114af4957": {
+   "answer": "The final answer is: 41518.0 ml",
+   "true": "[[42636]]"
+  },
+  "d8eb075e768231338b08ef56": {
+   "answer": "The final answer is: No. I found no MRSA SCREEN microbiology test results in 09/2142 for patient 10027445.",
+   "true": "[[0]]"
+  },
+  "d91a86b3f19888f5557a404a": {
+   "answer": "The final answer is: Yes. Since 08/2174, patient 10004733 received a Hyaline Casts test on 2174-12-13T11:03:00-05:00.",
+   "true": "[[1]]"
+  },
+  "d91bb87c28806cef8d1448de": {
+   "answer": "The final answer is: 2170-10-09T16:30:00-04:00",
+   "true": "[['2170-10-09 16:30:00']]"
+  },
+  "daad7a245a02c2817e1dab51": {
+   "answer": "The final answer is: 2146-07-10T23:00:00-04:00",
+   "true": "[['2146-07-10 23:00:00']]"
+  },
+  "db7f20610bfa0be1f5377ba9": {
+   "answer": "The final answer is: TRANSFER FROM HOSPITAL",
+   "true": "[['URGENT']]"
+  },
+  "dbe56779e1a5f940e7fde7f8": {
+   "answer": "The final answer is: 0 times.",
+   "true": "[[0]]"
+  },
+  "dbf9297a4c1d683faa792fef": {
+   "answer": "The final answer is: [{'year': 2157, 'emesis_volume': {'code': 'ml', 'unit': 'ml', 'value': 100, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}}]",
+   "true": "[]"
+  },
+  "dc671c0fb18f291e1d417779": {
+   "answer": "The final answer is: I cannot find a Foley output time for patient 10004235 on 03/19/2196.",
+   "true": "[]"
+  },
+  "dc8216b0660d0fb91f366b9e": {
+   "answer": "The final answer is: Yes. There were 5 procedures conducted on patient 10001725 since 2110:\n\n- Insertion of biological graft \u2014 2110-04-11T00:00:00-04:00\n- Insertion or replacement of other neurostimulator pulse generator \u2014 2110-04-11T00:00:00-04:00\n- Repair of rectocele with graft or prosthesis \u2014 2110-04-11T00:00:00-04:00\n- 20 Gauge \u2014 2110-04-11T16:02:00-04:00\n- 20 Gauge \u2014 2110-04-11T16:35:00-04:00",
+   "true": "[[1]]"
+  },
+  "dd025c270eae097731034a6c": {
+   "answer": "The final answer is: 318.51666666666665 hours.",
+   "true": "[]"
+  },
+  "df9f9f77da1cf00ef44d4e96": {
+   "answer": "The final answer is: Yes. Patient 10015931 had hospital admissions during this year (2176): \n\n- Encounter `202db44a-2332-54c4-af00-709ac5400e71`, from `2176-12-16T23:31:00-05:00` to `2176-12-31T17:35:00-05:00`\n- Encounter `9a8d3981-0eaa-5f92-8c47-40ffa75340d8`, from `2176-11-14T18:02:00-05:00` to `2176-11-27T13:30:00-05:00`",
+   "true": "[[1]]"
+  },
+  "e0693814cc896b83b3416d2d": {
+   "answer": "The final answer is: No. The second respiratory rate measurement on the first ICU visit was 18 insp/min, which is not greater than the first measurement of 20 insp/min.",
+   "true": "[[0]]"
+  },
+  "e134d64a96cc7940427b44cf": {
+   "answer": "The final answer is: Yes. Patient 10003046 had a pCO2 test during their last hospital visit. There were 8 pCO2 Observation records.",
+   "true": "[[1]]"
+  },
+  "e198cf387b6b22216a593d12": {
+   "answer": "The final answer is: 0",
+   "true": "[[None]]"
+  },
+  "e19b3138fb3b80c47b5d5688": {
+   "answer": "The final answer is: Yes. Patient 10022041 has an emergency room encounter recorded: Encounter/f264620b-facf-5565-9a98-a64b948373b3, class display \"emergency\", identifier system \"http://mimic.mit.edu/fhir/mimic/identifier/encounter-ed\", from 2187-05-18T14:59:00-04:00 to 2187-05-18T18:39:00-04:00.",
+   "true": "[[1]]"
+  },
+  "e19ea171900405ad202eba5f": {
+   "answer": "The final answer is: I cannot find the marital status for patient 10038081 on their first hospital visit in the retrieved FHIR data. The Patient resource was not available, and the first hospital Encounter resource did not contain a marital status field.",
+   "true": "[['SINGLE']]"
+  },
+  "e1f82dce913d0a344d686dcb": {
+   "answer": "The final answer is: 0 (no mediastinal output values were found in the last ICU visit).",
+   "true": "[[None]]"
+  },
+  "e2e9e3d582524db3f2e7d55a": {
+   "answer": "The final answer is: I cannot find any MedicationRequest prescribed via NU route during the patient's last hospital visit.",
+   "true": "[]"
+  },
+  "e38192db81eb4aedd18e81f8": {
+   "answer": "The final answer is: 0 ml",
+   "true": "[[None]]"
+  },
+  "e4373b254aad4b11af3fda65": {
+   "answer": "The final answer is: I cannot find a Fecal Bag event for patient 10029291 on 03/06/2123. The available Fecal Bag events were on 2123-03-01T06:38:00-05:00 and 2123-03-02T03:00:00-05:00.",
+   "true": "[]"
+  },
+  "e4e38f5cdc7fa7972dbcbfcd": {
+   "answer": "The final answer is: 2118-11-21T18:31:00-05:00",
+   "true": "[['2118-11-21 18:31:00']]"
+  },
+  "e57140ff3a3e15a2db33f62d": {
+   "answer": "The final answer is: -2.1 K/uL (the second White Blood Cells value was 7.8 K/uL compared to the first value of 9.9 K/uL, a decrease of 2.1 K/uL).",
+   "true": "[[-2.1]]"
+  },
+  "e59eccf79830c0ce43f8ca5c": {
+   "answer": "",
+   "true": "[['1000']]"
+  },
+  "e5e99a0d4249da9d001cf97b": {
+   "answer": "The final answer is: Yes. Laboratory tests were performed on patient 10009049 since 04/2174. There are 269 laboratory Observation records between 2174-04-01 and 2174-12-31, with the earliest on 2174-05-26T00:00:00-04:00 and the latest on 2174-07-20T10:50:00-04:00.",
+   "true": "[[1]]"
+  },
+  "e6ab1bc462921776329e8d65": {
+   "answer": "The final answer is: Yes. Patient 10027602 was in the hospital in the last year, with hospital encounters:\n- 2201-10-30T12:05:00-04:00 to 2201-11-20T14:45:00-05:00\n- 2201-12-11T12:00:00-05:00 to 2201-12-17T13:45:00-05:00",
+   "true": "[[0]]"
+  },
+  "e7d42c3433b73b5b7e9bab9a": {
+   "answer": "The final answer is: Yes. Patient 10021312 has been treated with \"Destruction of Right Lower Lung Lobe, Via Natural or Artificial Opening Endoscopic\" since 2113. Matching Procedure: id `112f5375-9752-5493-89ec-30a1b09669e3`, performed `2113-09-14T00:00:00-04:00`.",
+   "true": "[[1]]"
+  },
+  "e840f7d25b661f8952fb1eb0": {
+   "answer": "The final answer is: I cannot find any \u201cArterial Blood Pressure diastolic\u201d observations for patient 10018081 on 2133-12-30. Current-month maximum was 87 mmHg, last recorded at 2133-12-24T15:00:00-05:00.",
+   "true": "[]"
+  },
+  "ea018f554b80d642628c416c": {
+   "answer": "The final answer is: 1 ICU visit since 2174.",
+   "true": "[[1]]"
+  },
+  "ea764357f7772ceb7cc1de9d": {
+   "answer": "The final answer is: Yes. Patient 10019385 visited the emergency room. Encounter: [{'id': 'fa4f9df1-bfda-57ed-9493-d517885668a7', 'period': {'end': '2180-03-04T02:24:00-05:00', 'start': '2180-03-03T20:26:00-05:00'}, 'class': {'code': 'EMER', 'system': 'http://terminology.hl7.org/CodeSystem/v3-ActCode', 'display': 'emergency'}, 'identifier': [{'use': 'usual', 'value': '30324772', 'system': 'http://mimic.mit.edu/fhir/mimic/identifier/encounter-ed', 'assigner': {'reference': 'Organization/ee172322-118b-5716-abbc-18e4c5437e15'}}]}]",
+   "true": "[[1]]"
+  },
+  "ea9a85005a244ffc9f78a09c": {
+   "answer": "The final answer is: [\n  {\"date\": \"2118-11-16\", \"valueQuantity\": {\"value\": 25, \"unit\": \"ml\", \"code\": \"ml\"}},\n  {\"date\": \"2118-11-17\", \"valueQuantity\": {\"value\": 25, \"unit\": \"ml\", \"code\": \"ml\"}},\n  {\"date\": \"2118-11-18\", \"valueQuantity\": {\"value\": 15, \"unit\": \"ml\", \"code\": \"ml\"}},\n  {\"date\": \"2118-11-19\", \"valueQuantity\": {\"value\": 45, \"unit\": \"ml\", \"code\": \"ml\"}}\n]",
+   "true": "[]"
+  },
+  "eb20ba71a6257201e3668689": {
+   "answer": "The final answer is: 82.2 kg",
+   "true": "[[82.2]]"
+  },
+  "ebd6cc5909117f9e521d66c9": {
+   "answer": "The final answer is: 2167-05-06T05:00:00-04:00",
+   "true": "[['2167-05-06 05:00:00']]"
+  },
+  "ed91e258dd31d6431b37bd91": {
+   "answer": "The final answer is: Thiamine was the first medicine prescribed since 07/2138, authoredOn 2138-10-30T20:02:13-04:00.",
+   "true": "[['Heparin']\n ['Docusate Sodium']\n ['Senna']\n ['Sodium Chloride 0.9%  Flush']\n ['Sodium Chloride 0.9%']]"
+  },
+  "ee06998b93ca5610c35e7925": {
+   "answer": "The final answer is: Yes for clonidine patch 0.3 mg/24 hr and amlodipine; no for 5% dextrose.\n\n- Clonidine Patch 0.3 mg/24 hr: prescribed 1 time\n- Amlodipine: prescribed 1 time\n- 5% dextrose: not found as prescribed in this hospital encounter",
+   "true": "[[0]]"
+  },
+  "ee8306d4a542175197a6d200": {
+   "answer": "The final answer is: 1.028",
+   "true": "[[1.028]]"
+  },
+  "ee981ea61809ebc1e0cc8d32": {
+   "answer": "The final answer is: 7.702511574074074 days",
+   "true": "[[7.70251157]]"
+  },
+  "eea838bba39870d24a4fe781": {
+   "answer": "The final answer is: 2375 ml",
+   "true": "[[2375]]"
+  },
+  "eefb26cc5bd74a549f823166": {
+   "answer": "The final answer is: [{'month': '2146-10', 'minimum_void_volume': 250, 'unit': 'ml'}]",
+   "true": "[]"
+  },
+  "ef3f743b0397c2df00366c56": {
+   "answer": "The final answer is: 6.356898148148148 days",
+   "true": "[[6.35689815]]"
+  },
+  "ef903edb8d2304b433a243cb": {
+   "answer": "The final answer is: 660.5166666666667 hours since admission to the hospital.",
+   "true": "[]"
+  },
+  "efc169498c87c222d5b7020b": {
+   "answer": "The final answer is: 2141-05-22T21:29:00-04:00",
+   "true": "[['2141-05-22 21:29:00']]"
+  },
+  "f03742a9f076216fb37d4c2b": {
+   "answer": "The final answer is: I cannot find any \"O2 saturation pulseoxymetry\" measurement greater than 95.0 on 2181-11-02 for this patient.",
+   "true": "[]"
+  },
+  "f08654b0c2c58546d18b7efb": {
+   "answer": "The final answer is: Since 16 months ago, the last specimen-associated tests were received at 2155-11-10 12:36:00. The specimen tests were: [\"Bacteria\", \"Yeast\", \"Specific Gravity\", \"Protein\", \"Epithelial Cells\", \"Leukocytes\", \"Urobilinogen\", \"Ketone\", \"Bilirubin\", \"pH\", \"Nitrite\", \"RBC\", \"WBC\", \"Urine Appearance\", \"Blood\", \"Glucose\", \"Urine Color\", \"URINE CULTURE\"]",
+   "true": "[['BLOOD CULTURE']]"
+  },
+  "f147512eb438041a5186bf3e": {
+   "answer": "The final answer is: 3075 ml",
+   "true": "[[3075]]"
+  },
+  "f195f5a0d57e12581afdc61c": {
+   "answer": "The final answer is: 2140-09-18T12:40:00-04:00",
+   "true": "[['2140-09-18 12:40:00']]"
+  },
+  "f1ca5e6021ac2bbdb6b7e7bf": {
+   "answer": "The final answer is: No. On the first ICU visit, the first measured respiratory rate was 24 insp/min at 2180-07-23T14:12:00-04:00, and the last measured respiratory rate was 20 insp/min at 2180-07-23T22:00:00-04:00. The last value is not greater than the first value.",
+   "true": "[[0]]"
+  },
+  "f1dd398aaf1b00d4a562b899": {
+   "answer": "The final answer is: -0.7 kg",
+   "true": "[[-0.7]]"
+  },
+  "f3051b86c007dd34ade04ba9": {
+   "answer": "The final answer is: 2137-09-02T17:05:00-04:00",
+   "true": "[['2137-09-02 17:05:00']]"
+  },
+  "f356b6267c56b07e1f3e3045": {
+   "answer": "The final answer is: 2120-05-13T17:35:00-04:00",
+   "true": "[['2120-05-13 17:35:00']]"
+  },
+  "f3d6d302751188c87c7c1304": {
+   "answer": "The final answer is: Medication/d47a6867-82e7-5273-a74b-63955208ec8e, prescribed on 2174-12-23T00:38:21-05:00 through route IV.",
+   "true": "[['Sodium Chloride 0.9%  Flush']]"
+  },
+  "f8f6d23e64a92d83dd3fd151": {
+   "answer": "The final answer is: No. For the last respiratory viral screen/culture microbiology testing since 02/2146, performed on 2146-07-03 18:29:00, the Respiratory Viral Culture result was: \"No respiratory viruses isolated.\" No detected organism was found.",
+   "true": "[[0]]"
+  },
+  "f97ed282c4c48f5e86f5b1e6": {
+   "answer": "The final answer is: Yes. The last RDW-SD value measured on the last hospital visit was 44.6 fL, which is less than the second-to-last value of 45 fL.",
+   "true": "[[1]]"
+  },
+  "fa7797af0bc8368e7b76a129": {
+   "answer": "The final answer is: I cannot find respiratory rate measurements for patient 10004733 at 2174-12-30 16:00:00 or 2174-12-30 17:00:00 in the retrieved Observation data, so I cannot calculate the shift.",
+   "true": "[[None]]"
+  },
+  "fa829a69da2e049d895218f5": {
+   "answer": "The final answer is: 0 times.",
+   "true": "[[0]]"
+  },
+  "facfb8f560238eb16739c85e": {
+   "answer": "The final answer is: Yes. Patient 10015860 received a lymphocytes test during their first hospital visit. Matching Observation records included:\n- Lymphocytes \u2014 51244\n- Lymphocytes \u2014 51244\n- Atypical Lymphocytes \u2014 51143",
+   "true": "[[1]]"
+  },
+  "fae84ce9cc96b0e677f844f8": {
+   "answer": "The final answer is: 36.4 \u00b0C",
+   "true": "[[36.4]]"
+  },
+  "fb2fc2ad15a779e94e21d070": {
+   "answer": "The final answer is: I cannot find a vancomycin prescription record for patient 10021487 on this hospital encounter in the retrieved MedicationRequest prescription records, so I cannot calculate the elapsed time in days.",
+   "true": "[]"
+  },
+  "fbbb58618f0b12172d3a2c3f": {
+   "answer": "The final answer is: 1.0 kg",
+   "true": "[[1.]]"
+  },
+  "fc9a1a57bacdb774ac5e8f68": {
+   "answer": "The final answer is: PHYSICIAN REFERRAL",
+   "true": "[['SURGICAL SAME DAY ADMISSION']]"
+  },
+  "fd9b2daa83ce099cdf252c35": {
+   "answer": "The final answer is: Yes. Patient 10022880 had procedures in 2177:\n- Lumbar and lumbosacral fusion of the posterior column, posterior technique\n- Excision of bone for graft, unspecified site\n- Fusion or refusion of 2-3 vertebrae\n- 20 Gauge\n- 18 Gauge",
+   "true": "[[1]]"
+  },
+  "fde016b31923066cd34bb168": {
+   "answer": "The final answer is: I cannot find a Foley output time on 06/23/2125 for patient 10022281. No Foley Observation records were found on that date.",
+   "true": "[]"
+  },
+  "fdf5fc622de2b8d98e233ad6": {
+   "answer": "The final answer is: I cannot find any drug prescribed to patient 10020740 in 05/2150 for the first time. There were no MedicationRequest records authored in May 2150 for this patient.",
+   "true": "[]"
+  },
+  "feaa451705254e6b2a61a7fb": {
+   "answer": "The final answer is: 2132-12-12T10:03:09-05:00",
+   "true": "[['2132-12-12 11:00:00']]"
+  },
+  "ffcf49b4d60d6ba61111c10d": {
+   "answer": "The final answer is: I cannot find any heart rate observations for patient 10006053 on 2111-11-17, so the average heart rate cannot be calculated.",
+   "true": "[[None]]"
+  }
+ }
+}

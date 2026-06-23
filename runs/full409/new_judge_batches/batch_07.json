@@ -1,0 +1,44 @@
+[
+  {
+    "qid": "f1ca5e6021ac2bbdb6b7e7bf",
+    "question": "Is respiratory rate of patient 10000032 last measured on the first icu visit greater than the first value measured on the first icu visit?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. On the first ICU visit, the first measured respiratory rate was 24 insp/min at 2180-07-23T14:12:00-04:00, and the last measured respiratory rate was 20 insp/min at 2180-07-23T22:00:00-04:00. The last value is not greater than the first value."
+  },
+  {
+    "qid": "f8f6d23e64a92d83dd3fd151",
+    "question": "Has there been any organism detected during the last rapid respiratory viral screen & culture microbiology test for patient 10007818 since 02/2146?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. For the last respiratory viral screen/culture microbiology testing since 02/2146, performed on 2146-07-03 18:29:00, the Respiratory Viral Culture result was: \"No respiratory viruses isolated.\" No detected organism was found."
+  },
+  {
+    "qid": "f97ed282c4c48f5e86f5b1e6",
+    "question": "Is the value of patient 10019385's rdw-sd last measured on the last hospital visit less than the second to last value measured on the last hospital visit?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. The last RDW-SD value measured on the last hospital visit was 44.6 fL, which is less than the second-to-last value of 45 fL."
+  },
+  {
+    "qid": "fa829a69da2e049d895218f5",
+    "question": "What is the number of times that patient 10020786 had pre-admission on 12/04/last year?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: 0 times."
+  },
+  {
+    "qid": "facfb8f560238eb16739c85e",
+    "question": "Did patient 10015860 receive a lymphocytes test on their first hospital visit?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10015860 received a lymphocytes test during their first hospital visit. Matching Observation records included:\n- Lymphocytes \u2014 51244\n- Lymphocytes \u2014 51244\n- Atypical Lymphocytes \u2014 51143"
+  },
+  {
+    "qid": "fd9b2daa83ce099cdf252c35",
+    "question": "Has there been any procedure that patient 10022880 had in this year?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10022880 had procedures in this year (2177):\n\n- Lumbar and lumbosacral fusion of the posterior column, posterior technique \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- Excision of bone for graft, unspecified site \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- Fusion or refusion of 2-3 vertebrae \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- 20 Gauge \u2014 performedPeriod: 2177-03-15T06:00:00-04:00 to 2177-03-16T00:17:00-04:00\n- 18 Gauge \u2014 performedPeriod: 2177-03-15T06:00:00-04:00 to 2177-03-15T16:55:00-04:00",
+    "code_answer": "The final answer is: Yes. Patient 10022880 had procedures in 2177:\n- Lumbar and lumbosacral fusion of the posterior column, posterior technique\n- Excision of bone for graft, unspecified site\n- Fusion or refusion of 2-3 vertebrae\n- 20 Gauge\n- 18 Gauge"
+  }
+]

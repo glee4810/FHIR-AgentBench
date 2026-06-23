@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "346a6c07df798347268b1abd",
+    "question": "What was the total dosage of 5% dextrose that patient 10019172 was prescribed in 10/this year?",
+    "gold": "[[750]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "[FAILED: error/empty]"
+  },
+  {
+    "qid": "3de8ef9d5ffcc52173897ea8",
+    "question": "What was the first recorded height for patient 10020740 during their first hospital encounter?",
+    "gold": "[[180.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 180 cm"
+  },
+  {
+    "qid": "3e8b5080c946a24c2fb71498",
+    "question": "Count the number of times that patient 10021487 during their first icu visit had a or urine output.",
+    "gold": "[[2]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 2"
+  },
+  {
+    "qid": "3f3eaf9f4ef204effd22e28b",
+    "question": "What is the length of the first hospital stay in days for patient 10020786?",
+    "gold": "[[4.19097222]]",
+    "resource_answer": "The final answer is: 4.19 days",
+    "code_answer": "The final answer is: 4.190972222222222 days"
+  },
+  {
+    "qid": "3f83bca7c25ce27ab09a7ef0",
+    "question": "What is the difference between weights on patient 10003046 last measured on the last hospital visit compared to the value first measured on the last hospital visit?",
+    "gold": "[[2.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 2 kg"
+  },
+  {
+    "qid": "411239af52a2ceaa4e79d867",
+    "question": "How many unique prescription drugs were ordered for patient 10020944 since 24 months ago?",
+    "gold": "[[58]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 57 unique prescription drugs were ordered for patient 10020944 since 24 months ago."
+  },
+  {
+    "qid": "4344afd25464e3304de00b90",
+    "question": "What was patient 10013049's length of stay in days in the last icu stay?",
+    "gold": "[[1.1769213]]",
+    "resource_answer": "The final answer is: 1.1769 days",
+    "code_answer": "The final answer is: 1.1769212962962963 days"
+  },
+  {
+    "qid": "45b34eeae5d3c8d44b703194",
+    "question": "How much docusate sodium (liquid) dose has been prescribed to patient 10007818 on the first hospital encounter?",
+    "gold": "[[100]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: I cannot find a `dose_val_rx` value for Docusate Sodium (Liquid) prescribed to patient 10007818 during the first hospital encounter. One matching MedicationRequest was found, but it contains no dose value to sum."
+  },
+  {
+    "qid": "473f0352cd0b38c085ce1628",
+    "question": "What is the difference between weights on patient 10038933 second measured on the last hospital visit compared to the value first measured on the last hospital visit?",
+    "gold": "[[0.5]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 0.5 kg"
+  },
+  {
+    "qid": "48859a4418a3875bf6082407",
+    "question": "What was patient 10005866's first value of bilirubin, total since 03/2146?",
+    "gold": "[[2.6]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 2.6 mg/dL"
+  },
+  {
+    "qid": "4bff1dd96412ee933ce201a2",
+    "question": "Find the length in days of the last icu stay for patient 10006053.",
+    "gold": "[[1.75136574]]",
+    "resource_answer": "The final answer is: 1.7513657407 days",
+    "code_answer": "The final answer is: 1.7513657407407408 days"
+  },
+  {
+    "qid": "4e79db3380f81126bc756ee5",
+    "question": "What is the difference between mchc second measured on the last hospital visit compared to the first value measured on the last hospital visit for patient 10007928?",
+    "gold": "[[0.1]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 0.1 %"
+  },
+  {
+    "qid": "4ff852f95fae6d06622555a4",
+    "question": "What would be the daily weight of patient 10024043 in their last hospital encounter? if multiple weights are measured daily, take the maximum.",
+    "gold": "[[83.6]\n [84.2]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: [{'date': '2117-04-12', 'weight': 83.6, 'unit': 'kg'}, {'date': '2117-04-13', 'weight': 84.2, 'unit': 'kg'}]"
+  },
+  {
+    "qid": "52c6c669438001d194f1c9a8",
+    "question": "What is the length of the first hospital stay in days for patient 10016742?",
+    "gold": "[[4.96319444]]",
+    "resource_answer": "The final answer is: 4.963 days",
+    "code_answer": "The final answer is: 4.9631944444444445 days"
+  },
+  {
+    "qid": "5614cf0da6a6dc8d7f53e2e4",
+    "question": "In the last icu stay, what was the average value of heart rate of patient 10019385?",
+    "gold": "[[67.16216216]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 67.16216216216216 bpm"
+  }
+]

@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "e4373b254aad4b11af3fda65",
+  "question": "When did patient 10029291 last have a fecal bag event on 03/06/2123?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find a Fecal Bag event for patient 10029291 on 03/06/2123. The available Fecal Bag events were on 2123-03-01T06:38:00-05:00 and 2123-03-02T03:00:00-05:00.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "e4e38f5cdc7fa7972dbcbfcd",
+  "question": "When did patient 10019172 leave the hospital the last time?",
+  "gold": "[['2118-11-21 18:31:00']]",
+  "resource_answer": "2118-11-21T18:31:00-05:00",
+  "code_answer": "2118-11-21T18:31:00-05:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "e59eccf79830c0ce43f8ca5c",
+  "question": "How much metformin xr (glucophage xr) was prescribed to patient 10016150 first time in 05/this year?",
+  "gold": "[['1000']]",
+  "resource_answer": "1000 mg",
+  "code_answer": "(already graded)",
+  "grade_resource": true,
+  "grade_code": false
+ },
+ {
+  "qid": "e840f7d25b661f8952fb1eb0",
+  "question": "When was patient 10018081's last maximum diastolic blood pressure on this month/30?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any “Arterial Blood Pressure diastolic” observations for patient 10018081 on 2133-12-30. Current-month maximum was 87 mmHg, last recorded at 2133-12-24T15:00:00-05:00.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "ea9a85005a244ffc9f78a09c",
+  "question": "Find out the daily or urine output volume of patient 10019172 during the previous month. if multiple or urine output volumes are measured daily, take the minimum.",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[\n  {\"date\": \"2118-11-16\", \"valueQuantity\": {\"value\": 25, \"unit\": \"ml\", \"code\": \"ml\"}},\n  {\"date\": \"2118-11-17\", \"valueQuantity\": {\"value\": 25, \"unit\": \"ml\", \"code\": \"ml\"}},\n  {\"date\": \"2118-11-18\", \"valueQuantity\": {\"value\": 15, \"unit\": \"ml\", \"code\": \"ml\"}},\n  {\"date\": \"2118-11-19\", \"valueQuantity\": {\"value\": 45, \"unit\": \"ml\", \"code\": \"ml\"}}\n]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "ebd6cc5909117f9e521d66c9",
+  "question": "What was the first time patient 10018423 had their maximum respiratory rate during their last icu stay?",
+  "gold": "[['2167-05-06 05:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2167-05-06T05:00:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "ed91e258dd31d6431b37bd91",
+  "question": "What medicine was prescribed to patient 10039708 for the first time since 07/2138?",
+  "gold": "[['Heparin']\n ['Docusate Sodium']\n ['Senna']\n ['Sodium Chloride 0.9%  Flush']\n ['Sodium Chloride 0.9%']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "Thiamine was the first medicine prescribed since 07/2138, authoredOn 2138-10-30T20:02:13-04:00.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "eefb26cc5bd74a549f823166",
+  "question": "What is the monthly volume of void that patient 10014354 had since 10/06/2146? if multiple void volumes are measured monthly, take the minimum.",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[{'month': '2146-10', 'minimum_void_volume': 250, 'unit': 'ml'}]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "ef903edb8d2304b433a243cb",
+  "question": "How many hours have there been since patient 10004733's admission to the hospital?",
+  "gold": "[]",
+  "resource_answer": "660.52 hours since admission to the hospital.",
+  "code_answer": "660.5166666666667 hours since admission to the hospital.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "efc169498c87c222d5b7020b",
+  "question": "When was the last stool microbial test done in patient 10002495 since 04/2141?",
+  "gold": "[['2141-05-22 21:29:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2141-05-22T21:29:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "f03742a9f076216fb37d4c2b",
+  "question": "When was patient 10021938's spo2 the first time measured greater than 95.0 on last month/02?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any \"O2 saturation pulseoxymetry\" measurement greater than 95.0 on 2181-11-02 for this patient.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "f08654b0c2c58546d18b7efb",
+  "question": "Since 16 months ago, what specimen test did patient 10002428 receive for the last time?",
+  "gold": "[['BLOOD CULTURE']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "Since 16 months ago, the last specimen-associated tests were received at 2155-11-10 12:36:00. The specimen tests were: [\"Bacteria\", \"Yeast\", \"Specific Gravity\", \"Protein\", \"Epithelial Cells\", \"Leukocytes\", \"Urobilinogen\", \"Ketone\", \"Bilirubin\", \"pH\", \"Nitrite\", \"RBC\", \"WBC\", \"Urine Appearance\", \"Blood\", \"Glucose\", \"Urine Color\", \"URINE CULTURE\"]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "f195f5a0d57e12581afdc61c",
+  "question": "When did patient 10004457 first get discharged from the hospital?",
+  "gold": "[['2140-09-18 12:40:00']]",
+  "resource_answer": "2140-09-18T12:40:00-04:00",
+  "code_answer": "2140-09-18T12:40:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "f3051b86c007dd34ade04ba9",
+  "question": "When was the last time that patient 10003400 was discharged from the hospital?",
+  "gold": "[['2137-09-02 17:05:00']]",
+  "resource_answer": "2137-09-02T17:05:00-04:00",
+  "code_answer": "2137-09-02T17:05:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "f356b6267c56b07e1f3e3045",
+  "question": "What was the last time that patient 10035185 had the minimum value of the systolic blood pressure?",
+  "gold": "[['2120-05-13 17:35:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2120-05-13T17:35:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ }
+]

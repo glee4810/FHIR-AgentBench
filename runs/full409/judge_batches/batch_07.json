@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "8c531cd9b0af5ba949b9fa91",
+  "question": "How many hours have it been since patient 10021487's first free calcium lab test during their current hospital encounter?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "690.8166666666667 hours since the first Free Calcium lab test during the current hospital encounter.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "8e96be7df6dd4cc4c1e2a3b4",
+  "question": "How much is the daily weight of patient 10031757 during the last hospital encounter? if multiple weights are measured daily, take the minimum.",
+  "gold": "[[109.6]\n [110. ]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[\n  {\"date\": \"2137-10-15\", \"value\": 109.6, \"unit\": \"kg\"},\n  {\"date\": \"2137-10-16\", \"value\": 110, \"unit\": \"kg\"}\n]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "8f037d1cedf499b333e3a25d",
+  "question": "When was the first microbiological test of patient 10015931 performed during this month?",
+  "gold": "[['2176-12-22 10:57:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2176-12-22T10:57:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "91509e2b22c1e7959786b337",
+  "question": "When did patient 10009035 first have the maximum level of free calcium during their last hospital encounter?",
+  "gold": "[['2161-04-27 10:40:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2161-04-27T10:40:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "9444a73db82e2c64ae8bcdb3",
+  "question": "What was the total output volume that patient 10019172 had on 11/20/2118?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "0 ml",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "96b1d3fe1090aafcf5bcc954",
+  "question": "When did patient 10008454 first have foley output since 12/04/2110?",
+  "gold": "[['2110-12-04 01:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2110-12-04T01:00:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "9a126c3d410cde7047840e30",
+  "question": "What was the average heart rate on last month/25 for patient 10007058?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any heart rate observations for patient 10007058 on 2167-11-25, so the average heart rate for that date cannot be calculated.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "9a53c5a84a90577e106b30ec",
+  "question": "In the first hospital visit, what was patient 10016150's last procedure time?",
+  "gold": "[['2142-05-10 00:00:00']]",
+  "resource_answer": "2142-05-10T20:23:00-04:00",
+  "code_answer": "2142-05-10T20:23:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "9a8ac4df220dc07a83eeae9b",
+  "question": "When was patient 10019777's last insertion of non-drug-eluting peripheral (non-coronary) vessel stent(s) treatment in 2187?",
+  "gold": "[['2187-02-12 00:00:00']]",
+  "resource_answer": "2187-02-12T00:00:00-05:00",
+  "code_answer": "2187-02-12 00:00:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "9aff84dfbc8d4cb85bb5267f",
+  "question": "How much does patient 10038999 change in calcium, total second measured on the last hospital visit compared to the first value measured on the last hospital visit?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot compute the change because I found 0 \"Calcium, Total\" measurements during the patient's last hospital visit.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "9d71dca8add09e321ec57dd9",
+  "question": "When did patient 10026354 last have or urine output since 02/26/2119?",
+  "gold": "[['2119-10-26 08:50:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "Patient 10026354 last had OR Urine recorded on 2119-10-26 08:50:00, with a value of 1100 ml.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "a16e5eeb260d3b031762211d",
+  "question": "Tell me the name of the drug that patient 10021487 was first prescribed through the im route.",
+  "gold": "[['Glucagon']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find the drug name in the retrieved data. The first MedicationRequest prescribed through the IM route references `Medication/0b146275-8348-5a9f-b139-a68e1d319373`, but the corresponding Medication resource was not available.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "a2de199eb11275f923c798c8",
+  "question": "Can you tell me the first medicine that was prescribed to patient 10007795?",
+  "gold": "[['Multivitamins']\n ['Nicotine Patch']\n ['Duloxetine']\n ['Tamoxifen Citrate']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "Medication/9500bac0-b795-58eb-8f1f-0fbfca5e669e",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "a4aeae6cbe8fff13d7e4d651",
+  "question": "What was the total output amount for patient 10014729 on 03/05/this year?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "0 ml",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "a4e1867554fe617ae563f780",
+  "question": "Calculate the total volume of drainage bag for patient 10021487 on this month/17.",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "0 ml",
+  "grade_resource": false,
+  "grade_code": true
+ }
+]

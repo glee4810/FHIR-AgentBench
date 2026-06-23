@@ -1,0 +1,27 @@
+{
+  "ground_truth": "deterministic numeric tolerance vs known gold (non-LLM)",
+  "numeric_questions": 97,
+  "leaderboard": [
+    {
+      "judge": "gpt-5-mini (benchmark default)",
+      "scored": 111,
+      "accuracy": 0.6126,
+      "false_neg_precision_punished": 43,
+      "false_pos_miss_rewarded": 0
+    },
+    {
+      "judge": "codex/GPT panel (3-vote)",
+      "scored": 111,
+      "accuracy": 0.991,
+      "false_neg_precision_punished": 1,
+      "false_pos_miss_rewarded": 0
+    },
+    {
+      "judge": "Claude panel (3-vote)",
+      "scored": 111,
+      "accuracy": 0.982,
+      "false_neg_precision_punished": 1,
+      "false_pos_miss_rewarded": 1
+    }
+  ]
+}

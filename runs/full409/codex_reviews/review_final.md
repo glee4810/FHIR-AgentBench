@@ -1,0 +1,5 @@
+Real defect:
+
+- [TRUSTWORTHY_REGRADE.md](/Users/aanishsachdev/Desktop/cstack/FHIR-AgentBench/TRUSTWORTHY_REGRADE.md:75) says **115 boolean questions** and **230 boolean arm-labels**; [line 94](/Users/aanishsachdev/Desktop/cstack/FHIR-AgentBench/TRUSTWORTHY_REGRADE.md:94) says the final boolean panel had **111 boolean questions**. The artifacts show 114 `[[0]]/[[1]]` boolean golds and `panel_votes_new.json` has 111 boolean qids. Same stale `115` appears in [FINDINGS.md](/Users/aanishsachdev/Desktop/cstack/FHIR-AgentBench/FINDINGS.md:73) and [CODE_EXPERIMENT.md](/Users/aanishsachdev/Desktop/cstack/FHIR-AgentBench/CODE_EXPERIMENT.md:59).
+
+Everything else material matches the two JSON summaries: matched-budget −3.6pp p=0.179688, resource-real −6.1pp p=0.022461, pooled +39.9pp, gpt-5-mini 61.3%, panels 98.2/99.1%. Caveats are stated: post-hoc strata, patient clustering, mechanism not isolated.

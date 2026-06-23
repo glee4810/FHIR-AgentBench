@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "5886a94103455554061fb16a",
+    "question": "What was the quantity of glucose gel dose prescribed to patient 10020740 in 07/this year?",
+    "gold": "[[15]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "[FAILED: error/empty]"
+  },
+  {
+    "qid": "590d8305084857287efef413",
+    "question": "How much did patient 10038999 weigh at their first measurement on the first hospital encounter?",
+    "gold": "[[98.8]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 98.8 kg"
+  },
+  {
+    "qid": "5a67eba88dd963170a026d15",
+    "question": "What was the dose of glipizide xl patient 10029484 was prescribed?",
+    "gold": "[[10]]",
+    "resource_answer": "The final answer is: 10 mg",
+    "code_answer": "[FAILED: error/empty]"
+  },
+  {
+    "qid": "6b1fe6a4f18cb1365ffa3764",
+    "question": "What are patient 10004720's changes in weight last measured on the first hospital visit compared to the second to last value measured on the first hospital visit?",
+    "gold": "[[1.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 1.0 kg increase (from 73.9 kg to 74.9 kg)."
+  },
+  {
+    "qid": "6bb8d0b3a6e2b6227b56f595",
+    "question": "Tell me patient 10038081's first oxygen value on the first hospital stay.",
+    "gold": "[[94.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: {'code': '%', 'unit': '%', 'value': 94, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}"
+  },
+  {
+    "qid": "6e7e6e42109e147a8c37d95d",
+    "question": "What was the last rbc, ascites lab test result for patient 10005866 in their last hospital visit?",
+    "gold": "[[5770.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: {'code': '#/uL', 'unit': '#/uL', 'value': 5770, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}"
+  },
+  {
+    "qid": "7066a7025a2c0442a511c5e1",
+    "question": "What was patient 10015272's first spo2 since 203 days ago?",
+    "gold": "[[97.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: {'code': '%', 'unit': '%', 'value': 97, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}"
+  },
+  {
+    "qid": "712595edb391862c04d6ec79",
+    "question": "Calculate the length of stay in days for patient 10022041's first hospital stay.",
+    "gold": "[[5.00833333]]",
+    "resource_answer": "The final answer is: 5.0083 days (from 2187-05-18T17:08:00-04:00 to 2187-05-23T17:20:00-04:00).",
+    "code_answer": "The final answer is: 5.008333333333334 days"
+  },
+  {
+    "qid": "727aea1d64b5ba869e4b3dc8",
+    "question": "What was the total dose of bisacodyl that patient 10025463 has been prescribed in their first hospital visit?",
+    "gold": "[[10]]",
+    "resource_answer": "The final answer is: 0",
+    "code_answer": "[FAILED: error/empty]"
+  },
+  {
+    "qid": "7329fbf5056c86af263e9033",
+    "question": "Could you show me the total void output of patient 10024043?",
+    "gold": "[[6850]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 6850 ml"
+  },
+  {
+    "qid": "732aa8afc5a1fa558876a572",
+    "question": "What is patient 10004235's difference in weight from the last value measured on the first hospital visit compared to the first value measured on the first hospital visit?",
+    "gold": "[[0.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 0 kg"
+  },
+  {
+    "qid": "75687ea1705bf35f720606d4",
+    "question": "Tell me the number of times patient 10027602 got a cerebral ventricular #1 since 01/23/2201.",
+    "gold": "[[200]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 200"
+  },
+  {
+    "qid": "7aea773bb0cb8d7705a8afa2",
+    "question": "Calculate the length of stay in days for patient 10031757's first hospital stay.",
+    "gold": "[[11.78263889]]",
+    "resource_answer": "The final answer is: 11.78 days",
+    "code_answer": "The final answer is: 11.782638888888888 days"
+  },
+  {
+    "qid": "7d3d29193e98b64900b4be0a",
+    "question": "What was the length of stay in days for patient 10012552's last hospitalization?",
+    "gold": "[[7.86944444]]",
+    "resource_answer": "The final answer is: 7.87 days (from 2140-03-22T17:18:00-04:00 to 2140-03-30T14:10:00-04:00).",
+    "code_answer": "The final answer is: 7.8694444444444445 days"
+  },
+  {
+    "qid": "7edc30d3b6fa3b7308ebcd4a",
+    "question": "How many distinct medications were ordered for patient 10021118 since 10/2161?",
+    "gold": "[[56]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "[FAILED: error/empty]"
+  }
+]

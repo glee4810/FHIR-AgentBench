@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "a4371b693f24038ad04881c2",
+    "question": "Was patient 10005909 prescribed with 0.9% sodium chloride, bag, or duloxetine during the first hospital visit?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. During the first hospital visit (Encounter/4bf70b2e-29af-5519-8752-052b2f833a81), the patient was prescribed duloxetine.",
+    "code_answer": "The final answer is: No. During the first hospital visit, patient 10005909 was not prescribed with either:\n- 0.9% sodium chloride, bag\n- duloxetine"
+  },
+  {
+    "qid": "a5356c6c205e9f088964bb9a",
+    "question": "Has patient 10006580 received any medication?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. MedicationRequest records were found for patient 10006580. No MedicationAdministration resources were found.",
+    "code_answer": "The final answer is: No documented MedicationAdministration records were found for patient 10006580. However, the patient does have 52 MedicationRequest records, meaning medications were ordered/requested, but I cannot confirm they were actually administered from the available data."
+  },
+  {
+    "qid": "b822a4c44ce54f12b21a2ba9",
+    "question": "Has any lab test been performed on patient 10015931 in 10/last year?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. I could not find any lab test Observation records performed on patient 10015931 in 10/last year (October 2175)."
+  },
+  {
+    "qid": "ba93c08f689f2e3af0763012",
+    "question": "What is the number of times that patient 10004733 visited the hospital in 2174?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 hospital visit in 2174.",
+    "code_answer": "The final answer is: 1 hospital visit in 2174."
+  },
+  {
+    "qid": "c15288bf26d6222c25fe91c5",
+    "question": "Tell me the total icu visits of patient 10022281 in this year.",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 ICU visit during this year (2125).",
+    "code_answer": "The final answer is: 1 ICU visit in this year (2125)."
+  },
+  {
+    "qid": "c2a42482b7f7bf97e37b7a73",
+    "question": "Has patient 10018328 visited the hospital for admission since 1 year ago?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10018328 has hospital admission encounters since 1 year ago (since 2153-12-31 23:59:00):\n\n- Encounter/13418f64-5c33-565c-9263-4e9584b4e052, start: 2154-02-05T21:58:00-05:00, end: 2154-02-09T15:15:00-05:00\n- Encounter/894cc90b-329e-56ea-b26e-61ba1059ae96, start: 2154-04-24T03:15:00-04:00, end: 2154-05-03T14:00:00-04:00",
+    "code_answer": "The final answer is: Yes. Patient 10018328 has visited the hospital for admission since 1 year ago. There were 2 hospital admission encounters since 2153-12-31 23:59:00:\n- 2154-02-05T21:58:00-05:00 to 2154-02-09T15:15:00-05:00\n- 2154-04-24T03:15:00-04:00 to 2154-05-03T14:00:00-04:00"
+  },
+  {
+    "qid": "c486d3f623a7c682d0051190",
+    "question": "Has any procedure been carried out on patient 10010471 in 2155?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. 33 Procedure resources were carried out on patient 10010471 in 2155, including:\n\n- Performance of Urinary Filtration, Multiple \u2014 2155-05-09T00:00:00-04:00\n- Fluoroscopy of Multiple Coronary Arteries using Other Contrast \u2014 2155-12-05T00:00:00-05:00\n- Measurement of Cardiac Sampling and Pressure, Right Heart, Percutaneous Approach \u2014 2155-12-05T00:00:00-05:00\n- Blood Cultured \u2014 2155-12-03T20:23:00-05:00 to 2155-12-03T20:24:00-05:00\n- Foley Catheter \u2014 2155-12-02T21:16:00-05:00 to 2155-12-03T12:05:00-05:00\n- 22 Gauge \u2014 2155-12-02T21:13:00-05:00 to 2155-12-07T09:16:00-05:00\n- Dialysis Catheter \u2014 2155-12-02T21:13:00-05:00 to 2155-12-03T09:00:00-05:00\n- Hemodialysis \u2014 2155-12-04T13:30:00-05:00 to 2155-12-04T15:41:00-05:00\n- Multi Lumen \u2014 2155-12-02T20:53:00-05:00 to 2155-12-05T17:49:00-05:00\n- 18 Gauge \u2014 2155-12-02T20:52:00-05:00 to 2155-12-02T21:59:00-05:00\n- EKG \u2014 2155-12-04T15:46:00-05:00 to 2155-12-04T15:47:00-05:00\n- Multi Lumen \u2014 2155-12-05T17:55:00-05:00 to 2155-12-07T18:19:00-05:00\n- Multiple Taking patient vital signs assessment (procedure) entries in May and December 2155\n- Triage: emergency center (procedure) entries in May and December 2155",
+    "code_answer": "The final answer is: Yes. Procedures were carried out on patient 10010471 in 2155. There are 33 Procedure records in 2155, including:\n\n- Performance of Urinary Filtration, Multiple\n- Fluoroscopy of Multiple Coronary Arteries using Other Contrast\n- Measurement of Cardiac Sampling and Pressure, Right Heart, Percutaneous Approach\n- Blood Cultured\n- Foley Catheter\n- 22 Gauge\n- Dialysis Catheter\n- Hemodialysis\n- Multi Lumen\n- 18 Gauge\n- EKG\n- Taking patient vital signs assessment (procedure)\n- Triage: emergency center (procedure)"
+  },
+  {
+    "qid": "c4b26c0ae57a5f77fcd0c46d",
+    "question": "Has patient 10022281 been prescribed a drug since 24 months ago?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10022281 has MedicationRequest prescriptions since 24 months ago (since 2123-12-31 23:59:00), with prescriptions authored in 2125-06.",
+    "code_answer": "The final answer is: Yes. Patient 10022281 has been prescribed drugs since 24 months ago. There are 44 MedicationRequest records authored between 2123-12-31 23:59:00 and 2125-12-31 23:59:00."
+  },
+  {
+    "qid": "c996bd83ae8f43a3717a6f64",
+    "question": "How many times did patient 10002495 have irrigation of genitourinary tract using irrigating substance, via natural or artificial opening since 2141?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1",
+    "code_answer": "The final answer is: 1 time."
+  },
+  {
+    "qid": "cb5bf7d37033da680feb9abe",
+    "question": "How many visits did patient 10026354 make to the hospital throughout this year?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 hospital visit in 2119.",
+    "code_answer": "The final answer is: 1 hospital visit throughout this year (2119)."
+  },
+  {
+    "qid": "cd72a23c76002c4a524a1b61",
+    "question": "How many icu visits did patient 10022880 have during this year?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 ICU visit during this year (2177).",
+    "code_answer": "The final answer is: 1 ICU visit during this year (2177)."
+  },
+  {
+    "qid": "d0be97adb482380a1a57585d",
+    "question": "How many times patient 10027602 have a foley output recorded on 12/05/this year?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: 0 times."
+  },
+  {
+    "qid": "d331061cc248eb79de709879",
+    "question": "Has patient 10038933 been diagnosed with any type of disease?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10038933 has been diagnosed with the following conditions:\n\n- Retention of urine, unspecified\n- Hyposmolality and/or hyponatremia\n- Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- Alcohol withdrawal delirium\n- Unspecified essential hypertension\n- Candidiasis of mouth\n- Dysphagia, unspecified\n- FALL ON STAIR/STEP NEC\n- Encephalopathy, unspecified\n- Pneumonitis due to inhalation of food or vomitus\n- Other and unspecified cerebral laceration and contusion, without mention of open intracranial wound, with loss of consciousness of unspecified duration\n- Other and unspecified alcohol dependence, unspecified",
+    "code_answer": "The final answer is: Yes. Patient 10038933 has 12 recorded Condition diagnoses:\n\n- 78820 \u2014 Retention of urine, unspecified\n- 2761 \u2014 Hyposmolality and/or hyponatremia\n- 25000 \u2014 Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- 2910 \u2014 Alcohol withdrawal delirium\n- 4019 \u2014 Unspecified essential hypertension\n- 1120 \u2014 Candidiasis of mouth\n- 78720 \u2014 Dysphagia, unspecified\n- E8809 \u2014 FALL ON STAIR/STEP NEC\n- 34830 \u2014 Encephalopathy, unspecified\n- 5070 \u2014 Pneumonitis due to inhalation of food or vomitus\n- 85186 \u2014 Other and unspecified cerebral laceration and contusion, without mention of open intracranial wound, with loss of consciousness of unspecified duration\n- 30390 \u2014 Other and unspecified alcohol dependence, unspecified"
+  },
+  {
+    "qid": "d4b6c0167cad9291a4e1dbec",
+    "question": "Is the value of troponin t in patient 10007058 from the last measurement on the first hospital visit greater than its second to last measurement on the first hospital visit?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. The last Troponin T measurement on the first hospital visit was 2.33 ng/mL, which is greater than the second-to-last measurement of 1.93 ng/mL."
+  },
+  {
+    "qid": "d6ab8927156136206a55d8a8",
+    "question": "During the current hospital visit, has patient 10021487 been prescribed with readi-cat 2 (barium sulfate 2% suspension), plasmalyte, or acetazolamide sodium?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. During the current hospital visit, I found no MedicationRequest records for any of the following: readi-cat 2 (barium sulfate 2% suspension), plasmalyte, or acetazolamide sodium."
+  }
+]
