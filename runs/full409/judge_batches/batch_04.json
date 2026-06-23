@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "5437dceb1f465a249b318f40",
+  "question": "How many hours have there been since patient 10039831's admission to the hospital?",
+  "gold": "[]",
+  "resource_answer": "88 hours 44 minutes since admission to the hospital.",
+  "code_answer": "88.73 hours since admission.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "568a32b005438f0d65d4f758",
+  "question": "When did patient 10020786 receive the last magnesium test in their last hospital encounter?",
+  "gold": "[['2189-06-12 06:35:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2189-06-12T06:35:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "56cc41f276a6e10711d396f4",
+  "question": "When was patient 10004720's first microbiology test done?",
+  "gold": "[['2186-11-13 12:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2186-11-13T12:00:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "5c2b95425f850cf9aee654aa",
+  "question": "Please list the yearly volume of stool that was output by patient 10020740 since 03/26/2150. if multiple stool volumes are measured yearly, take the average.",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[] — I could not find any stool volume (`Stool | 226579`, unit `ml`) measurements for patient 10020740 since 03/26/2150 through 12/31/2150.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "5cf885d109f3f215844f994e",
+  "question": "How many hours have passed since patient 10004733's last stay in careunit medical/surgical intensive care unit (micu/sicu) in this hospital encounter?",
+  "gold": "[]",
+  "resource_answer": "459.93 hours have passed since the patient's last stay in careunit medical/surgical intensive care unit (micu/sicu), which ended at 2174-12-12T20:03:01-05:00.",
+  "code_answer": "459.93305555555554 hours",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "5da6b605b949e3c4c068537e",
+  "question": "When did patient 10039831 first receive a mrsa screen microbiological test in 12/2115?",
+  "gold": "[['2115-12-28 16:21:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2115-12-28T16:21:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "6336898e3861f505fd6e2a25",
+  "question": "How many days have there been since patient 10039831's admission to the hospital?",
+  "gold": "[]",
+  "resource_answer": "3 days, 16 hours, 44 minutes since hospital admission at 2115-12-28T07:15:00-05:00.",
+  "code_answer": "3.6972222222222224 days since admission to the hospital.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "633d7843ff15021b4c6b6ac9",
+  "question": "Tell me the marital status of patient 10012853 in their last hospital encounter.",
+  "gold": "[['WIDOWED']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find the marital status for patient 10012853 in their last hospital encounter.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "6381c60f67186bd31083fcdf",
+  "question": "How was patient 10000032 admitted in terms of admission type for the last time in the hospital?",
+  "gold": "[['EW EMER.']]",
+  "resource_answer": "emergency",
+  "code_answer": "emergency (code: EMER)",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "647bc08d18cac6dbda791c42",
+  "question": "When was, for the last time in 10/2184, patient 10018845 prescribed a medication via the sc route?",
+  "gold": "[['2184-10-09 16:00:00']]",
+  "resource_answer": "2184-10-09T11:34:19-04:00",
+  "code_answer": "2184-10-09T11:34:19-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "666f86f3566bfabb76e587a7",
+  "question": "When was patient 10038992 last prescribed a drug via the neb route since 07/2185?",
+  "gold": "[['2185-11-02 21:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2185-11-02T20:28:57-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "672d81cda5b780896726e4f2",
+  "question": "When was patient 10015860's respiratory rate less than 21.0 for the first time since 06/06/2186?",
+  "gold": "[['2186-09-15 18:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2186-09-15T12:56:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "68e2938f96286a982888a1f6",
+  "question": "Which was the last care unit patient 10007928 was in during their last hospital visit, as per the transfer record?",
+  "gold": "[['Med/Surg']]",
+  "resource_answer": "Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a",
+  "code_answer": "Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a\n\nI could not resolve this Location reference to a human-readable care unit name because the Location resource was not found in the retrieved data.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "6ac4cfa978f125a71ca0e9b0",
+  "question": "How much phenazopyridine was last prescribed since 10/2144 to patient 10005909?",
+  "gold": "[['100']]",
+  "resource_answer": "100 mg",
+  "code_answer": "(already graded)",
+  "grade_resource": true,
+  "grade_code": false
+ },
+ {
+  "qid": "6aea46a3a6bf0c02fb9bd415",
+  "question": "What was the last measured value of respiratory rate of patient 10027602 on this month/04?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find a respiratory rate measurement for patient 10027602 on 2201-12-04.",
+  "grade_resource": false,
+  "grade_code": true
+ }
+]

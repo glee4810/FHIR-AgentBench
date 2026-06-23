@@ -1,0 +1,74 @@
+[
+ {
+  "qid": "f3d6d302751188c87c7c1304",
+  "question": "What was the last medication that was prescribed to patient 10004733 in 12/this year through the iv route?",
+  "gold": "[['Sodium Chloride 0.9%  Flush']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "Medication/d47a6867-82e7-5273-a74b-63955208ec8e, prescribed on 2174-12-23T00:38:21-05:00 through route IV.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "fa7797af0bc8368e7b76a129",
+  "question": "How much do patient 10004733's respiratory rate shifts measured at 2174-12-30 17:00:00 compared to the value measured at 2174-12-30 16:00:00?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find respiratory rate measurements for patient 10004733 at 2174-12-30 16:00:00 or 2174-12-30 17:00:00 in the retrieved Observation data, so I cannot calculate the shift.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "fb2fc2ad15a779e94e21d070",
+  "question": "How much time in days has passed since the last time patient 10021487 was prescribed vancomycin on this hospital encounter?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find a vancomycin prescription record for patient 10021487 on this hospital encounter in the retrieved MedicationRequest prescription records, so I cannot calculate the elapsed time in days.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "fc9a1a57bacdb774ac5e8f68",
+  "question": "What was the admission type for patient 10023117 during their first hospital visit?",
+  "gold": "[['SURGICAL SAME DAY ADMISSION']]",
+  "resource_answer": "SS (short stay)",
+  "code_answer": "PHYSICIAN REFERRAL",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "fde016b31923066cd34bb168",
+  "question": "What was patient 10022281's first output time of foley on 06/23/2125?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find a Foley output time on 06/23/2125 for patient 10022281. No Foley Observation records were found on that date.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "fdf5fc622de2b8d98e233ad6",
+  "question": "What was the drug prescribed to patient 10020740 in 05/2150 for the first time?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any drug prescribed to patient 10020740 in 05/2150 for the first time. There were no MedicationRequest records authored in May 2150 for this patient.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "feaa451705254e6b2a61a7fb",
+  "question": "During this month, when was the first time that patient 10005817 was prescribed a medication via the iv drip route?",
+  "gold": "[['2132-12-12 11:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2132-12-12T10:03:09-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "ffcf49b4d60d6ba61111c10d",
+  "question": "On last month/17, what was the average of heart rate for patient 10006053?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any heart rate observations for patient 10006053 on 2111-11-17, so the average heart rate cannot be calculated.",
+  "grade_resource": false,
+  "grade_code": true
+ }
+]

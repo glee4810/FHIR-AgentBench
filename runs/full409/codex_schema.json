@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["grades"],
+  "properties": {
+    "grades": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["qid", "resource", "code"],
+        "properties": {
+          "qid": {"type": "string"},
+          "resource": {"type": "integer", "enum": [0, 1]},
+          "code": {"type": "integer", "enum": [0, 1]}
+        }
+      }
+    }
+  }
+}

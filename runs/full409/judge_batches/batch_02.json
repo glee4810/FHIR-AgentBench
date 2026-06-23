@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "264e8e9083e7fe02916af314",
+  "question": "What was the name of the medication that patient 10025612 was prescribed for the last time in 10/this year?",
+  "gold": "[['Potassium Chloride']]",
+  "resource_answer": "I cannot find the medication name in the retrieved data. The latest MedicationRequest(s) in 10/2125 were authoredOn `2125-10-02T11:17:54-04:00`, but they only contain medication references:\n\n- `Medication/d20a8921-5554-5d8c-ad5c-f7f4e2ff1ae0`\n- `Medication/5cbae514-bad1-5a8d-852f-5e39e0bba746`",
+  "code_answer": "I cannot find the medication name in the retrieved data. The last MedicationRequest in 10/2125 was authored on `2125-10-02T11:17:54-04:00` and references `Medication/5cbae514-bad1-5a8d-852f-5e39e0bba746`, but no Medication resource/name was available for that reference.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "26fba96883d9bde92fd8e95f",
+  "question": "How many hours have elapsed since the last time patient 10004733 on this hospital stay received a lab test for lactate dehydrogenase (ld)?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "330.82 hours have elapsed since the last lactate dehydrogenase (LD) lab test during this hospital stay.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "282f008dd8dfb8f4a1dd6999",
+  "question": "Tell me the name of the organism that was detected in the last urine test of patient 10027602 on their first hospital visit?",
+  "gold": "[['ENTEROCOCCUS SP.']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "No organism was detected; the last urine culture result was \"NO GROWTH.  \"",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "2cd96b3599e3450802308c45",
+  "question": "How many days has it been since patient 10018081's hospital admission?",
+  "gold": "[]",
+  "resource_answer": "13 days since hospital admission on 2133-12-18T16:58:00-05:00.",
+  "code_answer": "13 days since the hospital admission on 2133-12-18T16:58:00-05:00.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "2dfc862bcecf1f1b2c037bc9",
+  "question": "When did patient 10007818 receive a glucose laboratory test for the first time in 07/this year?",
+  "gold": "[['2146-07-01 03:10:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2146-07-01 03:10:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "2e773c48c344e7f33a29892f",
+  "question": "What was last procedure time of patient 10018423 since 2162?",
+  "gold": "[]",
+  "resource_answer": "I cannot find any Procedure resources for the patient since 2162 up to the current time 2162-12-31 23:59:00.",
+  "code_answer": "I cannot find any Procedure records for patient 10018423 since 2162 up to the assumed current time of 2162-12-31 23:59:00.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "2f0d855d95535316ee099fde",
+  "question": "Could you retrieve patient 10018081's daily weight? if multiple weights are measured daily, take the minimum.",
+  "gold": "[[ 90.7]\n [ 94. ]\n [ 97.4]\n [100.7]\n [ 98.6]\n [100. ]\n [ 93.6]\n [ 87.2]\n [ 83.5]\n [ 83. ]\n [ 81.5]\n [ 83. ]\n [ 84.9]\n [ 83.7]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[\n  {\"date\": \"2133-12-18\", \"weight\": 90.7, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-19\", \"weight\": 94.0, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-20\", \"weight\": 97.4, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-21\", \"weight\": 100.7, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-24\", \"weight\": 93.6, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-26\", \"weight\": 87.2, \"unit\": \"kg\"},\n  {\"date\": \"2133-12-28\", \"weight\": 83.5, \"unit\": \"kg\"},\n  {\"date\": \"2134-01-01\", \"weight\": 84.9, \"unit\": \"kg\"}\n]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "304589d2a4159d23de6243b4",
+  "question": "When was the last mrsa screen microbiology test given to patient 10015272 in the last hospital encounter?",
+  "gold": "[['2137-06-12 22:35:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2137-06-12T22:35:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "3173d5e9349394956703946f",
+  "question": "When was the last instance when patient 10021487's respiratory rate was greater than 17.0 on 12/17/2116?",
+  "gold": "[['2116-12-17 23:52:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2116-12-17 23:00:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "32fa88a37c2489a86ba893e5",
+  "question": "When did patient 10027445 for the last time leave the hospital?",
+  "gold": "[['2145-12-19 14:36:00']]",
+  "resource_answer": "2145-12-19T14:36:00-05:00",
+  "code_answer": "2145-12-19T14:36:00-05:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "3721cde992fe90dd17278b65",
+  "question": "How many hours have passed since the patient 10021487 was admitted to the hospital?",
+  "gold": "[]",
+  "resource_answer": "695.6 hours have passed since the hospital admission at 2116-12-03T00:23:00-05:00.",
+  "code_answer": "695.6 hours have passed since the patient was admitted to the hospital.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "37b440fc3a82a50003dce7ed",
+  "question": "What was patient 10019385's last creatine kinase, mb isoenzyme lab test time in their last hospital encounter?",
+  "gold": "[['2180-03-05 19:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2180-03-05T19:00:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "390c4f9e4e7b5c353eff9da7",
+  "question": "What was the last dose of potassium chl 20 meq / 1000 ml d5lr prescribed to patient 10016810?",
+  "gold": "[['1000']]",
+  "resource_answer": "1000",
+  "code_answer": "(already graded)",
+  "grade_resource": true,
+  "grade_code": false
+ },
+ {
+  "qid": "393404a584eb0bb1b6bbe900",
+  "question": "What was the last height reading for patient 10020944 in 03/2131?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find a 'Height (cm)' Observation for patient 10020944 in 03/2131.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "3c3a60ef6ea248ad69d36deb",
+  "question": "When was patient 10008287 prescribed for the last time a medication via the pr route since 08/2145?",
+  "gold": "[['2145-10-01 14:00:00']]",
+  "resource_answer": "2145-10-01T13:10:49-04:00",
+  "code_answer": "2145-10-01 13:10:49",
+  "grade_resource": true,
+  "grade_code": true
+ }
+]

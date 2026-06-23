@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "97bd7321746aeee64c00043b",
+    "question": "How much does patient 10014729 change in mch last measured on the last hospital visit compared to the second to last value measured on the last hospital visit?",
+    "gold": "[[-0.1]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: -0.1 pg (from 29.5 pg to 29.4 pg)."
+  },
+  {
+    "qid": "97f99846bf73b8acd7a1318e",
+    "question": "How many unique medicines were prescribed to patient 10014354 since 4 months ago?",
+    "gold": "[[28]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 29 unique medicines."
+  },
+  {
+    "qid": "9930fa67b91f89cc964e7df3",
+    "question": "Get the sum of the outputs that happened on 12/18/2116 for patient 10021487.",
+    "gold": "[[4110]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 3710 mL"
+  },
+  {
+    "qid": "9ab8b4d1a143e09289a29059",
+    "question": "What is the maximum metamyelocytes of patient 10038992?",
+    "gold": "[[0.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 0.0 %"
+  },
+  {
+    "qid": "9b79fc00bb70e04132ba060c",
+    "question": "What is the number of times that patient 10018081 had ostomy (output) since 12/03/2133?",
+    "gold": "[[68]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 90 times."
+  },
+  {
+    "qid": "9cdee4aaa2811035370a1c86",
+    "question": "Could you show me the daily weight of patient 10039831 since 07/2115? if multiple weights are measured daily, take the average.",
+    "gold": "[[61.7]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: [{'date': '2115-12-28', 'average_weight': 61.7, 'unit': 'kg', 'measurements_count': 1}]"
+  },
+  {
+    "qid": "9fc0ac6b29d8a361fd6e2512",
+    "question": "How much does patient 10007058 change in spo2 second measured on the first icu visit compared to the first value measured on the first icu visit?",
+    "gold": "[[1.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 1 % increase."
+  },
+  {
+    "qid": "9fd9c725dd075244d0eab9a8",
+    "question": "What was the maximum sodium of patient 10020187?",
+    "gold": "[[143.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 145.0 mEq/L"
+  },
+  {
+    "qid": "a07e014b5e2eb6177b5978a3",
+    "question": "Since 15 months ago, what was the last weight for patient 10011398?",
+    "gold": "[[70.3]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 70.3 kg on 2146-12-16T09:00:00-05:00."
+  },
+  {
+    "qid": "a12d2706258e7cd94b157f13",
+    "question": "How many times did patient 10021487 stay in icu?",
+    "gold": "[[2]]",
+    "resource_answer": "The final answer is: 2",
+    "code_answer": "The final answer is: 2 times."
+  },
+  {
+    "qid": "a13bd95a1540c1bc4c4568db",
+    "question": "Can you tell me the last ferritin lab reading for patient 10020740 in 03/2150?",
+    "gold": "[[384.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 384 ng/mL on 2150-03-17T04:21:00-04:00."
+  },
+  {
+    "qid": "a69440dfa419dc0ff7d88b64",
+    "question": "Tell me the total dose of metoprolol succinate xl that patient 10020944 was prescribed in 03/this year?",
+    "gold": "[[75]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "[FAILED: error/empty]"
+  },
+  {
+    "qid": "ab2159e2914558a41cd56bff",
+    "question": "What was the ciprofloxacin hcl dosage that patient 10019172 had been prescribed in 11/2118?",
+    "gold": "[[500]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "[FAILED: error/empty]"
+  },
+  {
+    "qid": "b05a0cc27584db59d2dc4a8b",
+    "question": "What was the length of stay in days for patient 10020944's last hospitalization?",
+    "gold": "[[14.06041667]]",
+    "resource_answer": "The final answer is: 14.02 days (from 2131-02-27T15:34:00-05:00 to 2131-03-13T17:01:00-04:00).",
+    "code_answer": "The final answer is: 14.060416666666667 days."
+  },
+  {
+    "qid": "b26e5939c6b846e6073358d5",
+    "question": "How many unique prescription drugs were ordered for patient 10018328 during their last hospital visit?",
+    "gold": "[[36]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 16 unique prescription drugs were ordered during patient 10018328\u2019s last hospital visit."
+  }
+]

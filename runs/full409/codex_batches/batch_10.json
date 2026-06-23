@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "d198804fbc8f627ea7a4dd74",
+    "question": "Can you provide the first care unit that patient 10010471 was in according to the transfer record?",
+    "gold": "[['Emergency Department']]",
+    "resource_answer": "The final answer is: Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f. The care unit name could not be found in the available retrieved data.",
+    "code_answer": "The final answer is: Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f\n\nI could not find a display/name for this care unit in the retrieved data; the first transfer record location only provides this Location reference."
+  },
+  {
+    "qid": "d2d7d8b52a277ffa44cfb072",
+    "question": "Please tell me patient 10019777's sex.",
+    "gold": "[['M']]",
+    "resource_answer": "The final answer is: I cannot find the information.",
+    "code_answer": "The final answer is: I cannot find the patient information for patient 10019777 / FHIR ID 23f959c1-6ac2-562b-9cbe-c111f338e27b, so I cannot determine the patient's sex."
+  },
+  {
+    "qid": "d4949e694ea61ec816d403c4",
+    "question": "On 04/05/this year, what was the average value of respiratory rate for patient 10012552?",
+    "gold": "[[None]]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: I cannot find any respiratory rate observations for patient 10012552 on 04/05/2140, so the average value is not available."
+  },
+  {
+    "qid": "d69a4b8b51374de9e093dde2",
+    "question": "How many hours have passed since patient 10004733 stayed in the careunit medicine on this hospital visit for the first time?",
+    "gold": "[]",
+    "resource_answer": "The final answer is: 459.93 hours",
+    "code_answer": "The final answer is: 459.93305555555554 hours"
+  },
+  {
+    "qid": "d91bb87c28806cef8d1448de",
+    "question": "When did patient 10023117 for the first time get discharged from the hospital?",
+    "gold": "[['2170-10-09 16:30:00']]",
+    "resource_answer": "The final answer is: 2170-10-09T16:30:00-04:00",
+    "code_answer": "The final answer is: 2170-10-09T16:30:00-04:00"
+  },
+  {
+    "qid": "daad7a245a02c2817e1dab51",
+    "question": "When did patient 10007818 last have a fecal bag event since 04/04/2146?",
+    "gold": "[['2146-07-10 23:00:00']]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 2146-07-10T23:00:00-04:00"
+  },
+  {
+    "qid": "db7f20610bfa0be1f5377ba9",
+    "question": "What was the admission type during the first hospital admission for patient 10021118?",
+    "gold": "[['URGENT']]",
+    "resource_answer": "The final answer is: urgent",
+    "code_answer": "The final answer is: TRANSFER FROM HOSPITAL"
+  },
+  {
+    "qid": "dbf9297a4c1d683faa792fef",
+    "question": "What is the yearly volume of emesis that patient 10001217 had since 07/2157? if multiple emesis volumes are measured yearly, take the minimum.",
+    "gold": "[]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: [{'year': 2157, 'emesis_volume': {'code': 'ml', 'unit': 'ml', 'value': 100, 'system': 'http://mimic.mit.edu/fhir/mimic/CodeSystem/mimic-units'}}]"
+  },
+  {
+    "qid": "dc671c0fb18f291e1d417779",
+    "question": "What was patient 10004235's last output time of foley on 03/19/2196?",
+    "gold": "[]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: I cannot find a Foley output time for patient 10004235 on 03/19/2196."
+  },
+  {
+    "qid": "dd025c270eae097731034a6c",
+    "question": "How many hours has it been since patient 10018081 first received a mcv lab test during this hospital encounter?",
+    "gold": "[]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 318.51666666666665 hours."
+  },
+  {
+    "qid": "e198cf387b6b22216a593d12",
+    "question": "Please show the total amount of output patient 10004720 had since 02/08/2183.",
+    "gold": "[[None]]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 0"
+  },
+  {
+    "qid": "e19ea171900405ad202eba5f",
+    "question": "Retrieve the marital status of patient 10038081 on their first hospital visit.",
+    "gold": "[['SINGLE']]",
+    "resource_answer": "The final answer is: I cannot find the marital status for patient 10038081 on their first hospital visit in the retrieved Patient or Encounter data.",
+    "code_answer": "The final answer is: I cannot find the marital status for patient 10038081 on their first hospital visit in the retrieved FHIR data. The Patient resource was not available, and the first hospital Encounter resource did not contain a marital status field."
+  },
+  {
+    "qid": "e1f82dce913d0a344d686dcb",
+    "question": "What was the total mediastinal output in the last icu visit that patient 10005817 had?",
+    "gold": "[[None]]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 0 (no mediastinal output values were found in the last ICU visit)."
+  },
+  {
+    "qid": "e2e9e3d582524db3f2e7d55a",
+    "question": "Tell me the name of the drug that was first prescribed to patient 10005817 during the last hospital visit via nu route?",
+    "gold": "[]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: I cannot find any MedicationRequest prescribed via NU route during the patient's last hospital visit."
+  },
+  {
+    "qid": "e38192db81eb4aedd18e81f8",
+    "question": "Calculate the total volume of mediastinal for patient 10005817 on 12/24/this year.",
+    "gold": "[[None]]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 0 ml"
+  }
+]

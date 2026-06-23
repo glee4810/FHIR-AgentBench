@@ -1,0 +1,41 @@
+{
+  "scoring": "benchmark-canonical (error/overflow/empty -> 0, per evaluation_metrics.py:133-137), gpt-5-mini judge on real answers",
+  "pooled_409": {
+    "n": 409,
+    "resource": 70,
+    "code": 154,
+    "resource_acc": 0.1711,
+    "code_acc": 0.3765,
+    "delta": 0.2054,
+    "fixed": 105,
+    "broke": 21,
+    "mcnemar_p": 0.0,
+    "significant": true
+  },
+  "matched_budget_stratum": {
+    "n": 140,
+    "resource": 67,
+    "code": 55,
+    "resource_acc": 0.4786,
+    "code_acc": 0.3929,
+    "delta": -0.0857,
+    "fixed": 6,
+    "broke": 18,
+    "mcnemar_p": 0.02265584,
+    "significant": true
+  },
+  "large_record_stratum": {
+    "n": 240,
+    "resource_acc": 0.0,
+    "code_acc": 0.4125,
+    "note": "resource = 0% by construction (overflowed 32k cap); code routes payload to sandbox"
+  },
+  "code_arm_failures": {
+    "answered_real": 380,
+    "overflow": 9,
+    "empty_or_error": 20
+  },
+  "resource_arm_overflow": 262,
+  "model": "gpt-5.5-2026-04-23",
+  "judge": "gpt-5-mini-2025-08-07"
+}

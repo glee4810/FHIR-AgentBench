@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "d738685ff207376b36d479fc",
+    "question": "Is the value of patient 10021118's body temperature from second measurement on the last icu visit less than its first measurement on the last icu visit?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. The second body temperature measurement on the last ICU visit was 36.4, which is not less than the first measurement of 36.2."
+  },
+  {
+    "qid": "d8eb075e768231338b08ef56",
+    "question": "Has patient 10027445 had any results of his or her mrsa screen microbiology tests in 09/this year?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. I found no MRSA SCREEN microbiology test results in 09/2142 for patient 10027445."
+  },
+  {
+    "qid": "d91a86b3f19888f5557a404a",
+    "question": "Since 08/2174 has patient 10004733 received a hyaline casts test?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Since 08/2174, patient 10004733 received a Hyaline Casts test on 2174-12-13T11:03:00-05:00."
+  },
+  {
+    "qid": "dbe56779e1a5f940e7fde7f8",
+    "question": "Keep count of how many times patient 10020944 outputted oral gastric on 03/12/this year.",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: 0 times."
+  },
+  {
+    "qid": "dc8216b0660d0fb91f366b9e",
+    "question": "Have there been any procedures conducted on patient 10001725 since 2110?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. The following procedures were conducted on patient 10001725 since 2110 (through 2110-12-31 23:59:00):\n\n- Insertion of biological graft \u2014 performedDateTime: 2110-04-11T00:00:00-04:00\n- Insertion or replacement of other neurostimulator pulse generator \u2014 performedDateTime: 2110-04-11T00:00:00-04:00\n- Repair of rectocele with graft or prosthesis \u2014 performedDateTime: 2110-04-11T00:00:00-04:00\n- 20 Gauge \u2014 performedPeriod: start 2110-04-11T16:02:00-04:00, end 2110-04-12T23:59:00-04:00\n- 20 Gauge \u2014 performedPeriod: start 2110-04-11T16:35:00-04:00, end 2110-04-12T23:59:00-04:00",
+    "code_answer": "The final answer is: Yes. There were 5 procedures conducted on patient 10001725 since 2110:\n\n- Insertion of biological graft \u2014 2110-04-11T00:00:00-04:00\n- Insertion or replacement of other neurostimulator pulse generator \u2014 2110-04-11T00:00:00-04:00\n- Repair of rectocele with graft or prosthesis \u2014 2110-04-11T00:00:00-04:00\n- 20 Gauge \u2014 2110-04-11T16:02:00-04:00\n- 20 Gauge \u2014 2110-04-11T16:35:00-04:00"
+  },
+  {
+    "qid": "df9f9f77da1cf00ef44d4e96",
+    "question": "Has patient 10015931 visited the hospital for admission during this year?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10015931 had hospital admissions during this year (2176):\n\n- Encounter ID: 9a8d3981-0eaa-5f92-8c47-40ffa75340d8; identifier value: 28157142; period.start: 2176-11-14T18:02:00-05:00; period.end: 2176-11-27T13:30:00-05:00\n- Encounter ID: 202db44a-2332-54c4-af00-709ac5400e71; identifier value: 24420677; period.start: 2176-12-16T23:31:00-05:00; period.end: 2176-12-31T17:35:00-05:00",
+    "code_answer": "The final answer is: Yes. Patient 10015931 had hospital admissions during this year (2176): \n\n- Encounter `202db44a-2332-54c4-af00-709ac5400e71`, from `2176-12-16T23:31:00-05:00` to `2176-12-31T17:35:00-05:00`\n- Encounter `9a8d3981-0eaa-5f92-8c47-40ffa75340d8`, from `2176-11-14T18:02:00-05:00` to `2176-11-27T13:30:00-05:00`"
+  },
+  {
+    "qid": "e0693814cc896b83b3416d2d",
+    "question": "Is the value of respiratory rate in patient 10016742 from second measurement on the first icu visit greater than its first measurement on the first icu visit?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. The second respiratory rate measurement on the first ICU visit was 18 insp/min, which is not greater than the first measurement of 20 insp/min."
+  },
+  {
+    "qid": "e134d64a96cc7940427b44cf",
+    "question": "Did patient 10003046 get a pco2 test in their last hospital visit?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10003046 had a pCO2 test during their last hospital visit. There were 8 pCO2 Observation records."
+  },
+  {
+    "qid": "e19b3138fb3b80c47b5d5688",
+    "question": "Has patient 10022041 been admitted to an emergency room?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10022041 has an emergency encounter with class.display = \"emergency\" and an ED encounter identifier system = \"http://mimic.mit.edu/fhir/mimic/identifier/encounter-ed\". The hospital encounter also lists admitSource code = \"EMERGENCY ROOM\".",
+    "code_answer": "The final answer is: Yes. Patient 10022041 has an emergency room encounter recorded: Encounter/f264620b-facf-5565-9a98-a64b948373b3, class display \"emergency\", identifier system \"http://mimic.mit.edu/fhir/mimic/identifier/encounter-ed\", from 2187-05-18T14:59:00-04:00 to 2187-05-18T18:39:00-04:00."
+  },
+  {
+    "qid": "e5e99a0d4249da9d001cf97b",
+    "question": "Has any laboratory test been performed on patient 10009049 since 04/2174?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Laboratory tests were performed on patient 10009049 since 04/2174. There are 269 laboratory Observation records between 2174-04-01 and 2174-12-31, with the earliest on 2174-05-26T00:00:00-04:00 and the latest on 2174-07-20T10:50:00-04:00."
+  },
+  {
+    "qid": "e6ab1bc462921776329e8d65",
+    "question": "Was patient 10027602 in the hospital in the last year?",
+    "gold": "[[0]]",
+    "resource_answer": "The final answer is: Yes. Patient 10027602 was in the hospital in the last year, with hospital encounters from 2201-10-30T12:05:00-04:00 to 2201-11-20T14:45:00-05:00 and from 2201-12-11T12:00:00-05:00 to 2201-12-17T13:45:00-05:00.",
+    "code_answer": "The final answer is: Yes. Patient 10027602 was in the hospital in the last year, with hospital encounters:\n- 2201-10-30T12:05:00-04:00 to 2201-11-20T14:45:00-05:00\n- 2201-12-11T12:00:00-05:00 to 2201-12-17T13:45:00-05:00"
+  },
+  {
+    "qid": "e7d42c3433b73b5b7e9bab9a",
+    "question": "Has patient 10021312 been treated with a destruction of right lower lung lobe, via natural or artificial opening endoscopic since 2113?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10021312 was treated with \"Destruction of Right Lower Lung Lobe, Via Natural or Artificial Opening Endoscopic\" on 2113-09-14T00:00:00-04:00.",
+    "code_answer": "The final answer is: Yes. Patient 10021312 has been treated with \"Destruction of Right Lower Lung Lobe, Via Natural or Artificial Opening Endoscopic\" since 2113. Matching Procedure: id `112f5375-9752-5493-89ec-30a1b09669e3`, performed `2113-09-14T00:00:00-04:00`."
+  },
+  {
+    "qid": "ea018f554b80d642628c416c",
+    "question": "Tell me the total icu visits of patient 10004733 since 2174.",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 ICU visit since 2174.",
+    "code_answer": "The final answer is: 1 ICU visit since 2174."
+  },
+  {
+    "qid": "ea764357f7772ceb7cc1de9d",
+    "question": "Has patient 10019385 visited the emergency room?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10019385 has an emergency room encounter: Encounter/fa4f9df1-bfda-57ed-9493-d517885668a7, class.display: emergency, period.start: 2180-03-03T20:26:00-05:00, period.end: 2180-03-04T02:24:00-05:00.",
+    "code_answer": "The final answer is: Yes. Patient 10019385 visited the emergency room. Encounter: [{'id': 'fa4f9df1-bfda-57ed-9493-d517885668a7', 'period': {'end': '2180-03-04T02:24:00-05:00', 'start': '2180-03-03T20:26:00-05:00'}, 'class': {'code': 'EMER', 'system': 'http://terminology.hl7.org/CodeSystem/v3-ActCode', 'display': 'emergency'}, 'identifier': [{'use': 'usual', 'value': '30324772', 'system': 'http://mimic.mit.edu/fhir/mimic/identifier/encounter-ed', 'assigner': {'reference': 'Organization/ee172322-118b-5716-abbc-18e4c5437e15'}}]}]"
+  },
+  {
+    "qid": "ee06998b93ca5610c35e7925",
+    "question": "Has clonidine patch 0.3 mg/24 hr, amlodipine, or 5% dextrose been prescribed for patient 10004733 in this hospital encounter?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes for clonidine patch 0.3 mg/24 hr and amlodipine; no for 5% dextrose.\n\n- Clonidine Patch 0.3 mg/24 hr: prescribed 1 time\n- Amlodipine: prescribed 1 time\n- 5% dextrose: not found as prescribed in this hospital encounter"
+  }
+]

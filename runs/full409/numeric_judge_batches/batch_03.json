@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "809821a4009fe30207a67903",
+    "question": "What is the average immunoglobulin a of patient 10029291 in 02/this year?",
+    "gold": "[[156.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 156.0 mg/dL"
+  },
+  {
+    "qid": "83b456769e420696daed1609",
+    "question": "What's the diastolic blood pressure change of patient 10022281 last measured on the last icu visit compared to the first value measured on the last icu visit?",
+    "gold": "[[-11.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: -11"
+  },
+  {
+    "qid": "844c677f9eb40b4cc09e828a",
+    "question": "How many times did patient 10001217 check into the icu?",
+    "gold": "[[2]]",
+    "resource_answer": "The final answer is: 2",
+    "code_answer": "The final answer is: 2"
+  },
+  {
+    "qid": "8465e809028d1263318be90f",
+    "question": "What is the difference between platelet count last measured on the first hospital visit compared to the first value measured on the first hospital visit for patient 10009628?",
+    "gold": "[[14.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 14 K/uL (last platelet count 244 K/uL minus first platelet count 230 K/uL during the first hospital visit)."
+  },
+  {
+    "qid": "84b9e35f62f23089ad08f03e",
+    "question": "How much of a difference is there in patient 10035185's mean blood pressure last measured on the first icu visit compared to the second to last value measured on the first icu visit?",
+    "gold": "[[-9.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 9 mmHg. The last measured Arterial Blood Pressure mean on the first ICU visit was 72 mmHg, and the second-to-last value was 81 mmHg, so the last value was 9 mmHg lower."
+  },
+  {
+    "qid": "86741d2d640a5dbbfa5d1036",
+    "question": "Can you tell me the last thyroid stimulating hormone value of patient 10010471 in 05/this year?",
+    "gold": "[[4.7]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 4.7 uIU/mL on 2155-05-08T20:58:00-04:00."
+  },
+  {
+    "qid": "8777f5505af432365af01179",
+    "question": "What is patient 10029291's difference in weight from the second value measured on the first hospital visit compared to the first value measured on the first hospital visit?",
+    "gold": "[[3.4]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 3.4 kg  \n(Second Daily Weight on first hospital visit: 91.1 kg; first Daily Weight: 87.7 kg; difference: 91.1 \u2212 87.7 = 3.4 kg)"
+  },
+  {
+    "qid": "883c4d0f0f9708f99cf278d8",
+    "question": "What was the last value of a lab test of calcium, urine in 12/this year for patient 10021487?",
+    "gold": "[[15.2]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 15.2 mg/dL"
+  },
+  {
+    "qid": "88a650d28643d60da24b7b3f",
+    "question": "What was the last recorded height for patient 10006580 during the first hospital encounter?",
+    "gold": "[[147.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 147 cm"
+  },
+  {
+    "qid": "89a854beb29f40da67997b3c",
+    "question": "What was patient 10039831's first diastolic blood pressure value since 12/13/2115?",
+    "gold": "[[63.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 63 mmHg"
+  },
+  {
+    "qid": "8cfda20a9826789d8b58747a",
+    "question": "How much does patient 10018423 change in systolic blood pressure last measured on the last icu visit compared to the first value measured on the last icu visit?",
+    "gold": "[[-12.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: -12 mmHg. The systolic blood pressure changed from 132 mmHg first measured on the last ICU visit to 120 mmHg last measured on the last ICU visit."
+  },
+  {
+    "qid": "8e96be7df6dd4cc4c1e2a3b4",
+    "question": "How much is the daily weight of patient 10031757 during the last hospital encounter? if multiple weights are measured daily, take the minimum.",
+    "gold": "[[109.6]\n [110. ]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: [\n  {\"date\": \"2137-10-15\", \"value\": 109.6, \"unit\": \"kg\"},\n  {\"date\": \"2137-10-16\", \"value\": 110, \"unit\": \"kg\"}\n]"
+  },
+  {
+    "qid": "94d8481d364db4cbd70b366f",
+    "question": "How much does patient 10005817 weigh based on the first measurement taken since 10/2132?",
+    "gold": "[[95.1]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 95.1 kg"
+  },
+  {
+    "qid": "964217a388912122a2c89866",
+    "question": "Tell me patient 10020944's average calcium, total value in 03/2131?",
+    "gold": "[[8.54705882]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 8.547058823529412 mg/dL"
+  },
+  {
+    "qid": "96ac404e31dae66aaf3c7df0",
+    "question": "How much difference is there in respiratory rate levels among patient 10019777 last measured on the last icu visit compared to the value second to last measured on the last icu visit?",
+    "gold": "[[-1.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: The last measured respiratory rate was 11 insp/min, and the second-to-last measured value was 12 insp/min. The difference is -1 insp/min, meaning the respiratory rate decreased by 1 insp/min."
+  }
+]

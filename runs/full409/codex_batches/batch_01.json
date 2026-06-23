@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "17bb906271e8d84bf499f645",
+    "question": "How much does patient 10038999 change in mesothelial cells last measured on the last hospital visit compared to the second to last value measured on the last hospital visit?",
+    "gold": "[[None]]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: I cannot calculate the change because there were no \u201cMesothelial Cells\u201d Observation values found during the patient\u2019s last hospital visit (2132-05-17T23:32:00-04:00 to 2132-05-23T13:01:00-04:00)."
+  },
+  {
+    "qid": "19858b1d6157d97c01ffb3cf",
+    "question": "During their last hospital visit, what time was patient 10001217's last procedure?",
+    "gold": "[['2157-12-19 00:00:00']]",
+    "resource_answer": "The final answer is: 2157-12-20T14:27:00-05:00",
+    "code_answer": "The final answer is: 2157-12-20T14:27:00-05:00"
+  },
+  {
+    "qid": "19d0768436838216fd47a301",
+    "question": "Could you provide the last care unit for patient 10009049 in their last hospital encounter according to the transfer record?",
+    "gold": "[['Medicine']]",
+    "resource_answer": "The final answer is: I cannot find the care unit name in the retrieved data. The last transfer/location record for the last hospital encounter references: Location/0fc2d23b-0e5b-5f91-8369-6d37301fea51.",
+    "code_answer": "The final answer is: Location/0fc2d23b-0e5b-5f91-8369-6d37301fea51"
+  },
+  {
+    "qid": "1afade11184c7bc98c9756f8",
+    "question": "When did the last time patient 10005909 have a fibrinogen, functional lab test in the first hospital visit?",
+    "gold": "[['2144-10-30 05:35:00']]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 2144-10-30T05:35:00-04:00"
+  },
+  {
+    "qid": "1c26aa5ab4b654a27fb0f4a6",
+    "question": "When did patient 10021487 first have the maximum value of plasma cells since 26 months ago?",
+    "gold": "[['2116-12-27 16:27:00']]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 2116-12-27T16:27:00-05:00"
+  },
+  {
+    "qid": "204b55b1a8a2dbeafa89b76c",
+    "question": "Retrieve the yearly l pleural #1 output of patient 10009035. if multiple l pleural #1 outputs are measured yearly, take the maximum.",
+    "gold": "[]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: [{'year': 2161, 'l pleural #1 output': {'value': 70, 'unit': 'ml', 'code': 'ml'}}]"
+  },
+  {
+    "qid": "20c3ddd36c65c44890c3f3e5",
+    "question": "What was the name of the specimen test that patient 10021666 was given for the first time since 03/2172?",
+    "gold": "[['MRSA SCREEN']]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: ['Acetaminophen', 'Amphetamine Screen, Urine', 'Anion Gap', 'Barbiturate Screen', 'Barbiturate Screen, Urine', 'Basophils', 'Benzodiazepine Screen', 'Benzodiazepine Screen, Urine', 'Bicarbonate', 'Chloride', 'Cocaine, Urine', 'Creatinine', 'Eosinophils', 'Estimated GFR (MDRD equation)', 'Ethanol', 'Glucose', 'Green Top Hold (plasma)', 'Hematocrit', 'Hemoglobin', 'INR(PT)', 'Length of Urine Collection', 'Light Green Top Hold', 'Lymphocytes', 'MCH', 'MCHC', 'MCV', 'Methadone, Urine', 'Monocytes', 'Neutrophils', 'Opiate Screen, Urine', 'PT', 'PTT', 'Platelet Count', 'Potassium', 'RDW', 'Red Blood Cells', 'Salicylate', 'Sodium', 'Tricyclic Antidepressant Screen', 'Uhold', 'Urea Nitrogen', 'Urine tube, held', 'White Blood Cells']"
+  },
+  {
+    "qid": "20d7ef0b9116aab70a4d883c",
+    "question": "Since 07/2181, what was patient 10021938's last microbiology test time?",
+    "gold": "[['2181-10-25 12:00:00']]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 2181-10-25T12:00:00-04:00"
+  },
+  {
+    "qid": "20db068481b9b06cc4340c25",
+    "question": "What was patient 10018081's first procedure time since 1 year ago?",
+    "gold": "[['2133-12-18 00:00:00']]",
+    "resource_answer": "The final answer is: 2133-12-18T12:09:00-05:00",
+    "code_answer": "The final answer is: 2133-12-18T00:00:00-05:00"
+  },
+  {
+    "qid": "20e38a034dc27e9626dfa8d9",
+    "question": "Which care unit did patient 10014078 first enter since 2166, based on the transfer record?",
+    "gold": "[['Emergency Department']]",
+    "resource_answer": "The final answer is: emergency",
+    "code_answer": "The final answer is: I found the first transfer since 2166 at `2166-08-21T21:39:00-04:00`, but the retrieved transfer/location record only contains the location reference `Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f` and does not include the care unit name."
+  },
+  {
+    "qid": "2143a6938a83abd7a5830ec5",
+    "question": "When was the first time patient 10006580 had a maximum of platelet count on the first hospital stay?",
+    "gold": "[['2137-08-11 04:11:00']]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 2137-08-11T04:11:00-04:00 (maximum platelet count: 333 K/uL)"
+  },
+  {
+    "qid": "220a7871615e4c1a12e5cf08",
+    "question": "Retrieve the marital status of patient 10006580 on the last hospital stay.",
+    "gold": "[['MARRIED']]",
+    "resource_answer": "The final answer is: I cannot find the marital status for patient 10006580 on the last hospital stay in the retrieved Patient or Encounter data.",
+    "code_answer": "The final answer is: I cannot find the marital status for patient 10006580 on the last hospital stay in the retrieved FHIR data."
+  },
+  {
+    "qid": "230ffeaf99bdda6a8e74e380",
+    "question": "What was the average mean blood pressure on 03/07/this year for patient 10014729?",
+    "gold": "[[None]]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: I cannot find any \"Arterial Blood Pressure mean\" observations on 2125-03-07 for patient 10014729, so the average mean blood pressure cannot be calculated."
+  },
+  {
+    "qid": "254b58ea3d513164000b4a51",
+    "question": "When did patient 10035185 receive red blood cells test the first time in the first hospital visit?",
+    "gold": "[['2120-05-12 15:00:00']]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: 2120-05-12T15:00:00-04:00"
+  },
+  {
+    "qid": "2592fc0c41e2b7144c374342",
+    "question": "On the current hospital visit, how many days have passed since the first time patient 10021487 was prescribed clobetasol propionate 0.05% cream?",
+    "gold": "[]",
+    "resource_answer": "[FAILED: context overflow \u2014 the agent could not fit the data and produced no answer]",
+    "code_answer": "The final answer is: I cannot find a MedicationRequest or Medication resource that explicitly identifies \u201cclobetasol propionate 0.05% cream\u201d for patient 10021487 in the retrieved data, so I cannot determine the number of days since it was first prescribed."
+  }
+]

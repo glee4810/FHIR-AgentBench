@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "c1088984666feded19fe629d",
+  "question": "Is patient 10020306 male or female?",
+  "gold": "[['F']]",
+  "resource_answer": "I cannot find the patient's sex/gender information in the retrieved patient data.",
+  "code_answer": "I cannot find the Patient resource for patient FHIR ID 27980ad8-77b7-5360-b211-bf4fac9c468c, so I cannot determine whether patient 10020306 is male or female.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "c1ffcaa8f6eaee005e37aa5d",
+  "question": "When did patient 10005909 last undergo a microbiology test on the last hospital encounter?",
+  "gold": "[['2144-11-01 02:09:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2144-11-01T02:09:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "c2ca78801b0bb755ec80903e",
+  "question": "Which care unit did patient 10004235 last enter since 2196, as recorded in the transfer record?",
+  "gold": "[['Transplant']]",
+  "resource_answer": "Location/9152585d-31b9-50ca-9476-a4db49030917",
+  "code_answer": "I cannot find the care unit name in the retrieved data. The last transfer/location entry since 2196 starts at `2196-06-21T17:54:26-04:00` and references `Location/9152585d-31b9-50ca-9476-a4db49030917`, but the corresponding Location resource was not available.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "c35acfb89f468f360b299535",
+  "question": "What was the first care unit patient 10018845 was in since 1 year ago, according to the transfer record?",
+  "gold": "[['Emergency Department']]",
+  "resource_answer": "Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f",
+  "code_answer": "(already graded)",
+  "grade_resource": true,
+  "grade_code": false
+ },
+ {
+  "qid": "c387a4c3a7bc1f1536ae7916",
+  "question": "Is patient 10031404 male or female?",
+  "gold": "[['F']]",
+  "resource_answer": "I cannot find the patient gender information in the retrieved data.",
+  "code_answer": "I cannot find the Patient resource for FHIR ID 740b7686-fa6d-5574-9779-f17ed7661cbe, so I cannot determine whether patient 10031404 is male or female.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "c58538af9651b0425098d396",
+  "question": "In 07/2189, when was the first time patient 10020786 was prescribed medication via the iv drip route?",
+  "gold": "[]",
+  "resource_answer": "I cannot find any medication prescription via the IV DRIP route in 07/2189 for this patient.",
+  "code_answer": "I cannot find any MedicationRequest in 07/2189 with route code/display matching iv drip for patient 10020786.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "c5d97a3fa6b67acc42a60f3f",
+  "question": "How many days have passed since patient 10039831's last stay in careunit discharge lounge in this hospital visit?",
+  "gold": "[]",
+  "resource_answer": "I cannot find the Location/careunit name needed to confirm a stay in careunit `discharge lounge`, so I cannot determine how many days have passed.",
+  "code_answer": "1 day (approximately 1.31 days) has passed since the patient’s last/ongoing Discharge Lounge stay began on 2115-12-30T16:31:48-05:00, as of 2115-12-31 23:59:00.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "c60ed59c6b7df6bf5fbfa0cf",
+  "question": "How many hours have passed since the first time patient 10004733 has taken a albumin lab test during this hospital encounter?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "619.9833333333333 hours have passed since the first albumin lab test during this hospital encounter.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "c639ce3944c3e8b1431b7f0d",
+  "question": "When is the first mrsa screen microbiological test on patient 10011398 during their last hospital encounter?",
+  "gold": "[['2146-12-15 12:39:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2146-12-15T12:39:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "c6b253614a8ea885b3619a02",
+  "question": "What was the last measurement of patient 10020786's height in 07/2189?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find a \"Height (cm)\" measurement for patient 10020786 in 07/2189.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "c747e1b668edc722be015e38",
+  "question": "When was the first time patient 10020740 was prescribed a medication via the ih route in 07/2150?",
+  "gold": "[['2150-07-10 01:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2150-07-10T00:23:27-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "c814a79881c8be3a4809fdb9",
+  "question": "Get patient 10018423's monthly weight information in 2162. if multiple weights are measured monthly, take the minimum.",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any “Daily Weight” Observation records for patient 10018423 in 2162.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "c86ef1c99a73bd58d05ad456",
+  "question": "How many days have passed since patient 10021487 stayed in the careunit emergency department during the current hospital visit for the last time?",
+  "gold": "[]",
+  "resource_answer": "28 days",
+  "code_answer": "28 days have passed since the patient last stayed in the emergency department during the current hospital visit.  \nExact elapsed time: 28 days, 22:57:00 (approximately 28.96 days).",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "cd8edc01787dda933e12fd99",
+  "question": "When patient 10021312 had the first void output since 09/16/2113?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any \"Void\" output observation for patient 10021312 on or after 09/16/2113. The latest recorded \"Void\" output before then was at 2113-09-15T05:00:00-04:00.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "ce3edde36063a4aeb5180c6d",
+  "question": "On last month/20, what was the maximum value of respiratory rate of patient 10019172?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find a respiratory rate observation for patient 10019172 on 2118-11-20, so the maximum value cannot be determined.",
+  "grade_resource": false,
+  "grade_code": true
+ }
+]

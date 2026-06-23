@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "7af6a3a42f264bdbbfb7c37a",
+  "question": "Is the value of diastolic blood pressure of patient 10018081 measured at 2133-12-31 23:00:00 greater than it is measured at 2133-12-31 22:00:00?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot determine this comparison because I could not find any Observation for “Arterial Blood Pressure diastolic” measured at 2133-12-31 22:00:00 or at 2133-12-31 23:00:00 in the retrieved patient data.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "7b7f155abcaed396f4e612b6",
+  "question": "Tell me the name of the medication patient 10004720 was first prescribed via iv route since 05/2183?",
+  "gold": "[]",
+  "resource_answer": "I cannot find the medication name in the retrieved data. The first MedicationRequest with route code `IV` since `05/2183` references `Medication/aabbc57b-1fca-5c0c-b6bd-2707ce8ec48c`, but the corresponding Medication resource could not be retrieved.",
+  "code_answer": "I cannot find any medication prescribed via IV route for patient 10004720 from 05/2183 through 2183-12-31 23:59:00.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "7bef1a39879d33661976e78e",
+  "question": "When did patient 10025463 receive a pt laboratory test for the first time?",
+  "gold": "[['2136-11-01 06:20:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2136-10-31T06:45:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "7c6bef368aa5ba846c186719",
+  "question": "How much of a difference is there in patient 10038999's c-reactive protein last measured on the last hospital visit compared to the first value measured on the last hospital visit?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any c-reactive protein measurements during patient 10038999’s last hospital visit, so the difference between the last and first value cannot be calculated.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "7eeda0d4bfae5ffe07de0b9b",
+  "question": "How many hours has it been since the first time patient 10018081 stayed in the careunit emergency department on the current hospital encounter?",
+  "gold": "[]",
+  "resource_answer": "323.83 hours since the first emergency department stay on the current hospital encounter.",
+  "code_answer": "323.8333333333333 hours.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "805a7efe25e2ce496220ee26",
+  "question": "What was the admission type during the first hospital admission for patient 10019172?",
+  "gold": "[['ELECTIVE']]",
+  "resource_answer": "elective",
+  "code_answer": "elective",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "8223cedf8e150ea026676246",
+  "question": "Tell me the name of the specimen test patient 10011398 last got since 12/2146?",
+  "gold": "[['MRSA SCREEN']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "['Hemoglobin', 'RDW', 'Platelet Count', 'White Blood Cells', 'MCHC', 'MCV', 'Red Blood Cells', 'Sodium', 'Urea Nitrogen', 'Creatinine', 'Chloride', 'Phosphate', 'Magnesium', 'Potassium', 'Hematocrit', 'MCH']",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "828f43dc5831cb08e5ce4ac8",
+  "question": "When was patient 10015931 first prescribed a medication via the po/ng route since 07/2176?",
+  "gold": "[['2176-11-14 08:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2176-11-14T21:39:52-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "82d84ee3f00fa576d3b70969",
+  "question": "Is the anion gap level of patient 10003400 measured at 2134-06-15 05:34:00 less than the level measured at 2134-06-14 06:15:00?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find an Anion Gap observation for patient 10003400 at either 2134-06-15 05:34:00 or 2134-06-14 06:15:00, so I cannot determine whether one level is less than the other.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "82ee3d9b301ac0cf74fc8be8",
+  "question": "Could you tell me the marital status of patient 10006580 during their first hospital visit?",
+  "gold": "[['MARRIED']]",
+  "resource_answer": "I cannot find the marital status of patient 10006580 during their first hospital visit in the retrieved data.",
+  "code_answer": "I cannot find the marital status for patient 10006580 during their first hospital visit in the retrieved data.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "849c73c34b291683b2d24907",
+  "question": "Tell me the drug that was prescribed to patient 10021487 for the first time through the iv route since 09/2116?",
+  "gold": "[['Lactated Ringers']\n ['Famotidine']\n ['Iso-Osmotic Sodium Chloride']\n ['Fentanyl Citrate']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find the actual drug names because the referenced Medication resources were not available. The first IV MedicationRequest(s) since 09/2116 were prescribed at `2116-12-03T01:33:08-05:00`, with these medication references:\n\n- `Medication/f4f985c7-9c92-5ffa-b210-f55b31f3b056`\n- `Medication/31eca7f8-cb55-5ce5-97b2-bb0a64178b4e`\n- `Medication/ca884e85-d519-51b9-8c96-e0a24bb8ec06`",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "8a0d9ca8816e2d1ca14e3fca",
+  "question": "What was the last drug that patient 10019172 was prescribed in 11/this year?",
+  "gold": "[['Potassium Chloride']\n ['Furosemide']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "Medication/1c32b8fd-7f2a-5b00-b4a5-08463f28c27b",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "8a165a892467a3f42aa7f482",
+  "question": "When did patient 10026255 last get a procedure since 2200?",
+  "gold": "[['2200-09-17 00:00:00']]",
+  "resource_answer": "2200-09-18T00:05:00-04:00",
+  "code_answer": "2200-09-18T00:05:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "8a2c412e28bd7e4d00a2c261",
+  "question": "What number of hours have passed since patient 10021487 first received a ntprobnp lab test during the current hospital visit?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "574.7 hours have passed since the patient first received a NTproBNP lab test during the current hospital visit.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "8bfea1a0b78f2e98d30ee271",
+  "question": "When was patient 10004422 for the first time leaving the hospital?",
+  "gold": "[['2111-01-25 15:00:00']]",
+  "resource_answer": "2111-01-25T15:00:00-05:00",
+  "code_answer": "2111-01-25T15:00:00-05:00",
+  "grade_resource": true,
+  "grade_code": true
+ }
+]

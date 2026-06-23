@@ -1,0 +1,51 @@
+[
+  {
+    "qid": "ee981ea61809ebc1e0cc8d32",
+    "question": "Tell me the length of stay in days for patient 10018328's first icu stay.",
+    "gold": "[[7.70251157]]",
+    "resource_answer": "The final answer is: 7.7025 days",
+    "code_answer": "The final answer is: 7.702511574074074 days"
+  },
+  {
+    "qid": "eea838bba39870d24a4fe781",
+    "question": "Tell me what patient 10018501's void output was since 06/05/2141.",
+    "gold": "[[2375]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 2375 ml"
+  },
+  {
+    "qid": "ef3f743b0397c2df00366c56",
+    "question": "Show me the length of stay in days of patient 10004422's first icu stay.",
+    "gold": "[[6.35689815]]",
+    "resource_answer": "The final answer is: 6.36 days",
+    "code_answer": "The final answer is: 6.356898148148148 days"
+  },
+  {
+    "qid": "f147512eb438041a5186bf3e",
+    "question": "What was the total output of patient 10014354 since 09/07/2146?",
+    "gold": "[[3075]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 3075 ml"
+  },
+  {
+    "qid": "f1dd398aaf1b00d4a562b899",
+    "question": "How much is the difference of weights of patient 10037975 second measured on the last hospital visit compared to the first value measured on the last hospital visit?",
+    "gold": "[[-0.7]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: -0.7 kg"
+  },
+  {
+    "qid": "fae84ce9cc96b0e677f844f8",
+    "question": "Since 128 days ago, what was the maximum body temperature for patient 10021118?",
+    "gold": "[[36.4]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 36.4 \u00b0C"
+  },
+  {
+    "qid": "fbbb58618f0b12172d3a2c3f",
+    "question": "How much is the difference of weights of patient 10004720 last measured on the first hospital visit compared to the second to last value measured on the first hospital visit?",
+    "gold": "[[1.]]",
+    "resource_answer": "[FAILED: context overflow]",
+    "code_answer": "The final answer is: 1.0 kg"
+  }
+]

@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "06b6dc7feba30e1bda1c5617",
+  "question": "Could you retrieve patient 10005909's monthly weight since 09/2144? if multiple weights are measured monthly, take the average.",
+  "gold": "[[115.8]\n [117.7]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[\n  {\"month\": \"2144-09\", \"average_weight\": null, \"unit\": null, \"number_of_measurements\": 0},\n  {\"month\": \"2144-10\", \"average_weight\": 115.8, \"unit\": \"kg\", \"number_of_measurements\": 1},\n  {\"month\": \"2144-11\", \"average_weight\": 117.7, \"unit\": \"kg\", \"number_of_measurements\": 1},\n  {\"month\": \"2144-12\", \"average_weight\": null, \"unit\": null, \"number_of_measurements\": 0}\n]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "06fbb15466649cd31a1f3b18",
+  "question": "What was the name of the organism found at the first pleural fluid test of patient 10014729 since 02/2125?",
+  "gold": "[['STAPH AUREUS COAG +']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "STAPH AUREUS COAG +",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "0a6429bfa48cdb76d66bf9a6",
+  "question": "How many days has it been since patient 10021487's hospital admission?",
+  "gold": "[]",
+  "resource_answer": "28 days and 23 hours 36 minutes (approximately 29 days).",
+  "code_answer": "28 full days have passed since the hospital admission on 2116-12-03T00:23:00-05:00 (about 28.98 days).",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "0b519b394a591392e5d6f8e3",
+  "question": "Today, when was the first time that patient 10018081 had the minimum spo2?",
+  "gold": "[['2133-12-31 02:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find any “O2 saturation pulseoxymetry” SpO2 observations for patient 10018081 today (2133-12-31), so there is no minimum SpO2 time to report.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "0bef44d46b407af716e48911",
+  "question": "How much of a difference is there in patient 10018328's respiratory rate measured at 2154-05-15 14:00:00 compared to the value measured at 2154-05-15 13:00:00?",
+  "gold": "[[None]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find respiratory rate measurements for patient 10018328 at either 2154-05-15 13:00:00 or 2154-05-15 14:00:00 in the retrieved Observation data, so the difference cannot be calculated.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "0e4bb22781a9b0bc9dedffb9",
+  "question": "When did patient 10004733 first have the minimum number of specific gravity on the current hospital visit?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2174-12-13T11:03:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "0eba370644940aed20760324",
+  "question": "What was the name of the drug that patient 10006580 was first prescribed via a sc route in their first hospital visit?",
+  "gold": "[['Insulin']]",
+  "resource_answer": "I cannot find the drug name in the retrieved data. The first SC prescription in the first hospital visit was for `Medication/920f43f3-a418-5eda-b39d-d3bc4fd403f1`.",
+  "code_answer": "I cannot find the drug name in the retrieved data. The first MedicationRequest via an SC route in the first hospital visit references `Medication/920f43f3-a418-5eda-b39d-d3bc4fd403f1`, but the corresponding Medication resource was not available.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "0fae80f812674773157d9f2a",
+  "question": "Can you specify the gender of patient 10022880?",
+  "gold": "[['M']]",
+  "resource_answer": "I cannot find the gender information for patient 10022880 in the retrieved patient data.",
+  "code_answer": "I cannot find the Patient resource for patient FHIR ID 13df78e7-150e-5eb7-be5f-5f62b2baee87, so I cannot determine the gender.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "104c93f89e19274578bafb8d",
+  "question": "When in the first hospital encounter did patient 10038999 receive their first drainage of left pleural cavity, percutaneous approach, diagnostic procedure?",
+  "gold": "[['2131-05-29 00:00:00']]",
+  "resource_answer": "2131-05-29T00:00:00-04:00",
+  "code_answer": "2131-05-29T00:00:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "1436276ff4d05d626c742fa4",
+  "question": "How many hours has it been since patient 10021487 got their last prescription of glucagon on this hospital stay?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "687.37 hours since the last glucagon prescription on this hospital stay.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "14d8196b90cb8b401ebd3a91",
+  "question": "How long has it been in hours since the first time calcium carbonate was prescribed to patient 10021487 during the current hospital visit?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find a calcium carbonate prescription for patient 10021487 during the current hospital visit, so I cannot calculate the number of hours since it was first prescribed.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "15a9e84696cb054763055092",
+  "question": "Since the first visit of patient 10004733 to the careunit neurology in their current hospital visit, how many hours have elapsed?",
+  "gold": "[]",
+  "resource_answer": "I cannot find a careunit value of \"neurology\" in the retrieved Encounter location data for patient 10004733, so I cannot determine how many hours have elapsed since the first visit to neurology.",
+  "code_answer": "I cannot find the exact first visit time to the careunit neurology in the retrieved data. The patient’s current hospital visit is present, but the referenced Location resources needed to identify which location/careunit is “neurology” were not available.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "15b35d75bfa2fee08c48a6c6",
+  "question": "When was the first time since 114 days ago that patient 10011398 had the maximum respiratory rate for?",
+  "gold": "[['2146-12-16 03:30:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2146-12-16T03:30:00-05:00, when the maximum Respiratory Rate was 17 insp/min.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "15b4990f761db52edf38273c",
+  "question": "How many days have passed since the last time that patient 10021487 had received a hemoglobin lab test during the current hospital visit?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "3.76 days have passed since the last Hemoglobin lab test during the current hospital visit.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "1757b6190d9346fb05196adf",
+  "question": "What was the name of the specimen test that patient 10007818 received since 06/2146 last?",
+  "gold": "[['BLOOD CULTURE']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "['MCHC', 'Red Blood Cells', 'RDW', 'RDW-SD', 'Hemoglobin', 'White Blood Cells', 'MCH', 'MCV', 'Urea Nitrogen', 'Potassium', 'Anion Gap', 'Asparate Aminotransferase (AST)', 'Chloride', 'Bicarbonate', 'Triglycerides', 'Sodium', 'Bilirubin, Total', 'Alkaline Phosphatase', 'Alanine Aminotransferase (ALT)', 'Glucose', 'Calcium, Total', 'INR(PT)', 'Magnesium', 'Platelet Count', 'Phosphate', 'PT', 'Creatinine', 'Hematocrit']",
+  "grade_resource": false,
+  "grade_code": true
+ }
+]

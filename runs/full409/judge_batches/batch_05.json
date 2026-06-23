@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "6d23077db7dbc8321431bf64",
+  "question": "How many days have passed since the patient 10004733 was admitted to the hospital?",
+  "gold": "[]",
+  "resource_answer": "27 days and 12 hours 31 minutes have passed since hospital admission at 2174-12-04T11:28:00-05:00.",
+  "code_answer": "27 days have passed since the patient was admitted to the hospital.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "6dc27e0c371f7e5dd9d2a981",
+  "question": "When was the first time on the first icu stay that patient 10027602's spo2 was greater than 95.0?",
+  "gold": "[['2201-10-30 12:03:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2201-11-01T00:00:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "6df8c8add4bde78a73d76071",
+  "question": "When was the first time patient 10009035 received the procedure of extracorporeal circulation auxiliary to open heart surgery in the last hospital visit?",
+  "gold": "[['2161-04-27 00:00:00']]",
+  "resource_answer": "2161-04-27T00:00:00-04:00",
+  "code_answer": "2161-04-27T00:00:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "6e19826cc8478fa8a97d1dee",
+  "question": "When was the first time in 07/this year that patient 10007818 had the minimum of tobramycin?",
+  "gold": "[['2146-07-06 16:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2146-07-06T16:00:00-04:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "70516111809660e05336d719",
+  "question": "When was the first sputum microbiology test performed on patient 10021487 in 12/2116?",
+  "gold": "[['2116-12-03 16:18:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2116-12-07T15:05:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "71cdc4002dd9037845bd713a",
+  "question": "When did patient 10031404 have the first procedure?",
+  "gold": "[['2113-08-04 00:00:00']]",
+  "resource_answer": "2113-08-04T00:00:00-04:00",
+  "code_answer": "2113-08-04T00:00:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "72e0ab522c86eeb3cfdf64d1",
+  "question": "When did patient 10016742 first have the minimum heart rate since 282 days ago?",
+  "gold": "[['2178-07-15 15:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2178-07-03 23:28:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "741720ef5045654c9099edd9",
+  "question": "How much time in days has passed since the last time patient 10018081 was prescribed metronidazole (flagyl) in their current hospital visit?",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot calculate the elapsed time because no metronidazole/flagyl MedicationRequest was found in the patient’s current hospital visit.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "74968f3f69d0e352733f0a96",
+  "question": "When was patient 10027602's first maximum pt in 12/this year?",
+  "gold": "[['2201-12-13 03:08:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2201-12-13T03:08:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "75b34f0cc40ad60222a3d432",
+  "question": "How was patient 10019777 admitted in terms of admission type for the first time in the hospital?",
+  "gold": "[['EW EMER.']]",
+  "resource_answer": "emergency",
+  "code_answer": "{'code': 'EMER', 'system': 'http://terminology.hl7.org/CodeSystem/v3-ActCode', 'display': 'emergency'}",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "764c80fc36e53d7964e0f522",
+  "question": "Since 01/2148, when was patient 10038933's first microbiology test done?",
+  "gold": "[['2148-09-10 15:29:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2148-09-10 00:00:00 (URINE CULTURE)",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "785297f1fb8d773e4c4a07e2",
+  "question": "Could you tell me the marital status of patient 10012853 on their first hospital visit?",
+  "gold": "[['WIDOWED']]",
+  "resource_answer": "I cannot find the marital status for patient 10012853 on their first hospital visit in the retrieved patient or encounter data.",
+  "code_answer": "(already graded)",
+  "grade_resource": true,
+  "grade_code": false
+ },
+ {
+  "qid": "7995633cbc3e134de24ae114",
+  "question": "How many hours has it been since the last time patient 10004733 stayed in the \"neurology\" careunit in this hospital encounter?",
+  "gold": "[]",
+  "resource_answer": "I cannot find the information needed to determine when patient 10004733 last stayed in the \"neurology\" careunit during this hospital encounter. The Encounter data references Location resources, but the Location details needed to identify a \"neurology\" careunit were not available in the retrieved data.",
+  "code_answer": "459.93 hours",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "7a1d975dc39f51887f287327",
+  "question": "Is patient 10020944 recorded as male or female?",
+  "gold": "[['M']]",
+  "resource_answer": "I cannot find the Patient resource information for patient 10020944, so I cannot determine whether the patient is recorded as male or female.",
+  "code_answer": "I cannot find the Patient resource for FHIR ID a87c1099-8c87-5548-8fc0-56972a82cebf, so I cannot determine whether patient 10020944 is recorded as male or female.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "7ae946cb6fe7f5a3cac9bfa8",
+  "question": "What was patient 10018423's last time of the bypass coronary artery, one artery from aorta with autologous venous tissue, open approach procedure in 2162?",
+  "gold": "[]",
+  "resource_answer": "I cannot find any record of the bypass coronary artery, one artery from aorta with autologous venous tissue, open approach procedure in 2162.",
+  "code_answer": "I cannot find any record of the bypass coronary artery, one artery from aorta with autologous venous tissue, open approach procedure in 2162 for patient 10018423.",
+  "grade_resource": true,
+  "grade_code": true
+ }
+]

@@ -1,0 +1,22 @@
+{
+  "numeric_questions": 97,
+  "arm_answers_scored": 111,
+  "agent_error_magnitude": {
+    "exact (<=0.1%)": 92,
+    "gross (>25%)": 10,
+    "near-miss (<=5%)": 7,
+    "off (5-25%)": 2
+  },
+  "gpt5mini_false_negatives": {
+    "n": 44,
+    "note": "answers within 1% of gold (deterministically CORRECT) that gpt-5-mini marked WRONG",
+    "median_rel_error_of_these": 0.0,
+    "max_rel_error_of_these": 0.0002
+  },
+  "gpt5mini_false_positives": {
+    "n": 0,
+    "note": "answers >1% off (deterministically WRONG) that gpt-5-mini marked CORRECT",
+    "median_rel_error_of_these": null,
+    "max_rel_error_of_these": 0
+  }
+}

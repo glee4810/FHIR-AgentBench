@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "7b11c8a07c7b85627d2a9c47",
+    "question": "Count how many times during their first hospital encounter patient 10018423 experienced the bypass coronary artery, one artery from left internal mammary with autologous arterial tissue, open approach procedure.",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: During the patient's first hospital encounter, that procedure occurred 1 time.",
+    "code_answer": "The final answer is: During the patient's first hospital encounter, that procedure occurred 1 time."
+  },
+  {
+    "qid": "7b18e66852f4386ce57b39c1",
+    "question": "Has there been any mrsa screen microbiology test done for patient 10029484 since 09/2160?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. There was an MRSA SCREEN microbiology test done since 09/2160:\n\n- Date: 2160-11-08 06:14:00\n- Test: MRSA SCREEN\n- Result: No MRSA isolated.  \n- Status: final"
+  },
+  {
+    "qid": "7bb4dd3032dd60767f552577",
+    "question": "Has patient 10006580 had any medication since 13 months ago?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10006580 had medication records since 13 months ago; MedicationRequest records were found in 2137-08, which is after 2136-11-30 23:59:00.",
+    "code_answer": "The final answer is: Yes. Patient 10006580 has had medication since 13 months ago. There are 52 MedicationRequest records dated on or after 2136-11-30 23:59:00; there are 0 MedicationAdministration records."
+  },
+  {
+    "qid": "7d5fe035bb44c9237b17dfe5",
+    "question": "Was patient 10031757 prescribed on their first hospital visit heparin flush (10 units/ml), enoxaparin sodium, or vancomycin?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes \u2014 during the first hospital visit, patient 10031757 was prescribed `Enoxaparin Sodium`. They were not prescribed `heparin flush (10 units/ml)` or `vancomycin` in the prescription records for that visit."
+  },
+  {
+    "qid": "7e7f2de29fe0d6cf726ecfd4",
+    "question": "Did patient 10020306 visit the hospital for admission during the last year?",
+    "gold": "[[0]]",
+    "resource_answer": "The final answer is: No. I found no hospital admission encounter during last calendar year (01/01/2128\u201312/31/2128).",
+    "code_answer": "The final answer is: No. I found 0 hospital admission visits during last year (2128-01-01 through 2128-12-31)."
+  },
+  {
+    "qid": "7ed170e256f209788ad3c985",
+    "question": "Has there been any organism found in patient 10008454's last mrsa screen microbiological examination since 03/2110?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. The last MRSA SCREEN since 03/2110 was on 2110-11-30T19:28:00, and the result was \"No MRSA isolated.  \""
+  },
+  {
+    "qid": "82b93a79d0dad5db6d3f5918",
+    "question": "Has patient 10008454 been in the hospital this year?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10008454 had a hospital encounter this year from 2110-11-30T06:31:00-05:00 to 2110-12-10T15:53:00-05:00.",
+    "code_answer": "The final answer is: Yes. Patient 10008454 has been in the hospital this year. The hospital encounter was from 2110-11-30T06:31:00-05:00 to 2110-12-10T15:53:00-05:00."
+  },
+  {
+    "qid": "833f3dcc0c1a68ee5c293d02",
+    "question": "Did patient 10022041 have any diagnosis in their last hospital visit?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10022041 had 13 Condition records during their last hospital visit, representing 12 unique diagnoses:\n\n- Other and unspecified alcohol dependence, unspecified\n- Other and unspecified hyperlipidemia\n- Unspecified essential hypertension\n- Unspecified fall\n- Alcohol withdrawal\n- Other psoriasis\n- Closed fracture of surgical neck of humerus\n- Backache, unspecified\n- Grand mal status\n- Altered mental status\n- Other convulsions\n- Pure hypercholesterolemia",
+    "code_answer": "The final answer is: Yes. Patient 10022041 had diagnoses in their last hospital visit.\n\nThere were 13 Condition records, with these unique diagnoses:\n- 30390 \u2014 Other and unspecified alcohol dependence, unspecified\n- 2724 \u2014 Other and unspecified hyperlipidemia\n- 4019 \u2014 Unspecified essential hypertension\n- E8889 \u2014 Unspecified fall\n- 29181 \u2014 Alcohol withdrawal\n- 6961 \u2014 Other psoriasis\n- 81201 \u2014 Closed fracture of surgical neck of humerus\n- 7245 \u2014 Backache, unspecified\n- 3453 \u2014 Grand mal status\n- 78097 \u2014 Altered mental status\n- 78039 \u2014 Other convulsions\n- 2720 \u2014 Pure hypercholesterolemia"
+  },
+  {
+    "qid": "8706d212667c3018e03000a7",
+    "question": "Is the value of mean blood pressure of patient 10031757 second measured on the first icu visit greater than it is first measured on the first icu visit?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. The second measured mean blood pressure value on the first ICU visit was 86 mmHg, which is greater than the first measured value of -8 mmHg."
+  },
+  {
+    "qid": "878917a494e18bf3082ea4c4",
+    "question": "Is spo2 of patient 10031757 second measured on the first icu visit greater than the first value measured on the first icu visit?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. The second measured SpO2 value on the first ICU visit was 99, which is greater than the first measured value of 89."
+  },
+  {
+    "qid": "8e97f8923eae1120693cf379",
+    "question": "Is the value of mchc of patient 10026255 second measured on the last hospital visit less than it was first measured on the last hospital visit?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. The second measured mchc value on the last hospital visit was 32.8, which is not less than the first measured value of 32.2."
+  },
+  {
+    "qid": "905bf1d8d8b2ee5cc48396ca",
+    "question": "Has the prescription of sodium chloride 0.9%, nicardipine iv, or ondansetron been given to patient 10039997 in 2134?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes \u2014 in 2134, I found a matching prescription for **Sodium Chloride 0.9% Flush**. I could not confirm **nicardipine iv** or **ondansetron** by name from the retrieved MedicationRequest data because those entries used medicationReference IDs and the referenced Medication details were not available.",
+    "code_answer": "The final answer is: Yes. In 2134, the patient had a prescription matching:\n\n- Sodium Chloride 0.9% Flush \u2014 authoredOn: 2134-09-08T23:27:25-04:00, status: stopped\n\nNo 2134 prescription was found for:\n- nicardipine iv\n- ondansetron\n\nNo MedicationAdministration records were found for this patient."
+  },
+  {
+    "qid": "916c297dfa63e76557d57bb8",
+    "question": "Is patient 10025612's heart rate ever greater than 104.0 on 10/03/2125?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. I could not find any heart rate Observation greater than 104.0 on 10/03/2125."
+  },
+  {
+    "qid": "92b8f8b9f70e026d369cdfbd",
+    "question": "Has there been any mrsa screen microbiology test result for patient 10003046 throughout this year?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. There was 1 MRSA SCREEN microbiology test result for patient 10003046 during this year (2154):\n\n- MRSA SCREEN | 90189 \u2014 valueString: No MRSA isolated. \u2014 date: 2154-01-02 16:36:00 \u2014 status: final"
+  },
+  {
+    "qid": "a3585e47c9d9845ccde194bf",
+    "question": "Has patient 10037975 been given a creatinine, urine test since 15 months ago?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10037975 has been given a Creatinine, Urine test since 15 months ago. The matching Observation was on 2185-01-19T11:22:00-05:00, with value 52 mg/dL."
+  }
+]

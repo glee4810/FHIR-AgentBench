@@ -1,0 +1,107 @@
+[
+  {
+    "qid": "524208cb99d72ea26c67c3f9",
+    "question": "How many times did patient 10019385 check into the icu during this year?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 ICU check-in during this year (2180).",
+    "code_answer": "The final answer is: 1 ICU check-in during this year (2180)."
+  },
+  {
+    "qid": "53388f93019e894471f1753a",
+    "question": "Has patient 10026354 undergone a procedure?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10026354 has undergone procedures, including:\n\n- Reposition Left Maxilla with External Fixation Device, Percutaneous Approach\n- Reposition Right Mandible with Internal Fixation Device, Open Approach\n- Repair Upper Artery, Open Approach\n- Reposition Left Mandible with External Fixation Device, Percutaneous Approach\n- 20 Gauge\n- OR Sent\n- Arterial Line\n- Invasive Ventilation\n- Extubation\n- Foley Catheter\n- Cordis/Introducer\n- Triage: emergency center (procedure)",
+    "code_answer": "The final answer is: Yes. Patient 10026354 has undergone procedures. There are 13 Procedure records, including:\n\n- 0NSS35Z \u2014 Reposition Left Maxilla with External Fixation Device, Percutaneous Approach\n- 0NST04Z \u2014 Reposition Right Mandible with Internal Fixation Device, Open Approach\n- 03QY0ZZ \u2014 Repair Upper Artery, Open Approach\n- 0NSV35Z \u2014 Reposition Left Mandible with External Fixation Device, Percutaneous Approach\n- 224275 \u2014 20 Gauge\n- 225470 \u2014 OR Sent\n- 225752 \u2014 Arterial Line\n- 225792 \u2014 Invasive Ventilation\n- 224275 \u2014 20 Gauge\n- 227194 \u2014 Extubation\n- 229351 \u2014 Foley Catheter\n- 224267 \u2014 Cordis/Introducer\n- 386478007 \u2014 Triage: emergency center (procedure)"
+  },
+  {
+    "qid": "55d4903b176bcfa711e73e0f",
+    "question": "Has patient 10006580 had any implantation or replacement of carotid sinus stimulation device, total system procedure in 2137?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10006580 had the procedure \"Implantation or replacement of carotid sinus stimulation device, total system\" on 2137-08-11T00:00:00-04:00.",
+    "code_answer": "The final answer is: Yes. Patient 10006580 had the procedure Implantation or replacement of carotid sinus stimulation device, total system in 2137, on 2137-08-11T00:00:00-04:00."
+  },
+  {
+    "qid": "56919090958387812584e77a",
+    "question": "Was lisinopril, warfarin, or heparin prescribed for patient 10012853 in their first hospital encounter?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: In patient 10012853\u2019s first hospital encounter, warfarin and heparin were prescribed, but lisinopril was not prescribed."
+  },
+  {
+    "qid": "571b776d0c624ec21b51af31",
+    "question": "Has patient 10024043 had any organisms detected in his first mrsa screen microbiology test since 1 year ago?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. The first MRSA SCREEN microbiology test since 1 year ago was on 2117-04-11T22:57:00, and its valueString was \"No MRSA isolated.  \""
+  },
+  {
+    "qid": "580f56a66f7626bbcd078c21",
+    "question": "Has patient 10023239 had any organisms detected in his last urine microbiology test in 2137?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. In patient 10023239\u2019s last urine microbiology test in 2137, the URINE CULTURE result was `NO GROWTH.  `, so no organisms were detected."
+  },
+  {
+    "qid": "58a17f0e9f1fb5701047c022",
+    "question": "Did patient 10002428 come to the er during the first hospital encounter?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. The first hospital encounter had admitSource code: EMERGENCY ROOM.",
+    "code_answer": "The final answer is: No. I found the first hospital encounter (ID: 493f1402-9b10-53db-9d78-7a5f25b710b8, from 2155-07-14T19:15:00-04:00 to 2155-07-15T18:37:00-04:00), and there were no ER/ED encounters during that first hospital encounter."
+  },
+  {
+    "qid": "5ad1c0bd8c724486755abcd6",
+    "question": "How many icu visits did patient 10018845 have during the first hospital encounter?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: 1 ICU visit during the first hospital encounter.",
+    "code_answer": "The final answer is: 1 ICU visit during the first hospital encounter."
+  },
+  {
+    "qid": "5c365a198595d213cd5d103a",
+    "question": "Has patient 10004733 received any tests for triglycerides in 10/last year?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: No. I found no triglycerides tests for patient 10004733 in 10/last year (October 2173)."
+  },
+  {
+    "qid": "5c5d37eab2cf65bcaafade09",
+    "question": "Count the number of times that patient 10010471 received the performance of urinary filtration, multiple procedure in the previous year.",
+    "gold": "[[0]]",
+    "resource_answer": "The final answer is: 0",
+    "code_answer": "The final answer is: 0 times."
+  },
+  {
+    "qid": "5d31a8336f838e5062d60d2d",
+    "question": "Has patient 10038999 received the procedure of drainage of left pleural cavity, percutaneous approach, diagnostic in 2131?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10038999 received the procedure \"Drainage of Left Pleural Cavity, Percutaneous Approach, Diagnostic\" in 2131 on 2131-05-29T00:00:00-04:00.",
+    "code_answer": "The final answer is: Yes. Patient 10038999 received the procedure \"Drainage of Left Pleural Cavity, Percutaneous Approach, Diagnostic\" in 2131."
+  },
+  {
+    "qid": "5d5a07118525dfe5b79a0611",
+    "question": "Has patient 10026255 had any tests for red blood cells since 04/2200?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10026255 had 7 Red Blood Cells tests since 04/2200:\n\n- 2200-09-17T19:40:00 \u2014 Red Blood Cells \u2014 4.7 m/uL\n- 2200-09-22T06:20:00 \u2014 Red Blood Cells \u2014 4 m/uL\n- 2200-09-26T06:45:00 \u2014 Red Blood Cells \u2014 4.2 m/uL\n- 2200-09-27T06:10:00 \u2014 Red Blood Cells \u2014 4.22 m/uL\n- 2200-09-28T06:50:00 \u2014 Red Blood Cells \u2014 4.06 m/uL\n- 2200-09-29T10:35:00 \u2014 Red Blood Cells \u2014 4.4 m/uL\n- 2200-12-07T10:45:00 \u2014 Red Blood Cells \u2014 4.36 m/uL"
+  },
+  {
+    "qid": "5db87efd687aa472406c44c6",
+    "question": "Has patient 10015931 been prescribed medication since 2176?",
+    "gold": "[[1]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. Patient 10015931 has been prescribed medication since 2176; there are 288 MedicationRequest records authored between 2176-01-01 00:00:00 and 2176-12-31 23:59:00."
+  },
+  {
+    "qid": "601558b753933c463ad3089a",
+    "question": "During this icu encounter, was the respiratory rate of patient 10018081 ever less than 35.0?",
+    "gold": "[[0]]",
+    "resource_answer": "[FAILED: context overflow \u2014 no answer produced]",
+    "code_answer": "The final answer is: Yes. For ICU encounter Encounter/70b55a0d-3279-52be-bb6a-2ff9afdd452e, the respiratory rate was ever less than 35.0; the minimum recorded value was 11.0. For ICU encounter Encounter/677b526f-c52e-5c75-9fc0-601c48f308bb, I could not find any respiratory rate observations."
+  },
+  {
+    "qid": "6236365bb1b1dab256878dbe",
+    "question": "Has patient 10020187 been prescribed any medications?",
+    "gold": "[[1]]",
+    "resource_answer": "The final answer is: Yes. Patient 10020187 has MedicationRequest records, indicating they have been prescribed medications.",
+    "code_answer": "The final answer is: Yes. Patient 10020187 has been prescribed medications; there are 84 MedicationRequest records."
+  }
+]

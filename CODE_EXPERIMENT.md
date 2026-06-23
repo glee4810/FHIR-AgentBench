@@ -1,81 +1,98 @@
-# Code-interpreter experiment — the one lever that works (GPT-5.5)
+# Code-interpreter experiment — an overflow-avoidance effect, not a reasoning win (GPT-5.5)
 
-After three nulls (typed tools, payload shaping, reasoning effort — none improved accuracy), this tests
-the one lever the evidence pointed at: a **code interpreter**. It is run as **standard-vs-standard** —
-the benchmark's *own* reference agents, unchanged, so there are no hand-picked "our tools" to argue about.
+After three nulls (typed tools, payload shaping, reasoning effort), this tests the one lever the early
+evidence seemed to point at: a **code interpreter**. Run as **standard-vs-standard** — the benchmark's *own*
+reference agents, unchanged. The honest result, after a harness-bug fix, a judge-reliability fix, and a
+boolean-grading fix in our own pipeline, is that the interpreter's apparent accuracy win is **context-overflow
+avoidance (data plumbing), not a compute or reasoning gain.** Where both agents can fit the data, it is not a
+win — if anything a slight, non-significant loss.
 
 ## Setup
 
-- **Arms (FHIR-AgentBench's own agents):** `multi_turn_resource` (retrieve → reason in natural language,
-  no code) vs `multi_turn_code_resource` (retrieve → `execute_python_code` → answer). Only the code tool
-  differs.
-- **Model:** GPT-5.5 (`gpt-5.5-2026-04-23`), both arms. **Judge:** gpt-5-mini (the benchmark's judge).
-- **Data:** 200 held-out **test**-split questions (seed 20260621), MIMIC-IV-on-FHIR demo loaded into a
-  self-hosted **Medplum** (the benchmark's GCP client is swapped for a Medplum backend via
-  `medplum_fhir_client.py`; FHIR R4 is FHIR R4, agent logic unchanged).
-- **Stats:** paired McNemar (same questions both arms).
+- **Arms (FHIR-AgentBench's own agents):** `multi_turn_resource` (retrieve → reason in natural language, no
+  code) vs `multi_turn_code_resource` (retrieve → `execute_python_code` → answer). The code arm differs in
+  three ways at once — the interpreter, a code-tailored prompt, **and** data plumbing: the resource arm
+  serializes retrieved FHIR JSON into the prompt; the code arm passes a *pointer* to the payload into a Python
+  sandbox (`retrieved_resources` global) and never serializes it into context. That plumbing difference is the
+  result.
+- **Model:** GPT-5.5 (`gpt-5.5-2026-04-23`), both arms. **Data:** full 409-question held-out test split,
+  MIMIC-IV-on-FHIR demo loaded into a self-hosted **Medplum**.
+- **Grading:** **deterministic numeric + a 3-Claude-judge panel**, cross-checked by an independent codex/GPT
+  judge panel and validated against non-LLM ground truth on numerics. The benchmark's default gpt-5-mini judge
+  is **not** trustworthy here (61% accurate vs numeric ground truth — see
+  [TRUSTWORTHY_REGRADE.md](TRUSTWORTHY_REGRADE.md)). **Stats:** paired McNemar with 95% CIs.
 
-## Result — significant (full 409-question test set)
+## Result — stratified (the honest primary result)
 
-| arm | accuracy |
-|---|---|
-| resource (no code) | **27.6%** (113/409) |
-| code (+`execute_python_code`) | **38.6%** (158/409) |
-| **delta** | **+11.0 pp** |
+| Stratum | n | resource | code | Δ (95% CI) | McNemar | reading |
+|---|---|---|---|---|---|---|
+| **Matched budget** (both arms answered) | 140 | 71.4% | 67.9% | **−3.6pp** (−7.7…+0.6) | **p=0.18 → not significant** | no reasoning benefit when both can fit the data |
+| **Resource-real** (predefined by resource success) | 147 | 70.8% | 64.6% | **−6.1pp** (−10.8…−1.4) | p=0.022 → significant | code worse on answerable Qs (≈⅓ is code's higher error rate) |
+| **Large records** (resource overflows 32k) | 262 | 0% | 65.6% | — | by construction | code answers what the no-code agent can't fit — architectural |
+| Pooled (mix) | 409 | 25.4% | 65.3% | +39.9pp (+34.6…+45.1) | p≈0 | the overflow stratum; not a reasoning gain |
 
-**McNemar:** code **fixed 76**, **broke 31** → **exact p = 1.6e-5 (highly significant).** Net **+45** questions.
-**Conservative:** the code arm only *answered* 390/409 (19 timed out / errored on heavy patients and were
-scored wrong), so the true lift is if anything larger.
-**Cost:** **$34.38** total agent (resource $11.63 + code $22.75); the gpt-5-mini judge re-run cost <$1.
+- **Matched budget is the controlled comparison, and it is not a win** (code fixed 2, broke 7; −3.6pp, p=0.18).
+- **The pooled gap is overflow, not compute.** The resource arm hits `Input tokens exceeded` on **262/409
+  (64%)**; the code arm produced a real answer on **240/262** of those. Strip the overflow and the advantage
+  evaporates.
+- **Resource-real (predefined) is significantly negative**, but decomposing the 11 questions code broke:
+  **4 are code erroring/overflowing** where retrieval sufficed (reliability), **7 are buggy generated code**.
+- **Cost:** ~$34 total agent run (resource $11.63 + code $22.75); judge panels separate.
 
-> **n=200 preview (earlier, consistent):** on the first 200 test questions the lift was **+6.5pp**
-> (21.0%→27.5%, McNemar p=0.0106, fixed 18/broke 5, cost $5.36). The full 409-set lift is *larger* — the
-> additional 209 questions skew more compute-heavy, where code helps most. **Same direction, stronger, more
-> significant.** (The 409 was re-judged 2026-06-23 after the first scoring pass erred on OpenAI quota; the
-> agent answers were intact — see `medplum-eval/FULL409_STATUS.md`.)
+## Where the apparent lift comes from (mechanism)
 
-The code interpreter genuinely lifts GPT-5.5's accuracy on realistic FHIR QA — confirming the parent
-paper's finding (which used o4-mini) on a *new model* and a *self-hosted substrate*, with paired stats.
+It is **not** "Python does temporal-ordering/aggregation the model can't." At matched budget — where the
+no-code agent also has the data — the code arm shows no significant edge (−3.6pp, p=0.18). The lift is
+concentrated where it is **mechanically forced**: the 262 large-record questions where the resource arm cannot
+fit the patient into a 32k window and is scored 0, while the code arm processes the same payload
+out-of-context in a sandbox. **The effect is about where the data lives, not computational reasoning.** Payload
+projection (`_elements`/`_summary`/views) — keeping the serialized payload under the cap — is a different lever
+that targets the *same* overflow; we did not test whether it recovers the 262 cases, but it plausibly recovers
+much of the same ground without a code path.
 
-## Where the lift comes from (mechanism)
+## The three-round correction (why this matters)
 
-Of the **76 questions code fixed** (full 409 set), **≈89% (68/76) are compute-shaped** — temporal-ordering
-("first/last/since…" → sort events by date) and aggregation ("count occasions", "average…", "total…") —
-exactly what a no-code agent can't do reliably by reading FHIR JSON in-context, and what Python does
-perfectly. (Keyword heuristic, consistent with the hand-verified **17/18 compute-heavy** on the n=200
-subset.) The **31 it broke** are *also* mostly compute-heavy (temporal/aggregate where the model wrote buggy
-code) — **code is the lever, not a guarantee**, but the net is strongly positive (76 vs 31).
+| pass | grading | matched-budget verdict | defect |
+|---|---|---|---|
+| 1 | gpt-5-mini, no error pre-filter | "+11pp, code is the lever" | harness bug + pooled mixes overflow |
+| 2 | gpt-5-mini, canonical pre-filter | "−8.6pp, code HURTS" (p=0.02) | judge artifact (gpt-5-mini 61% accurate, precision-punishing) |
+| 3a | deterministic-numeric + Claude panel | "+1.4pp, null" | our own bug: 115 boolean Yes/No golds mis-graded as numeric |
+| 3b | **deterministic(clean) + Claude panel, fixed** | **−3.6pp, not significant** | the trustworthy answer |
+
+Independent codex/GPT panel reproduces 3b (matched −3.6pp p=0.18, pooled +39.1%). Full audit, judge leaderboard
+(gpt-5-mini 61% vs panels 98-99% on numeric ground truth), and the magnitude analysis are in
+[TRUSTWORTHY_REGRADE.md](TRUSTWORTHY_REGRADE.md).
 
 ## Honest caveats
 
-- **Absolute accuracy is moderate** (27.6% / 38.6%) vs the paper's 0.50 ceiling. Main driver: the **resource
-  agent overflows** on heavy patients (a patient can have 10k+ observations — they don't fit in context,
-  so it can't answer; the code agent sidesteps this by processing them in code). Also: GPT-5.5 ≠ o4-mini,
-  Medplum ≠ GCP, and the adapter caps retrieval at 10k resources/type (Medplum's offset limit). **The
-  *delta* is the finding, not the absolute level** — and the delta is significant.
-- **Single seed, single model, full 409-question test split.** The lift replicates a known direction; it is
-  not a novel discovery that "code helps" — the contribution is the clean GPT-5.5 confirmation + the
-  failure-mode map + the reusable standard-vs-standard harness on Medplum.
+- **The finding is a matched-budget null + an architecture effect**, not "code helps" and not "code is broadly
+  worse." Its only positive value is dodging context overflow; its cost is slightly lower reliability on
+  answerable questions.
+- **"Matched budget" conditions on both arms answering** (post-treatment), so it is conservative; the
+  resource-real stratum (predefined) is significantly negative but ≈⅓ reliability-driven. **Questions cluster
+  by patient** (~90), which McNemar ignores.
+- **Mechanism not isolated:** interpreter vs prompt vs payload-routing are confounded. **Single seed, single
+  model, single substrate.** GPT-5.5 ≠ o4-mini, Medplum ≠ GCP, retrieval capped at 10k resources/type.
 
 ## Reproduce
 
 ```bash
 # substrate: docker compose up in medplum-eval-bundle/ + bash scripts/load_mimic.sh (incl. chartevents)
 export MEDPLUM_BASE_URL=http://localhost:8103 OPENAI_API_KEY=...
-bash run_409.sh           # both arms, full 409-question test split (resumable; resumes by answered rows)
-# scoring runs at the end of run_409.sh; if the judge erred (quota), finish it with:
-python rejudge_409.py     # re-judges only the failed labels from medplum-eval/full409_answers.json
-bash progress409.sh       # progress bar + prints the final result when done
+bash run_409.sh                              # both arms, full 409-question test split (resumable)
+python build_labels.py && python final_grade.py   # deterministic + Claude-panel trustworthy grading (boolean-fixed)
+python judge_leaderboard.py                  # judge accuracy vs non-LLM ground truth (numeric subset)
+bash codex_panel.sh && python codex_judge_compare.py   # independent GPT cross-check (judge-family independence)
 ```
 
-Raw per-question outputs: `runs/full409/{multi_turn_resource,multi_turn_code_resource}.json` (gitignored;
-regenerate with the above). Durable answer backup: `medplum-eval/full409_answers.json`. Summaries:
-`medplum-eval/full409_summary.json` (409, final) and `medplum-eval/code_experiment_summary.json` (n=200 preview).
+Per-question outputs: `runs/full409/multi_turn_{resource,code_resource}.json` (large, gitignored; regenerate).
+**Human-auditable**: `runs/full409/human_review.{json,csv}` — all 409 questions, both arms' final answers, all
+four judges' labels, final label. Durable answer backup: `medplum-eval/full409_answers.json`.
 
 ## How it fits the project
 
-The arc: original eval = **null** → three nulls (tools / payload / reasoning effort) → **the lever is a
-code interpreter** → **confirmed highly significant on the full 409-question test set** (+11.0pp, p=1.6e-5;
-n=200 preview was +6.5pp, p=0.01). For accuracy on FHIR agents, the bottleneck is *compute over the data*,
-not tool design, payload size, or thinking time. The cheap, defensible move for any FHIR agent: give it a
-sandboxed Python/code path, not a bigger tool catalog.
+The arc: original eval = **null** → three nulls (tools / payload / reasoning effort) → a tempting
+code-interpreter "+11pp" → which, under a harness-bug fix, a judge-reliability fix, a boolean-grading fix, and
+stratification, **decomposes to a matched-budget null plus an overflow-avoidance architecture effect.** Unified
+conclusion: **for FHIR agents, accuracy is gated by context/data-plumbing — getting a bounded, projected slice
+of FHIR to the model — not by tool design, payload coaching, thinking time, or a code interpreter's compute.**

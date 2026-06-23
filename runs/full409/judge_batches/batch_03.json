@@ -1,0 +1,137 @@
+[
+ {
+  "qid": "3d5c7c8185dc079c5e416e14",
+  "question": "What was the first time patient 10040025 had the minimum platelet count value in 03/2143?",
+  "gold": "[['2143-03-19 08:50:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2143-03-19T08:50:00 (minimum platelet count value: 202 K/uL)",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "3e4b52c69a2bdf36e4f03676",
+  "question": "Retrieve the marital status of patient 10005866 during their last hospital encounter.",
+  "gold": "[['SINGLE']]",
+  "resource_answer": "I cannot find the marital status for patient 10005866 in the retrieved Patient or Encounter data.",
+  "code_answer": "I cannot find the marital status for patient 10005866 during their last hospital encounter in the retrieved FHIR data. The last hospital Encounter is `ba829745-66af-547d-9425-5d71fc2fc0ff`, but it does not contain a marital status field, and no Patient resource was retrieved for the provided Patient FHIR ID.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "3ec03a348a536f8a80e9d54e",
+  "question": "Please list the yearly volume of chest tube #1 that was output by patient 10019172 since 09/2118. if multiple chest tube #1 volumes are measured yearly, take the average.",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[{'year': '2118', 'volume': 24.347826086956523, 'unit': 'ml'}]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "419163a7cde49786dfda6fcd",
+  "question": "When was patient 10019172 first discharged from the hospital?",
+  "gold": "[['2118-10-11 20:15:00']]",
+  "resource_answer": "2118-10-11T20:15:00-04:00",
+  "code_answer": "2118-10-11T20:15:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "426ce736177896950ecec77f",
+  "question": "When was the first time when patient 10038933 received a other diagnostic procedures on lung or bronchus treatment during the first hospital encounter?",
+  "gold": "[['2148-09-11 00:00:00']]",
+  "resource_answer": "2148-09-11T00:00:00-04:00",
+  "code_answer": "2148-09-11T00:00:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "43da3486df026843872b9af4",
+  "question": "What was the admission type for patient 10019172's first hospital admission?",
+  "gold": "[['ELECTIVE']]",
+  "resource_answer": "elective",
+  "code_answer": "ELECTIVE",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "44ba2f356939ab27e43cbc9a",
+  "question": "When was patient 10000032 first given a creatinine test in 05/2180?",
+  "gold": "[['2180-05-07 05:05:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2180-05-06 22:25:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "45b3c545de90501570505db8",
+  "question": "What was the dose of heparin flush (10 units/ml) that was prescribed since 04/2196 for the last time to patient 10004235?",
+  "gold": "[['1']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "I cannot find the dose_val_rx information for the last Heparin Flush (10 units/ml) prescription since 04/2196. The last matching MedicationRequest was authoredOn 2196-06-14T14:25:58-04:00, but the retrieved FHIR resource does not include a dose_val_rx value or dosageInstruction.",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "49a4cd3cf6fcacac9a3bf922",
+  "question": "When was the last time patient 10025612 was measured with a greater diastolic blood pressure than 59.0 since 02/02/2125?",
+  "gold": "[['2125-09-28 08:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2125-09-28 08:00:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "4a73f78af6f830619516e24b",
+  "question": "When did patient 10005909 experience the last instance where their heart rate was less than 115.0 in their last icu stay?",
+  "gold": "[['2144-11-02 15:00:00']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "2144-11-02T15:00:00-05:00",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "4b72e7b13c37b47053d926d9",
+  "question": "Can you provide the monthly output of pre-admission for patient 10022041? if multiple pre-admission outputs are measured monthly, take the maximum.",
+  "gold": "[]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[{'month': '2187-05', 'value': 250, 'unit': 'ml', 'code': 'ml'}]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "4ff852f95fae6d06622555a4",
+  "question": "What would be the daily weight of patient 10024043 in their last hospital encounter? if multiple weights are measured daily, take the maximum.",
+  "gold": "[[83.6]\n [84.2]]",
+  "resource_answer": "(already graded)",
+  "code_answer": "[{'date': '2117-04-12', 'weight': 83.6, 'unit': 'kg'}, {'date': '2117-04-13', 'weight': 84.2, 'unit': 'kg'}]",
+  "grade_resource": false,
+  "grade_code": true
+ },
+ {
+  "qid": "52132e5911d6dc1ae05dcf5a",
+  "question": "When was the first continuous invasive mechanical ventilation for less than 96 consecutive hours done for patient 10027445 since 2142?",
+  "gold": "[['2142-07-31 00:00:00']]",
+  "resource_answer": "2142-07-31T00:00:00-04:00",
+  "code_answer": "2142-07-31T00:00:00-04:00",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "52f6bc8e9873cce45456c38e",
+  "question": "Can you specify the gender of patient 10025463?",
+  "gold": "[['M']]",
+  "resource_answer": "I cannot find the gender information for patient 10025463 in the retrieved patient data.",
+  "code_answer": "I cannot find the Patient resource for patient 10025463 with FHIR ID 28776290-4349-56d3-8c13-adc554feabb8, so I cannot specify the gender.",
+  "grade_resource": true,
+  "grade_code": true
+ },
+ {
+  "qid": "5436413908d5e902536630e8",
+  "question": "What was the name of the specimen test that patient 10018845 was given for the last time in 10/2184?",
+  "gold": "[['URINE']]",
+  "resource_answer": "(already graded)",
+  "code_answer": "['Anion Gap', 'Bicarbonate', 'Calcium, Total', 'Chloride', 'Creatinine', 'Glucose', 'Hematocrit', 'Hemoglobin', 'MCH', 'MCHC', 'MCV', 'Magnesium', 'Phosphate', 'Platelet Count', 'Potassium', 'RDW', 'Red Blood Cells', 'Sodium', 'Urea Nitrogen', 'White Blood Cells']",
+  "grade_resource": false,
+  "grade_code": true
+ }
+]

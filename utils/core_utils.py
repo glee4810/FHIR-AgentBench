@@ -353,7 +353,13 @@ def count_tokens_in_messages(messages) -> int:
 
 def safe_llm_call(model, messages, tools=None, temperature=0.0, parallel_tool_calls=True, max_retries=5, max_tokens=32000, base_url=None):
     """Safe LLM API call with context length validation and retry logic."""
-    
+
+    # Cap-factorial hook: EVAL_INPUT_CAP overrides the input-token cap globally (e.g. 100000) so the
+    # context budget can be varied as an explicit experimental factor. Unset => stock 32k behaviour.
+    _cap_override = os.environ.get("EVAL_INPUT_CAP")
+    if _cap_override:
+        max_tokens = int(_cap_override)
+
     input_tokens = count_tokens_in_messages(messages)
     if tools:
         # the tools schema is re-sent on EVERY turn and billed as input; include it in the cap gate so
