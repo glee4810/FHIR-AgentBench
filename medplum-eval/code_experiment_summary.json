@@ -1,0 +1,14 @@
+{
+  "n_paired": 200,
+  "n_total": 200,
+  "resource_acc": 0.21,
+  "code_acc": 0.275,
+  "delta": 0.065,
+  "code_fixed": 18,
+  "code_broke": 5,
+  "mcnemar_p": 0.010622,
+  "significant": true,
+  "cost_resource": 0.55,
+  "cost_code": 4.82,
+  "cost_total": 5.36
+}
