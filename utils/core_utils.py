@@ -279,6 +279,7 @@ def create_agent(agent_strategy, model, verbose=False, base_url=None):
         "single_turn_resource": ("agent.single_turn_resource_agent", "SingleTurnResourceAgent"),
         "single_turn_code_resource": ("agent.single_turn_code_resource_agent", "SingleTurnCodeResourceAgent"),
         "multi_turn_resource": ("agent.multi_turn_resource_agent", "MultiTurnResourceAgent"),
+        "multi_turn_projected_resource": ("agent.multi_turn_projected_resource_agent", "MultiTurnProjectedResourceAgent"),
         "multi_turn_code_resource": ("agent.multi_turn_code_resource_agent", "MultiTurnCodeResourceAgent"),
         "mcp": ("agent.mcp_agent", "MCPAgent"),
     }

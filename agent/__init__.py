@@ -4,6 +4,7 @@ from .single_turn_resource_agent import SingleTurnResourceAgent
 from .single_turn_code_resource_agent import SingleTurnCodeResourceAgent
 from .multi_turn_resource_agent import MultiTurnResourceAgent
 from .multi_turn_code_resource_agent import MultiTurnCodeResourceAgent
+from .multi_turn_projected_resource_agent import MultiTurnProjectedResourceAgent
 
 __all__ = [
     'BaseAgent',
@@ -11,5 +12,6 @@ __all__ = [
     'SingleTurnResourceAgent',
     'SingleTurnCodeResourceAgent',
     'MultiTurnResourceAgent',
-    'MultiTurnCodeResourceAgent'
+    'MultiTurnCodeResourceAgent',
+    'MultiTurnProjectedResourceAgent'
 ]
