@@ -138,7 +138,8 @@ This fork contributes three results to the picture above (full detail in [FINDIN
 - **The raw-FHIR failure is overflow, quantified:** the no-code agent overflows 32k on 64% of single-patient
   questions. This is the same wall MedAgentBench v2 and FHIR-AgentBench hit, measured directly.
 - **The celebrated code-interpreter "win" is overflow-avoidance, not reasoning** (−3.6pp at matched budget,
-  p=0.18). This sharpens Pattern B: the field's headline architecture works for the wrong reason.
+  p=0.18). In this FHIR-AgentBench setup, the observed code gain is overflow-driven rather than a measured
+  reasoning gain.
 - **Benchmark judges need auditing:** FHIR-AgentBench's default `gpt-5-mini` judge was only **61% accurate vs
   non-LLM numeric ground truth**, with a one-directional precision-punishing bias; multi-vote panels score
   98–99%. Published scores across this whole landscape deserve a skeptical eye.
@@ -149,8 +150,8 @@ This fork contributes three results to the picture above (full detail in [FINDIN
 
 **Agreement.** Don't dump raw nested FHIR into context [1][3][19, this fork]. Retrieve/rank, don't stuff
 [9][8]. Bounding *how* the model invokes FHIR beats free-form HTTP [3][16][32]. The single-patient ceiling is
-mediocre (~50%) and improving via architecture, not scale [1][3]. Aggregate/cohort ABAC over FHIR is nobody's
-solved problem [29][15][24][28].
+mediocre (~50%) and improving via architecture, not scale [1][3]. In the standards and OSS systems reviewed
+here, aggregate/cohort ABAC over FHIR remains unresolved [29][15][24][28].
 
 **Contested.** Is the code interpreter load-bearing or a crutch? Literature says load-bearing [1][5]; this
 fork's matched-budget result says crutch [CODE_EXPERIMENT.md]. FHIRPath vs SQL vs ViewDefinition as the query
@@ -170,10 +171,10 @@ context or a code sandbox. Two honest caveats keep this an *open direction*, not
    head (it could be run on this fork's harness as a third arm — and the nearest analogue here,
    `_elements`-coaching, was a null). Projection also *relocates* difficulty to query-synthesis (≤42%
    un-tuned) [4].
-2. **The governance gap is real and unfilled.** SQL-on-FHIR, Pathling, and the warehouse vendors all
-   explicitly leave authorization "to the host" [29][15], and aggregate/cohort ABAC over FHIR is shipped by no
-   standard or OSS engine [24][28]. Enforcing access *inside* a bounded query path is an open engineering
-   problem, not solved infrastructure.
+2. **The governance gap is real and unfilled in this reviewed set.** SQL-on-FHIR, Pathling, and the warehouse
+   vendors all explicitly leave authorization "to the host" [29][15], and I found no standard or OSS engine
+   here that ships aggregate/cohort ABAC over FHIR [24][28]. Enforcing access *inside* a bounded query path is
+   an open engineering problem, not solved infrastructure.
 
 ---
 

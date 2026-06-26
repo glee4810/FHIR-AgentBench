@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
+  <title id="title">A0 prime overflow-stratum decomposition</title>
+  <desc id="desc">Stacked bar decomposing 262 A0-overflow questions into A0 prime correct, residual overflow, and fit-but-wrong categories, with sandbox and heuristic ceiling markers.</desc>
+  <rect width="900" height="300" fill="#ffffff"/>
+  <text x="40" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">Why blunt projection only recovers a third</text>
+  <text x="40" y="70" font-family="Arial, sans-serif" font-size="14" fill="#4b5563">A0' on the 262 questions where raw FHIR overflowed.</text>
+
+  <rect x="80" y="120" width="155" height="54" fill="#2563eb"/>
+  <rect x="235" y="120" width="259" height="54" fill="#ef4444"/>
+  <rect x="494" y="120" width="286" height="54" fill="#f59e0b"/>
+  <rect x="80" y="120" width="700" height="54" fill="none" stroke="#111827" stroke-width="1"/>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#ffffff" font-weight="700">
+    <text x="157.5" y="142" font-size="15">58 correct</text>
+    <text x="157.5" y="160" font-size="13">22.1%</text>
+    <text x="364.5" y="142" font-size="15">97 still overflow</text>
+    <text x="364.5" y="160" font-size="13">37.0%</text>
+    <text x="637" y="142" font-size="15">107 fit but wrong</text>
+    <text x="637" y="160" font-size="13">40.8%</text>
+  </g>
+
+  <line x1="539" y1="103" x2="539" y2="198" stroke="#065f46" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="539" y="94" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#065f46">A5 sandbox 65.6%</text>
+  <line x1="553" y1="103" x2="553" y2="214" stroke="#111827" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="553" y="229" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#111827">heuristic query-aware ceiling 67.6%</text>
+
+  <g font-family="Arial, sans-serif" font-size="13" fill="#111827">
+    <rect x="80" y="238" width="14" height="14" fill="#2563eb"/>
+    <text x="101" y="250">already correct under blunt projection</text>
+    <rect x="326" y="238" width="14" height="14" fill="#ef4444"/>
+    <text x="347" y="250">multi-turn accumulation overflow</text>
+    <rect x="560" y="238" width="14" height="14" fill="#f59e0b"/>
+    <text x="581" y="250">data fit, but cap/selection dropped what mattered</text>
+  </g>
+</svg>

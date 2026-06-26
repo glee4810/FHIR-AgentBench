@@ -8,16 +8,26 @@ A0' is graded with the SAME trustworthy method: deterministic for numeric golds 
 codex_panel on the a0prime batches first). Where a non-numeric A0' answer has no panel label yet, it is left
 out of the trustworthy number and counted in `a0prime_ungraded`.
 """
-import json, re, glob
+import json, re, glob, os
 from collections import defaultdict
 
 R = "runs/full409"
 A0P_FILE = "runs/a0prime/multi_turn_projected_resource.json"  # scp'd from the mini
 
-res = {r["question_id"]: r for r in json.load(open(f"{R}/multi_turn_resource.json"))}
-cod = {r["question_id"]: r for r in json.load(open(f"{R}/multi_turn_code_resource.json"))}
-a0p = {r["question_id"]: r for r in json.load(open(A0P_FILE))}
-det = json.load(open(f"{R}/det_labels.json"))
+def load_json(path):
+    if not os.path.exists(path):
+        raise SystemExit(
+            f"missing required artifact: {path}\n"
+            "This script recomputes from raw answer dumps, which are large and gitignored. "
+            "Restore the raw runs/full409 and runs/a0prime answer files before running."
+        )
+    with open(path) as f:
+        return json.load(f)
+
+res = {r["question_id"]: r for r in load_json(f"{R}/multi_turn_resource.json")}
+cod = {r["question_id"]: r for r in load_json(f"{R}/multi_turn_code_resource.json")}
+a0p = {r["question_id"]: r for r in load_json(A0P_FILE)}
+det = load_json(f"{R}/det_labels.json")
 
 # --- panel labels (Claude) for resource/code ---
 pvotes = defaultdict(list)
@@ -33,7 +43,12 @@ def pmaj(k):
     return None if not v else (1 if sum(v) * 2 > len(v) else (0 if sum(v) * 2 < len(v) else None))
 def L(arm, q):
     k = f"{arm}|{q}"
-    return det[k] if k in det else (pmaj(k) or 0)
+    if k in det:
+        return det[k]
+    lab = pmaj(k)
+    if lab is None:
+        raise SystemExit(f"missing or tied panel label for {k}")
+    return lab
 
 # --- grade A0' (deterministic numeric/failures + its own codex panel for non-numeric) ---
 NUM = re.compile(r"-?\d+\.?\d*")
@@ -52,18 +67,36 @@ def numeric_ok(ans, gold):
     if not gs or not as_: return 0
     return int(all(any(abs(a - g) <= max(0.05, 0.01 * abs(g)) for a in as_) for g in gs))
 
-# A0' codex panel (if present): runs/a0prime/codex_votes/*.json -> majority
+# A0' codex panel: runs/a0prime/codex_votes/*.json -> majority.
+# Fail closed: stale, malformed, missing, or extra votes invalidate the run.
 a0p_panel = defaultdict(list)
-for f in glob.glob("runs/a0prime/codex_votes/*.json"):
-    try:
-        for row in json.load(open(f)).get("grades", []):
-            if row.get("label") in (0, 1): a0p_panel[row["qid"]].append(row["label"])
-    except Exception: pass
+vote_files = sorted(glob.glob("runs/a0prime/codex_votes/p[123]_b[0-9][0-9].json"))
+extra_vote_files = sorted(set(glob.glob("runs/a0prime/codex_votes/*.json")) - set(vote_files))
+if extra_vote_files:
+    raise SystemExit(f"unexpected vote files: {extra_vote_files[:3]}")
+if not vote_files:
+    raise SystemExit("missing A0' codex vote files under runs/a0prime/codex_votes/")
+for f in vote_files:
+    data = load_json(f)
+    grades = data.get("grades")
+    if not isinstance(grades, list):
+        raise SystemExit(f"{f}: missing grades array")
+    seen = set()
+    for row in grades:
+        qid, label = row.get("qid"), row.get("label")
+        if not isinstance(qid, str) or label not in (0, 1):
+            raise SystemExit(f"{f}: malformed grade row {row!r}")
+        if qid in seen:
+            raise SystemExit(f"{f}: duplicate qid {qid}")
+        seen.add(qid)
+        a0p_panel[qid].append(label)
 def a0p_panel_label(q):
     v = a0p_panel.get(q, [])
-    return None if not v else (1 if sum(v) * 2 > len(v) else 0)
+    if len(v) != 3:
+        return None
+    return 1 if sum(v) * 2 > len(v) else 0
 
-ungraded = []
+ungraded = set()
 def La0p(q):
     rec = a0p.get(q)
     if rec is None: return None
@@ -71,7 +104,7 @@ def La0p(q):
     gt = gold_type(rec.get("true_answer"))
     if gt == "numeric": return numeric_ok(rec.get("agent_answer"), rec.get("true_answer"))
     lab = a0p_panel_label(q)
-    if lab is None: ungraded.append(q); return None
+    if lab is None: ungraded.add(q); return None
     return lab
 
 strata = json.load(open(f"{R}/_strata.json"))

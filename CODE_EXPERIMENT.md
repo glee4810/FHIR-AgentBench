@@ -47,8 +47,8 @@ concentrated where it is **mechanically forced**: the 262 large-record questions
 fit the patient into a 32k window and is scored 0, while the code arm processes the same payload
 out-of-context in a sandbox. **The effect is about where the data lives, not computational reasoning.** Payload
 projection (`_elements`/`_summary`/views) — keeping the serialized payload under the cap — is a different lever
-that targets the *same* overflow; we did not test whether it recovers the 262 cases, but it plausibly recovers
-much of the same ground without a code path.
+that targets the *same* overflow. The later A0′ control tested one blunt recency-capped projection and recovered
+only a third of the code arm's overflow accuracy; a query-aware projection remains untested.
 
 ## The three-round correction (why this matters)
 

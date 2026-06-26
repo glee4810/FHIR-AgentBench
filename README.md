@@ -4,9 +4,10 @@
 > [glee4810/FHIR-AgentBench](https://github.com/glee4810/FHIR-AgentBench) carrying a rig for a simple but
 > slippery question: **when you expose tools to an LLM agent through an
 > [MCP](https://modelcontextprotocol.io) server, do those tools actually make the agent better — and how
-> would you *honestly* measure that?** The worked example is FHIR / [Medplum](https://www.medplum.com),
-> but the harness and the lessons generalize to evaluating *any* MCP tool surface. Treat the numbers as
-> preliminary; see [Reproducibility status](#where-this-was-actually-run--reproducibility-status).
+> would you *honestly* measure that?** The worked example is FHIR / [Medplum](https://www.medplum.com).
+> The harness pattern generalizes to other MCP tool surfaces; the empirical lessons are scoped to this FHIR
+> case study. Treat the numbers as preliminary; see
+> [Reproducibility status](#where-this-was-actually-run--reproducibility-status).
 
 ## TL;DR
 
@@ -37,13 +38,47 @@ apparent win is a context-overflow artifact (a null at matched budget), not a re
 - **Contributions:** (1) the *correct decomposition* — the code "win" is a context-overflow artifact, not a
   compute gain; the same confound faked the tool-catalog "win"; (2) a **judge-reliability finding** — the
   default judge is 61% accurate vs ground truth; a multi-vote panel (two model families, 97% mutual
-  agreement) fixes it; (3) the grading methodology that also caught a boolean Yes/No grading bug in our own
+  agreement) mitigates it; (3) the grading methodology that also caught a boolean Yes/No grading bug in our own
   first fix; (4) the cap-factorial + paired-stats harness that caught the confound twice.
-- ⚠️ **Reproducibility is split.** The **trustworthy re-grade is fully reproducible** from committed data
-  (`runs/full409/{det_labels,panel_votes*,human_review}.json`, `build_labels.py`, `final_grade.py`). The
-  **Opus tool-ablation numbers are not** (run on torn-down EC2). See [Reproducibility status](#where-this-was-actually-run--reproducibility-status).
+- ⚠️ **Reproducibility is split.** Frozen labels/summaries for the trustworthy re-grade are committed, but exact
+  answer-level recomputation requires raw answer dumps that are large and gitignored. The new A0′ table is
+  locally recomputable when those dumps are present; [FINAL_REPORT.md](FINAL_REPORT.md) records the exact scope.
+  **Opus tool-ablation numbers are not** (run on torn-down EC2). See
+  [Reproducibility status](#where-this-was-actually-run--reproducibility-status).
 - **Start here: [FINDINGS.md](FINDINGS.md)** (the capstone conclusion). Then the tool-ablation deep-dive
   **[REPORT.md](REPORT.md)** and the code result **[CODE_EXPERIMENT.md](CODE_EXPERIMENT.md)**.
+
+## Final result: A0 vs A0' vs A5
+
+The final control asks whether the code sandbox is valuable because it computes out-of-context, or because it
+selects a bounded slice of the chart. The answer is narrower: **query-aware selection is the lever; the sandbox
+is one implementation.** The tested projection was deliberately blunt, so it is a floor for projection quality,
+not a ceiling.
+
+![Grouped bar chart of final three-arm accuracy](images/final_three_arm_accuracy.svg)
+
+| Arm | Overflow stratum (n=262) | Resource-real stratum (n=147) | Pooled (n=409) |
+|---|---:|---:|---:|
+| A0 — raw FHIR in context | 0.0% | 70.7% | 25.4% |
+| A0' — projection only | 22.1% | 70.1% | 39.4% |
+| A5 — code interpreter | 65.6% | 64.6% | 65.3% |
+
+![Stacked bar chart of A0 prime overflow decomposition](images/a0prime_overflow_decomposition.svg)
+
+Read the full, red-teamed version in [FINAL_REPORT.md](FINAL_REPORT.md). The clean next experiment is a
+query-aware in-context projection arm: fetch the resource type and date range the question asks for, keep
+first-and-last values, and deduplicate repeated requests.
+
+## Future work / issues
+
+The repo is ready for GitHub issues. The issue-ready backlog lives in [ROADMAP.md](ROADMAP.md):
+
+- Run the query-aware in-context projection arm.
+- Publish a minimized reproducibility artifact package with checksums.
+- Rerun A0, A0', and A5 on one substrate.
+- Add cross-family or human adjudication for A0' non-numeric labels.
+- Run a projection cap sweep.
+- Add a tracked failure-decomposition script.
 
 ## What we're actually trying to do
 
@@ -199,14 +234,13 @@ most of them are not recomputable from committed artifacts.** The full pipeline 
 multi-hour Opus and GPT-5.5 ablation runs) ran on ephemeral EC2 boxes (`t3.xlarge`, us-east-2) that have
 since been torn down. Be precise about what survives:
 
-**Reproducible from this repo:**
+**Reproducible or preserved from this repo:**
 - The Docker **boot path** (steps 1–2): containers up, Medplum healthy, bare-PKCE token, FHIR read/write
   round-trip, MCP advertises the generic `fhir-request` tool — smoke-verified on macOS
   ([`medplum-eval-bundle/SMOKE_TEST.md`](medplum-eval-bundle/SMOKE_TEST.md)).
-- The **entire GPT-5.5 side**: the deterministic re-score curve + overflow taxonomy (`robustness_analysis.py`,
-  REPORT §9.1), *and* — recovered 2026-06-21 by re-judging the surviving committed raw answers with
-  `gpt-5-mini` — the **LLM-judge accuracies + paired stats**, with per-question labels frozen in
-  `medplum-eval/results/*.judged.json` and aggregates in `_scores.csv` / `_paired.json`.
+- The **GPT-5.5 summaries and frozen labels**: deterministic re-score outputs, overflow taxonomy, LLM-judge
+  accuracies, paired stats, and panel labels are committed as derived artifacts. Exact answer-level
+  recomputation still needs the raw answer dumps when a script reads them directly.
 
 **NOT reproducible (lost with a torn-down box):**
 - **The entire Opus run** (including the cap-factorial and the headline "only robust effect,"
@@ -214,9 +248,10 @@ since been torn down. Be precise about what survives:
   there is **no committed Opus data at all** — so the Opus numbers are reconstructed from console output.
 
 So treat the bundle as a faithful, boot-smoke-verified **recipe** of the EC2 environment. The load-bearing,
-verifiable claims are the **null** and the **GPT-5.5 curve** (now fully recomputable); only the **Opus cap
-finding** is credible-but-unverifiable. Re-running the Opus arm on Docker (the scorer now persists
-per-question labels, so it can't be lost the same way) is the one open reproducibility item.
+verifiable claims are the **null** and the **GPT-5.5 curve** as frozen derived artifacts; exact answer-level
+recomputation needs the raw dumps. The **Opus cap finding** remains credible-but-unverifiable. Re-running the
+Opus arm on Docker (the scorer now persists per-question labels, so it can't be lost the same way) is still an
+open reproducibility item.
 (`robustness_analysis.py` prints a provenance banner separating computed-from-committed-data vs reconstructed.)
 
 ## Caveats — this is experimental
