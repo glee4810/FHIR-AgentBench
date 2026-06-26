@@ -1,0 +1,86 @@
+[
+  {
+    "qid": "efc169498c87c222d5b7020b",
+    "question": "When was the last stool microbial test done in patient 10002495 since 04/2141?",
+    "gold": "[['2141-05-22 21:29:00']]",
+    "answer": "The final answer is: 2141-05-30T12:11:00-04:00"
+  },
+  {
+    "qid": "f03742a9f076216fb37d4c2b",
+    "question": "When was patient 10021938's spo2 the first time measured greater than 95.0 on last month/02?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find any \"O2 saturation pulseoxymetry\" SpO2 measurement greater than 95.0 on 2181-11-02."
+  },
+  {
+    "qid": "f195f5a0d57e12581afdc61c",
+    "question": "When did patient 10004457 first get discharged from the hospital?",
+    "gold": "[['2140-09-18 12:40:00']]",
+    "answer": "The final answer is: 2140-09-18T12:40:00-04:00"
+  },
+  {
+    "qid": "f3051b86c007dd34ade04ba9",
+    "question": "When was the last time that patient 10003400 was discharged from the hospital?",
+    "gold": "[['2137-09-02 17:05:00']]",
+    "answer": "The final answer is: 2137-09-02T17:05:00-04:00"
+  },
+  {
+    "qid": "f356b6267c56b07e1f3e3045",
+    "question": "What was the last time that patient 10035185 had the minimum value of the systolic blood pressure?",
+    "gold": "[['2120-05-13 17:35:00']]",
+    "answer": "The final answer is: I cannot find the \"Arterial Blood Pressure systolic\" observations in the retrieved patient data."
+  },
+  {
+    "qid": "f3d6d302751188c87c7c1304",
+    "question": "What was the last medication that was prescribed to patient 10004733 in 12/this year through the iv route?",
+    "gold": "[['Sodium Chloride 0.9%  Flush']]",
+    "answer": "The final answer is: Medication/d47a6867-82e7-5273-a74b-63955208ec8e"
+  },
+  {
+    "qid": "fa7797af0bc8368e7b76a129",
+    "question": "How much do patient 10004733's respiratory rate shifts measured at 2174-12-30 17:00:00 compared to the value measured at 2174-12-30 16:00:00?",
+    "gold": "[[None]]",
+    "answer": "The final answer is: I cannot find the respiratory rate measurements at 2174-12-30 17:00:00 and 2174-12-30 16:00:00 in the retrieved patient Observation data."
+  },
+  {
+    "qid": "fa829a69da2e049d895218f5",
+    "question": "What is the number of times that patient 10020786 had pre-admission on 12/04/last year?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: 0 times."
+  },
+  {
+    "qid": "fc9a1a57bacdb774ac5e8f68",
+    "question": "What was the admission type for patient 10023117 during their first hospital visit?",
+    "gold": "[['SURGICAL SAME DAY ADMISSION']]",
+    "answer": "The final answer is: routine"
+  },
+  {
+    "qid": "fd9b2daa83ce099cdf252c35",
+    "question": "Has there been any procedure that patient 10022880 had in this year?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10022880 had the following procedures in 2177:\n\n- Excision of bone for graft, unspecified site \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- Fusion or refusion of 2-3 vertebrae \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- Lumbar and lumbosacral fusion of the posterior column, posterior technique \u2014 performedDateTime: 2177-03-12T00:00:00-04:00\n- 18 Gauge \u2014 performedPeriod: 2177-03-15T06:00:00-04:00 to 2177-03-15T16:55:00-04:00\n- 20 Gauge \u2014 performedPeriod: 2177-03-15T06:00:00-04:00 to 2177-03-16T00:17:00-04:00"
+  },
+  {
+    "qid": "fde016b31923066cd34bb168",
+    "question": "What was patient 10022281's first output time of foley on 06/23/2125?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find a Foley output time for patient 10022281 on 06/23/2125."
+  },
+  {
+    "qid": "fdf5fc622de2b8d98e233ad6",
+    "question": "What was the drug prescribed to patient 10020740 in 05/2150 for the first time?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find any drug prescribed to patient 10020740 in 05/2150 in the retrieved data."
+  },
+  {
+    "qid": "feaa451705254e6b2a61a7fb",
+    "question": "During this month, when was the first time that patient 10005817 was prescribed a medication via the iv drip route?",
+    "gold": "[['2132-12-12 11:00:00']]",
+    "answer": "The final answer is: I cannot find the first prescription time for an IV DRIP route medication during this month (2132-12) in the retrieved MedicationRequest data."
+  },
+  {
+    "qid": "ffcf49b4d60d6ba61111c10d",
+    "question": "On last month/17, what was the average of heart rate for patient 10006053?",
+    "gold": "[[None]]",
+    "answer": "The final answer is: I cannot find the heart rate observations for patient 10006053 on 2111-11-17 in the retrieved data, so I cannot calculate the average."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "qid": "45b3c545de90501570505db8",
+    "question": "What was the dose of heparin flush (10 units/ml) that was prescribed since 04/2196 for the last time to patient 10004235?",
+    "gold": "[['1']]",
+    "answer": "The final answer is: 1"
+  },
+  {
+    "qid": "461ff9eeedf5e9452cbf12b2",
+    "question": "Has patient 10007818 had any drainage of peritoneal cavity, percutaneous approach, diagnostic treatment in 2146?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10007818 had the following matching Procedure resources in 2146:\n\n- Drainage of Peritoneal Cavity, Percutaneous Approach, Diagnostic \u2014 performedDateTime: 2146-07-02T00:00:00-04:00\n- Drainage of Peritoneal Cavity, Percutaneous Approach, Diagnostic \u2014 performedDateTime: 2146-06-19T00:00:00-04:00"
+  },
+  {
+    "qid": "4724c2961dfc05d2b08ea4be",
+    "question": "Did patient 10020187 receive restriction of intracranial artery with intraluminal device, percutaneous approach in the last hospital encounter?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10020187 received \"Restriction of Intracranial Artery with Intraluminal Device, Percutaneous Approach\" during the last hospital encounter."
+  },
+  {
+    "qid": "472793119170f9c8adb0b84b",
+    "question": "Is patient 10021487's diastolic blood pressure ever less than 31.0 since 09/08/2116?",
+    "gold": "[[0]]",
+    "answer": "I cannot determine from the retrieved patient data. The available Observation retrieval was truncated and did not include any observations with display text `Arterial Blood Pressure diastolic` during the period since `09/08/2116` up to the assumed current time `2116-12-31 23:59:00`.\n\nThe final answer is: I cannot find the information."
+  },
+  {
+    "qid": "49a4cd3cf6fcacac9a3bf922",
+    "question": "When was the last time patient 10025612 was measured with a greater diastolic blood pressure than 59.0 since 02/02/2125?",
+    "gold": "[['2125-09-28 08:00:00']]",
+    "answer": "The final answer is: I cannot find the requested diastolic blood pressure measurement in the retrieved patient Observation data."
+  },
+  {
+    "qid": "4a73f78af6f830619516e24b",
+    "question": "When did patient 10005909 experience the last instance where their heart rate was less than 115.0 in their last icu stay?",
+    "gold": "[['2144-11-02 15:00:00']]",
+    "answer": "The final answer is: I cannot find the information in the retrieved patient data. The Observation resources were truncated and the returned observations did not include heart rate measurements during the last ICU stay."
+  },
+  {
+    "qid": "4b10d0fec2f23acab915e3f3",
+    "question": "Count how many times in the first hospital visit patient 10004457 had coronary arteriography using two catheters.",
+    "gold": "[[1]]",
+    "answer": "The final answer is: 1"
+  },
+  {
+    "qid": "4b635ac1325eaf0dd75988d5",
+    "question": "In 04/last year, has patient 10001725 been prescribed with pantoprazole, albuterol 0.083% neb soln, or propranolol?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: No. I could not find any MedicationRequest records in 04/2109 for pantoprazole, albuterol 0.083% neb soln, or propranolol."
+  },
+  {
+    "qid": "519da8c653b3284432571957",
+    "question": "Has there been any results of microbiology tests for the blood culture of patient 10007818 since 2146?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: I cannot find any microbiology blood culture test results for patient 10007818 since 2146 in the retrieved patient data."
+  },
+  {
+    "qid": "52132e5911d6dc1ae05dcf5a",
+    "question": "When was the first continuous invasive mechanical ventilation for less than 96 consecutive hours done for patient 10027445 since 2142?",
+    "gold": "[['2142-07-31 00:00:00']]",
+    "answer": "The final answer is: 2142-07-31T00:00:00-04:00"
+  },
+  {
+    "qid": "524208cb99d72ea26c67c3f9",
+    "question": "How many times did patient 10019385 check into the icu during this year?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: 1 ICU check-in during this year (2180)."
+  },
+  {
+    "qid": "52f6bc8e9873cce45456c38e",
+    "question": "Can you specify the gender of patient 10025463?",
+    "gold": "[['M']]",
+    "answer": "The final answer is: I cannot find the gender of patient 10025463 in the retrieved patient data."
+  },
+  {
+    "qid": "53388f93019e894471f1753a",
+    "question": "Has patient 10026354 undergone a procedure?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10026354 has 13 Procedure resources, including:\n\n- Reposition Left Maxilla with External Fixation Device, Percutaneous Approach\n- Reposition Right Mandible with Internal Fixation Device, Open Approach\n- Reposition Left Mandible with External Fixation Device, Percutaneous Approach\n- Triage: emergency center (procedure)\n- Repair Upper Artery, Open Approach\n- Invasive Ventilation\n- OR Sent\n- 20 Gauge\n- Arterial Line\n- Foley Catheter\n- Extubation\n- Cordis/Introducer"
+  },
+  {
+    "qid": "5436413908d5e902536630e8",
+    "question": "What was the name of the specimen test that patient 10018845 was given for the last time in 10/2184?",
+    "gold": "[['URINE']]",
+    "answer": "The final answer is: \n\n- RDW\n- Platelet Count\n- Hemoglobin\n- White Blood Cells\n- MCV\n- MCH\n- MCHC\n- Glucose\n- Sodium\n- Red Blood Cells\n- Creatinine\n- Hematocrit\n- Potassium\n- Chloride\n- Bicarbonate\n- Calcium, Total\n- Anion Gap\n- Magnesium\n- Urea Nitrogen\n- Phosphate"
+  },
+  {
+    "qid": "5437dceb1f465a249b318f40",
+    "question": "How many hours have there been since patient 10039831's admission to the hospital?",
+    "gold": "[]",
+    "answer": "The final answer is: 88 hours and 44 minutes (approximately 88.73 hours) since admission to the hospital."
+  }
+]

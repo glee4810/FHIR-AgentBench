@@ -1,0 +1,92 @@
+[
+  {
+    "qid": "9a8ac4df220dc07a83eeae9b",
+    "question": "When was patient 10019777's last insertion of non-drug-eluting peripheral (non-coronary) vessel stent(s) treatment in 2187?",
+    "gold": "[['2187-02-12 00:00:00']]",
+    "answer": "The final answer is: 2187-02-12T00:00:00-05:00"
+  },
+  {
+    "qid": "9d71dca8add09e321ec57dd9",
+    "question": "When did patient 10026354 last have or urine output since 02/26/2119?",
+    "gold": "[['2119-10-26 08:50:00']]",
+    "answer": "The final answer is: I cannot find the time when patient 10026354 last had \"or urine output\" since 02/26/2119 in the retrieved patient data."
+  },
+  {
+    "qid": "9eda5afbe00ed4d5f058ec11",
+    "question": "What was the last time patient 10037975 got the stool microbiology test?",
+    "gold": "[['2185-01-21 11:03:00']]",
+    "answer": "The final answer is: I cannot find the last time patient 10037975 got the stool microbiology test in the retrieved data."
+  },
+  {
+    "qid": "a16e5eeb260d3b031762211d",
+    "question": "Tell me the name of the drug that patient 10021487 was first prescribed through the im route.",
+    "gold": "[['Glucagon']]",
+    "answer": "The final answer is: I cannot find a MedicationRequest with route code `IM` in the retrieved patient data."
+  },
+  {
+    "qid": "a2de199eb11275f923c798c8",
+    "question": "Can you tell me the first medicine that was prescribed to patient 10007795?",
+    "gold": "[['Multivitamins']\n ['Nicotine Patch']\n ['Duloxetine']\n ['Tamoxifen Citrate']]",
+    "answer": "The final answer is: I cannot determine the first medicine prescribed because the retrieved MedicationRequest data was truncated (_returned: 50 of _total: 224), and the earliest prescription records were not included."
+  },
+  {
+    "qid": "a4371b693f24038ad04881c2",
+    "question": "Was patient 10005909 prescribed with 0.9% sodium chloride, bag, or duloxetine during the first hospital visit?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10005909 was prescribed both:\n- 0.9% sodium chloride, bag\n- duloxetine"
+  },
+  {
+    "qid": "a5356c6c205e9f088964bb9a",
+    "question": "Has patient 10006580 received any medication?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. The patient has medication records: 52 MedicationRequest resources were found. No MedicationAdministration resources were found."
+  },
+  {
+    "qid": "aaa0dd1684e01424ce21edfd",
+    "question": "When was the last occasion that patient 10018423 underwent a fluoroscopy of multiple coronary arteries using low osmolar contrast procedure since 1 year ago?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find any \"Fluoroscopy of Multiple Coronary Arteries using Low Osmolar Contrast\" procedure for patient 10018423 since 1 year ago (from 2161-12-31 23:59:00 through 2162-12-31 23:59:00)."
+  },
+  {
+    "qid": "ad25b33f618fbda4463dc6d1",
+    "question": "Is patient 10021938 recorded as male or female?",
+    "gold": "[['M']]",
+    "answer": "The final answer is: I cannot find the Patient resource information for patient 10021938, so I cannot determine whether the patient is recorded as male or female."
+  },
+  {
+    "qid": "b41f33bd6784e344776668f2",
+    "question": "What was the first dose of 0.9% sodium chloride (mini bag plus) given to patient 10015931?",
+    "gold": "[['100']]",
+    "answer": "The final answer is: 250 mL"
+  },
+  {
+    "qid": "b472da76f7e2b4d53f38f131",
+    "question": "Can you tell me the last care unit patient 10003046 was in during their last hospital visit, according to the transfer record?",
+    "gold": "[['Med/Surg']]",
+    "answer": "The final answer is: I cannot find the care unit name in the retrieved data. According to the transfer record for the last hospital visit, the last location reference was `Location/0483cba3-574b-58e3-a6a1-2eec0f3b707a`."
+  },
+  {
+    "qid": "b710f2ea6d630a9c88a40fc2",
+    "question": "What was the name of the prescription drug that patient 10017492 was prescribed last in 04/this year?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find the prescription drug prescribed last in 04/2114 in the retrieved MedicationRequest data."
+  },
+  {
+    "qid": "b71bf47188930e8abb1e562f",
+    "question": "When was patient 10036156's last procedure conducted in this year?",
+    "gold": "[['2157-07-01 00:00:00']]",
+    "answer": "The final answer is: 2157-07-02T14:18:00-04:00"
+  },
+  {
+    "qid": "b822a4c44ce54f12b21a2ba9",
+    "question": "Has any lab test been performed on patient 10015931 in 10/last year?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: No. I cannot find any lab test performed for patient 10015931 in 10/2175."
+  },
+  {
+    "qid": "ba93c08f689f2e3af0763012",
+    "question": "What is the number of times that patient 10004733 visited the hospital in 2174?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: 1 hospital visit in 2174."
+  }
+]

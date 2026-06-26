@@ -1,0 +1,92 @@
+[
+  {
+    "qid": "15a9e84696cb054763055092",
+    "question": "Since the first visit of patient 10004733 to the careunit neurology in their current hospital visit, how many hours have elapsed?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find the Location details needed to confirm which Encounter.location corresponds to careunit \u201cneurology.\u201d"
+  },
+  {
+    "qid": "15b4990f761db52edf38273c",
+    "question": "How many days have passed since the last time that patient 10021487 had received a hemoglobin lab test during the current hospital visit?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot determine this because the retrieved Encounter data shows no active/current hospital visit at 2116-12-31 23:59:00. The most recent hospital encounter before that time ended at 2116-12-28T13:19:00-05:00."
+  },
+  {
+    "qid": "1613b932a1fa398b6bb15ef8",
+    "question": "Has any lab test been performed on patient 10016150 in 2142?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Laboratory Observation resources were found for patient 10016150 in 2142, including tests such as \"Magnesium\" on \"2142-05-14T08:30:00-04:00\", \"INR(PT)\" and \"PT\" on \"2142-05-15T06:23:00-04:00\", and \"URINE CULTURE\" on \"2142-05-15T19:02:00-04:00\"."
+  },
+  {
+    "qid": "1757b6190d9346fb05196adf",
+    "question": "What was the name of the specimen test that patient 10007818 received since 06/2146 last?",
+    "gold": "[['BLOOD CULTURE']]",
+    "answer": "The final answer is: I cannot find any Specimen resources for patient 10007818, so I cannot determine the name of the specimen test received since 06/2146 last."
+  },
+  {
+    "qid": "17bb906271e8d84bf499f645",
+    "question": "How much does patient 10038999 change in mesothelial cells last measured on the last hospital visit compared to the second to last value measured on the last hospital visit?",
+    "gold": "[[None]]",
+    "answer": "The final answer is: I cannot find mesothelial cells measurements for the patient's last hospital visit in the retrieved Observation data."
+  },
+  {
+    "qid": "19858b1d6157d97c01ffb3cf",
+    "question": "During their last hospital visit, what time was patient 10001217's last procedure?",
+    "gold": "[['2157-12-19 00:00:00']]",
+    "answer": "The final answer is: 2157-12-20T14:27:00-05:00"
+  },
+  {
+    "qid": "19d0768436838216fd47a301",
+    "question": "Could you provide the last care unit for patient 10009049 in their last hospital encounter according to the transfer record?",
+    "gold": "[['Medicine']]",
+    "answer": "The final answer is: Location/0fc2d23b-0e5b-5f91-8369-6d37301fea51. I could not find the corresponding Location resource details/name for this care unit in the retrieved data."
+  },
+  {
+    "qid": "1afade11184c7bc98c9756f8",
+    "question": "When did the last time patient 10005909 have a fibrinogen, functional lab test in the first hospital visit?",
+    "gold": "[['2144-10-30 05:35:00']]",
+    "answer": "The final answer is: I cannot find the fibrinogen, functional lab test time during the first hospital visit from the retrieved patient data."
+  },
+  {
+    "qid": "1cb7346d2299d0467b9fcb27",
+    "question": "In 03/last year, was the respiratory rate of patient 10020187 ever greater than 12.0?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: No. I could not find any respiratory rate observations for patient 10020187 in 03/2168, so there is no evidence that the respiratory rate was ever greater than 12.0 during that month."
+  },
+  {
+    "qid": "1dffdf5fe800e0b9a0dcf1b3",
+    "question": "Has patient 10005866 been in the hospital?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10005866 has been in the hospital. Hospital encounter records include:\n- 20364112\n- 21636229\n- 26134779\n- 23514107\n- 22589518\n- 27167814\n- 26158160"
+  },
+  {
+    "qid": "1eff45de74ada2d6145da372",
+    "question": "Has any laboratory test been performed on patient 10004733 this month?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: I cannot determine from the retrieved data. The returned Observation data is truncated, and the retrieved laboratory Observations do not include any tests performed during this month (2174-12-01 through 2174-12-31)."
+  },
+  {
+    "qid": "1fcac336ef5d4a18372aeae5",
+    "question": "What was the last prescribed dose of docusate sodium (liquid) that patient 10021487 got during the current hospital visit?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find a prescribed dose of docusate sodium (liquid) during the current hospital visit in the retrieved patient data."
+  },
+  {
+    "qid": "204b55b1a8a2dbeafa89b76c",
+    "question": "Retrieve the yearly l pleural #1 output of patient 10009035. if multiple l pleural #1 outputs are measured yearly, take the maximum.",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find any \"l pleural #1\" output in the retrieved Observation data for patient 10009035."
+  },
+  {
+    "qid": "20c3ddd36c65c44890c3f3e5",
+    "question": "What was the name of the specimen test that patient 10021666 was given for the first time since 03/2172?",
+    "gold": "[['MRSA SCREEN']]",
+    "answer": "The final answer is: I cannot find the specimen test name from the available data. The Observation data were truncated, and Specimen resources could not be retrieved for this patient."
+  },
+  {
+    "qid": "20d7ef0b9116aab70a4d883c",
+    "question": "Since 07/2181, what was patient 10021938's last microbiology test time?",
+    "gold": "[['2181-10-25 12:00:00']]",
+    "answer": "The final answer is: I cannot find patient 10021938's last microbiology test time since 07/2181 in the retrieved FHIR data."
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "experiment": "A0 (raw FHIR) vs A0prime (projection-only, strip+recency-cap-50) vs A5 (code interpreter), 409 MIMIC-IV-on-FHIR questions, GPT-5.5, self-hosted Medplum on Mac mini, trustworthy grading (deterministic numerics+failures + 3-vote codex panel on non-numeric)",
+  "strata": {
+    "overflow": 262,
+    "matched_answerable": 147,
+    "pooled": 409
+  },
+  "accuracy": {
+    "A0_raw": {
+      "overflow": 0.0,
+      "matched": 0.707,
+      "pooled": 0.254
+    },
+    "A0prime_projection": {
+      "overflow": 0.221,
+      "matched": 0.701,
+      "pooled": 0.394
+    },
+    "A5_code": {
+      "overflow": 0.656,
+      "matched": 0.646,
+      "pooled": 0.653
+    }
+  },
+  "a0prime_overflow_rate": "97/262 = 37% (projection still overflows the biggest patients even after ~99% payload reduction)",
+  "findings": [
+    "MATCHED-ANSWERABLE (data already fits 32k): raw 70.7% ~= projection 70.1% > code 64.6%. No arm reasons better; projection gives no benefit when data fits; code slightly hurts (reliability tax). Confirms the matched-budget null with a third arm.",
+    "OVERFLOW (data does not fit 32k): raw 0% < projection 22.1% < code 65.6%. Projection-alone recovers only 34% of the code sandbox accuracy. Blunt recency-capped projection partially rescues overflow but (a) still overflows 37% of the biggest patients, (b) drops data the answer needs.",
+    "POOLED: raw 25.4% < projection 39.4% < code 65.3%."
+  ],
+  "verdict": "The entire effect is overflow-avoidance / data-shape, NOT reasoning (matched-answerable is a null). BUT how you avoid overflow matters enormously: blunt projection-into-context recovers only ~1/3 of the lift; the code sandbox (processing data OUT of context) recovers it fully. So shrink-and-stuff is insufficient \u2014 a smart layer (sandboxed compute / answer-returning queries over clean projections) is needed, not naive projection of raw resources.",
+  "caveat": "A0prime is one config (recency-cap=50). The exact 22.1% depends on the cap; the structural conclusion (partial recovery, bounded by residual overflow + data-drop) holds across caps. Single model (GPT-5.5), single seed.",
+  "substrate_note": "A0 and A5 are from the prior run on the original (torn-down) EC2 Medplum; A0' was run on a freshly-loaded Medplum on a Mac mini. Parity verified via agent_fhir_resources UUID overlap (median Jaccard 1.0; PUT preserves ids), NOT a strict same-instance control.",
+  "matched_stratum_correction": "The n=147 'resource-real' stratum is NOT a three-way null. A0' vs A0 = -0.7pp p=1.00 (null); A5 vs A0 = -6.1pp p=0.0225 (code significantly WORSE, reliability tax). The genuine matched-BUDGET null (-3.6pp p=0.18) is the separate n=140 both-answered stratum.",
+  "interpretation_correction": "A0' recovers 34% of code's overflow accuracy UNDER blunt recency-cap-50 (an adversarial, query-blind config: 40/107 fit-wrong ask for the FIRST value a recency cap drops; 97 residual overflows are multi-turn accumulation). A query-aware in-context projection is upper-bounded at ~67.6%, a tie with the sandbox. So the lever is query-AWARE SELECTION, not out-of-context compute exclusively; a sandbox is one way, not required.",
+  "grading_note": "A0' non-numeric labels are single-family (codex-only) 3-vote; the original's cross-family Claude+codex check does not transfer. Codex is the stricter family -> A0' is a conservative lower bound."
+}

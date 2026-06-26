@@ -1,0 +1,1 @@
+{"type": "object", "additionalProperties": false, "required": ["grades"], "properties": {"grades": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["qid", "label"], "properties": {"qid": {"type": "string"}, "label": {"type": "integer", "enum": [0, 1]}}}}}}

@@ -1,0 +1,92 @@
+[
+  {
+    "qid": "c5d97a3fa6b67acc42a60f3f",
+    "question": "How many days have passed since patient 10039831's last stay in careunit discharge lounge in this hospital visit?",
+    "gold": "[]",
+    "answer": "The final answer is: 0 days have passed, because the patient's last stay in careunit discharge lounge appears to still be ongoing at the assumed current time (2115-12-31 23:59:00)."
+  },
+  {
+    "qid": "c6b253614a8ea885b3619a02",
+    "question": "What was the last measurement of patient 10020786's height in 07/2189?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find a 'Height (cm)' measurement for patient 10020786 in 07/2189."
+  },
+  {
+    "qid": "c747e1b668edc722be015e38",
+    "question": "When was the first time patient 10020740 was prescribed a medication via the ih route in 07/2150?",
+    "gold": "[['2150-07-10 01:00:00']]",
+    "answer": "The final answer is: 2150-07-10T00:23:27-04:00"
+  },
+  {
+    "qid": "c86ef1c99a73bd58d05ad456",
+    "question": "How many days have passed since patient 10021487 stayed in the careunit emergency department during the current hospital visit for the last time?",
+    "gold": "[]",
+    "answer": "The final answer is: 28.96 days (28 full days) since the last Emergency Department stay ended at 2116-12-03T01:02:00-05:00."
+  },
+  {
+    "qid": "c996bd83ae8f43a3717a6f64",
+    "question": "How many times did patient 10002495 have irrigation of genitourinary tract using irrigating substance, via natural or artificial opening since 2141?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: 1"
+  },
+  {
+    "qid": "cb5bf7d37033da680feb9abe",
+    "question": "How many visits did patient 10026354 make to the hospital throughout this year?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: 1 hospital visit in 2119."
+  },
+  {
+    "qid": "ccedb8f78a6736b132f3b079",
+    "question": "Tell me the organism that was detected in the last urine test of patient 10031757 during their last hospital encounter?",
+    "gold": "[['YEAST']]",
+    "answer": "The final answer is: I cannot find the organism detected in the last urine test from the retrieved patient data."
+  },
+  {
+    "qid": "cd72a23c76002c4a524a1b61",
+    "question": "How many icu visits did patient 10022880 have during this year?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: 1 ICU visit during this year (2177)."
+  },
+  {
+    "qid": "cd8edc01787dda933e12fd99",
+    "question": "When patient 10021312 had the first void output since 09/16/2113?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find a recorded first \"Void\" output since 09/16/2113 in the retrieved patient data."
+  },
+  {
+    "qid": "ce3edde36063a4aeb5180c6d",
+    "question": "On last month/20, what was the maximum value of respiratory rate of patient 10019172?",
+    "gold": "[[None]]",
+    "answer": "The final answer is: I cannot find any Respiratory Rate observation for patient 10019172 on 2118-11-20."
+  },
+  {
+    "qid": "cfe831c90fd2c89d0116f576",
+    "question": "What was the name of the drug that patient 10019385 is first prescribed via td route?",
+    "gold": "[['Nicotine Patch']]",
+    "answer": "The final answer is: Lidocaine 5% Patch"
+  },
+  {
+    "qid": "d0be97adb482380a1a57585d",
+    "question": "How many times patient 10027602 have a foley output recorded on 12/05/this year?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: 0 times."
+  },
+  {
+    "qid": "d198804fbc8f627ea7a4dd74",
+    "question": "Can you provide the first care unit that patient 10010471 was in according to the transfer record?",
+    "gold": "[['Emergency Department']]",
+    "answer": "The final answer is: Location/501cd59a-cd8a-5f98-8298-2ca9c897d59f"
+  },
+  {
+    "qid": "d2d7d8b52a277ffa44cfb072",
+    "question": "Please tell me patient 10019777's sex.",
+    "gold": "[['M']]",
+    "answer": "The final answer is: I cannot find the patient's sex in the retrieved patient data."
+  },
+  {
+    "qid": "d331061cc248eb79de709879",
+    "question": "Has patient 10038933 been diagnosed with any type of disease?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10038933 has been diagnosed with the following conditions:\n\n- Candidiasis of mouth\n- Retention of urine, unspecified\n- Pneumonitis due to inhalation of food or vomitus\n- Alcohol withdrawal delirium\n- FALL ON STAIR/STEP NEC\n- Dysphagia, unspecified\n- Encephalopathy, unspecified\n- Hyposmolality and/or hyponatremia\n- Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- Unspecified essential hypertension\n- Other and unspecified alcohol dependence, unspecified\n- Other and unspecified cerebral laceration and contusion, without mention of open intracranial wound, with loss of consciousness of unspecified duration"
+  }
+]

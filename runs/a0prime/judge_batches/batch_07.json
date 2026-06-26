@@ -1,0 +1,92 @@
+[
+  {
+    "qid": "70b7e8f278566e9443f31eaf",
+    "question": "Has there been any results of the microbiological mrsa screen test for patient 10031757 since 2137?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: I cannot find any microbiological MRSA screen test results for this patient in the retrieved data since 2137."
+  },
+  {
+    "qid": "71cdc4002dd9037845bd713a",
+    "question": "When did patient 10031404 have the first procedure?",
+    "gold": "[['2113-08-04 00:00:00']]",
+    "answer": "The final answer is: 2113-08-04T00:00:00-04:00"
+  },
+  {
+    "qid": "71fb7280916537b48dea629f",
+    "question": "How many times was patient 10020786 admitted to the hospital since 2189?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: 1 hospital admission since 2189."
+  },
+  {
+    "qid": "73710b96b938a24a7a5c86d5",
+    "question": "Tell me the medication that patient 10014729 was prescribed for the first time?",
+    "gold": "[['Milk of Magnesia']]",
+    "answer": "The final answer is: I cannot determine the medication prescribed for the first time from the available retrieved data. The MedicationRequest data was truncated (_total: 207, _returned: 50), and the earliest retrieved MedicationRequests may not represent the patient's true first prescription."
+  },
+  {
+    "qid": "740f87417b7715602b678286",
+    "question": "Did patient 10029484 have any tests for creatine kinase, mb isoenzyme during the previous month?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: I cannot find a retrieved Observation for \"Creatine Kinase, MB Isoenzyme\" during the previous month (2160-11-01 through 2160-11-30). However, the Observation retrieval was truncated, so I cannot fully rule it out from the available data."
+  },
+  {
+    "qid": "741720ef5045654c9099edd9",
+    "question": "How much time in days has passed since the last time patient 10018081 was prescribed metronidazole (flagyl) in their current hospital visit?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find the metronidazole (flagyl) prescription information for patient 10018081 in their current hospital visit from the retrieved MedicationRequest data."
+  },
+  {
+    "qid": "74968f3f69d0e352733f0a96",
+    "question": "When was patient 10027602's first maximum pt in 12/this year?",
+    "gold": "[['2201-12-13 03:08:00']]",
+    "answer": "The final answer is: 2201-12-13T03:08:00-05:00"
+  },
+  {
+    "qid": "7559da6b7b189084f45242ea",
+    "question": "Was patient 10020944 to the e.r. in their first hospital visit?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. In their first hospital visit, the patient was admitted from the E.R.; the hospital encounter has admitSource code `EMERGENCY ROOM` and also has a related ED encounter (`encounter-ed`)."
+  },
+  {
+    "qid": "75b34f0cc40ad60222a3d432",
+    "question": "How was patient 10019777 admitted in terms of admission type for the first time in the hospital?",
+    "gold": "[['EW EMER.']]",
+    "answer": "The final answer is: emergency (code: EMER)"
+  },
+  {
+    "qid": "764c80fc36e53d7964e0f522",
+    "question": "Since 01/2148, when was patient 10038933's first microbiology test done?",
+    "gold": "[['2148-09-10 15:29:00']]",
+    "answer": "The final answer is: 2148-09-21T13:33:00-04:00"
+  },
+  {
+    "qid": "76a3b26583f61cc00377b6a2",
+    "question": "Count the distinct medications that patient 10004720 was prescribed since 04/2183.",
+    "gold": "[[0]]",
+    "answer": "The final answer is: 0 distinct medications prescribed since 04/2183 through 2183-12-31 23:59:00."
+  },
+  {
+    "qid": "785297f1fb8d773e4c4a07e2",
+    "question": "Could you tell me the marital status of patient 10012853 on their first hospital visit?",
+    "gold": "[['WIDOWED']]",
+    "answer": "The final answer is: I cannot find the marital status for patient 10012853 on their first hospital visit in the retrieved data."
+  },
+  {
+    "qid": "7995633cbc3e134de24ae114",
+    "question": "How many hours has it been since the last time patient 10004733 stayed in the \"neurology\" careunit in this hospital encounter?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot determine how many hours it has been since the last stay in the \"neurology\" careunit because the retrieved Encounter data only contains Location references, and the corresponding Location details/careunit names could not be found."
+  },
+  {
+    "qid": "7a1d975dc39f51887f287327",
+    "question": "Is patient 10020944 recorded as male or female?",
+    "gold": "[['M']]",
+    "answer": "The final answer is: I cannot find the Patient resource or gender information for patient 10020944."
+  },
+  {
+    "qid": "7ae946cb6fe7f5a3cac9bfa8",
+    "question": "What was patient 10018423's last time of the bypass coronary artery, one artery from aorta with autologous venous tissue, open approach procedure in 2162?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find this procedure in 2162 for patient 10018423."
+  }
+]

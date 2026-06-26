@@ -1,0 +1,92 @@
+[
+  {
+    "qid": "3508fba9387d18248281be4e",
+    "question": "Was patient 10014078 diagnosed with a disease during their last hospital encounter?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10014078 was diagnosed with diseases/conditions during their last hospital encounter. Diagnoses included:\n\n- Unspecified infectious and parasitic diseases\n- Benign neoplasm of cerebral meninges\n- Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled\n- Encephalopathy, unspecified\n- Other and unspecified hyperlipidemia\n- Unspecified essential hypertension\n- Grand mal status"
+  },
+  {
+    "qid": "3721cde992fe90dd17278b65",
+    "question": "How many hours have passed since the patient 10021487 was admitted to the hospital?",
+    "gold": "[]",
+    "answer": "The final answer is: 695.6 hours have passed since the hospital admission at 2116-12-03T00:23:00-05:00."
+  },
+  {
+    "qid": "37b440fc3a82a50003dce7ed",
+    "question": "What was patient 10019385's last creatine kinase, mb isoenzyme lab test time in their last hospital encounter?",
+    "gold": "[['2180-03-05 19:00:00']]",
+    "answer": "The final answer is: 2180-03-05T19:00:00-05:00"
+  },
+  {
+    "qid": "3813f972b07ceee5031bb452",
+    "question": "Did patient 10021666 receive a diagnosis during their last hospital encounter?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10021666 received diagnoses during their last hospital encounter. There were 35 Condition records associated with the last hospital encounter and its child encounter(s)."
+  },
+  {
+    "qid": "390c4f9e4e7b5c353eff9da7",
+    "question": "What was the last dose of potassium chl 20 meq / 1000 ml d5lr prescribed to patient 10016810?",
+    "gold": "[['1000']]",
+    "answer": "The final answer is: 1000"
+  },
+  {
+    "qid": "3a676bfafee66c27173904e8",
+    "question": "On the first hospital visit, was patient 10005866 admitted to the emergency room?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. On the first hospital visit, patient 10005866 was admitted from: EMERGENCY ROOM."
+  },
+  {
+    "qid": "3c3a60ef6ea248ad69d36deb",
+    "question": "When was patient 10008287 prescribed for the last time a medication via the pr route since 08/2145?",
+    "gold": "[['2145-10-01 14:00:00']]",
+    "answer": "The final answer is: 2145-10-01T13:10:49-04:00"
+  },
+  {
+    "qid": "3c71f198ffca8a3ba108d583",
+    "question": "What was the organism found in patient 10027602's first mini-bal microbiology test?",
+    "gold": "[['STAPH AUREUS COAG +']]",
+    "answer": "The final answer is: NO GROWTH, <1000 CFU/ml."
+  },
+  {
+    "qid": "3de4eeab52c93e43309156d7",
+    "question": "Has any medication been designated for patient 10029484 in 04/last year?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: No. I cannot find any medication designated for patient 10029484 in 04/2159."
+  },
+  {
+    "qid": "3e4b52c69a2bdf36e4f03676",
+    "question": "Retrieve the marital status of patient 10005866 during their last hospital encounter.",
+    "gold": "[['SINGLE']]",
+    "answer": "The final answer is: I cannot find the marital status for patient 10005866 in the retrieved Patient or Encounter data."
+  },
+  {
+    "qid": "3e69022ac78531ddbbfd8b99",
+    "question": "Has patient 10016742 had any introduction of nutritional substance into lower gi, via natural or artificial opening treatment since 2178?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10016742 had the procedure \"Introduction of Nutritional Substance into Lower GI, Via Natural or Artificial Opening\" on 2178-07-25T00:00:00-04:00."
+  },
+  {
+    "qid": "40bd0f4265c38c258e1d9e19",
+    "question": "Has there been any organism found in patient 10021118's last urine microbiological examination in 12/this year?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: I cannot find any urine microbiological examination for patient 10021118 in 12/2161, so I cannot determine that any organism was found."
+  },
+  {
+    "qid": "419163a7cde49786dfda6fcd",
+    "question": "When was patient 10019172 first discharged from the hospital?",
+    "gold": "[['2118-10-11 20:15:00']]",
+    "answer": "The final answer is: 2118-10-11T20:15:00-04:00"
+  },
+  {
+    "qid": "426ce736177896950ecec77f",
+    "question": "When was the first time when patient 10038933 received a other diagnostic procedures on lung or bronchus treatment during the first hospital encounter?",
+    "gold": "[['2148-09-11 00:00:00']]",
+    "answer": "The final answer is: 2148-09-11T00:00:00-04:00"
+  },
+  {
+    "qid": "43da3486df026843872b9af4",
+    "question": "What was the admission type for patient 10019172's first hospital admission?",
+    "gold": "[['ELECTIVE']]",
+    "answer": "The final answer is: elective"
+  }
+]

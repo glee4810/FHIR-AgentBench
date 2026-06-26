@@ -1,0 +1,92 @@
+[
+  {
+    "qid": "7b11c8a07c7b85627d2a9c47",
+    "question": "Count how many times during their first hospital encounter patient 10018423 experienced the bypass coronary artery, one artery from left internal mammary with autologous arterial tissue, open approach procedure.",
+    "gold": "[[1]]",
+    "answer": "The final answer is: During the patient's first hospital encounter, that procedure occurred 1 time."
+  },
+  {
+    "qid": "7b18e66852f4386ce57b39c1",
+    "question": "Has there been any mrsa screen microbiology test done for patient 10029484 since 09/2160?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: I cannot determine whether an mrsa screen microbiology test was done since 09/2160 from the available retrieved data. The Observation results were truncated (_total: 963, _returned: 50), and the returned observations did not include an MRSA screen microbiology test."
+  },
+  {
+    "qid": "7b7f155abcaed396f4e612b6",
+    "question": "Tell me the name of the medication patient 10004720 was first prescribed via iv route since 05/2183?",
+    "gold": "[]",
+    "answer": "The final answer is: I cannot find the medication name for an IV-route prescription for patient 10004720 since 05/2183 in the retrieved data."
+  },
+  {
+    "qid": "7bb4dd3032dd60767f552577",
+    "question": "Has patient 10006580 had any medication since 13 months ago?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10006580 has MedicationRequest records since 13 months ago, including multiple orders in 2137-08."
+  },
+  {
+    "qid": "7bef1a39879d33661976e78e",
+    "question": "When did patient 10025463 receive a pt laboratory test for the first time?",
+    "gold": "[['2136-11-01 06:20:00']]",
+    "answer": "The final answer is: I cannot find the first \u201cpt\u201d laboratory test time in the retrieved patient data."
+  },
+  {
+    "qid": "7c6bef368aa5ba846c186719",
+    "question": "How much of a difference is there in patient 10038999's c-reactive protein last measured on the last hospital visit compared to the first value measured on the last hospital visit?",
+    "gold": "[[None]]",
+    "answer": "I identified the last hospital visit as Encounter/5c758f58-0e4e-5957-9f4b-7bacc1502b3f, from 2132-05-17T23:32:00-04:00 to 2132-05-23T13:01:00-04:00. In the retrieved Observation records, I could not find any c-reactive protein / C-Reactive Protein measurement for that visit, so I cannot calculate the difference between the first and last values.\n\nThe final answer is: I cannot find the c-reactive protein values needed to calculate the difference."
+  },
+  {
+    "qid": "7d5fe035bb44c9237b17dfe5",
+    "question": "Was patient 10031757 prescribed on their first hospital visit heparin flush (10 units/ml), enoxaparin sodium, or vancomycin?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes \u2014 the retrieved prescription records for the first hospital visit include:\n\n- Enoxaparin Sodium"
+  },
+  {
+    "qid": "7e7f2de29fe0d6cf726ecfd4",
+    "question": "Did patient 10020306 visit the hospital for admission during the last year?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: Yes. Patient 10020306 had a hospital encounter for admission during the last year: Encounter/6697ebc3-3bf2-55e1-ba96-b623d17786b5, from 2129-10-29T08:00:00-04:00 to 2129-10-30T13:20:00-04:00."
+  },
+  {
+    "qid": "7ed170e256f209788ad3c985",
+    "question": "Has there been any organism found in patient 10008454's last mrsa screen microbiological examination since 03/2110?",
+    "gold": "[[0]]",
+    "answer": "The final answer is: I cannot find any MRSA SCREEN microbiological examination in the retrieved patient data since 03/2110, so I cannot determine whether any organism was found."
+  },
+  {
+    "qid": "7eeda0d4bfae5ffe07de0b9b",
+    "question": "How many hours has it been since the first time patient 10018081 stayed in the careunit emergency department on the current hospital encounter?",
+    "gold": "[]",
+    "answer": "The final answer is: 323.83 hours since the first emergency department stay began on the current hospital encounter."
+  },
+  {
+    "qid": "805a7efe25e2ce496220ee26",
+    "question": "What was the admission type during the first hospital admission for patient 10019172?",
+    "gold": "[['ELECTIVE']]",
+    "answer": "The final answer is: elective"
+  },
+  {
+    "qid": "8223cedf8e150ea026676246",
+    "question": "Tell me the name of the specimen test patient 10011398 last got since 12/2146?",
+    "gold": "[['MRSA SCREEN']]",
+    "answer": "The final answer is: Since 12/2146, up to the current time of 2146-12-31 23:59:00, the last specimen-associated tests found were on 2146-12-19T05:55:00-05:00:\n\n- MCV\n- Creatinine\n- Phosphate\n- Chloride\n- Sodium\n- Magnesium\n- Urea Nitrogen\n- MCHC\n- Platelet Count\n- Potassium\n- Hematocrit\n- RDW\n- Hemoglobin\n- MCH\n- White Blood Cells\n- Red Blood Cells"
+  },
+  {
+    "qid": "828f43dc5831cb08e5ce4ac8",
+    "question": "When was patient 10015931 first prescribed a medication via the po/ng route since 07/2176?",
+    "gold": "[['2176-11-14 08:00:00']]",
+    "answer": "The final answer is: I cannot find a medication prescribed via the PO/NG route between 07/2176 and the current time (2176-12-31 23:59:00) in the retrieved data."
+  },
+  {
+    "qid": "82b93a79d0dad5db6d3f5918",
+    "question": "Has patient 10008454 been in the hospital this year?",
+    "gold": "[[1]]",
+    "answer": "The final answer is: Yes. Patient 10008454 had a hospital encounter this year, from 2110-11-30T06:31:00-05:00 to 2110-12-10T15:53:00-05:00."
+  },
+  {
+    "qid": "82d84ee3f00fa576d3b70969",
+    "question": "Is the anion gap level of patient 10003400 measured at 2134-06-15 05:34:00 less than the level measured at 2134-06-14 06:15:00?",
+    "gold": "[[None]]",
+    "answer": "The final answer is: I cannot find the anion gap levels measured at 2134-06-15 05:34:00 and 2134-06-14 06:15:00 in the retrieved patient data, so I cannot determine whether one is less than the other."
+  }
+]
